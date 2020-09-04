@@ -1,7 +1,8 @@
 (function(dc, d3){
+//alert(dc.ColorMixin);
     dc.wordCloud = function(parent, chartGroup) {
         var WORD_CLASS = "dc-cloud-word",
-            _chart = dc.colorChart(dc.baseChart({})),
+            _chart = dc.ColorMixin(dc.BaseMixin),
             _size = [400, 400],
             _padding = 1,
             _timeInterval = 10,
