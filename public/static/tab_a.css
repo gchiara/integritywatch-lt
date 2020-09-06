@@ -259,7 +259,7 @@ div.dc-html-legend {
   padding: 5px 25px;
 }
 #iw-nav .navbar-brand img {
-  height: 50px;
+  height: 30px;
 }
 #iw-nav a {
   font-weight: bold;
@@ -285,7 +285,7 @@ div.dc-html-legend {
   color: #42b983;
 }
 #iw-nav .donate-btn-img {
-  width: 150px;
+  width: 170px;
 }
 
 /* MAIN & CHARTS */
@@ -873,6 +873,14 @@ table.dataTable thead .sorting_desc_disabled {
 .dataTables_wrapper th {
   color: #3a89c1;
   text-align: left;
+  width: 15%;
+}
+.dataTables_wrapper th.header-num {
+  width: 7%;
+}
+.dataTables_wrapper th.header-meetings {
+  width: 23%;
+  max-width: 250px;
 }
 .dataTables_wrapper td {
   text-align: left;

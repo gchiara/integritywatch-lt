@@ -23,15 +23,14 @@
               <!-- INFO -->
               <div class="col-md-8 chart-col" v-if="showInfo">
                 <div class="boxed-container description-container">
-                  <h1>ManoSeimas.lt – Seimo narių susitikimai</h1>
+                  <h1>ManoSeimas.lt</h1>
                   <p>Svetainėje „ManoSeimas.lt“ galite greitai ir paprastai sužinoti, kaip LR Seimo nariai skelbia savo darbotvarkes ir praneša apie susitikimus su įvairių interesų grupių atstovais, dalyvavimą renginiuose, susitikimus su kitais politikais. Galite šiuos duomenis analizuoti atskirose Seimo frakcijose arba tarpusavyje lyginti visų Seimo frakcijų rodiklius. Daugiau informacijos čia. <a href="./about.php">Daugiau čia</a>.</p>
                   <i class="material-icons close-btn" @click="showInfo = false">close</i>
                 </div>
               </div>
               <div class="col-md-4 chart-col" v-if="showInfo">
                 <div class="boxed-container description-container">
-                  <p>Sužinok, kiek ir kokių susitikimų su registruotais lobistais ir interesų grupėmis turėjo Tavo išrinktas parlamentaras!</p>
-                  <p>Kiekvienos sesijos susitikimų apžvalga nuo 2017 m. <a href="./about.php">čia</a>.</p>
+                  <p>Ši svetainė – tai pirminė (beta) puslapio versija, todėl apie pastebėtas klaidas prašome pranešti mums el. paštu info@transparency.lt</p>
                   <i class="material-icons close-btn" @click="showInfo = false">close</i>
                 </div>
               </div>
@@ -56,7 +55,7 @@
           </div>
           <!-- TOGGLE BUTTON -->
           <div class="col-md-12 toggle-btn-container">
-            <button class="toggle-btn" id="charts-toggle-btn" @click="showAllCharts = !showAllCharts">Show all</button>
+            <button class="toggle-btn" id="charts-toggle-btn" @click="showAllCharts = !showAllCharts">Daugiau</button>
           </div>
           <!-- CHARTS - SECOND ROW - CAN BE TOGGLED -->
           <div class="col-md-6 chart-col" v-show="showAllCharts">
@@ -68,7 +67,7 @@
           <!-- TABLE -->
           <div class="col-12 chart-col">
             <div class="selected-rows-list">
-              <span class="selected-rows-title">Selected:</span>
+              <span class="selected-rows-title">Pasirinkta:</span>
               <div class="selected-rows-tags">
               </div>
             </div>
@@ -78,14 +77,14 @@
                 <table class="table table-hover dc-data-table" id="dc-data-table">
                   <thead>
                     <tr class="header">
-                      <th class="header">Nr</th> 
-                      <th class="header">Vardas ir pavardė</th>
-                      <th class="header">Frakcija</th>
-                      <th class="header">Kadencija</th>
+                      <th class="header header-num">Nr</th> 
+                      <th class="header header-name">Vardas ir pavardė</th>
+                      <th class="header header-group">Frakcija</th>
+                      <th class="header header-term">Kadencija</th>
                       <!-- <th class="header">Ar parlamentaras yra frakcijos seniūnas ir/arba komiteto pirmininkas?</th> -->
-                      <th class="header">Visi lrs.lt darbotvarkės įrašai</th>
-                      <th class="header">Susitikimai su interesų grupėmis ir registruotais lobistais</th>
-                      <th class="header">More info</th>
+                      <th class="header header-agenda">Visi lrs.lt darbotvarkės įrašai</th>
+                      <th class="header header-meetings">Susitikimai su interesų grupėmis ir registruotais lobistais</th>
+                      <th class="header header-extra">Daugiau</th>
                     </tr>
                   </thead>
                 </table>
@@ -123,7 +122,7 @@
                     <div class="modal-divider"></div>
                     <div v-if="selectedElement.lobbyMeetings">
                       <div class="meetings-count-info-container" v-for="el in meetingsCountsTables">
-                        <div class="details-line details-line-meetings-title">{{ el.title }} - {{ selectedElement.lobbyMeetings[el.dataPrefix+'_total'] }}</div>
+                        <div class="details-line details-line-meetings-title">{{ el.title }}: {{ selectedElement.lobbyMeetings[el.dataPrefix+'_total'] }}</div>
                         <table>
                           <thead><tr><th>Su verslu</th><th>Su registruotais lobistais</th><th>Su NVO</th><th>Su profesinėmis sąjungomis</th><th>Kiti</th></tr></thead>
                           <tbody>

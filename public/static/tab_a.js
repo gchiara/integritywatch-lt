@@ -46770,23 +46770,23 @@ var vuedata = {
   charts: {
     meetingsTotals: {
       title: 'Seimo narių susitikimai',
-      info: ''
+      info: 'Pasirinkite iki keturių Seimo narių ir palyginkite, kaip keitėsi jų susitikimų skaičius kadencijos metu.'
     },
     meetingsSelected: {
       title: 'Seimo narių susitikimai',
-      info: ''
+      info: 'Pasirinkite iki keturių Seimo narių ir palyginkite, kaip keitėsi jų susitikimų skaičius kadencijos metu.'
     },
     meetingsGroups: {
       title: 'Frakcijų susitikimai',
-      info: ''
+      info: 'Pasirinkite jus dominančią frakciją ir pamatykite, kaip keitėsi jos narių susitikimų skaičius kadencijos metu. Parlamentarui pakeitus frakciją, jo/ jos nauji susitikimai buvo priskirti tai frakcijai, prie kurios jis/ ji prisijungė. 2018 m. rudenį  LLRA-KŠSF papildomai skelbė frakcijos darbotvarkę, kurioje pažymėjo 5 susitikimus su interesų grupėmis.'
     },
     wordcloud: {
-      title: 'Wordcloud',
-      info: ''
+      title: 'Susitikimų tema',
+      info: 'Pasirinkite jus dominantį Seimo narį ir sužinokite, kokius susitikimus jis/ji turėjo dažniausiai (Seimo, komitetų, frakcijų posėdžiai neįtraukti į sąrašą).'
     },
     mainTable: {
       title: 'Table',
-      info: ''
+      info: 'Pamatykite, kaip parlamentarai viešina savo darbotvarkes, su kokiomis interesų grupėmis susitinka, rikiuokite ir palyginkite parlamentarų aktyvumą paspausdami ant lentelės skilčių pavadinimų.'
     }
   },
   openModalClicked: false,
@@ -47104,14 +47104,15 @@ for (var i = 0; i < 5; i++) {
             var agendas = agendasDataset.SeimoInformacija.SeimoNarys;
             var totAgendas = 0;
             var totMeetings = 0;
+            var extraMeetings = 5;
             var meetingsTotObject = {
-              "2017_PAVASARIS": 0,
-              "2017_RUDUO": 0,
-              "2018_PAVASARIS": 0,
-              "2018_RUDUO": 0,
-              "2019_PAVASARIS": 0,
-              "2019_RUDUO": 0,
-              "2020_PAVASARIS": 0 //"2020_RUDUO": 0
+              "2017 PAVASARIS": 0,
+              "2017 RUDUO": 0,
+              "2018 PAVASARIS": 0,
+              "2018 RUDUO": 0,
+              "2019 PAVASARIS": 0,
+              "2019 RUDUO": 0,
+              "2020 PAVASARIS": 0 //"2020 RUDUO": 0
               //Loop through factions to get list of mps ids per faction
 
             };
@@ -47142,7 +47143,7 @@ for (var i = 0; i < 5; i++) {
                 return x['@asmens_id'] == d['@asmens_id'];
               });
               d.lobbyMeetings = _.find(lobbyMeetingsDataset, function (x) {
-                return x['last_name'] == d['@pavardė'] && x['first_name'] == d['@vardas'];
+                return x['last_name'].trim() == d['@pavardė'].trim() && x['first_name'].trim() == d['@vardas'].trim();
               }); //Get photo url
 
               d.photoUrl = _.find(photosDataset, function (x) {
@@ -47160,31 +47161,31 @@ for (var i = 0; i < 5; i++) {
                 var b2020 = parseInt(d.lobbyMeetings["2020_Autumn_total"]);
 
                 if (!isNaN(a2017)) {
-                  meetingsTotObject["2017_PAVASARIS"] += a2017;
+                  meetingsTotObject["2017 PAVASARIS"] += a2017;
                 }
 
                 if (!isNaN(b2017)) {
-                  meetingsTotObject["2017_RUDUO"] += b2017;
+                  meetingsTotObject["2017 RUDUO"] += b2017;
                 }
 
                 if (!isNaN(a2018)) {
-                  meetingsTotObject["2018_PAVASARIS"] += a2018;
+                  meetingsTotObject["2018 PAVASARIS"] += a2018;
                 }
 
                 if (!isNaN(b2018)) {
-                  meetingsTotObject["2018_RUDUO"] += b2018;
+                  meetingsTotObject["2018 RUDUO"] += b2018;
                 }
 
                 if (!isNaN(a2019)) {
-                  meetingsTotObject["2019_PAVASARIS"] += a2019;
+                  meetingsTotObject["2019 PAVASARIS"] += a2019;
                 }
 
                 if (!isNaN(b2019)) {
-                  meetingsTotObject["2019_RUDUO"] += b2019;
+                  meetingsTotObject["2019 RUDUO"] += b2019;
                 }
 
                 if (!isNaN(a2020)) {
-                  meetingsTotObject["2020_PAVASARIS"] += a2020;
+                  meetingsTotObject["2020 PAVASARIS"] += a2020;
                 } //if(!isNaN(b2020)){ meetingsTotObject["2020_RUDUO"] += b2020; }
 
               } //Agendas count and string for word cloud
@@ -47238,7 +47239,7 @@ for (var i = 0; i < 5; i++) {
             vuedata.globalAgendasData = stringToCloudData(vuedata.globalAgendasString); //Set totals for custom counters
 
             $('.count-box-agendas .total-count').html(totAgendas);
-            $('.count-box-meetings .total-count').html(totMeetings); //Set dc main vars. The second crossfilter is used to handle the travels stacked bar chart.
+            $('.count-box-meetings .total-count').html(totMeetings + extraMeetings); //Set dc main vars. The second crossfilter is used to handle the travels stacked bar chart.
 
             var ndx = crossfilter(mps);
             var ndxMeetingsTotals = crossfilter(meetingsTotalsData);
@@ -47261,28 +47262,25 @@ for (var i = 0; i < 5; i++) {
 
               var selectedMeetingsData = [{
                 timeId: "2017_Spring",
-                time: "2017_PAVASARIS"
+                time: "2017 PAVASARIS"
               }, {
                 timeId: "2017_Autumn",
-                time: "2017_RUDUO"
+                time: "2017 RUDUO"
               }, {
                 timeId: "2018_Spring",
-                time: "2018_PAVASARIS"
+                time: "2018 PAVASARIS"
               }, {
                 timeId: "2018_Autumn",
-                time: "2018_RUDUO"
+                time: "2018 RUDUO"
               }, {
                 timeId: "2019_Spring",
-                time: "2019_PAVASARIS"
+                time: "2019 PAVASARIS"
               }, {
                 timeId: "2019_Autumn",
-                time: "2019_RUDUO"
+                time: "2019 RUDUO"
               }, {
                 timeId: "2020_Spring",
-                time: "2020_PAVASARIS"
-              }, {
-                timeId: "2020_Autumn",
-                time: "2020_RUDUO"
+                time: "2020 PAVASARIS"
               }];
 
               _.each(vuedata.selectedRows, function (d) {
@@ -47339,7 +47337,7 @@ for (var i = 0; i < 5; i++) {
                 right: 10,
                 bottom: 60,
                 left: 30
-              }).legend(dc.legend().x(10).y(390).itemHeight(15).gap(15).horizontal(true).autoItemWidth(true)).x(d3.scaleBand()).xUnits(dc.units.ordinal).brushOn(false).xAxisLabel('').yAxisLabel('Meetings').dimension(dimension).group(groups[0], 'Meetings')._rangeBandPadding(1).compose(composeArray);
+              }).legend(dc.legend().x(10).y(390).itemHeight(15).gap(15).horizontal(true).autoItemWidth(true)).x(d3.scaleBand()).xUnits(dc.units.ordinal).brushOn(false).xAxisLabel('').yAxisLabel('Susitikimų skaičius').dimension(dimension).group(groups[0], 'Susitikimų skaičius')._rangeBandPadding(1).compose(composeArray);
 
               chart.xAxis().tickFormat(function (d) {
                 return d;
@@ -47382,11 +47380,11 @@ for (var i = 0; i < 5; i++) {
                 right: 10,
                 bottom: 60,
                 left: 30
-              }).legend(dc.legend().x(10).y(390).itemHeight(15).gap(15).horizontal(true).autoItemWidth(true)).x(d3.scaleBand()).xUnits(dc.units.ordinal).brushOn(false).xAxisLabel('').yAxisLabel('Meetings').dimension(dimension).group(group, 'Meetings')._rangeBandPadding(1).compose([dc.lineChart(chart).group(group, "Total").colors('#ff5400').renderDataPoints({
+              }).legend(dc.legend().x(10).y(390).itemHeight(15).gap(15).horizontal(true).autoItemWidth(true)).x(d3.scaleBand()).xUnits(dc.units.ordinal).brushOn(false).xAxisLabel('').yAxisLabel('Susitikimų skaičius').dimension(dimension).group(group, 'Susitikimų skaičius')._rangeBandPadding(1).compose([dc.lineChart(chart).group(group, "Visų susitikimų skaičius").colors('#ff5400').renderDataPoints({
                 radius: 2,
                 fillOpacity: 0.5,
                 strokeOpacity: 0.8
-              }), dc.lineChart(chart).group(group2, "Average").colors('#5196c8').renderDataPoints({
+              }), dc.lineChart(chart).group(group2, "Vidutinis susitikimų skaičius").colors('#5196c8').renderDataPoints({
                 radius: 2,
                 fillOpacity: 0.5,
                 strokeOpacity: 0.8
@@ -47467,7 +47465,7 @@ for (var i = 0; i < 5; i++) {
                 name: "Liberalų Sąjūdžio Frakcija (LSF)",
                 color: "#F49813"
               }, {
-                name: "os lenkų rinkimų akcijos-Krikščioniškų šeimų sąjungos frakcija (LLRA-KŠSF)",
+                name: "Lietuvos lenkų rinkimų akcijos-Krikščioniškų šeimų sąjungos frakcija (LLRA-KŠSF)",
                 color: "#3164B7"
               }, {
                 name: "Lietuvos Socialdemokratų Darbo Frakcija (LSDDF) *",
@@ -47623,7 +47621,7 @@ for (var i = 0; i < 5; i++) {
                   "defaultContent": "N/A",
                   "data": function data(d) {
                     var rowId = d["@asmens_id"];
-                    return '<button id="' + rowId + '" class="detailsModalBtn">View</button>';
+                    return '<button id="' + rowId + '" class="detailsModalBtn">Žiūrėti</button>';
                   }
                 }],
                 "iDisplayLength": 25,
@@ -47650,7 +47648,7 @@ for (var i = 0; i < 5; i++) {
               datatable.DataTable().draw(); //Refresh selected rows list tags
 
               var regenTags = function regenTags() {
-                $('.selected-rows-title').html('Selected (' + vuedata.selectedRows.length + '/4):');
+                $('.selected-rows-title').html('Pasirinkta (' + vuedata.selectedRows.length + '/4):');
                 $('.selected-rows-tags').html("");
 
                 _.each(vuedata.selectedRows, function (d) {
@@ -47872,6 +47870,10 @@ for (var i = 0; i < 5; i++) {
               }).renderlet(function (chart) {
                 $(".nbagendas").text(agendas);
                 $(".nbmeetings").text(meetings);
+
+                if (meetings == totMeetings) {
+                  $(".nbmeetings").text(meetings + extraMeetings);
+                }
               });
               customCounters.render();
             }
