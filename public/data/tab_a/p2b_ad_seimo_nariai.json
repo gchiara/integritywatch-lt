@@ -2,7 +2,7 @@
     "SeimoInformacija": {
         "@licencija": "CC BY 4.0",
         "@pavadinimas": "Seimo nariai",
-        "@suformavimo_laikas": "2020-03-02 18:02:00",
+        "@suformavimo_laikas": "2020-09-07 17:37:58",
         "@tiekėjas": "Seimo kanceliarija",
         "@šaltinis": "www.lrs.lt",
         "SeimoKadencija": {
@@ -1657,6 +1657,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2020-05-13",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "235",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Mažosios Lietuvos draugų grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2017-06-15",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "126",
@@ -1971,6 +1978,13 @@
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "234",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji Honkongo draugų grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2020-05-13",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "235",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Mažosios Lietuvos draugų grupė"
                         },
                         {
                             "@data_iki": "",
@@ -3264,6 +3278,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2020-05-13",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "235",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Mažosios Lietuvos draugų grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2017-03-10",
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "199",
@@ -4424,7 +4445,7 @@
                             "@pareigos": "Komisijos pirmininkas"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2020-03-09",
                             "@data_nuo": "2017-10-19",
                             "@padalinio_id": "1098",
                             "@padalinio_pavadinimas": "Lietuvos socialdemokratų darbo frakcija",
@@ -4435,6 +4456,13 @@
                             "@data_nuo": "2016-11-14",
                             "@padalinio_id": "793",
                             "@padalinio_pavadinimas": "Lietuvos socialdemokratų partijos frakcija",
+                            "@pareigos": "Frakcijos narys"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2020-03-10",
+                            "@padalinio_id": "47",
+                            "@padalinio_pavadinimas": "Mišri Seimo narių grupė",
                             "@pareigos": "Frakcijos narys"
                         },
                         {
@@ -6459,6 +6487,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2020-05-13",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "235",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Mažosios Lietuvos draugų grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2017-06-15",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "126",
@@ -7528,6 +7563,13 @@
                             "@pareigos": "Frakcijos narys"
                         },
                         {
+                            "@data_iki": "",
+                            "@data_nuo": "2020-04-30",
+                            "@padalinio_id": "1070",
+                            "@padalinio_pavadinimas": "Lietuvos valstiečių ir žaliųjų sąjungos frakcija",
+                            "@pareigos": "Frakcijos narys"
+                        },
+                        {
                             "@data_iki": "2019-07-08",
                             "@data_nuo": "2019-06-25",
                             "@padalinio_id": "47",
@@ -7542,7 +7584,7 @@
                             "@pareigos": "Frakcijos narys"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2020-04-29",
                             "@data_nuo": "2020-01-13",
                             "@padalinio_id": "47",
                             "@padalinio_pavadinimas": "Mišri Seimo narių grupė",
@@ -9330,7 +9372,7 @@
                             "@pareigos": "Frakcijos narys"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2020-05-07",
                             "@data_nuo": "2018-03-12",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "52",
@@ -9831,6 +9873,13 @@
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "213",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji Lukiškių aikštės memorialo grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2020-05-13",
+                            "@pareigos": "Pirmininkas",
+                            "@parlamentinės_grupės_id": "235",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Mažosios Lietuvos draugų grupė"
                         },
                         {
                             "@data_iki": "",
@@ -11925,6 +11974,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2020-05-28",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "90",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Dzūkijos bičiulių grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2018-04-10",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "222",
@@ -12132,6 +12188,13 @@
                         }
                     ],
                     "Pareigos": [
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2020-03-10",
+                            "@padalinio_id": "35",
+                            "@padalinio_pavadinimas": "Seimo valdyba",
+                            "@pareigos": "Seimo opozicijos lyderis"
+                        },
                         {
                             "@data_iki": "2019-07-09",
                             "@data_nuo": "2016-11-16",
@@ -14020,6 +14083,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2020-05-08",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "52",
+                            "@parlamentinės_grupės_pavadinimas": "Seniūnų sueiga"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2019-06-14",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "231",
@@ -15762,6 +15832,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2020-05-13",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "235",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Mažosios Lietuvos draugų grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2017-11-09",
                             "@pareigos": "Pirmininkas",
                             "@parlamentinės_grupės_id": "218",
@@ -16126,6 +16203,13 @@
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "108",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji Maldos grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2020-05-13",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "235",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Mažosios Lietuvos draugų grupė"
                         },
                         {
                             "@data_iki": "",
@@ -17638,6 +17722,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2020-05-13",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "235",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Mažosios Lietuvos draugų grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2017-03-10",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "199",
@@ -17865,6 +17956,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2020-05-13",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "235",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Mažosios Lietuvos draugų grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2019-12-03",
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "184",
@@ -17973,6 +18071,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2020-05-08",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "52",
+                            "@parlamentinės_grupės_pavadinimas": "Seniūnų sueiga"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2016-12-15",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "194",
@@ -18033,6 +18138,13 @@
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "210",
                             "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Lotynų Amerika ir Karibų salomis grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2020-07-02",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "49",
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Vokietijos Federacine Respublika grupė"
                         },
                         {
                             "@data_iki": "",
@@ -19894,7 +20006,7 @@
                     ],
                     "Pareigos": [
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2020-03-09",
                             "@data_nuo": "2019-09-11",
                             "@padalinio_id": "35",
                             "@padalinio_pavadinimas": "Seimo valdyba",
@@ -19985,7 +20097,7 @@
                             "@pareigos": "Frakcijos narys"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2020-05-07",
                             "@data_nuo": "2018-11-15",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "52",
@@ -20820,11 +20932,18 @@
                             "@pareigos": "Komiteto narys"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2020-06-30",
                             "@data_nuo": "2017-12-18",
                             "@padalinio_id": "8",
                             "@padalinio_pavadinimas": "Ekonomikos komitetas",
                             "@pareigos": "Komiteto pirmininkas"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2020-07-01",
+                            "@padalinio_id": "8",
+                            "@padalinio_pavadinimas": "Ekonomikos komitetas",
+                            "@pareigos": "Komiteto narys"
                         },
                         {
                             "@data_iki": "",
@@ -21640,7 +21759,7 @@
                             "@pareigos": "Frakcijos narys"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2020-05-06",
                             "@data_nuo": "2018-04-24",
                             "@padalinio_id": "1098",
                             "@padalinio_pavadinimas": "Lietuvos socialdemokratų darbo frakcija",
@@ -21651,6 +21770,13 @@
                             "@data_nuo": "2016-11-14",
                             "@padalinio_id": "793",
                             "@padalinio_pavadinimas": "Lietuvos socialdemokratų partijos frakcija",
+                            "@pareigos": "Frakcijos narys"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2020-05-07",
+                            "@padalinio_id": "47",
+                            "@padalinio_pavadinimas": "Mišri Seimo narių grupė",
                             "@pareigos": "Frakcijos narys"
                         },
                         {
@@ -22720,6 +22846,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2020-05-13",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "235",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Mažosios Lietuvos draugų grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2017-06-15",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "126",
@@ -23125,10 +23258,17 @@
                     ],
                     "Pareigos": [
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2020-05-14",
                             "@data_nuo": "2016-11-16",
                             "@padalinio_id": "25",
                             "@padalinio_pavadinimas": "Valstybės valdymo ir savivaldybių komitetas",
+                            "@pareigos": "Komiteto narys"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2020-05-15",
+                            "@padalinio_id": "48",
+                            "@padalinio_pavadinimas": "Žmogaus teisių komitetas",
                             "@pareigos": "Komiteto narys"
                         },
                         {
@@ -23805,7 +23945,7 @@
                             "@rūšis": "Darbo telefonas"
                         },
                         {
-                            "@reikšmė": "http://www.lrs.lt/sip/portal.show?p_r=9286&p_k=1",
+                            "@reikšmė": "https://www.lrs.lt/sip/portal.show?p_r=9286&p_k=1",
                             "@rūšis": "Asmeninė interneto svetainė"
                         }
                     ],
@@ -25951,6 +26091,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2020-05-13",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "235",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Mažosios Lietuvos draugų grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2016-12-15",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "193",
@@ -26123,6 +26270,13 @@
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "228",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji Lietuvos Respublikos Konstitucijos apsaugos grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2020-05-13",
+                            "@pareigos": "Pirmininko pavaduotojas",
+                            "@parlamentinės_grupės_id": "235",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Mažosios Lietuvos draugų grupė"
                         },
                         {
                             "@data_iki": "2018-12-03",
@@ -26373,11 +26527,18 @@
                             "@pareigos": "Frakcijos narė"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2020-05-13",
                             "@data_nuo": "2020-01-23",
                             "@padalinio_id": "1098",
                             "@padalinio_pavadinimas": "Lietuvos socialdemokratų darbo frakcija",
                             "@pareigos": "Frakcijos narė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2020-05-14",
+                            "@padalinio_id": "1098",
+                            "@padalinio_pavadinimas": "Lietuvos socialdemokratų darbo frakcija",
+                            "@pareigos": "Frakcijos seniūno pavaduotoja"
                         },
                         {
                             "@data_iki": "2019-07-08",
@@ -26642,10 +26803,17 @@
                             "@pareigos": "Komisijos narys"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2020-03-09",
                             "@data_nuo": "2016-11-14",
                             "@padalinio_id": "1070",
                             "@padalinio_pavadinimas": "Lietuvos valstiečių ir žaliųjų sąjungos frakcija",
+                            "@pareigos": "Frakcijos narys"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2020-03-10",
+                            "@padalinio_id": "47",
+                            "@padalinio_pavadinimas": "Mišri Seimo narių grupė",
                             "@pareigos": "Frakcijos narys"
                         },
                         {
@@ -27113,6 +27281,13 @@
                     ],
                     "Pareigos": [
                         {
+                            "@data_iki": "",
+                            "@data_nuo": "2020-05-15",
+                            "@padalinio_id": "22",
+                            "@padalinio_pavadinimas": "Nacionalinio saugumo ir gynybos komitetas",
+                            "@pareigos": "Komiteto narys"
+                        },
+                        {
                             "@data_iki": "2018-09-24",
                             "@data_nuo": "2016-11-16",
                             "@padalinio_id": "583",
@@ -27120,7 +27295,7 @@
                             "@pareigos": "Komiteto narys"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2020-05-14",
                             "@data_nuo": "2018-09-25",
                             "@padalinio_id": "48",
                             "@padalinio_pavadinimas": "Žmogaus teisių komitetas",

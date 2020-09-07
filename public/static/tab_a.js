@@ -46785,7 +46785,7 @@ var vuedata = {
       info: 'Pasirinkite jus dominantį Seimo narį ir sužinokite, kokius susitikimus jis/ji turėjo dažniausiai (Seimo, komitetų, frakcijų posėdžiai neįtraukti į sąrašą).'
     },
     mainTable: {
-      title: 'Table',
+      title: '',
       info: 'Pamatykite, kaip parlamentarai viešina savo darbotvarkes, su kokiomis interesų grupėmis susitinka, rikiuokite ir palyginkite parlamentarų aktyvumą paspausdami ant lentelės skilčių pavadinimų.'
     }
   },
@@ -47038,7 +47038,7 @@ function stringToCloudData(s) {
   var cloudData = [];
   var maxWords = 70;
   var stringArray = s.replace(/[!\.,:;'"\?]/g, '').split(" ");
-  var blacklist = ['ir', 'o', 'bet', 'tačiau', 'dėl', 'nes', 'kad', 'jeigu', 'rytinis', 'vakarinis', 'su', 'prie', 'į', 'už', 'rugsėj', 'spal', 'lapkrit', 'gruod', 'saus', 'vasar', 'kov', 'baland', 'geguž', 'biržel', 'liep', 'rugpjū', 'k.', 'atšauktas', 'nuotoliniu', 'būdu', 'veiksmų', 'p.', 'm.', 'raj.', 'valanda', 'viešin'];
+  var blacklist = ['ir', 'o', 'bet', 'tačiau', 'dėl', 'nes', 'kad', 'jeigu', 'rytinis', 'vakarinis', 'su', 'prie', 'į', 'už', 'rugsėj', 'spal', 'lapkrit', 'gruod', 'saus', 'vasar', 'kov', 'baland', 'geguž', 'biržel', 'liep', 'rugpjū', 'k.', 'atšauktas', 'nuotoliniu', 'būdu', 'veiksmų', 'p.', 'm.', 'raj.', 'valanda', 'viešin', 'komit', 'posėd', 'plenar', 'frakc', 'Seim', 'komisij'];
 
   _.each(stringArray, function (w) {
     if (blacklist.indexOf(w) == -1) {
@@ -47062,7 +47062,6 @@ function stringToCloudData(s) {
     return b.size - a.size;
   });
   var cloudDataFiltered = cloudData.slice(0, maxWords);
-  console.log(cloudDataFiltered);
   return cloudDataFiltered;
 } //Generate selected rows agendas data for word cloud
 
@@ -47098,798 +47097,821 @@ for (var i = 0; i < 5; i++) {
       (0, _d3Request.json)('./data/tab_a/p2b_ad_sn_darbotvarkes.json?' + randomPar, function (err, agendasDataset) {
         (0, _d3Request.csv)('./data/tab_a/meetings_totals.csv?' + randomPar, function (err, lobbyMeetingsDataset) {
           (0, _d3Request.csv)('./data/tab_a/party_meetings.csv?' + randomPar, function (err, partyMeetingsDataset) {
-            //Loop through data to aply fixes and calculations
-            var mps = mpsDataset.SeimoInformacija.SeimoKadencija.SeimoNarys;
-            var factions = factionsDataset.SeimoInformacija.SeimoKadencija.SeimoFrakcija;
-            var agendas = agendasDataset.SeimoInformacija.SeimoNarys;
-            var totAgendas = 0;
-            var totMeetings = 0;
-            var extraMeetings = 5;
-            var meetingsTotObject = {
-              "2017 PAVASARIS": 0,
-              "2017 RUDUO": 0,
-              "2018 PAVASARIS": 0,
-              "2018 RUDUO": 0,
-              "2019 PAVASARIS": 0,
-              "2019 RUDUO": 0,
-              "2020 PAVASARIS": 0 //"2020 RUDUO": 0
-              //Loop through factions to get list of mps ids per faction
+            (0, _d3Request.json)('./data/tab_a/wordcloud.json?' + randomPar, function (err, wordcloudMainData) {
+              //Loop through data to aply fixes and calculations
+              var mps = mpsDataset.SeimoInformacija.SeimoKadencija.SeimoNarys;
+              var factions = factionsDataset.SeimoInformacija.SeimoKadencija.SeimoFrakcija;
+              var agendas = agendasDataset.SeimoInformacija.SeimoNarys;
+              var totAgendas = 0;
+              var totMeetings = 0;
+              var extraMeetings = 5;
+              var meetingsTotObject = {
+                "2017 PAVASARIS": 0,
+                "2017 RUDUO": 0,
+                "2018 PAVASARIS": 0,
+                "2018 RUDUO": extraMeetings,
+                "2019 PAVASARIS": 0,
+                "2019 RUDUO": 0,
+                "2020 PAVASARIS": 0 //"2020 RUDUO": 0
+                //Loop through factions to get list of mps ids per faction
 
-            };
+              };
 
-            _.each(factions, function (f) {
-              f.mpsList = [];
+              _.each(factions, function (f) {
+                f.mpsList = [];
 
-              _.each(f.SeimoFrakcijosNarys, function (f2) {
-                f.mpsList.push(f2['@asmens_id']);
-              });
-            }); //Loop through mps to link and tidy data
-
-
-            _.each(mps, function (d) {
-              //Find related data from other datasets.
-              d.legislature = mpsDataset.SeimoInformacija.SeimoKadencija['@kadencijos_id'];
-              d.faction = _.find(factions, function (x) {
-                return x.mpsList.indexOf(d['@asmens_id']) > -1;
-              });
-
-              if (d.faction) {
-                d.factionDetail = _.find(d.faction.SeimoFrakcijosNarys, function (x) {
-                  return x['@asmens_id'] == d['@asmens_id'];
+                _.each(f.SeimoFrakcijosNarys, function (f2) {
+                  f.mpsList.push(f2['@asmens_id']);
                 });
-              }
-
-              d.agendas = _.find(agendas, function (x) {
-                return x['@asmens_id'] == d['@asmens_id'];
-              });
-              d.lobbyMeetings = _.find(lobbyMeetingsDataset, function (x) {
-                return x['last_name'].trim() == d['@pavardė'].trim() && x['first_name'].trim() == d['@vardas'].trim();
-              }); //Get photo url
-
-              d.photoUrl = _.find(photosDataset, function (x) {
-                return x['url'] == d['@biografijos_nuoroda'];
-              }).photoUrl; //Add totals to totals object
-
-              if (d.lobbyMeetings) {
-                var a2017 = parseInt(d.lobbyMeetings["2017_Spring_total"]);
-                var b2017 = parseInt(d.lobbyMeetings["2017_Autumn_total"]);
-                var a2018 = parseInt(d.lobbyMeetings["2018_Spring_total"]);
-                var b2018 = parseInt(d.lobbyMeetings["2018_Autumn_total"]);
-                var a2019 = parseInt(d.lobbyMeetings["2019_Spring_total"]);
-                var b2019 = parseInt(d.lobbyMeetings["2019_Autumn_total"]);
-                var a2020 = parseInt(d.lobbyMeetings["2020_Spring_total"]);
-                var b2020 = parseInt(d.lobbyMeetings["2020_Autumn_total"]);
-
-                if (!isNaN(a2017)) {
-                  meetingsTotObject["2017 PAVASARIS"] += a2017;
-                }
-
-                if (!isNaN(b2017)) {
-                  meetingsTotObject["2017 RUDUO"] += b2017;
-                }
-
-                if (!isNaN(a2018)) {
-                  meetingsTotObject["2018 PAVASARIS"] += a2018;
-                }
-
-                if (!isNaN(b2018)) {
-                  meetingsTotObject["2018 RUDUO"] += b2018;
-                }
-
-                if (!isNaN(a2019)) {
-                  meetingsTotObject["2019 PAVASARIS"] += a2019;
-                }
-
-                if (!isNaN(b2019)) {
-                  meetingsTotObject["2019 RUDUO"] += b2019;
-                }
-
-                if (!isNaN(a2020)) {
-                  meetingsTotObject["2020 PAVASARIS"] += a2020;
-                } //if(!isNaN(b2020)){ meetingsTotObject["2020_RUDUO"] += b2020; }
-
-              } //Agendas count and string for word cloud
+              }); //Loop through mps to link and tidy data
 
 
-              d.agendasCount = 0;
-              d.agendasString = "";
-
-              if (d.agendas) {
-                d.agendasCount = d.agendas["SeimoNarioDarbotvarkėsĮvykis"].length;
-                totAgendas += parseInt(d.agendasCount);
-
-                _.each(d.agendas.SeimoNarioDarbotvarkėsĮvykis, function (a) {
-                  d.agendasString += " " + a["@pavadinimas"];
+              _.each(mps, function (d) {
+                //Find related data from other datasets.
+                d.legislature = mpsDataset.SeimoInformacija.SeimoKadencija['@kadencijos_id'];
+                d.faction = _.find(factions, function (x) {
+                  return x.mpsList.indexOf(d['@asmens_id']) > -1;
                 });
 
-                vuedata.globalAgendasString += d.agendasString;
-              } //Meetings count
-
-
-              d.meetingsCount = 0;
-
-              if (d.lobbyMeetings && !isNaN(parseInt(d.lobbyMeetings['Total_all_periods']))) {
-                d.meetingsCount = parseInt(d.lobbyMeetings['Total_all_periods']);
-                totMeetings += parseInt(d.lobbyMeetings['Total_all_periods']);
-              }
-              /*
-              if(d.lobbyMeetings && !isNaN(d.lobbyMeetings['2019_PAVASARIS'])) {
-                d.meetingsCount = d.lobbyMeetings['2019_PAVASARIS'];
-                totMeetings += parseInt(d.meetingsCount);
-              }
-              */
-              //Generate string for group leader/chairman column
-
-
-              d.chairmanString = "";
-
-              _.each(d.Pareigos, function (p) {
-                if (p['@pareigos'] == "Komisijos pirmininkė") {
-                  if (d.chairmanString.length > 0) {
-                    d.chairmanString += "<br />";
-                  }
-
-                  d.chairmanString += "Komisijos pirmininkė " + p['@padalinio_pavadinimas'];
-                }
-              });
-            });
-
-            var meetingsTotalsData = objToArray(meetingsTotObject); //console.log(vuedata.globalAgendasString);
-
-            vuedata.globalAgendasData = stringToCloudData(vuedata.globalAgendasString); //Set totals for custom counters
-
-            $('.count-box-agendas .total-count').html(totAgendas);
-            $('.count-box-meetings .total-count').html(totMeetings + extraMeetings); //Set dc main vars. The second crossfilter is used to handle the travels stacked bar chart.
-
-            var ndx = crossfilter(mps);
-            var ndxMeetingsTotals = crossfilter(meetingsTotalsData);
-            var ndxMeetingsGroups = crossfilter(partyMeetingsDataset);
-            var searchDimension = ndx.dimension(function (d) {
-              var entryString = d['@vardas'] + ' ' + d['@pavardė'];
-              return entryString.toLowerCase();
-            }); //CHART 1 DYNAMIC
-
-            var createMeetingsSelectedChart = function createMeetingsSelectedChart() {
-              //Hide if nothing selected
-              if (vuedata.selectedRows.length == 0) {
-                $("#meetingsselected_chart_container").hide();
-                $("#meetingstotals_chart_container").show();
-                return;
-              }
-
-              $("#meetingsselected_chart_container").show();
-              $("#meetingstotals_chart_container").hide(); //Generate data
-
-              var selectedMeetingsData = [{
-                timeId: "2017_Spring",
-                time: "2017 PAVASARIS"
-              }, {
-                timeId: "2017_Autumn",
-                time: "2017 RUDUO"
-              }, {
-                timeId: "2018_Spring",
-                time: "2018 PAVASARIS"
-              }, {
-                timeId: "2018_Autumn",
-                time: "2018 RUDUO"
-              }, {
-                timeId: "2019_Spring",
-                time: "2019 PAVASARIS"
-              }, {
-                timeId: "2019_Autumn",
-                time: "2019 RUDUO"
-              }, {
-                timeId: "2020_Spring",
-                time: "2020 PAVASARIS"
-              }];
-
-              _.each(vuedata.selectedRows, function (d) {
-                var thisName = d['@vardas'] + ' ' + d['@pavardė'];
-
-                if (d.lobbyMeetings) {
-                  _.each(selectedMeetingsData, function (a) {
-                    var thisTime = a.timeId;
-                    var thisTotal = parseInt(d.lobbyMeetings[thisTime + "_total"]);
-
-                    if (isNaN(thisTotal)) {
-                      a[thisName] = 0;
-                    } else {
-                      a[thisName] = thisTotal;
-                    }
+                if (d.faction) {
+                  d.factionDetail = _.find(d.faction.SeimoFrakcijosNarys, function (x) {
+                    return x['@asmens_id'] == d['@asmens_id'];
                   });
                 }
-              }); //Generate chart
 
+                d.agendas = _.find(agendas, function (x) {
+                  return x['@asmens_id'] == d['@asmens_id'];
+                });
+                d.lobbyMeetings = _.find(lobbyMeetingsDataset, function (x) {
+                  return x['last_name'].trim() == d['@pavardė'].trim() && x['first_name'].trim() == d['@vardas'].trim();
+                }); //Get photo url
 
-              var ndxSelected = crossfilter(selectedMeetingsData);
-              var chart = new dc.CompositeChart("#" + charts.meetingsSelected.divId);
-              var dimension = ndxSelected.dimension(function (d) {
-                return d.time;
-              });
-              var colors = ["#5196c8", "#264796", "#ff5400", "#ffc000"];
-              var groups = [];
-              var composeArray = [];
-              var groupscount = 0;
+                d.photoUrl = _.find(photosDataset, function (x) {
+                  return x['url'] == d['@biografijos_nuoroda'];
+                }).photoUrl; //Add totals to totals object
 
-              _.each(vuedata.selectedRows, function (d) {
-                var thisName = d['@vardas'] + ' ' + d['@pavardė'];
-                var thisGroup = dimension.group().reduceSum(function (d) {
-                  if (isNaN(d[thisName])) {
-                    return 0;
+                if (d.lobbyMeetings) {
+                  var a2017 = parseInt(d.lobbyMeetings["2017_Spring_total"]);
+                  var b2017 = parseInt(d.lobbyMeetings["2017_Autumn_total"]);
+                  var a2018 = parseInt(d.lobbyMeetings["2018_Spring_total"]);
+                  var b2018 = parseInt(d.lobbyMeetings["2018_Autumn_total"]);
+                  var a2019 = parseInt(d.lobbyMeetings["2019_Spring_total"]);
+                  var b2019 = parseInt(d.lobbyMeetings["2019_Autumn_total"]);
+                  var a2020 = parseInt(d.lobbyMeetings["2020_Spring_total"]);
+                  var b2020 = parseInt(d.lobbyMeetings["2020_Autumn_total"]);
+
+                  if (!isNaN(a2017)) {
+                    meetingsTotObject["2017 PAVASARIS"] += a2017;
                   }
 
-                  return d[thisName];
-                });
-                var thisCompose = dc.lineChart(chart).group(thisGroup, thisName).colors(colors[groupscount]).renderDataPoints({
-                  radius: 2,
-                  fillOpacity: 0.5,
-                  strokeOpacity: 0.8
-                });
-                groups.push(thisGroup);
-                composeArray.push(thisCompose);
-                groupscount++;
-              });
+                  if (!isNaN(b2017)) {
+                    meetingsTotObject["2017 RUDUO"] += b2017;
+                  }
 
-              var width = recalcWidth(charts.meetingsSelected.divId);
+                  if (!isNaN(a2018)) {
+                    meetingsTotObject["2018 PAVASARIS"] += a2018;
+                  }
 
-              chart.width(width).height(400).yAxisPadding(10).renderHorizontalGridLines(true).margins({
-                top: 10,
-                right: 10,
-                bottom: 60,
-                left: 30
-              }).legend(dc.legend().x(10).y(390).itemHeight(15).gap(15).horizontal(true).autoItemWidth(true)).x(d3.scaleBand()).xUnits(dc.units.ordinal).brushOn(false).xAxisLabel('').yAxisLabel('Susitikimų skaičius').dimension(dimension).group(groups[0], 'Susitikimų skaičius')._rangeBandPadding(1).compose(composeArray);
+                  if (!isNaN(b2018)) {
+                    meetingsTotObject["2018 RUDUO"] += b2018;
+                  }
 
-              chart.xAxis().tickFormat(function (d) {
-                return d;
-              });
+                  if (!isNaN(a2019)) {
+                    meetingsTotObject["2019 PAVASARIS"] += a2019;
+                  }
 
-              chart.filter = function () {};
+                  if (!isNaN(b2019)) {
+                    meetingsTotObject["2019 RUDUO"] += b2019;
+                  }
 
-              chart.renderlet(function (chart) {
-                // rotate x-axis labels
-                chart.selectAll('g.x text').attr('transform', 'translate(-10,10) rotate(315)');
-              });
-              chart.render();
-              charts.meetingsSelected.chart = chart;
-            }; //CHART 1 - TOTALS
+                  if (!isNaN(a2020)) {
+                    meetingsTotObject["2020 PAVASARIS"] += a2020;
+                  } //if(!isNaN(b2020)){ meetingsTotObject["2020_RUDUO"] += b2020; }
+
+                } //Agendas count and string for word cloud
 
 
-            var createMeetingsTotalsChart = function createMeetingsTotalsChart() {
-              var chart = charts.meetingsTotals.chart;
-              var dimension = ndxMeetingsTotals.dimension(function (d) {
-                return d.x;
-              });
-              var group = dimension.group().reduceSum(function (d) {
-                if (isNaN(d.y)) {
-                  return 0;
+                d.agendasCount = 0;
+                d.agendasString = "";
+
+                if (d.agendas) {
+                  d.agendasCount = d.agendas["SeimoNarioDarbotvarkėsĮvykis"].length;
+                  totAgendas += parseInt(d.agendasCount);
+
+                  _.each(d.agendas.SeimoNarioDarbotvarkėsĮvykis, function (a) {
+                    d.agendasString += " " + a["@pavadinimas"];
+                  });
+
+                  vuedata.globalAgendasString += d.agendasString;
+                } //Meetings count
+
+
+                d.meetingsCount = 0;
+
+                if (d.lobbyMeetings && !isNaN(parseInt(d.lobbyMeetings['Total_all_periods']))) {
+                  d.meetingsCount = parseInt(d.lobbyMeetings['Total_all_periods']);
+                  totMeetings += parseInt(d.lobbyMeetings['Total_all_periods']);
                 }
-
-                return d.y;
-              });
-              var group2 = dimension.group().reduceSum(function (d) {
-                if (isNaN(d.avg)) {
-                  return 0;
-                }
-
-                return d.avg;
-              });
-              var width = recalcWidth(charts.meetingsTotals.divId);
-
-              chart.width(width).height(400).yAxisPadding(10).renderHorizontalGridLines(true).margins({
-                top: 10,
-                right: 10,
-                bottom: 60,
-                left: 30
-              }).legend(dc.legend().x(10).y(390).itemHeight(15).gap(15).horizontal(true).autoItemWidth(true)).x(d3.scaleBand()).xUnits(dc.units.ordinal).brushOn(false).xAxisLabel('').yAxisLabel('Susitikimų skaičius').dimension(dimension).group(group, 'Susitikimų skaičius')._rangeBandPadding(1).compose([dc.lineChart(chart).group(group, "Visų susitikimų skaičius").colors('#ff5400').renderDataPoints({
-                radius: 2,
-                fillOpacity: 0.5,
-                strokeOpacity: 0.8
-              }), dc.lineChart(chart).group(group2, "Vidutinis susitikimų skaičius").colors('#5196c8').renderDataPoints({
-                radius: 2,
-                fillOpacity: 0.5,
-                strokeOpacity: 0.8
-              })]);
-
-              chart.filter = function () {};
-
-              chart.render();
-            }; //CHART 2
-
-
-            var createWordcloudChart = function createWordcloudChart() {
-              //Data to use
-              var thisData = vuedata.globalAgendasData;
-
-              if (vuedata.selectedRows.length > 0) {
-                thisData = vuedata.selectedRowsAgendasData;
-              }
-
-              if (thisData.length == 0) {
-                thisData = [{
-                  word: " ",
-                  size: "1"
-                }];
-              } //Size variables
-
-
-              var sizeScale = d3.scaleLinear().domain([1, thisData.length > 10 ? thisData[2].size : thisData[0].size]).range([11, 50]);
-              var margin = {
-                top: -10,
-                right: 0,
-                bottom: 0,
-                left: 0
-              };
-              var width = $("#" + charts.wordcloud.divId).width();
-              var height = 450; //Append the svg object
-
-              var svg = d3.select("#" + charts.wordcloud.divId).append("svg").attr("width", width).attr("height", height).append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")"); //Constructs cloud layout
-
-              var layout = d3.layout.cloud().size([width, height]).words(thisData.map(function (d) {
-                return {
-                  text: d.word,
-                  size: d.size
-                };
-              })).padding(5) //space between words
-              .rotate(function () {
-                return ~~(Math.random() * 2) * 90;
-              }).fontSize(function (d) {
-                return sizeScale(d.size) > 50 ? 50 : sizeScale(d.size);
-              }) // font size of words
-              .on("end", draw);
-              layout.start(); // Draw function
-
-              function draw(words) {
-                var cloud = svg.append("g").attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")") //.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")")
-                .selectAll("text").data(words);
-                cloud.enter().append("text").style("font-size", function (d) {
-                  return d.size;
-                }).style("fill", function (d) {
-                  return vuedata.colors.cloud[Math.floor(Math.random() * vuedata.colors.cloud.length)];
-                }).attr("text-anchor", "middle").style("font-family", "Impact").attr("transform", function (d) {
-                  return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
-                }).text(function (d) {
-                  return d.text;
-                });
-                cloud.transition().duration(600).style("font-size", function (d) {
-                  return d.size;
-                }).attr("transform", function (d) {
-                  return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
-                }).style("fill-opacity", 1);
-                cloud.exit().transition().duration(200).style('fill-opacity', 1e-6).attr('font-size', 1).remove();
-              }
-            }; //CHART 3
-
-
-            var createMeetingsGroupsChart = function createMeetingsGroupsChart() {
-              var partiesData = [{
-                name: "Liberalų Sąjūdžio Frakcija (LSF)",
-                color: "#F49813"
-              }, {
-                name: "Lietuvos lenkų rinkimų akcijos-Krikščioniškų šeimų sąjungos frakcija (LLRA-KŠSF)",
-                color: "#3164B7"
-              }, {
-                name: "Lietuvos Socialdemokratų Darbo Frakcija (LSDDF) *",
-                color: "DD3333"
-              }, {
-                name: "Lietuvos Socialdemokratų Partijos Frackija (LSDPF)",
-                color: "#E10514"
-              }, {
-                name: "Lietuvos Valstiečių ir Žaliųjų Sąjungos Frakcija (LVŽSF)",
-                color: "#0F7448"
-              }, {
-                name: "Mišri Seimo narių grupė (MG)",
-                color: "#7D7D7D"
-              }, {
-                name: "Tėvynės sąjungos - Lietuvos Krikščionių demokratų frakcija (TS-LKDF)",
-                color: "#00A59B"
-              }, {
-                name: "Frakcija 'Lietuvos Gerovei' *",
-                color: "#04A03C"
-              }, {
-                name: "Tvarkos ir teisingumo frakcija (TTF) *",
-                color: "#24418C"
-              }];
-              var chart = charts.meetingsGroups.chart;
-              var dimension = ndxMeetingsGroups.dimension(function (d) {
-                return d.time;
-              });
-              var groups = [];
-              var composeArray = [];
-
-              _.each(partiesData, function (p) {
-                var thisGroup = dimension.group().reduceSum(function (d) {
-                  var val = parseInt(d[p.name]);
-
-                  if (isNaN(val)) {
-                    return 0;
-                  }
-
-                  return val;
-                });
-                var thisCompose = dc.lineChart(chart).group(thisGroup, p.name).colors(p.color).renderDataPoints({
-                  radius: 2,
-                  fillOpacity: 0.5,
-                  strokeOpacity: 0.8
-                });
-                groups.push(thisGroup);
-                composeArray.push(thisCompose);
-              });
-
-              var width = recalcWidth(charts.meetingsGroups.divId);
-
-              chart.width(width).height(400).yAxisPadding(10).renderHorizontalGridLines(true).margins({
-                top: 10,
-                right: 10,
-                bottom: 60,
-                left: 30
-              }).legend(dc.legend().x(10).y(390).itemHeight(12).gap(7).horizontal(false).autoItemWidth(true)).x(d3.scaleBand()).xUnits(dc.units.ordinal).brushOn(false).xAxisLabel('').yAxisLabel('Meetings').dimension(dimension).group(groups[0], 'Meetings')._rangeBandPadding(1).compose(composeArray);
-
-              chart.xAxis() //.tickValues(d3.range(data.length))
-              .tickFormat(function (d) {
-                return d;
-              });
-
-              chart.filter = function () {};
-
-              chart.render();
-            }; //TABLE
-
-
-            var createTable = function createTable() {
-              var count = 0;
-              charts.mainTable.chart = $("#dc-data-table").dataTable({
-                "columnDefs": [{
-                  "searchable": false,
-                  "orderable": false,
-                  "targets": 0,
-                  data: function data(row, type, val, meta) {
-                    return count;
-                  }
-                }, {
-                  "searchable": false,
-                  "orderable": true,
-                  "targets": 1,
-                  "defaultContent": "N/A",
-                  "data": function data(d) {
-                    return '<a href="https://www.lrs.lt/sip/portal.show?p_r=35299&p_k=1&p_a=498&p_asm_id=' + d['@asmens_id'] + '" target="_blank">' + d['@vardas'] + ' ' + d['@pavardė'];
-                  }
-                }, {
-                  "searchable": false,
-                  "orderable": true,
-                  "targets": 2,
-                  "defaultContent": "N/A",
-                  "data": function data(d) {
-                    if (d.faction) {
-                      return d.faction['@padalinio_pavadinimo_santrumpa'];
-                    }
-                  }
-                }, {
-                  "searchable": false,
-                  "orderable": true,
-                  "targets": 3,
-                  "defaultContent": "N/A",
-                  "data": function data(d) {
-                    //return d.legislature;
-                    return d['@kadencijų_skaičius'];
-                  }
-                },
                 /*
-                {
-                  "searchable": false,
-                  "orderable": true,
-                  "targets": 4,
-                  "defaultContent":"N/A",
-                  "data": function(d) {
-                    var groupsRoleString = "";
-                    if(d.factionDetail && d.factionDetail['@pareigos'] == 'Frakcijos seniūnas') {
-                      groupsRoleString += "Frakcijos seniūnas";
-                    }
-                    if(d.chairmanString.length > 0) {
-                      if(d.chairmanString.length > 0) {
-                        //groupsRoleString += "<br />";
-                      }
-                      groupsRoleString += d.chairmanString;
-                    }
-                    return groupsRoleString;
-                  }
-                },
+                if(d.lobbyMeetings && !isNaN(d.lobbyMeetings['2019_PAVASARIS'])) {
+                  d.meetingsCount = d.lobbyMeetings['2019_PAVASARIS'];
+                  totMeetings += parseInt(d.meetingsCount);
+                }
                 */
-                {
-                  "searchable": false,
-                  "orderable": true,
-                  "targets": 4,
-                  "defaultContent": "N/A",
-                  "data": function data(d) {
-                    return d.agendasCount;
-                  }
-                }, {
-                  "searchable": false,
-                  "orderable": true,
-                  "targets": 5,
-                  "defaultContent": "N/A",
-                  "data": function data(d) {
-                    if (d.lobbyMeetings) {
-                      return d.lobbyMeetings['Total_all_periods'];
-                    } else {
-                      return '-';
+                //Generate string for group leader/chairman column
+
+
+                d.chairmanString = "";
+
+                _.each(d.Pareigos, function (p) {
+                  if (p['@pareigos'] == "Komisijos pirmininkė") {
+                    if (d.chairmanString.length > 0) {
+                      d.chairmanString += "<br />";
                     }
+
+                    d.chairmanString += "Komisijos pirmininkė " + p['@padalinio_pavadinimas'];
                   }
-                }, {
-                  "searchable": false,
-                  "orderable": true,
-                  "targets": 6,
-                  "defaultContent": "N/A",
-                  "data": function data(d) {
-                    var rowId = d["@asmens_id"];
-                    return '<button id="' + rowId + '" class="detailsModalBtn">Žiūrėti</button>';
-                  }
-                }],
-                "iDisplayLength": 25,
-                "bPaginate": true,
-                "bLengthChange": true,
-                "bFilter": false,
-                "order": [[1, "desc"]],
-                "bSort": true,
-                "bInfo": true,
-                "bAutoWidth": false,
-                "bDeferRender": true,
-                "aaData": searchDimension.top(Infinity),
-                "bDestroy": true
-              });
-              var datatable = charts.mainTable.chart;
-              datatable.on('draw.dt', function () {
-                var PageInfo = $('#dc-data-table').DataTable().page.info();
-                datatable.DataTable().column(0, {
-                  page: 'current'
-                }).nodes().each(function (cell, i) {
-                  cell.innerHTML = i + 1 + PageInfo.start;
                 });
               });
-              datatable.DataTable().draw(); //Refresh selected rows list tags
 
-              var regenTags = function regenTags() {
-                $('.selected-rows-title').html('Pasirinkta (' + vuedata.selectedRows.length + '/4):');
-                $('.selected-rows-tags').html("");
+              var meetingsTotalsData = objToArray(meetingsTotObject);
+              vuedata.globalAgendasData = wordcloudMainData; //To regenerate main wordcloud:
+              //vuedata.globalAgendasData = stringToCloudData(vuedata.globalAgendasString);
+              //console.log(JSON.stringify(vuedata.globalAgendasData));
+              //Set totals for custom counters
+
+              $('.count-box-agendas .total-count').html(totAgendas);
+              $('.count-box-meetings .total-count').html(totMeetings + extraMeetings); //Set dc main vars. The second crossfilter is used to handle the travels stacked bar chart.
+
+              var ndx = crossfilter(mps);
+              var ndxMeetingsTotals = crossfilter(meetingsTotalsData);
+              var ndxMeetingsGroups = crossfilter(partyMeetingsDataset);
+              var searchDimension = ndx.dimension(function (d) {
+                var entryString = d['@vardas'] + ' ' + d['@pavardė'];
+                return entryString.toLowerCase();
+              }); //CHART 1 DYNAMIC
+
+              var createMeetingsSelectedChart = function createMeetingsSelectedChart() {
+                //Hide if nothing selected
+                if (vuedata.selectedRows.length == 0) {
+                  $("#meetingsselected_chart_container").hide();
+                  $("#meetingstotals_chart_container").show();
+                  return;
+                }
+
+                $("#meetingsselected_chart_container").show();
+                $("#meetingstotals_chart_container").hide(); //Generate data
+
+                var selectedMeetingsData = [{
+                  timeId: "2017_Spring",
+                  time: "2017 PAVASARIS"
+                }, {
+                  timeId: "2017_Autumn",
+                  time: "2017 RUDUO"
+                }, {
+                  timeId: "2018_Spring",
+                  time: "2018 PAVASARIS"
+                }, {
+                  timeId: "2018_Autumn",
+                  time: "2018 RUDUO"
+                }, {
+                  timeId: "2019_Spring",
+                  time: "2019 PAVASARIS"
+                }, {
+                  timeId: "2019_Autumn",
+                  time: "2019 RUDUO"
+                }, {
+                  timeId: "2020_Spring",
+                  time: "2020 PAVASARIS"
+                }];
 
                 _.each(vuedata.selectedRows, function (d) {
-                  var tag = '<div class="selected-tag">' + d['@vardas'] + ' ' + d['@pavardė'] + '<div class="selected-tag-remove" id="' + d['@asmens_id'] + '">x</div></div>';
-                  $('.selected-rows-tags').append(tag);
+                  var thisName = d['@vardas'] + ' ' + d['@pavardė'];
+
+                  if (d.lobbyMeetings) {
+                    _.each(selectedMeetingsData, function (a) {
+                      var thisTime = a.timeId;
+                      var thisTotal = parseInt(d.lobbyMeetings[thisTime + "_total"]);
+
+                      if (isNaN(thisTotal)) {
+                        a[thisName] = 0;
+                      } else {
+                        a[thisName] = thisTotal;
+                      }
+                    });
+                  }
+                }); //Generate chart
+
+
+                var ndxSelected = crossfilter(selectedMeetingsData);
+                var chart = new dc.CompositeChart("#" + charts.meetingsSelected.divId);
+                var dimension = ndxSelected.dimension(function (d) {
+                  return d.time;
                 });
-              };
+                var colors = ["#5196c8", "#264796", "#ff5400", "#ffc000"];
+                var groups = [];
+                var composeArray = [];
+                var groupscount = 0;
 
-              $(".chart-container-table").delegate("tbody tr", "click", function () {
-                var data = datatable.DataTable().row(this).data(); //Check if element is already selected and deselect
+                _.each(vuedata.selectedRows, function (d) {
+                  var thisName = d['@vardas'] + ' ' + d['@pavardė'];
+                  var thisGroup = dimension.group().reduceSum(function (d) {
+                    if (isNaN(d[thisName])) {
+                      return 0;
+                    }
 
-                var currentElIndex = _.findIndex(vuedata.selectedRows, function (x) {
-                  return x['@asmens_id'] == data['@asmens_id'];
+                    return d[thisName];
+                  });
+                  var thisCompose = dc.lineChart(chart).group(thisGroup, thisName).colors(colors[groupscount]).renderDataPoints({
+                    radius: 2,
+                    fillOpacity: 0.5,
+                    strokeOpacity: 0.8
+                  });
+                  groups.push(thisGroup);
+                  composeArray.push(thisCompose);
+                  groupscount++;
                 });
 
-                if (currentElIndex > -1) {
-                  vuedata.selectedRows.splice(currentElIndex, 1);
-                  $(this).removeClass("selected");
-                } else {
-                  if (vuedata.selectedRows.length > 3) {
-                    return;
+                var width = recalcWidth(charts.meetingsSelected.divId);
+
+                chart.width(width).height(400).yAxisPadding(10).renderHorizontalGridLines(true).margins({
+                  top: 10,
+                  right: 10,
+                  bottom: 60,
+                  left: 30
+                }).legend(dc.legend().x(10).y(390).itemHeight(15).gap(15).horizontal(true).autoItemWidth(true)).x(d3.scaleBand()).xUnits(dc.units.ordinal).brushOn(false).xAxisLabel('').yAxisLabel('Susitikimų skaičius').dimension(dimension).group(groups[0], 'Susitikimų skaičius')._rangeBandPadding(1).compose(composeArray);
+
+                chart.xAxis().tickFormat(function (d) {
+                  return d;
+                });
+
+                chart.filter = function () {};
+
+                chart.renderlet(function (chart) {
+                  // rotate x-axis labels
+                  chart.selectAll('g.x text').attr('transform', 'translate(-10,10) rotate(315)');
+                });
+                chart.render();
+                charts.meetingsSelected.chart = chart;
+              }; //CHART 1 - TOTALS
+
+
+              var createMeetingsTotalsChart = function createMeetingsTotalsChart() {
+                var chart = charts.meetingsTotals.chart;
+                var dimension = ndxMeetingsTotals.dimension(function (d) {
+                  return d.x;
+                });
+                var group = dimension.group().reduceSum(function (d) {
+                  if (isNaN(d.y)) {
+                    return 0;
                   }
 
-                  vuedata.selectedRows.push(data);
-                  $(this).addClass("selected");
-                  $(this).attr("id", data['@asmens_id']);
-                } //Refresh selected rows list tags
+                  return d.y;
+                });
+                var group2 = dimension.group().reduceSum(function (d) {
+                  if (isNaN(d.avg)) {
+                    return 0;
+                  }
+
+                  return d.avg;
+                });
+                var width = recalcWidth(charts.meetingsTotals.divId);
+
+                chart.width(width).height(400).yAxisPadding(10).renderHorizontalGridLines(true).margins({
+                  top: 10,
+                  right: 10,
+                  bottom: 60,
+                  left: 30
+                }).legend(dc.legend().x(10).y(390).itemHeight(15).gap(15).horizontal(true).autoItemWidth(true)).x(d3.scaleBand()).xUnits(dc.units.ordinal).brushOn(false).xAxisLabel('').yAxisLabel('Susitikimų skaičius').dimension(dimension).group(group, 'Susitikimų skaičius')._rangeBandPadding(1).compose([dc.lineChart(chart).group(group, "Visų susitikimų skaičius").colors('#ff5400').renderDataPoints({
+                  radius: 2,
+                  fillOpacity: 0.5,
+                  strokeOpacity: 0.8
+                }), dc.lineChart(chart).group(group2, "Vidutinis susitikimų skaičius").colors('#5196c8').renderDataPoints({
+                  radius: 2,
+                  fillOpacity: 0.5,
+                  strokeOpacity: 0.8
+                })]);
+
+                chart.filter = function () {};
+
+                chart.render();
+              }; //CHART 2
 
 
-                regenTags();
-                createMeetingsSelectedChart();
-                genSelectedRowsCloudData();
-                resetCloud();
-              }); //REMOVE SELECTED FROM TAG BUTTONS
+              var createWordcloudChart = function createWordcloudChart() {
+                //Data to use
+                var thisData = vuedata.globalAgendasData;
 
-              $(".selected-rows-tags").on("click", "div.selected-tag-remove", function () {
-                var rowId = $(this).attr("id");
+                if (vuedata.selectedRows.length > 0) {
+                  thisData = vuedata.selectedRowsAgendasData;
+                }
 
-                var currentElIndex = _.findIndex(vuedata.selectedRows, function (x) {
+                if (thisData.length == 0) {
+                  thisData = [{
+                    word: " ",
+                    size: "1"
+                  }];
+                } //Size variables
+
+
+                var sizeScale = d3.scaleLinear().domain([1, thisData.length > 10 ? thisData[2].size : thisData[0].size]).range([11, 50]);
+                var margin = {
+                  top: -10,
+                  right: 0,
+                  bottom: 0,
+                  left: 0
+                };
+                var width = $("#" + charts.wordcloud.divId).width();
+                var height = 450; //Append the svg object
+
+                var svg = d3.select("#" + charts.wordcloud.divId).append("svg").attr("width", width).attr("height", height).append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")"); //Constructs cloud layout
+
+                var layout = d3.layout.cloud().size([width, height]).words(thisData.map(function (d) {
+                  return {
+                    text: d.word,
+                    size: d.size
+                  };
+                })).padding(5) //space between words
+                .rotate(function () {
+                  return ~~(Math.random() * 2) * 90;
+                }).fontSize(function (d) {
+                  return sizeScale(d.size) > 50 ? 50 : sizeScale(d.size);
+                }) // font size of words
+                .on("end", draw);
+                layout.start(); // Draw function
+
+                function draw(words) {
+                  var cloud = svg.append("g").attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")") //.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")")
+                  .selectAll("text").data(words);
+                  cloud.enter().append("text").style("font-size", function (d) {
+                    return d.size;
+                  }).style("fill", function (d) {
+                    return vuedata.colors.cloud[Math.floor(Math.random() * vuedata.colors.cloud.length)];
+                  }).attr("text-anchor", "middle").style("font-family", "Impact").attr("transform", function (d) {
+                    return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+                  }).text(function (d) {
+                    return d.text;
+                  });
+                  cloud.transition().duration(600).style("font-size", function (d) {
+                    return d.size;
+                  }).attr("transform", function (d) {
+                    return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+                  }).style("fill-opacity", 1);
+                  cloud.exit().transition().duration(200).style('fill-opacity', 1e-6).attr('font-size', 1).remove();
+                }
+              }; //CHART 3
+
+
+              var createMeetingsGroupsChart = function createMeetingsGroupsChart() {
+                var partiesData = [{
+                  name: "Liberalų Sąjūdžio Frakcija (LSF)",
+                  color: "#F49813"
+                }, {
+                  name: "Lietuvos lenkų rinkimų akcijos-Krikščioniškų šeimų sąjungos frakcija (LLRA-KŠSF)",
+                  color: "#3164B7"
+                }, {
+                  name: "Lietuvos Socialdemokratų Darbo Frakcija (LSDDF) *",
+                  color: "DD3333"
+                }, {
+                  name: "Lietuvos Socialdemokratų Partijos Frackija (LSDPF)",
+                  color: "#E10514"
+                }, {
+                  name: "Lietuvos Valstiečių ir Žaliųjų Sąjungos Frakcija (LVŽSF)",
+                  color: "#0F7448"
+                }, {
+                  name: "Mišri Seimo narių grupė (MG)",
+                  color: "#7D7D7D"
+                }, {
+                  name: "Tėvynės sąjungos - Lietuvos Krikščionių demokratų frakcija (TS-LKDF)",
+                  color: "#00A59B"
+                }, {
+                  name: "Frakcija 'Lietuvos Gerovei' *",
+                  color: "#04A03C"
+                }, {
+                  name: "Tvarkos ir teisingumo frakcija (TTF) *",
+                  color: "#24418C"
+                }];
+                var chart = charts.meetingsGroups.chart;
+                var dimension = ndxMeetingsGroups.dimension(function (d) {
+                  return d.time;
+                });
+                var groups = [];
+                var composeArray = [];
+
+                _.each(partiesData, function (p) {
+                  var thisGroup = dimension.group().reduceSum(function (d) {
+                    var val = parseInt(d[p.name]);
+
+                    if (isNaN(val)) {
+                      return 0;
+                    }
+
+                    return val;
+                  });
+                  var thisCompose = dc.lineChart(chart).group(thisGroup, p.name).colors(p.color).renderDataPoints({
+                    radius: 2,
+                    fillOpacity: 0.5,
+                    strokeOpacity: 0.8
+                  });
+                  groups.push(thisGroup);
+                  composeArray.push(thisCompose);
+                });
+
+                var width = recalcWidth(charts.meetingsGroups.divId);
+
+                chart.width(width).height(400).yAxisPadding(10).renderHorizontalGridLines(true).margins({
+                  top: 10,
+                  right: 10,
+                  bottom: 60,
+                  left: 30
+                }).legend(dc.legend().x(10).y(390).itemHeight(12).gap(7).horizontal(false).autoItemWidth(true)).x(d3.scaleBand()).xUnits(dc.units.ordinal).brushOn(false).xAxisLabel('').yAxisLabel('Sustikimų Skaičius').dimension(dimension).group(groups[0], 'Sustikimų Skaičius')._rangeBandPadding(1).compose(composeArray);
+
+                chart.xAxis() //.tickValues(d3.range(data.length))
+                .tickFormat(function (d) {
+                  return d;
+                });
+
+                chart.filter = function () {};
+
+                chart.render();
+              }; //TABLE
+
+
+              var createTable = function createTable() {
+                var count = 0;
+                charts.mainTable.chart = $("#dc-data-table").dataTable({
+                  "columnDefs": [{
+                    "searchable": false,
+                    "orderable": false,
+                    "targets": 0,
+                    data: function data(row, type, val, meta) {
+                      return count;
+                    }
+                  }, {
+                    "searchable": false,
+                    "orderable": true,
+                    "targets": 1,
+                    "defaultContent": "N/A",
+                    "data": function data(d) {
+                      return '<a href="https://www.lrs.lt/sip/portal.show?p_r=35299&p_k=1&p_a=498&p_asm_id=' + d['@asmens_id'] + '" target="_blank">' + d['@vardas'] + ' ' + d['@pavardė'];
+                    }
+                  }, {
+                    "searchable": false,
+                    "orderable": true,
+                    "targets": 2,
+                    "defaultContent": "N/A",
+                    "data": function data(d) {
+                      if (d.faction) {
+                        return d.faction['@padalinio_pavadinimo_santrumpa'];
+                      }
+                    }
+                  }, {
+                    "searchable": false,
+                    "orderable": true,
+                    "targets": 3,
+                    "defaultContent": "N/A",
+                    "data": function data(d) {
+                      //return d.legislature;
+                      return d['@kadencijų_skaičius'];
+                    }
+                  },
+                  /*
+                  {
+                    "searchable": false,
+                    "orderable": true,
+                    "targets": 4,
+                    "defaultContent":"N/A",
+                    "data": function(d) {
+                      var groupsRoleString = "";
+                      if(d.factionDetail && d.factionDetail['@pareigos'] == 'Frakcijos seniūnas') {
+                        groupsRoleString += "Frakcijos seniūnas";
+                      }
+                      if(d.chairmanString.length > 0) {
+                        if(d.chairmanString.length > 0) {
+                          //groupsRoleString += "<br />";
+                        }
+                        groupsRoleString += d.chairmanString;
+                      }
+                      return groupsRoleString;
+                    }
+                  },
+                  */
+                  {
+                    "searchable": false,
+                    "orderable": true,
+                    "targets": 4,
+                    "defaultContent": "N/A",
+                    "data": function data(d) {
+                      return d.agendasCount;
+                    }
+                  }, {
+                    "searchable": false,
+                    "orderable": true,
+                    "targets": 5,
+                    "defaultContent": "N/A",
+                    "data": function data(d) {
+                      if (d.lobbyMeetings) {
+                        return d.lobbyMeetings['Total_all_periods'];
+                      } else {
+                        return '-';
+                      }
+                    }
+                  }, {
+                    "searchable": false,
+                    "orderable": true,
+                    "targets": 6,
+                    "defaultContent": "N/A",
+                    "data": function data(d) {
+                      var rowId = d["@asmens_id"];
+                      return '<button id="' + rowId + '" class="detailsModalBtn">Žiūrėti</button>';
+                    }
+                  }],
+                  "iDisplayLength": 25,
+                  "bPaginate": true,
+                  "bLengthChange": true,
+                  "bFilter": false,
+                  "order": [[1, "desc"]],
+                  "bSort": true,
+                  "bInfo": true,
+                  "bAutoWidth": false,
+                  "bDeferRender": true,
+                  "aaData": searchDimension.top(Infinity),
+                  "bDestroy": true
+                });
+                var datatable = charts.mainTable.chart;
+                datatable.on('draw.dt', function () {
+                  var PageInfo = $('#dc-data-table').DataTable().page.info();
+                  datatable.DataTable().column(0, {
+                    page: 'current'
+                  }).nodes().each(function (cell, i) {
+                    cell.innerHTML = i + 1 + PageInfo.start;
+                  });
+                });
+                datatable.DataTable().draw(); //Refresh selected rows list tags
+
+                var regenTags = function regenTags() {
+                  $('.selected-rows-title').html('Pasirinkta (' + vuedata.selectedRows.length + '/4):');
+                  $('.selected-rows-tags').html("");
+
+                  _.each(vuedata.selectedRows, function (d) {
+                    var tag = '<div class="selected-tag">' + d['@vardas'] + ' ' + d['@pavardė'] + '<div class="selected-tag-remove" id="' + d['@asmens_id'] + '">x</div></div>';
+                    $('.selected-rows-tags').append(tag);
+                  });
+                };
+
+                $(".chart-container-table").delegate("tbody tr", "click", function () {
+                  var data = datatable.DataTable().row(this).data(); //Check if element is already selected and deselect
+
+                  var currentElIndex = _.findIndex(vuedata.selectedRows, function (x) {
+                    return x['@asmens_id'] == data['@asmens_id'];
+                  });
+
+                  if (currentElIndex > -1) {
+                    vuedata.selectedRows.splice(currentElIndex, 1);
+                    $(this).removeClass("selected");
+                  } else {
+                    if (vuedata.selectedRows.length > 3) {
+                      return;
+                    }
+
+                    vuedata.selectedRows.push(data);
+                    $(this).addClass("selected");
+                    $(this).attr("id", data['@asmens_id']);
+                  } //Refresh selected rows list tags
+
+
+                  regenTags();
+                  createMeetingsSelectedChart();
+                  genSelectedRowsCloudData();
+                  resetCloud();
+                }); //REMOVE SELECTED FROM TAG BUTTONS
+
+                $(".selected-rows-tags").on("click", "div.selected-tag-remove", function () {
+                  var rowId = $(this).attr("id");
+
+                  var currentElIndex = _.findIndex(vuedata.selectedRows, function (x) {
+                    return x['@asmens_id'] == rowId;
+                  });
+
+                  vuedata.selectedRows.splice(currentElIndex, 1);
+                  $("#dc-data-table").find("tr#" + rowId).removeClass("selected");
+                  regenTags();
+                  createMeetingsSelectedChart();
+                  genSelectedRowsCloudData();
+                  resetCloud();
+                });
+              }; //OPEN DETAILS MODAL FROM BUTTONS
+
+
+              var dTable = $("#modalAgendasTable");
+
+              function openDetailsModal(rowId) {
+                var rowData = _.find(mps, function (x) {
                   return x['@asmens_id'] == rowId;
                 });
 
-                vuedata.selectedRows.splice(currentElIndex, 1);
-                $("#dc-data-table").find("tr#" + rowId).removeClass("selected");
-                regenTags();
+                vuedata.selectedElement = rowData;
+                $('#detailsModal').modal();
+                var dTable = $("#modalAgendasTable");
+                dTable.DataTable({
+                  "data": vuedata.selectedElement.agendas['SeimoNarioDarbotvarkėsĮvykis'],
+                  "destroy": true,
+                  "search": false,
+                  "pageLength": 20,
+                  "dom": '<<t>pi>',
+                  "columns": [{
+                    "data": "@pabaiga"
+                  }, {
+                    "data": "@pavadinimas"
+                  }, {
+                    "data": "@pradžia"
+                  }, {
+                    "data": "@vieta"
+                  }]
+                });
+              }
+
+              $(".chart-container-table").delegate(".detailsModalBtn", "click", function (e) {
+                e.stopPropagation();
+                var rowId = $(this).attr("id");
+                openDetailsModal(rowId);
+              }); //REFRESH TABLE
+
+              function RefreshTable() {
+                dc.events.trigger(function () {
+                  var alldata = searchDimension.top(Infinity);
+                  charts.mainTable.chart.fnClearTable();
+                  charts.mainTable.chart.fnAddData(alldata);
+                  charts.mainTable.chart.fnDraw();
+                });
+              } //SEARCH INPUT FUNCTIONALITY
+
+
+              var typingTimer;
+              var doneTypingInterval = 1000;
+              var $input = $("#search-input");
+              $input.on('keyup', function () {
+                clearTimeout(typingTimer);
+                typingTimer = setTimeout(doneTyping, doneTypingInterval);
+              });
+              $input.on('keydown', function () {
+                clearTimeout(typingTimer);
+              });
+
+              function doneTyping() {
+                var s = $input.val().toLowerCase();
+                searchDimension.filter(function (d) {
+                  return d.indexOf(s) !== -1;
+                });
+                throttle();
+                var throttleTimer;
+
+                function throttle() {
+                  window.clearTimeout(throttleTimer);
+                  throttleTimer = window.setTimeout(function () {
+                    //dc.redrawAll();
+                    RefreshTable();
+                    customCounters.redraw();
+                  }, 250);
+                }
+              } //Reset charts
+
+
+              var resetGraphs = function resetGraphs() {
+                for (var c in charts) {
+                  if (charts[c].type !== 'table' && charts[c].type !== 'd3' && charts[c].chart.hasFilter()) {
+                    charts[c].chart.filterAll();
+                  }
+                }
+
+                searchDimension.filter(null);
+                $('#search-input').val(''); //Remove selected people, hide dynamic chart and show totals one
+
+                vuedata.selectedRows = [];
+                $('.dataTable tr').removeClass('selected');
+                $('.selected-rows-tags').html("");
+                $('.selected-rows-title').html('Selected (' + vuedata.selectedRows.length + '/4):');
                 createMeetingsSelectedChart();
-                genSelectedRowsCloudData();
-                resetCloud();
-              });
-            }; //OPEN DETAILS MODAL FROM BUTTONS
+                resetCloud(); //dc.redrawAll();
 
-
-            function openDetailsModal(rowId) {
-              var rowData = _.find(mps, function (x) {
-                return x['@asmens_id'] == rowId;
-              });
-
-              vuedata.selectedElement = rowData;
-              $('#detailsModal').modal();
-            }
-
-            $(".chart-container-table").delegate(".detailsModalBtn", "click", function (e) {
-              e.stopPropagation();
-              var rowId = $(this).attr("id");
-              openDetailsModal(rowId);
-            }); //REFRESH TABLE
-
-            function RefreshTable() {
-              dc.events.trigger(function () {
-                var alldata = searchDimension.top(Infinity);
-                charts.mainTable.chart.fnClearTable();
-                charts.mainTable.chart.fnAddData(alldata);
-                charts.mainTable.chart.fnDraw();
-              });
-            } //SEARCH INPUT FUNCTIONALITY
-
-
-            var typingTimer;
-            var doneTypingInterval = 1000;
-            var $input = $("#search-input");
-            $input.on('keyup', function () {
-              clearTimeout(typingTimer);
-              typingTimer = setTimeout(doneTyping, doneTypingInterval);
-            });
-            $input.on('keydown', function () {
-              clearTimeout(typingTimer);
-            });
-
-            function doneTyping() {
-              var s = $input.val().toLowerCase();
-              searchDimension.filter(function (d) {
-                return d.indexOf(s) !== -1;
-              });
-              throttle();
-              var throttleTimer;
-
-              function throttle() {
-                window.clearTimeout(throttleTimer);
-                throttleTimer = window.setTimeout(function () {
-                  //dc.redrawAll();
-                  RefreshTable();
-                  customCounters.redraw();
-                }, 250);
-              }
-            } //Reset charts
-
-
-            var resetGraphs = function resetGraphs() {
-              for (var c in charts) {
-                if (charts[c].type !== 'table' && charts[c].type !== 'd3' && charts[c].chart.hasFilter()) {
-                  charts[c].chart.filterAll();
-                }
-              }
-
-              searchDimension.filter(null);
-              $('#search-input').val(''); //Remove selected people, hide dynamic chart and show totals one
-
-              vuedata.selectedRows = [];
-              $('.dataTable tr').removeClass('selected');
-              $('.selected-rows-tags').html("");
-              $('.selected-rows-title').html('Selected (' + vuedata.selectedRows.length + '/4):');
-              createMeetingsSelectedChart();
-              resetCloud(); //dc.redrawAll();
-
-              resizeGraphs();
-              customCounters.redraw();
-            };
-
-            var resetCloud = function resetCloud() {
-              d3.selectAll("#" + charts.wordcloud.divId + " svg").remove();
-              createWordcloudChart();
-            };
-
-            $('.reset-btn').click(function () {
-              resetGraphs();
-              RefreshTable();
-            }); //Render charts
-
-            createMeetingsTotalsChart();
-            createMeetingsGroupsChart();
-            createTable();
-            createWordcloudChart();
-            $('.dataTables_wrapper').append($('.dataTables_length')); //Toggle last charts functionality and fix for responsiveness
-
-            vuedata.showAllCharts = false;
-            $('#charts-toggle-btn').click(function () {
-              if (vuedata.showAllCharts) {
                 resizeGraphs();
+                customCounters.redraw();
+              };
+
+              var resetCloud = function resetCloud() {
+                d3.selectAll("#" + charts.wordcloud.divId + " svg").remove();
+                createWordcloudChart();
+              };
+
+              $('.reset-btn').click(function () {
+                resetGraphs();
+                RefreshTable();
+              }); //Render charts
+
+              createMeetingsTotalsChart();
+              createMeetingsGroupsChart();
+              createTable();
+              createWordcloudChart();
+              $('.dataTables_wrapper').append($('.dataTables_length')); //Toggle last charts functionality and fix for responsiveness
+
+              vuedata.showAllCharts = false;
+              $('#charts-toggle-btn').click(function () {
+                if (vuedata.showAllCharts) {
+                  resizeGraphs();
+                }
+              }); //Hide loader
+
+              vuedata.loader = false;
+              $("#meetingsselected_chart_container").hide(); //COUNTERS
+              //Main counter
+
+              var all = ndx.groupAll();
+              var counter = dc.dataCount('.dc-data-count').dimension(ndx).group(all);
+              counter.render(); //Update datatables
+
+              counter.on("renderlet.resetall", function (c) {
+                RefreshTable();
+              }); //Custom counters
+
+              var customCounters;
+
+              function drawCustomCounters() {
+                var dim = ndx.dimension(function (d) {
+                  if (!d['@asmens_id']) {
+                    return "";
+                  } else {
+                    return d['@asmens_id'];
+                  }
+                });
+                var group = dim.group().reduce(function (p, d) {
+                  p.nb += 1;
+
+                  if (!d['@asmens_id']) {
+                    return p;
+                  }
+
+                  p.agendas += +d.agendasCount;
+                  p.meetings += d.meetingsCount;
+                  return p;
+                }, function (p, d) {
+                  p.nb -= 1;
+
+                  if (!d['@asmens_id']) {
+                    return p;
+                  }
+
+                  p.agendas -= +d.agendasCount;
+                  p.meetings -= d.meetingsCount;
+                  return p;
+                }, function (p, d) {
+                  return {
+                    nb: 0,
+                    agendas: 0,
+                    meetings: 0
+                  };
+                });
+                group.order(function (p) {
+                  return p.nb;
+                });
+                var agendas = 0;
+                var meetings = 0;
+                customCounters = dc.dataCount(".count-box-main").dimension(group).group({
+                  value: function value() {
+                    agendas = 0;
+                    meetings = 0;
+                    return group.all().filter(function (kv) {
+                      if (kv.value.nb > 0) {
+                        agendas += +kv.value.agendas;
+                        meetings += +kv.value.meetings;
+                      }
+
+                      return kv.value.nb > 0;
+                    }).length;
+                  }
+                }).renderlet(function (chart) {
+                  $(".nbagendas").text(agendas);
+                  $(".nbmeetings").text(meetings);
+
+                  if (meetings == totMeetings) {
+                    $(".nbmeetings").text(meetings + extraMeetings);
+                  }
+                });
+                customCounters.render();
               }
-            }); //Hide loader
 
-            vuedata.loader = false;
-            $("#meetingsselected_chart_container").hide(); //COUNTERS
-            //Main counter
+              drawCustomCounters(); //Scroll to top
 
-            var all = ndx.groupAll();
-            var counter = dc.dataCount('.dc-data-count').dimension(ndx).group(all);
-            counter.render(); //Update datatables
+              $('.scrolltotop-btn').click(function () {
+                window.scrollTo({
+                  top: 0,
+                  behavior: 'smooth'
+                });
+              }); //Window resize function
 
-            counter.on("renderlet.resetall", function (c) {
-              RefreshTable();
-            }); //Custom counters
-
-            var customCounters;
-
-            function drawCustomCounters() {
-              var dim = ndx.dimension(function (d) {
-                if (!d['@asmens_id']) {
-                  return "";
-                } else {
-                  return d['@asmens_id'];
-                }
-              });
-              var group = dim.group().reduce(function (p, d) {
-                p.nb += 1;
-
-                if (!d['@asmens_id']) {
-                  return p;
-                }
-
-                p.agendas += +d.agendasCount;
-                p.meetings += d.meetingsCount;
-                return p;
-              }, function (p, d) {
-                p.nb -= 1;
-
-                if (!d['@asmens_id']) {
-                  return p;
-                }
-
-                p.agendas -= +d.agendasCount;
-                p.meetings -= d.meetingsCount;
-                return p;
-              }, function (p, d) {
-                return {
-                  nb: 0,
-                  agendas: 0,
-                  meetings: 0
-                };
-              });
-              group.order(function (p) {
-                return p.nb;
-              });
-              var agendas = 0;
-              var meetings = 0;
-              customCounters = dc.dataCount(".count-box-main").dimension(group).group({
-                value: function value() {
-                  agendas = 0;
-                  meetings = 0;
-                  return group.all().filter(function (kv) {
-                    if (kv.value.nb > 0) {
-                      agendas += +kv.value.agendas;
-                      meetings += +kv.value.meetings;
-                    }
-
-                    return kv.value.nb > 0;
-                  }).length;
-                }
-              }).renderlet(function (chart) {
-                $(".nbagendas").text(agendas);
-                $(".nbmeetings").text(meetings);
-
-                if (meetings == totMeetings) {
-                  $(".nbmeetings").text(meetings + extraMeetings);
-                }
-              });
-              customCounters.render();
-            }
-
-            drawCustomCounters(); //Scroll to top
-
-            $('.scrolltotop-btn').click(function () {
-              window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-              });
-            }); //Window resize function
-
-            window.onresize = function (event) {
-              resizeGraphs();
-            };
+              window.onresize = function (event) {
+                resizeGraphs();
+              };
+            });
           });
         });
       });
@@ -47924,7 +47946,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57362" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51362" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

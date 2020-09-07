@@ -23,7 +23,6 @@
               <!-- INFO -->
               <div class="col-md-8 chart-col" v-if="showInfo">
                 <div class="boxed-container description-container">
-                  <h1>ManoSeimas.lt</h1>
                   <p>Svetainėje „ManoSeimas.lt“ galite greitai ir paprastai sužinoti, kaip LR Seimo nariai skelbia savo darbotvarkes ir praneša apie susitikimus su įvairių interesų grupių atstovais, dalyvavimą renginiuose, susitikimus su kitais politikais. Galite šiuos duomenis analizuoti atskirose Seimo frakcijose arba tarpusavyje lyginti visų Seimo frakcijų rodiklius. Daugiau informacijos čia. <a href="./about.php">Daugiau čia</a>.</p>
                   <i class="material-icons close-btn" @click="showInfo = false">close</i>
                 </div>
@@ -111,8 +110,13 @@
                 <div class="row">
                   <div class="col-md-8">
                     <div class="details-line"><span class="details-line-title"><a :href="selectedElement['@biografijos_nuoroda']">LRS.lt profilis</a></span></div>
-                    <div class="details-line"><span class="details-line-title">Seimo narys nuo: </span> {{ selectedElement['@data_nuo'] }}</div>
+                    <div class="details-line">
+                      <span class="details-line-title" v-if="selectedElement['@lytis'] == 'M'">Seimo narė nuo: </span>
+                      <span class="details-line-title" v-else>Seimo nary nuo: </span>
+                      {{ selectedElement['@data_nuo'] }}<span v-if="selectedElement['@data_iki']"> iki {{ selectedElement['@data_iki'] }}</span>
+                    </div>
                     <div class="details-line" v-if="selectedElement.lobbyMeetings"><span class="details-line-title">Susitikimai su interesų grupėmis ir registruotais lobistais:</span> {{ selectedElement.lobbyMeetings.Total_all_periods }}</div>
+                    <div class="details-line"><span class="details-line-title">Visi lrs.lt darbotvarkės įrašai:</span> {{ selectedElement.agendasCount }}</div>
                   </div>
                   <div class="col-md-4">
                     <img :src="selectedElement.photoUrl" class="photo" />
@@ -136,6 +140,14 @@
                           </tbody>
                         </table>
                       </div>
+                    </div>
+                    <div v-show="selectedElement.agendas && selectedElement.agendasCount > 0" class="agendas-table-container">
+                    <div class="details-line"><span class="details-line-title">Visi lrs.lt darbotvarkės įrašai: {{ selectedElement.agendasCount }}</span></div>
+                      <table id="modalAgendasTable" class="agendas-table">
+                        <thead>
+                          <tr><th>Pradžia</th><th>pavadinimas</th><th>Pabaiga</th><th>vieta</th></tr>
+                        </thead>
+                      </table>
                     </div>
                   </div>
                 </div>
