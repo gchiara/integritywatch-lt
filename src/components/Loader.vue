@@ -6,7 +6,7 @@
       </div>
       <div class="loader"></div>
       <div class="loader-text below">
-        Please wait a moment for the data to load ...
+        Prašome palaukti, kol bus įkelti duomenys
       </div>
     </div>
   </div>

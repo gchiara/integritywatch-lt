@@ -30,7 +30,7 @@ foreach ($mps['SeimoInformacija']['SeimoKadencija']['SeimoNarys'] as $key => $va
 
 //Parse string
 $maxWords = 70;
-$blacklist = ['ir','o','bet','tačiau','dėl','nes','kad','jeigu','rytinis','vakarinis','su','prie','į','už','rugsėj','spal','lapkrit','gruod','saus','vasar','kov','baland','geguž','biržel','liep','rugpjū','k.','atšauktas','nuotoliniu','būdu','veiksmų','p.','m.','raj.','valanda','viešin','komit','posėd','plenar','frakc','Seim','komisij'];
+$blacklist = ["ir","o","bet","tačiau","dėl","nes","kad","jeigu","rytinis","vakarinis","su","prie","į","už","rugsėj","spal","lapkrit","gruod","saus","vasar","kov","baland","geguž","biržel","liep","rugpjū","k.","atšauktas","nuotoliniu","būdu","veiksmų","p.","m.","raj.","valanda","komitetas","komiteto","komitetui","komitetai","komitetui","posėdis","posėdžio","posėdyje","Seimo","Seimas","Seimui","komisijos","komisija","komisijai","frakcija","frakcijos","frakcijoje","viešina","plenarinis","plenarinio","plenariniame"];
 
 $agendasStringClean = preg_replace('/[!\.,:;\'"\?]/', ' ', $agendasString);
 $stringArray = explode(' ', $agendasStringClean);

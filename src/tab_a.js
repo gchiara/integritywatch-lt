@@ -43,7 +43,7 @@ var vuedata = {
     },
     meetingsGroups: {
       title: 'Frakcijų susitikimai',
-      info: 'Pasirinkite jus dominančią frakciją ir pamatykite, kaip keitėsi jos narių susitikimų skaičius kadencijos metu. Parlamentarui pakeitus frakciją, jo/ jos nauji susitikimai buvo priskirti tai frakcijai, prie kurios jis/ ji prisijungė. 2018 m. rudenį  LLRA-KŠSF papildomai skelbė frakcijos darbotvarkę, kurioje pažymėjo 5 susitikimus su interesų grupėmis.'
+      info: 'Pasirinkite jus dominančią frakciją ir pamatykite, kaip keitėsi jos narių susitikimų skaičius kadencijos metu. Parlamentarui pakeitus frakciją, jo/ jos nauji susitikimai buvo priskirti tai frakcijai, prie kurios jis/ ji prisijungė. 2018 m. rudenį LLRA-KŠSF papildomai skelbė frakcijos darbotvarkę, kurioje pažymėjo 5 susitikimus su interesų grupėmis. Frakcija „Tvarka ir teisingumas“ iširo 2019 m. rugsėjį; Frakcija „Lietuvos Gerovei“ susikūrė 2019 m. rugsėjį, iširo 2020 m. sausį.'
     },
     wordcloud: {
       title: 'Susitikimų tema',
@@ -95,7 +95,7 @@ var vuedata = {
     generic: ["#3b95d0", "#4081ae", "#406a95", "#395a75" ],
     default1: "#2b90b8",
     default2: "#449188",
-    cloud: ["#264796", "#3a89c1", "#326f9b", "#5d8fb3", "#7f96a6", "#3e8bc2"]
+    cloud: ["#264796", "#3a89c1", "#326f9b", "#5d8fb3", "#3e8bc2","#369f3e","#80b827", "#15811d"]
   }
 }
 
@@ -112,18 +112,18 @@ new Vue({
   methods: {
     //Share
     downloadDataset: function () {
-      window.open('./data/tab_a/executive.csv');
+      window.open('/data/tab_a/meetings_totals.csv');
     },
     share: function (platform) {
       if(platform == 'twitter'){
         var thisPage = window.location.href.split('?')[0];
-        var shareText = 'Share text here ' + thisPage;
+        var shareText = 'Manoseimas.lt - SUŽINOK, SU KUO SUSITINKA SEIMO NARIAI ' + thisPage;
         var shareURL = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(shareText);
         window.open(shareURL, '_blank');
         return;
       }
       if(platform == 'facebook'){
-        var toShareUrl = 'https://integritywatch.lt';
+        var toShareUrl = 'http://manoseimas.lt/';
         var shareURL = 'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(toShareUrl);
         window.open(shareURL, '_blank', 'toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250,top=300,left=300');
         return;
@@ -304,7 +304,7 @@ function stringToCloudData(s) {
   var cloudData = [];
   var maxWords = 70;
   var stringArray = s.replace(/[!\.,:;'"\?]/g, '').split(" ");
-  var blacklist = ['ir','o','bet','tačiau','dėl','nes','kad','jeigu','rytinis','vakarinis','su','prie','į','už','rugsėj','spal','lapkrit','gruod','saus','vasar','kov','baland','geguž','biržel','liep','rugpjū','k.','atšauktas','nuotoliniu','būdu','veiksmų','p.','m.','raj.','valanda','viešin','komit','posėd','plenar','frakc','Seim','komisij'];
+  var blacklist = ["ir","o","bet","tačiau","dėl","nes","kad","jeigu","rytinis","vakarinis","su","prie","į","už","rugsėj","spal","lapkrit","gruod","saus","vasar","kov","baland","geguž","biržel","liep","rugpjū","k.","atšauktas","nuotoliniu","būdu","veiksmų","p.","m.","raj.","valanda","komitetas","komiteto","komitetui","komitetai","komitetui","posėdis","posėdžio","posėdyje","Seimo","Seimas","Seimui","komisijos","komisija","komisijai","frakcija","frakcijos","frakcijoje","viešina","plenarinis","plenarinio","plenariniame"];
   _.each(stringArray, function(w) {
     if(blacklist.indexOf(w) == -1) {
       //If word already in data, add value, else add data
@@ -501,7 +501,7 @@ json('./data/tab_a/p2b_ad_seimo_nariai.json?' + randomPar, (err, mpsDataset) => 
                 var dimension = ndxSelected.dimension(function (d) {
                   return d.time; 
                 });
-                var colors = ["#5196c8", "#264796", "#ff5400", "#ffc000"];
+                var colors = ["#5196c8", "#264796", "#369f3e", "#80b827"];
                 var groups = [];
                 var composeArray = [];
                 var groupscount = 0;
@@ -591,7 +591,7 @@ json('./data/tab_a/p2b_ad_seimo_nariai.json?' + randomPar, (err, mpsDataset) => 
                   .compose([
                     dc.lineChart(chart)
                     .group(group, "Visų susitikimų skaičius")
-                    .colors('#ff5400')
+                    .colors('#369f3e')
                     .renderDataPoints({
                       radius: 2,
                       fillOpacity: 0.5,
@@ -679,15 +679,15 @@ json('./data/tab_a/p2b_ad_seimo_nariai.json?' + randomPar, (err, mpsDataset) => 
               //CHART 3
               var createMeetingsGroupsChart = function(){
                 var partiesData = [
-                  {name: "Liberalų Sąjūdžio Frakcija (LSF)", color: "#F49813"},
+                  {name: "Liberalų sąjūdžio frakcija (LSF)", color: "#F49813"},
                   {name: "Lietuvos lenkų rinkimų akcijos-Krikščioniškų šeimų sąjungos frakcija (LLRA-KŠSF)", color: "#3164B7"},
-                  {name: "Lietuvos Socialdemokratų Darbo Frakcija (LSDDF) *", color: "DD3333"},
-                  {name: "Lietuvos Socialdemokratų Partijos Frackija (LSDPF)", color: "#E10514"},
-                  {name: "Lietuvos Valstiečių ir Žaliųjų Sąjungos Frakcija (LVŽSF)", color: "#0F7448"},
+                  {name: "Lietuvos socialdemokratų darbo frakcija (LSDDF)", color: "#DD3333"},
+                  {name: "Lietuvos socialdemokratų partijos frakcija (LSDPF)", color: "#E10514"},
+                  {name: "Lietuvos valstiečių ir žaliųjų sąjungos frakcija (LVŽSF)", color: "#0F7448"},
                   {name: "Mišri Seimo narių grupė (MG)", color: "#7D7D7D"},
-                  {name: "Tėvynės sąjungos - Lietuvos Krikščionių demokratų frakcija (TS-LKDF)", color: "#00A59B"},
-                  {name: "Frakcija 'Lietuvos Gerovei' *", color: "#04A03C"},
-                  {name: "Tvarkos ir teisingumo frakcija (TTF) *", color: "#24418C"},
+                  {name: "Tėvynės sąjungos-Lietuvos krikščionių demokratų frakcija (TS-LKDF)", color: "#00A59B"},
+                  {name: "Frakcija „Lietuvos gerovei“", color: "#04A03C"},
+                  {name: "Frakcija „Tvarka ir teisingumas“", color: "#24418C"},
                 ];
                 var chart = charts.meetingsGroups.chart;
                 var dimension = ndxMeetingsGroups.dimension(function (d) {
@@ -742,6 +742,17 @@ json('./data/tab_a/p2b_ad_seimo_nariai.json?' + randomPar, (err, mpsDataset) => 
               var createTable = function() {
                 var count=0;
                 charts.mainTable.chart = $("#dc-data-table").dataTable({
+                  "language": {
+                    "info": "Nuo _START_ iki _END_ iš _TOTAL_ įrašų",
+                    "lengthMenu": "Rodyti _MENU_ įrašus",
+                    "paginate": {
+                      "first":      "First",
+                      "last":       "Last",
+                      "next":       "Kitas",
+                      "previous":   "Ankstesnis"
+                    },
+                    "infoEmpty": "No entries to show"
+                  },
                   "columnDefs": [
                     {
                       "searchable": false,
@@ -776,6 +787,7 @@ json('./data/tab_a/p2b_ad_seimo_nariai.json?' + randomPar, (err, mpsDataset) => 
                       "orderable": true,
                       "targets": 3,
                       "defaultContent":"N/A",
+                      "className": "dt-center",
                       "data": function(d) {
                         //return d.legislature;
                         return d['@kadencijų_skaičius'];
@@ -807,6 +819,7 @@ json('./data/tab_a/p2b_ad_seimo_nariai.json?' + randomPar, (err, mpsDataset) => 
                       "orderable": true,
                       "targets": 4,
                       "defaultContent":"N/A",
+                      "className": "dt-center",
                       "data": function(d) {
                         return d.agendasCount;
                       }
@@ -816,6 +829,7 @@ json('./data/tab_a/p2b_ad_seimo_nariai.json?' + randomPar, (err, mpsDataset) => 
                       "orderable": true,
                       "targets": 5,
                       "defaultContent":"N/A",
+                      "className": "dt-center",
                       "data": function(d) {
                         if(d.lobbyMeetings) {
                           return d.lobbyMeetings['Total_all_periods'];
@@ -839,7 +853,7 @@ json('./data/tab_a/p2b_ad_seimo_nariai.json?' + randomPar, (err, mpsDataset) => 
                   "bPaginate": true,
                   "bLengthChange": true,
                   "bFilter": false,
-                  "order": [[ 1, "desc" ]],
+                  "order": [[ 5, "desc" ]],
                   "bSort": true,
                   "bInfo": true,
                   "bAutoWidth": false,
@@ -898,22 +912,35 @@ json('./data/tab_a/p2b_ad_seimo_nariai.json?' + randomPar, (err, mpsDataset) => 
               }
               
               //OPEN DETAILS MODAL FROM BUTTONS
-              var dTable = $("#modalAgendasTable");
               function openDetailsModal(rowId) {
                 var rowData = _.find(mps, function(x) { return x['@asmens_id'] == rowId; });
                 vuedata.selectedElement = rowData;
                 $('#detailsModal').modal();
                 var dTable = $("#modalAgendasTable");
                 dTable.DataTable ({
+                    "language": {
+                      "info": "Nuo _START_ iki _END_ iš _TOTAL_ įrašų",
+                      "lengthMenu": "Rodyti _MENU_ įrašus",
+                      "paginate": {
+                        "first":      "First",
+                        "last":       "Last",
+                        "next":       "Kitas",
+                        "previous":   "Ankstesnis"
+                      },
+                      "infoEmpty": "No entries to show"
+                    },
                     "data" : vuedata.selectedElement.agendas['SeimoNarioDarbotvarkėsĮvykis'],
                     "destroy": true,
                     "search": false,
                     "pageLength": 20,
                     "dom": '<<t>pi>',
+                    "order": [[ 0, "desc" ]],
                     "columns" : [
-                        { "data" : "@pabaiga" },
+                        { "data" : function(d) { 
+                            return d["@pradžia"].split(" ")[0];
+                          } 
+                        },
                         { "data" : "@pavadinimas" },
-                        { "data" : "@pradžia" },
                         { "data" : "@vieta" }
                     ]
                 });

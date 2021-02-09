@@ -259,11 +259,15 @@ div.dc-html-legend {
   padding: 5px 25px;
 }
 #iw-nav .navbar-brand img {
-  height: 30px;
+  height: 25px;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
 }
 #iw-nav .navbar-brand2 img {
   height: 40px;
   margin-right: 10px;
+  vertical-align: middle;
 }
 #iw-nav a {
   font-weight: bold;
@@ -606,13 +610,11 @@ div.dc-html-legend {
     display: none;
   }
 }
-@media only screen and (max-width: 1280px) {
-  .footer-bar .footer-counts .count-box.count-box-lobbyists, .footer-bar .footer-counts .count-box.count-box-institutions {
-    display: none;
-  }
-}
 .footer-bar .footer-counts .count-box.count-box-agendas {
   width: 200px;
+}
+.footer-bar .footer-counts .count-box.count-box-meetings {
+  width: 180px;
 }
 .footer-bar .footer-counts .count-box:first-child {
   margin-left: 10px;
@@ -746,8 +748,8 @@ div.dc-html-legend {
   font-size: 12px;
 }
 #detailsModal .agendas-table th {
-  background: #eee;
-  color: #666;
+  background: #f5f6f7;
+  color: #3a89c1;
 }
 #detailsModal .modal-title {
   text-align: center;
@@ -909,6 +911,7 @@ table.dataTable thead .sorting_desc_disabled {
 .dataTables_wrapper th {
   color: #3a89c1;
   text-align: left;
+  vertical-align: middle !important;
   width: 15%;
 }
 .dataTables_wrapper th.header-num {
@@ -984,6 +987,10 @@ table.dataTable tbody tr.selected .detailsModalBtn:hover, table.dataTable tbody 
   background: #d65b1e;
   border: none;
   color: #fff;
+}
+
+td.dt-center {
+  text-align: center !important;
 }
 
 /* POPOVER */
@@ -1166,8 +1173,11 @@ table.dataTable tbody tr.selected .detailsModalBtn:hover, table.dataTable tbody 
   font-size: 12px;
 }
 #detailsModal .meetings-count-info-container table th {
-  background: #eee;
-  color: #666;
+  background: #f5f6f7;
+  color: #3a89c1;
+}
+#detailsModal .meetings-count-info-container table td {
+  text-align: center;
 }
 
 /* Scroll to top button */

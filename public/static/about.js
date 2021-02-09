@@ -46589,7 +46589,7 @@ exports.default = _default;
       _c("div", { staticClass: "loader" }),
       _vm._v(" "),
       _c("div", { staticClass: "loader-text below" }, [
-        _vm._v("\n      Please wait a moment for the data to load ...\n    ")
+        _vm._v("\n      Prašome palaukti, kol bus įkelti duomenys\n    ")
       ])
     ])
   ])
