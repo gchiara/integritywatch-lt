@@ -451,15 +451,6 @@ div.dc-html-legend {
 .chart-container.tab_a_3 .dc-legend-item text {
   font-size: 12px;
 }
-.chart-container.tab_b_1 {
-  height: 570px;
-}
-.chart-container.tab_b_2 {
-  height: 570px;
-}
-.chart-container.tab_b_3 {
-  height: 570px;
-}
 
 .institution-filter-container {
   padding: 20px;
@@ -1217,20 +1208,6 @@ td.dt-center {
 .tabA .x.axis text {
   text-anchor: end !important;
   transform: rotate(-20deg);
-}
-
-.tabB .dc-chart g.row rect {
-  fill-opacity: 1;
-}
-
-/* Badges detail panel */
-.row-details-container .row-details-entry {
-  padding: 2px 0 2px 20px;
-  font-size: 13px;
-}
-.row-details-container .row-details-num {
-  display: inline-block;
-  width: 20px;
 }.overlay[data-v-e7ec53] {
   background-color: rgba(255, 255, 255, 0.9);
   z-index: 10001;

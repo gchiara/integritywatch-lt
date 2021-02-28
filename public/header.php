@@ -12,6 +12,12 @@
     <ul class="navbar-nav mr-auto">
     </ul>
     <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a href="./app.php" class="nav-link nav-link-main" :class="{active: page == 'tabA'}">Meetings</a>
+      </li>
+      <li class="nav-item">
+        <a href="./access-badges.php" class="nav-link nav-link-main" :class="{active: page == 'tabB'}">Badges</a>
+      </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Kitų šalių įrankiai
@@ -22,7 +28,6 @@
 			<a class="dropdown-item" href="https://www.integritywatch.gr/" target="_blank">Graikija</a>
 			<a class="dropdown-item" href="http://www.soldiepolitica.it/" target="_blank">Italija</a>
 			<a class="dropdown-item" href="https://deputatiuzdelnas.lv/" target="_blank">Latvija</a>
-			<a class="dropdown-item" href="https://manoseimas.lt/" target="_blank">Lithuania</a>
 			<a class="dropdown-item" href="https://www.integritywatch.nl/" target="_blank">Nyderlandai</a>
 			<a class="dropdown-item" href="http://varuhintegritete.transparency.si/" target="_blank">Slovėnija</a>
 			<a class="dropdown-item" href="https://integritywatch.es/" target="_blank">Ispanija</a>

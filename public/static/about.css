@@ -451,6 +451,15 @@ div.dc-html-legend {
 .chart-container.tab_a_3 .dc-legend-item text {
   font-size: 12px;
 }
+.chart-container.tab_b_1 {
+  height: 570px;
+}
+.chart-container.tab_b_2 {
+  height: 570px;
+}
+.chart-container.tab_b_3 {
+  height: 570px;
+}
 
 .institution-filter-container {
   padding: 20px;
@@ -1208,6 +1217,20 @@ td.dt-center {
 .tabA .x.axis text {
   text-anchor: end !important;
   transform: rotate(-20deg);
+}
+
+.tabB .dc-chart g.row rect {
+  fill-opacity: 1;
+}
+
+/* Badges detail panel */
+.row-details-container .row-details-entry {
+  padding: 2px 0 2px 20px;
+  font-size: 13px;
+}
+.row-details-container .row-details-num {
+  display: inline-block;
+  width: 20px;
 }.container {
   padding: 30px 0;
   padding-bottom: 50px;
@@ -1322,7 +1345,7 @@ td.dt-center {
   font-weight: 600;
   text-decoration: none;
   font-size: 20px;
-}.overlay[data-v-04b068] {
+}.overlay[data-v-e7ec53] {
   background-color: rgba(255, 255, 255, 0.9);
   z-index: 10001;
   top: 0;
@@ -1332,7 +1355,7 @@ td.dt-center {
   position: fixed;
   margin: 0;
 }
-.overlay .loader-container[data-v-04b068] {
+.overlay .loader-container[data-v-e7ec53] {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1340,7 +1363,7 @@ td.dt-center {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-.overlay .loader-container .loader[data-v-04b068] {
+.overlay .loader-container .loader[data-v-e7ec53] {
   border: 13px solid #f3f3f3;
   /* Light grey */
   border-top: 13px solid #138496;
@@ -1349,52 +1372,52 @@ td.dt-center {
   width: 120px;
   height: 120px;
   margin: 30px auto;
-  animation: spin-data-v-04b068 2s linear infinite;
+  animation: spin-data-v-e7ec53 2s linear infinite;
 }
-.overlay .loader-container .loader-text[data-v-04b068] {
+.overlay .loader-container .loader-text[data-v-e7ec53] {
   font-size: 20px;
   font-weight: 600;
 }
-.overlay .loader-container .loader-text.below[data-v-04b068] {
+.overlay .loader-container .loader-text.below[data-v-e7ec53] {
   color: #138496;
   font-weight: 600;
 }
-@keyframes spin-data-v-04b068 {
+@keyframes spin-data-v-e7ec53 {
 0% {
     transform: rotate(0deg);
 }
 100% {
     transform: rotate(360deg);
 }
-}.chart-header[data-v-fb3fc1] {
+}.chart-header[data-v-2c0ea8] {
   padding: 10px 5px;
   margin: 0;
   background: #fafafa;
 }
-.chart-header .chart-title[data-v-fb3fc1] {
+.chart-header .chart-title[data-v-2c0ea8] {
   font-size: 20px;
   text-align: left;
   color: #020c10;
 }
 @media only screen and (max-width: 1400px) {
-.chart-header .chart-title[data-v-fb3fc1] {
+.chart-header .chart-title[data-v-2c0ea8] {
     font-size: 18px;
 }
 }
 @media only screen and (max-width: 1250px) {
-.chart-header .chart-title[data-v-fb3fc1] {
+.chart-header .chart-title[data-v-2c0ea8] {
     font-size: 16px;
 }
 }
 @media only screen and (max-width: 767px) {
-.chart-header .chart-title[data-v-fb3fc1] {
+.chart-header .chart-title[data-v-2c0ea8] {
     font-size: 20px;
 }
 }
-.chart-header .chart-header-buttons[data-v-fb3fc1] {
+.chart-header .chart-header-buttons[data-v-2c0ea8] {
   text-align: right;
 }
-.chart-header .chart-header-buttons .btn-info[data-v-fb3fc1] {
+.chart-header .chart-header-buttons .btn-info[data-v-2c0ea8] {
   padding: 0px 10px;
   border-radius: 2px;
   font-weight: 600;

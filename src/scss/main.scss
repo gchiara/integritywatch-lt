@@ -199,6 +199,15 @@ $color_lobby: #449188;
       }
     }
   }
+  &.tab_b_1 {
+    height: 570px;
+  }
+  &.tab_b_2 {
+    height: 570px;
+  }
+  &.tab_b_3 {
+    height: 570px;
+  }
 }
 .institution-filter-container {
   padding: 20px;
@@ -977,6 +986,24 @@ td.dt-center {
   .x.axis text {
     text-anchor: end !important;
     transform: rotate(-20deg);
+  }
+}
+
+.tabB {
+  .dc-chart g.row rect {
+    fill-opacity: 1;
+  }
+}
+
+/* Badges detail panel */
+.row-details-container {
+  .row-details-entry {
+    padding: 2px 0 2px 20px;
+    font-size: 13px;
+  }
+  .row-details-num {
+    display: inline-block;
+    width: 20px;
   }
 }
 

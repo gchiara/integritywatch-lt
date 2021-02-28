@@ -351,7 +351,7 @@ json('./data/tab_a/p2b_ad_seimo_nariai.json?' + randomPar, (err, mpsDataset) => 
         csv('./data/tab_a/meetings_totals.csv?' + randomPar, (err, lobbyMeetingsDataset) => {
           csv('./data/tab_a/party_meetings.csv?' + randomPar, (err, partyMeetingsDataset) => {
             json('./data/tab_a/wordcloud.json?' + randomPar, (err, wordcloudMainData) => {
-              //Loop through data to aply fixes and calculations
+              //Loop through data to apply fixes and calculations
               var mps = mpsDataset.SeimoInformacija.SeimoKadencija.SeimoNarys;
               var factions = factionsDataset.SeimoInformacija.SeimoKadencija.SeimoFrakcija;
               var agendas = agendasDataset.SeimoInformacija.SeimoNarys;

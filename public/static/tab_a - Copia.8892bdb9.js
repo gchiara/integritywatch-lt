@@ -46719,7 +46719,7 @@ render._withStripped = true
       
       }
     })();
-},{"_css_loader":"C:/Users/ElaineG/AppData/Local/Yarn/config/global/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.esm.js"}],"tab_a.js":[function(require,module,exports) {
+},{"_css_loader":"C:/Users/ElaineG/AppData/Local/Yarn/config/global/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.esm.js"}],"tab_a - Copia.js":[function(require,module,exports) {
 "use strict";
 
 var _jquery = _interopRequireWildcard(require("jquery"));
@@ -47098,7 +47098,7 @@ for (var i = 0; i < 5; i++) {
         (0, _d3Request.csv)('./data/tab_a/meetings_totals.csv?' + randomPar, function (err, lobbyMeetingsDataset) {
           (0, _d3Request.csv)('./data/tab_a/party_meetings.csv?' + randomPar, function (err, partyMeetingsDataset) {
             (0, _d3Request.json)('./data/tab_a/wordcloud.json?' + randomPar, function (err, wordcloudMainData) {
-              //Loop through data to apply fixes and calculations
+              //Loop through data to aply fixes and calculations
               var mps = mpsDataset.SeimoInformacija.SeimoKadencija.SeimoNarys;
               var factions = factionsDataset.SeimoInformacija.SeimoKadencija.SeimoFrakcija;
               var agendas = agendasDataset.SeimoInformacija.SeimoNarys;
@@ -47970,7 +47970,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60732" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51684" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -48145,4 +48145,4 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["C:/Users/ElaineG/AppData/Local/Yarn/config/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","tab_a.js"], null)
+},{}]},{},["C:/Users/ElaineG/AppData/Local/Yarn/config/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","tab_a - Copia.js"], null)
