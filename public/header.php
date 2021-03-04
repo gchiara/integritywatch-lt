@@ -13,10 +13,10 @@
     </ul>
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a href="./app.php" class="nav-link nav-link-main" :class="{active: page == 'tabA'}">Meetings</a>
+        <a href="./app.php" class="nav-link nav-link-main" :class="{active: page == 'tabA'}">Darbotvarkės</a>
       </li>
       <li class="nav-item">
-        <a href="./access-badges.php" class="nav-link nav-link-main" :class="{active: page == 'tabB'}">Badges</a>
+        <a href="./access-badges.php" class="nav-link nav-link-main" :class="{active: page == 'tabB'}">Ilgalaikiai leidimai</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -36,10 +36,7 @@
         </div>
       </li>
       <li class="nav-item">
-        <a href="./about.php" class="nav-link">APIE</a>
-      </li>
-      <li class="nav-item">
-        <i class="material-icons nav-link icon-btn info-btn" @click="showInfo = !showInfo">info</i>
+        <a href="./about.php" class="nav-link">Apie</a>
       </li>
       <li class="nav-item">
         <a href="https://www.transparency.lt/paremk/" class="nav-link" target="_blank"><img src="./images/donate.png" class="donate-btn-img" alt="Donate" /></a>

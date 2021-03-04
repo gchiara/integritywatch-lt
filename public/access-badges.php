@@ -68,10 +68,11 @@
                   <thead>
                     <tr class="header">
                       <th class="header header-num">Nr</th> 
+                      <th class="header header-term">Vardas ir pavardė</th>
                       <th class="header header-name">Organizacija / įstaiga</th>
-                      <th class="header header-term">Pirmas vardas</th>
-                      <th class="header header-agenda">Pavardė</th>
+                      <th class="header header-agenda">Pareigos</th>
                       <th class="header header-meetings">Badges number</th>
+                      <th class="header header-meetings">Committee Meetings</th>
                     </tr>
                   </thead>
                 </table>
@@ -100,7 +101,7 @@
         <button class="reset-btn"><i class="material-icons">settings_backup_restore</i><span class="reset-btn-text">Atnaujinti</span></button>
         <div class="footer-buttons-right">
           <button @click="downloadDataset"><i class="material-icons">cloud_download</i></button>
-          <button class="btn-twitter" @click="share('twitter')"><img src="./images/twitter.png" /></button>
+          <!-- <button class="btn-twitter" @click="share('twitter')"><img src="./images/twitter.png" /></button> -->
           <button class="btn-fb" @click="share('facebook')"><img src="./images/facebook.png" /></button>
         </div>
       </div>

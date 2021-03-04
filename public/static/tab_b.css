@@ -274,7 +274,7 @@ div.dc-html-legend {
   color: #3a89c1;
 }
 #iw-nav a.active, #iw-nav a:hover {
-  color: #ff5400;
+  color: #369f3e;
 }
 #iw-nav .icon-btn {
   vertical-align: middle;
@@ -645,7 +645,7 @@ div.dc-html-legend {
 }
 .footer-bar .reset-btn {
   position: absolute;
-  right: 170px;
+  right: 130px;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -1231,6 +1231,35 @@ td.dt-center {
 .row-details-container .row-details-num {
   display: inline-block;
   width: 20px;
+}
+
+.legislation-select-container {
+  text-align: left;
+  padding-left: 5px;
+}
+.legislation-select-container .link-button {
+  border: none;
+  color: #fff;
+  display: inline-block;
+  margin: 5px 5px;
+  padding: 10px;
+  border-radius: 2px;
+  width: auto;
+  max-width: 90%;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #2a7aae;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+.legislation-select-container .link-button:hover {
+  color: #fff;
+  background-color: #1a6a9e;
+}
+.legislation-select-container .link-button.active {
+  color: #fff;
+  background-color: #369f3e;
 }.overlay[data-v-e7ec53] {
   background-color: rgba(255, 255, 255, 0.9);
   z-index: 10001;

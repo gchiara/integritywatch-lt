@@ -1,0 +1,1 @@
+<?php header("Location: http://www.chiaragirardelli.net/iw-lt/app.php"); ?>

@@ -46760,6 +46760,8 @@ window._ = _underscore.default;
 // Data object - is also used by Vue
 var vuedata = {
   page: 'tabA',
+  legislationSelected: 8,
+  showMeetingsCharts: true,
   loader: true,
   readMore: false,
   showInfo: true,
@@ -47080,6 +47082,17 @@ function genSelectedRowsCloudData() {
 
   vuedata.selectedRowsAgendasData = stringToCloudData(fullString);
   return;
+} //Get URL parameters
+
+
+function getParameterByName(name, url) {
+  if (!url) url = window.location.href;
+  name = name.replace(/[\[\]]/g, '\\$&');
+  var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+      results = regex.exec(url);
+  if (!results) return null;
+  if (!results[2]) return '';
+  return decodeURIComponent(results[2].replace(/\+/g, ' '));
 } //Generate random parameter for dynamic dataset loading (to avoid caching)
 
 
@@ -47088,16 +47101,41 @@ var randomCharacters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123
 
 for (var i = 0; i < 5; i++) {
   randomPar += randomCharacters.charAt(Math.floor(Math.random() * randomCharacters.length));
+}
+
+var mpsDatasetFile = './data/tab_a/legislation8/p2b_ad_seimo_nariai.json';
+var factionsDatasetFile = './data/tab_a/legislation8/p2b_ad_seimo_frakcijos.json';
+var agendasDatasetFile = './data/tab_a/legislation8/p2b_ad_sn_darbotvarkes.json';
+var photosDatasetFile = './data/tab_a/legislation8/photos.json';
+var lobbyMeetingsDatasetFile = './data/tab_a/legislation8/meetings_totals.csv';
+var partyMeetingsDatasetFile = './data/tab_a/legislation8/party_meetings.csv';
+var wordcloudMainDataFile = './data/tab_a/legislation8/wordcloud.json';
+var legislationSelected = getParameterByName('legislation');
+
+if (legislationSelected == '8' || legislationSelected == '9') {
+  vuedata.legislationSelected = legislationSelected;
+  mpsDatasetFile = './data/tab_a/legislation' + legislationSelected + '/p2b_ad_seimo_nariai.json';
+  factionsDatasetFile = './data/tab_a/legislation' + legislationSelected + '/p2b_ad_seimo_frakcijos.json';
+  agendasDatasetFile = './data/tab_a/legislation' + legislationSelected + '/p2b_ad_sn_darbotvarkes.json';
+  photosDatasetFile = './data/tab_a/legislation' + legislationSelected + '/photos.json';
+  lobbyMeetingsDatasetFile = './data/tab_a/legislation' + legislationSelected + '/meetings_totals.csv';
+  partyMeetingsDatasetFile = './data/tab_a/legislation' + legislationSelected + '/party_meetings.csv';
+  wordcloudMainDataFile = './data/tab_a/legislation' + legislationSelected + '/wordcloud.json';
+}
+
+if (legislationSelected == '9') {
+  vuedata.showMeetingsCharts = false;
+  vuedata.charts.mainTable.info = "Pamatykite, kaip parlamentarai viešina savo darbotvarkes, rikiuokite ir palyginkite parlamentarų aktyvumą paspausdami ant lentelės skilčių pavadinimų. Informacija apie Seimo narius atnaujinama remiantis atvirasi Seimo duomenimis. Interesų grupių duomenys renkami ir bus atnaujinti prieš 2021 m. Seimo rudens sesiją.";
 } //Load data and generate charts
 
 
-(0, _d3Request.json)('./data/tab_a/p2b_ad_seimo_nariai.json?' + randomPar, function (err, mpsDataset) {
-  (0, _d3Request.json)('./data/tab_a/photos.json?' + randomPar, function (err, photosDataset) {
-    (0, _d3Request.json)('./data/tab_a/p2b_ad_seimo_frakcijos.json?' + randomPar, function (err, factionsDataset) {
-      (0, _d3Request.json)('./data/tab_a/p2b_ad_sn_darbotvarkes.json?' + randomPar, function (err, agendasDataset) {
-        (0, _d3Request.csv)('./data/tab_a/meetings_totals.csv?' + randomPar, function (err, lobbyMeetingsDataset) {
-          (0, _d3Request.csv)('./data/tab_a/party_meetings.csv?' + randomPar, function (err, partyMeetingsDataset) {
-            (0, _d3Request.json)('./data/tab_a/wordcloud.json?' + randomPar, function (err, wordcloudMainData) {
+(0, _d3Request.json)(mpsDatasetFile + '?' + randomPar, function (err, mpsDataset) {
+  (0, _d3Request.json)(photosDatasetFile + '?' + randomPar, function (err, photosDataset) {
+    (0, _d3Request.json)(factionsDatasetFile + '?' + randomPar, function (err, factionsDataset) {
+      (0, _d3Request.json)(agendasDatasetFile + '?' + randomPar, function (err, agendasDataset) {
+        (0, _d3Request.csv)(lobbyMeetingsDatasetFile + '?' + randomPar, function (err, lobbyMeetingsDataset) {
+          (0, _d3Request.csv)(partyMeetingsDatasetFile + '?' + randomPar, function (err, partyMeetingsDataset) {
+            (0, _d3Request.json)(wordcloudMainDataFile + '?' + randomPar, function (err, wordcloudMainData) {
               //Loop through data to apply fixes and calculations
               var mps = mpsDataset.SeimoInformacija.SeimoKadencija.SeimoNarys;
               var factions = factionsDataset.SeimoInformacija.SeimoKadencija.SeimoFrakcija;
@@ -47146,9 +47184,16 @@ for (var i = 0; i < 5; i++) {
                   return x['last_name'].trim() == d['@pavardė'].trim() && x['first_name'].trim() == d['@vardas'].trim();
                 }); //Get photo url
 
-                d.photoUrl = _.find(photosDataset, function (x) {
+                d.photoUrl = '';
+
+                var photoEntry = _.find(photosDataset, function (x) {
                   return x['url'] == d['@biografijos_nuoroda'];
-                }).photoUrl; //Add totals to totals object
+                });
+
+                if (photoEntry) {
+                  d.photoUrl = photoEntry.photoUrl;
+                } //Add totals to totals object
+
 
                 if (d.lobbyMeetings) {
                   var a2017 = parseInt(d.lobbyMeetings["2017_Spring_total"]);
@@ -47195,6 +47240,20 @@ for (var i = 0; i < 5; i++) {
                 d.agendasString = "";
 
                 if (d.agendas) {
+                  if (vuedata.legislationSelected == '9') {
+                    //Filter agendas to only keep entries after 13 Nov 2020
+                    d.agendas["SeimoNarioDarbotvarkėsĮvykis"] = _.filter(d.agendas["SeimoNarioDarbotvarkėsĮvykis"], function (x) {
+                      var iniDate = parseInt(x["@pradžia"].split(" ")[0].replaceAll("-", ""));
+                      return iniDate >= 20201113;
+                    });
+                  } else {
+                    //Filter agendas to only keep entries before 13 Nov 2020
+                    d.agendas["SeimoNarioDarbotvarkėsĮvykis"] = _.filter(d.agendas["SeimoNarioDarbotvarkėsĮvykis"], function (x) {
+                      var iniDate = parseInt(x["@pradžia"].split(" ")[0].replaceAll("-", ""));
+                      return iniDate < 20201113;
+                    });
+                  }
+
                   d.agendasCount = d.agendas["SeimoNarioDarbotvarkėsĮvykis"].length;
                   totAgendas += parseInt(d.agendasCount);
 
@@ -47674,45 +47733,49 @@ for (var i = 0; i < 5; i++) {
                 };
 
                 $(".chart-container-table").delegate("tbody tr", "click", function () {
-                  var data = datatable.DataTable().row(this).data(); //Check if element is already selected and deselect
+                  if (vuedata.showMeetingsCharts) {
+                    var data = datatable.DataTable().row(this).data(); //Check if element is already selected and deselect
 
-                  var currentElIndex = _.findIndex(vuedata.selectedRows, function (x) {
-                    return x['@asmens_id'] == data['@asmens_id'];
-                  });
+                    var currentElIndex = _.findIndex(vuedata.selectedRows, function (x) {
+                      return x['@asmens_id'] == data['@asmens_id'];
+                    });
 
-                  if (currentElIndex > -1) {
-                    vuedata.selectedRows.splice(currentElIndex, 1);
-                    $(this).removeClass("selected");
-                  } else {
-                    if (vuedata.selectedRows.length > 3) {
-                      return;
-                    }
+                    if (currentElIndex > -1) {
+                      vuedata.selectedRows.splice(currentElIndex, 1);
+                      $(this).removeClass("selected");
+                    } else {
+                      if (vuedata.selectedRows.length > 3) {
+                        return;
+                      }
 
-                    vuedata.selectedRows.push(data);
-                    $(this).addClass("selected");
-                    $(this).attr("id", data['@asmens_id']);
-                  } //Refresh selected rows list tags
+                      vuedata.selectedRows.push(data);
+                      $(this).addClass("selected");
+                      $(this).attr("id", data['@asmens_id']);
+                    } //Refresh selected rows list tags
 
 
-                  regenTags();
-                  createMeetingsSelectedChart();
-                  genSelectedRowsCloudData();
-                  resetCloud();
+                    regenTags();
+                    createMeetingsSelectedChart();
+                    genSelectedRowsCloudData();
+                    resetCloud();
+                  }
                 }); //REMOVE SELECTED FROM TAG BUTTONS
 
                 $(".selected-rows-tags").on("click", "div.selected-tag-remove", function () {
-                  var rowId = $(this).attr("id");
+                  if (vuedata.showMeetingsCharts) {
+                    var rowId = $(this).attr("id");
 
-                  var currentElIndex = _.findIndex(vuedata.selectedRows, function (x) {
-                    return x['@asmens_id'] == rowId;
-                  });
+                    var currentElIndex = _.findIndex(vuedata.selectedRows, function (x) {
+                      return x['@asmens_id'] == rowId;
+                    });
 
-                  vuedata.selectedRows.splice(currentElIndex, 1);
-                  $("#dc-data-table").find("tr#" + rowId).removeClass("selected");
-                  regenTags();
-                  createMeetingsSelectedChart();
-                  genSelectedRowsCloudData();
-                  resetCloud();
+                    vuedata.selectedRows.splice(currentElIndex, 1);
+                    $("#dc-data-table").find("tr#" + rowId).removeClass("selected");
+                    regenTags();
+                    createMeetingsSelectedChart();
+                    genSelectedRowsCloudData();
+                    resetCloud();
+                  }
                 });
               }; //OPEN DETAILS MODAL FROM BUTTONS
 
@@ -47809,16 +47872,20 @@ for (var i = 0; i < 5; i++) {
                 }
 
                 searchDimension.filter(null);
-                $('#search-input').val(''); //Remove selected people, hide dynamic chart and show totals one
+                $('#search-input').val('');
 
-                vuedata.selectedRows = [];
-                $('.dataTable tr').removeClass('selected');
-                $('.selected-rows-tags').html("");
-                $('.selected-rows-title').html('Selected (' + vuedata.selectedRows.length + '/4):');
-                createMeetingsSelectedChart();
-                resetCloud(); //dc.redrawAll();
+                if (vuedata.showMeetingsCharts) {
+                  //Remove selected people, hide dynamic chart and show totals one
+                  vuedata.selectedRows = [];
+                  $('.dataTable tr').removeClass('selected');
+                  $('.selected-rows-tags').html("");
+                  $('.selected-rows-title').html('Selected (' + vuedata.selectedRows.length + '/4):');
+                  createMeetingsSelectedChart();
+                  resetCloud(); //dc.redrawAll();
 
-                resizeGraphs();
+                  resizeGraphs();
+                }
+
                 customCounters.redraw();
               };
 
@@ -47832,10 +47899,17 @@ for (var i = 0; i < 5; i++) {
                 RefreshTable();
               }); //Render charts
 
-              createMeetingsTotalsChart();
-              createMeetingsGroupsChart();
+              if (vuedata.showMeetingsCharts) {
+                createMeetingsTotalsChart();
+                createMeetingsGroupsChart();
+              }
+
               createTable();
-              createWordcloudChart();
+
+              if (vuedata.showMeetingsCharts) {
+                createWordcloudChart();
+              }
+
               $('.dataTables_wrapper').append($('.dataTables_length')); //Toggle last charts functionality and fix for responsiveness
 
               vuedata.showAllCharts = false;

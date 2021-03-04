@@ -28,7 +28,7 @@ $color_lobby: #449188;
     font-weight: bold;
     color: $color_TI;
     &.active, &:hover {
-      color: #ff5400;
+      color: #369f3e;
     }
   }
   .icon-btn {
@@ -383,7 +383,7 @@ $color_lobby: #449188;
   }
   .reset-btn {
     position: absolute;
-    right: 170px;
+    right: 130px;
     top: 50%;
     -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -1004,6 +1004,35 @@ td.dt-center {
   .row-details-num {
     display: inline-block;
     width: 20px;
+  }
+}
+
+.legislation-select-container {
+  text-align: left;
+  padding-left: 5px;
+  .link-button {
+    border: none;
+    color: #fff;
+    display: inline-block;
+    margin: 5px 5px;
+    padding: 10px;
+    border-radius: 2px;
+    width: auto;
+    max-width: 90%;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #2a7aae;
+    text-decoration: none;
+    transition: all .4s;
+    &:hover {
+      color: #fff;
+      background-color: #1a6a9e;
+    }
+    &.active {
+      color: #fff;
+      background-color: #369f3e;
+    }
   }
 }
 

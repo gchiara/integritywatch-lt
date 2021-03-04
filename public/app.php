@@ -39,9 +39,15 @@
                 </div>
               </div>
             </div>
+            <div class="row">
+              <div class="col-md-12 chart-col legislation-select-container">
+                <a href="./app.php?legislation=9" class="link-button" :class="{active: legislationSelected == 9}">XIII kadencija</a>
+                <a href="./app.php?legislation=8" class="link-button" :class="{active: legislationSelected == 8}">XII kadencija</a>
+              </div>
+            </div>
           </div>
           <!-- CHARTS - FIRST ROW -->
-          <div class="col-md-6 chart-col">
+          <div class="col-md-6 chart-col" v-if="showMeetingsCharts">
             <div class="boxed-container chart-container tab_a_1" id="meetingstotals_chart_container">
               <chart-header :title="charts.meetingsTotals.title" :info="charts.meetingsTotals.info" ></chart-header>
               <div class="chart-inner" id="meetingstotals_chart"></div>
@@ -51,18 +57,18 @@
               <div class="chart-inner" id="meetingsselected_chart"></div>
             </div>
           </div>
-          <div class="col-md-6 chart-col">
+          <div class="col-md-6 chart-col" v-if="showMeetingsCharts">
             <div class="boxed-container chart-container  tab_a_2">
               <chart-header :title="charts.wordcloud.title" :info="charts.wordcloud.info" ></chart-header>
               <div class="chart-inner" id="wordcloud_chart"></div>
             </div>
           </div>
           <!-- TOGGLE BUTTON -->
-          <div class="col-md-12 toggle-btn-container">
+          <div class="col-md-12 toggle-btn-container" v-if="showMeetingsCharts">
             <button class="toggle-btn" id="charts-toggle-btn" @click="showAllCharts = !showAllCharts">Daugiau</button>
           </div>
           <!-- CHARTS - SECOND ROW - CAN BE TOGGLED -->
-          <div class="col-md-6 chart-col" v-show="showAllCharts">
+          <div class="col-md-6 chart-col" v-show="showAllCharts" v-if="showMeetingsCharts">
             <div class="boxed-container chart-container  tab_a_3">
               <chart-header :title="charts.meetingsGroups.title" :info="charts.meetingsGroups.info" ></chart-header>
               <div class="chart-inner" id="meetingsgroups_chart"></div>
@@ -184,7 +190,7 @@
         <button class="reset-btn"><i class="material-icons">settings_backup_restore</i><span class="reset-btn-text">Atnaujinti</span></button>
         <div class="footer-buttons-right">
           <button @click="downloadDataset"><i class="material-icons">cloud_download</i></button>
-          <button class="btn-twitter" @click="share('twitter')"><img src="./images/twitter.png" /></button>
+          <!-- <button class="btn-twitter" @click="share('twitter')"><img src="./images/twitter.png" /></button> -->
           <button class="btn-fb" @click="share('facebook')"><img src="./images/facebook.png" /></button>
         </div>
       </div>

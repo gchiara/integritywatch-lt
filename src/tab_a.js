@@ -25,6 +25,8 @@ import ChartHeader from './components/ChartHeader.vue';
 
 var vuedata = {
   page: 'tabA',
+  legislationSelected: 8,
+  showMeetingsCharts: true,
   loader: true,
   readMore: false,
   showInfo: true,
@@ -336,6 +338,16 @@ function genSelectedRowsCloudData() {
   vuedata.selectedRowsAgendasData = stringToCloudData(fullString);
   return;
 }
+//Get URL parameters
+function getParameterByName(name, url) {
+  if (!url) url = window.location.href;
+  name = name.replace(/[\[\]]/g, '\\$&');
+  var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+      results = regex.exec(url);
+  if (!results) return null;
+  if (!results[2]) return '';
+  return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
 
 //Generate random parameter for dynamic dataset loading (to avoid caching)
 var randomPar = '';
@@ -343,14 +355,39 @@ var randomCharacters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123
 for ( var i = 0; i < 5; i++ ) {
   randomPar += randomCharacters.charAt(Math.floor(Math.random() * randomCharacters.length));
 }
+
+var mpsDatasetFile = './data/tab_a/legislation8/p2b_ad_seimo_nariai.json';
+var factionsDatasetFile = './data/tab_a/legislation8/p2b_ad_seimo_frakcijos.json';
+var agendasDatasetFile = './data/tab_a/legislation8/p2b_ad_sn_darbotvarkes.json';
+var photosDatasetFile = './data/tab_a/legislation8/photos.json';
+var lobbyMeetingsDatasetFile = './data/tab_a/legislation8/meetings_totals.csv';
+var partyMeetingsDatasetFile = './data/tab_a/legislation8/party_meetings.csv';
+var wordcloudMainDataFile = './data/tab_a/legislation8/wordcloud.json';
+
+var legislationSelected = getParameterByName('legislation');
+if(legislationSelected == '8' || legislationSelected == '9') {
+  vuedata.legislationSelected = legislationSelected;
+  mpsDatasetFile = './data/tab_a/legislation'+legislationSelected+'/p2b_ad_seimo_nariai.json';
+  factionsDatasetFile = './data/tab_a/legislation'+legislationSelected+'/p2b_ad_seimo_frakcijos.json';
+  agendasDatasetFile = './data/tab_a/legislation'+legislationSelected+'/p2b_ad_sn_darbotvarkes.json';
+  photosDatasetFile = './data/tab_a/legislation'+legislationSelected+'/photos.json';
+  lobbyMeetingsDatasetFile = './data/tab_a/legislation'+legislationSelected+'/meetings_totals.csv';
+  partyMeetingsDatasetFile = './data/tab_a/legislation'+legislationSelected+'/party_meetings.csv';
+  wordcloudMainDataFile = './data/tab_a/legislation'+legislationSelected+'/wordcloud.json';
+}
+if(legislationSelected == '9') {
+  vuedata.showMeetingsCharts = false;
+  vuedata.charts.mainTable.info = "Pamatykite, kaip parlamentarai viešina savo darbotvarkes, rikiuokite ir palyginkite parlamentarų aktyvumą paspausdami ant lentelės skilčių pavadinimų. Informacija apie Seimo narius atnaujinama remiantis atvirasi Seimo duomenimis. Interesų grupių duomenys renkami ir bus atnaujinti prieš 2021 m. Seimo rudens sesiją.";
+}
+
 //Load data and generate charts
-json('./data/tab_a/p2b_ad_seimo_nariai.json?' + randomPar, (err, mpsDataset) => {
-  json('./data/tab_a/photos.json?' + randomPar, (err, photosDataset) => {
-    json('./data/tab_a/p2b_ad_seimo_frakcijos.json?' + randomPar, (err, factionsDataset) => {
-      json('./data/tab_a/p2b_ad_sn_darbotvarkes.json?' + randomPar, (err, agendasDataset) => {
-        csv('./data/tab_a/meetings_totals.csv?' + randomPar, (err, lobbyMeetingsDataset) => {
-          csv('./data/tab_a/party_meetings.csv?' + randomPar, (err, partyMeetingsDataset) => {
-            json('./data/tab_a/wordcloud.json?' + randomPar, (err, wordcloudMainData) => {
+json(mpsDatasetFile + '?' + randomPar, (err, mpsDataset) => {
+  json(photosDatasetFile + '?' + randomPar, (err, photosDataset) => {
+    json(factionsDatasetFile + '?' + randomPar, (err, factionsDataset) => {
+      json(agendasDatasetFile + '?' + randomPar, (err, agendasDataset) => {
+        csv(lobbyMeetingsDatasetFile + '?' + randomPar, (err, lobbyMeetingsDataset) => {
+          csv(partyMeetingsDatasetFile + '?' + randomPar, (err, partyMeetingsDataset) => {
+            json(wordcloudMainDataFile + '?' + randomPar, (err, wordcloudMainData) => {
               //Loop through data to apply fixes and calculations
               var mps = mpsDataset.SeimoInformacija.SeimoKadencija.SeimoNarys;
               var factions = factionsDataset.SeimoInformacija.SeimoKadencija.SeimoFrakcija;
@@ -386,7 +423,11 @@ json('./data/tab_a/p2b_ad_seimo_nariai.json?' + randomPar, (err, mpsDataset) => 
                 d.agendas = _.find(agendas, function(x) { return x['@asmens_id'] == d['@asmens_id']});
                 d.lobbyMeetings = _.find(lobbyMeetingsDataset, function(x) { return x['last_name'].trim() == d['@pavardė'].trim() && x['first_name'].trim() == d['@vardas'].trim()});
                 //Get photo url
-                d.photoUrl = _.find(photosDataset, function(x) { return x['url'] == d['@biografijos_nuoroda']}).photoUrl;
+                d.photoUrl = '';
+                var photoEntry = _.find(photosDataset, function(x) { return x['url'] == d['@biografijos_nuoroda']});
+                if(photoEntry) {
+                  d.photoUrl = photoEntry.photoUrl;
+                }
                 //Add totals to totals object
                 if(d.lobbyMeetings) {
                   var a2017 = parseInt(d.lobbyMeetings["2017_Spring_total"]);
@@ -410,6 +451,19 @@ json('./data/tab_a/p2b_ad_seimo_nariai.json?' + randomPar, (err, mpsDataset) => 
                 d.agendasCount = 0;
                 d.agendasString = "";
                 if(d.agendas) {
+                  if(vuedata.legislationSelected == '9') {
+                    //Filter agendas to only keep entries after 13 Nov 2020
+                    d.agendas["SeimoNarioDarbotvarkėsĮvykis"] = _.filter(d.agendas["SeimoNarioDarbotvarkėsĮvykis"], function(x) { 
+                      var iniDate = parseInt(x["@pradžia"].split(" ")[0].replaceAll("-",""));
+                      return iniDate >= 20201113; 
+                    });
+                  } else {
+                    //Filter agendas to only keep entries before 13 Nov 2020
+                    d.agendas["SeimoNarioDarbotvarkėsĮvykis"] = _.filter(d.agendas["SeimoNarioDarbotvarkėsĮvykis"], function(x) { 
+                      var iniDate = parseInt(x["@pradžia"].split(" ")[0].replaceAll("-",""));
+                      return iniDate < 20201113; 
+                    });
+                  }
                   d.agendasCount = d.agendas["SeimoNarioDarbotvarkėsĮvykis"].length;
                   totAgendas += parseInt(d.agendasCount);
                   _.each(d.agendas.SeimoNarioDarbotvarkėsĮvykis, function(a) {
@@ -880,34 +934,38 @@ json('./data/tab_a/p2b_ad_seimo_nariai.json?' + randomPar, (err, mpsDataset) => 
                   });
                 }
                 $(".chart-container-table").delegate("tbody tr", "click", function() {
-                  var data = datatable.DataTable().row( this ).data();
-                  //Check if element is already selected and deselect
-                  var currentElIndex = _.findIndex(vuedata.selectedRows, function(x) { return x['@asmens_id'] == data['@asmens_id']; });
-                  if(currentElIndex  > -1) {
-                    vuedata.selectedRows.splice(currentElIndex, 1);
-                    $(this).removeClass("selected");
-                  } else {
-                    if(vuedata.selectedRows.length > 3) { return; }
-                    vuedata.selectedRows.push(data);
-                    $(this).addClass("selected");
-                    $(this).attr("id", data['@asmens_id']);
+                  if(vuedata.showMeetingsCharts) {
+                    var data = datatable.DataTable().row( this ).data();
+                    //Check if element is already selected and deselect
+                    var currentElIndex = _.findIndex(vuedata.selectedRows, function(x) { return x['@asmens_id'] == data['@asmens_id']; });
+                    if(currentElIndex  > -1) {
+                      vuedata.selectedRows.splice(currentElIndex, 1);
+                      $(this).removeClass("selected");
+                    } else {
+                      if(vuedata.selectedRows.length > 3) { return; }
+                      vuedata.selectedRows.push(data);
+                      $(this).addClass("selected");
+                      $(this).attr("id", data['@asmens_id']);
+                    }
+                    //Refresh selected rows list tags
+                    regenTags();
+                    createMeetingsSelectedChart();
+                    genSelectedRowsCloudData();
+                    resetCloud();
                   }
-                  //Refresh selected rows list tags
-                  regenTags();
-                  createMeetingsSelectedChart();
-                  genSelectedRowsCloudData();
-                  resetCloud();
                 });
                 //REMOVE SELECTED FROM TAG BUTTONS
                 $(".selected-rows-tags").on("click", "div.selected-tag-remove", function(){
-                  var rowId = $(this).attr("id");
-                  var currentElIndex = _.findIndex(vuedata.selectedRows, function(x) { return x['@asmens_id'] == rowId; });
-                  vuedata.selectedRows.splice(currentElIndex, 1);
-                  $("#dc-data-table").find("tr#" + rowId).removeClass("selected");
-                  regenTags();
-                  createMeetingsSelectedChart();
-                  genSelectedRowsCloudData();
-                  resetCloud();
+                  if(vuedata.showMeetingsCharts) {
+                    var rowId = $(this).attr("id");
+                    var currentElIndex = _.findIndex(vuedata.selectedRows, function(x) { return x['@asmens_id'] == rowId; });
+                    vuedata.selectedRows.splice(currentElIndex, 1);
+                    $("#dc-data-table").find("tr#" + rowId).removeClass("selected");
+                    regenTags();
+                    createMeetingsSelectedChart();
+                    genSelectedRowsCloudData();
+                    resetCloud();
+                  }
                 });
               }
               
@@ -999,16 +1057,19 @@ json('./data/tab_a/p2b_ad_seimo_nariai.json?' + randomPar, (err, mpsDataset) => 
                 }
                 searchDimension.filter(null);
                 $('#search-input').val('');
-                //Remove selected people, hide dynamic chart and show totals one
-                vuedata.selectedRows = [];
-                $('.dataTable tr').removeClass('selected');
-                $('.selected-rows-tags').html("");
-                $('.selected-rows-title').html('Selected ('+vuedata.selectedRows.length+'/4):');
-                createMeetingsSelectedChart();
-                resetCloud();
-                //dc.redrawAll();
-                resizeGraphs();
+                if(vuedata.showMeetingsCharts) {
+                  //Remove selected people, hide dynamic chart and show totals one
+                  vuedata.selectedRows = [];
+                  $('.dataTable tr').removeClass('selected');
+                  $('.selected-rows-tags').html("");
+                  $('.selected-rows-title').html('Selected ('+vuedata.selectedRows.length+'/4):');
+                  createMeetingsSelectedChart();
+                  resetCloud();
+                  //dc.redrawAll();
+                  resizeGraphs();
+                }
                 customCounters.redraw();
+                
               }
               var resetCloud = function() {
                 d3.selectAll("#" + charts.wordcloud.divId + " svg").remove();
@@ -1020,10 +1081,14 @@ json('./data/tab_a/p2b_ad_seimo_nariai.json?' + randomPar, (err, mpsDataset) => 
               })
               
               //Render charts
-              createMeetingsTotalsChart();
-              createMeetingsGroupsChart();
+              if(vuedata.showMeetingsCharts) {
+                createMeetingsTotalsChart();
+                createMeetingsGroupsChart();
+              }
               createTable();
-              createWordcloudChart();
+              if(vuedata.showMeetingsCharts) {
+                createWordcloudChart();
+              }
 
               $('.dataTables_wrapper').append($('.dataTables_length'));
 

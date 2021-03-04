@@ -73,12 +73,12 @@ new Vue({
   methods: {
     //Share
     downloadDataset: function () {
-      window.open('/data/tab_a/meetings_totals.csv');
+      window.open('/data/tab_b/badges.csv');
     },
     share: function (platform) {
       if(platform == 'twitter'){
         var thisPage = window.location.href.split('?')[0];
-        var shareText = 'Manoseimas.lt - SUŽINOK, SU KUO SUSITINKA SEIMO NARIAI ' + thisPage;
+        var shareText = 'Manoseimas.lt ' + thisPage;
         var shareURL = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(shareText);
         window.open(shareURL, '_blank');
         return;
@@ -101,8 +101,8 @@ $(function () {
 //Charts
 var charts = {
   orgType: {
-    chart: new dc.PieChart("#orgtype_chart"),
-    type: 'pie',
+    chart: new dc.RowChart("#orgtype_chart"),
+    type: 'row',
     divId: 'orgtype_chart'
   },
   years: {
@@ -245,8 +245,10 @@ var randomCharacters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123
 for ( var i = 0; i < 5; i++ ) {
   randomPar += randomCharacters.charAt(Math.floor(Math.random() * randomCharacters.length));
 }
+
 //Load data and generate charts
 csv('./data/tab_b/badges.csv?' + randomPar, (err, badges) => {
+csv('./data/tab_b/meetings.csv?' + randomPar, (err, meetings) => {
   //Loop through mps to link and tidy data
   var people = [];
   _.each(badges, function (d) {
@@ -254,6 +256,7 @@ csv('./data/tab_b/badges.csv?' + randomPar, (err, badges) => {
     if(listedPerson) {
       listedPerson.badges_num ++;
       var thisBadge = {
+        "organisation_institution": d.organisation_institution,
         "org_inst_category": d.org_inst_category,
         "issue_year": d.issue_year,
         "issue_date": d.issue_date,
@@ -267,10 +270,18 @@ csv('./data/tab_b/badges.csv?' + randomPar, (err, badges) => {
         "surname": d.surname,
         "organisation_institution": d.organisation_institution,
         "org_inst_category": d.org_inst_category,
+        "profession": d.profession,
         "badges_num": 1,
-        "badges": []
+        "badges": [],
+        "meetings_num": 0
+      }
+      //Find meetings num
+      var meetingsNum = _.find(meetings, function(x) { return x.ID == d.ID });
+      if(meetingsNum) {
+        newPerson.meetings_num = meetingsNum.num;
       }
       var thisBadge = {
+        "organisation_institution": d.organisation_institution,
         "org_inst_category": d.org_inst_category,
         "issue_year": d.issue_year,
         "issue_date": d.issue_date,
@@ -303,7 +314,7 @@ csv('./data/tab_b/badges.csv?' + randomPar, (err, badges) => {
   });
 
   //Chart 1
-  var createOrgTypeChart = function() {
+  var createOrgTypeChart_bkp = function() {
     var chart = charts.orgType.chart;
     var dimension = ndx.dimension(function (d) {
       return d.org_inst_category;
@@ -330,6 +341,53 @@ csv('./data/tab_b/badges.csv?' + randomPar, (err, badges) => {
       .dimension(dimension)
       .ordinalColors(vuedata.colors.generic2)
       .group(group);
+    chart.render();
+    chart.on('filtered', function(c) { 
+      UpdateTable();
+      dc.redrawAll() 
+    });
+  }
+
+  //Chart 3
+  var createOrgTypeChart = function() {
+    var chart = charts.orgType.chart;
+    var dimension = ndx.dimension(function (d) {
+        return d.org_inst_category;
+    });
+    var group = dimension.group().reduceSum(function (d) {
+        return 1;
+    });
+    var filteredGroup = (function(source_group) {
+      return {
+        all: function() {
+          return source_group.top(100).filter(function(d) {
+            return (d.value != 0);
+          });
+        }
+      };
+    })(group);
+    var width = recalcWidth(charts.orgType.divId);
+    var charsLength = recalcCharsLength(width);
+    chart
+      .width(width)
+      .height(450)
+      .margins({top: 0, left: 0, right: 0, bottom: 20})
+      .group(filteredGroup)
+      .dimension(dimension)
+      .colorCalculator(function(d, i) {
+        return vuedata.colors.default1;
+      })
+      .label(function (d) {
+          if(d.key.length > charsLength){
+            return d.key.substring(0,charsLength) + '...';
+          }
+          return d.key;
+      })
+      .title(function (d) {
+          return d.key + ': ' + d.value;
+      })
+      .elasticX(true)
+      .xAxis().ticks(4);
     chart.render();
     chart.on('filtered', function(c) { 
       UpdateTable();
@@ -457,8 +515,9 @@ csv('./data/tab_b/badges.csv?' + randomPar, (err, badges) => {
           "orderable": true,
           "targets": 1,
           "defaultContent":"N/A",
+          "className": "",
           "data": function(d) {
-            return d.organisation_institution;
+            return d.name + " " + d.surname;
           }
         },
         {
@@ -466,9 +525,8 @@ csv('./data/tab_b/badges.csv?' + randomPar, (err, badges) => {
           "orderable": true,
           "targets": 2,
           "defaultContent":"N/A",
-          "className": "",
           "data": function(d) {
-            return d.name;
+            return d.organisation_institution;
           }
         },
         {
@@ -478,7 +536,8 @@ csv('./data/tab_b/badges.csv?' + randomPar, (err, badges) => {
           "defaultContent":"N/A",
           "className": "",
           "data": function(d) {
-            return d.surname;
+            console.log(d);
+            return d.profession;
           }
         },
         {
@@ -489,6 +548,16 @@ csv('./data/tab_b/badges.csv?' + randomPar, (err, badges) => {
           "className": "",
           "data": function(d) {
             return d.badges_num;
+          }
+        },
+        {
+          "searchable": false,
+          "orderable": true,
+          "targets": 5,
+          "defaultContent":"N/A",
+          "className": "",
+          "data": function(d) {
+            return d.meetings_num;
           }
         }
       ],
@@ -529,7 +598,7 @@ csv('./data/tab_b/badges.csv?' + randomPar, (err, badges) => {
             var badgesCount = 0;
             _.each(data.badges, function (a) {
               badgesCount ++;
-              rowInfoContent += "<div class='row-details-entry'><span class='row-details-num'>" + badgesCount + ".</span> " + a.issue_date + " - " + a.valid_until + "</div>";
+              rowInfoContent += "<div class='row-details-entry'><span class='row-details-num'>" + badgesCount + ".</span> " + a.organisation_institution + " - " + a.org_inst_category + " - " + a.issue_date + " - " + a.valid_until + "</div>";
             });
             rowInfoContent += "</div>";
             row.child(rowInfoContent).show();
@@ -693,4 +762,5 @@ csv('./data/tab_b/badges.csv?' + randomPar, (err, badges) => {
     resizeGraphs();
   };
 
+});
 });
