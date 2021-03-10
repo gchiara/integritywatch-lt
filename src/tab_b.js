@@ -222,6 +222,38 @@ function addcommas(x){
   }
   return x;
 }
+//Calc badge data
+function calcBadgeDate(b){
+  var badgeDateNum = 0;
+  var excludeStrings = ["", "Neterminuotai", "kol eina šias pareigas", "Nenurodyta", "iki jos kadencijos pab., vadovaujantis Seimo valdybos 2016 m. rugpjūčio 17 d. sprendimu Nr. SV-S-1632"]
+  var issueDate = b.issue_date.trim().replace("  "," ");
+  var issueYear = b.issue_year.trim().replace("  "," ");
+  var validUntil = b.valid_until.trim().replace("  "," ");
+  if (validUntil && excludeStrings.indexOf(validUntil) == -1) {
+    var validUntilSplit = validUntil.split(" ");
+    //Some valid_until have 2 dates, slash separated
+    if(validUntil.indexOf("/") > -1) {
+      validUntilSplit = validUntil.split("/")[0].split(" ");
+    }
+    if(validUntilSplit.length > 2) {
+      badgeDateNum = parseInt(validUntilSplit[0] + validUntilSplit[1] + validUntilSplit[2]);
+    } else {
+      badgeDateNum = parseInt(validUntilSplit[0]);
+    }
+  } else if(issueDate && issueDate !== "Nenurodyta" && issueDate !== "") {
+    var issueDateSplit = issueDate.split(" ");
+    if(issueDateSplit.length > 2) {
+      badgeDateNum = parseInt(issueDateSplit[0] + issueDateSplit[1] + issueDateSplit[2]);
+    } else {
+      badgeDateNum = parseInt(issueDateSplit[0]);
+    }
+  } else if (issueYear && excludeStrings.indexOf(issueYear) == -1) {
+    badgeDateNum = parseInt(issueYear);
+  } else {
+    console.log(b);
+  }
+  return badgeDateNum;
+}
 //Custom date order for dataTables
 var dmy = d3.timeParse("%d/%m/%Y");
 jQuery.extend( jQuery.fn.dataTableExt.oSort, {
@@ -258,11 +290,20 @@ csv('./data/tab_b/meetings.csv?' + randomPar, (err, meetings) => {
       var thisBadge = {
         "organisation_institution": d.organisation_institution,
         "org_inst_category": d.org_inst_category,
+        "profession": d.profession,
         "issue_year": d.issue_year,
         "issue_date": d.issue_date,
         "valid_until": d.valid_until
       }
       listedPerson.badges.push(thisBadge);
+      //Compare badge date, if this is more recent, update profession and org
+      var thisBadgeDate = calcBadgeDate(thisBadge);
+      if(listedPerson.latest_badge_date < thisBadgeDate) {
+        listedPerson.profession = d.profession;
+        listedPerson.org_inst_category = d.org_inst_category;
+        listedPerson.organisation_institution = d.organisation_institution;
+        listedPerson.latest_badge_date = thisBadgeDate;
+      }
     } else {
       var newPerson = {
         "ID": d.ID,
@@ -273,6 +314,7 @@ csv('./data/tab_b/meetings.csv?' + randomPar, (err, meetings) => {
         "profession": d.profession,
         "badges_num": 1,
         "badges": [],
+        "latest_badge_date": 0,
         "meetings_num": 0
       }
       //Find meetings num
@@ -283,6 +325,7 @@ csv('./data/tab_b/meetings.csv?' + randomPar, (err, meetings) => {
       var thisBadge = {
         "organisation_institution": d.organisation_institution,
         "org_inst_category": d.org_inst_category,
+        "profession": d.profession,
         "issue_year": d.issue_year,
         "issue_date": d.issue_date,
         "valid_until": d.valid_until
@@ -536,7 +579,6 @@ csv('./data/tab_b/meetings.csv?' + randomPar, (err, meetings) => {
           "defaultContent":"N/A",
           "className": "",
           "data": function(d) {
-            console.log(d);
             return d.profession;
           }
         },
@@ -545,7 +587,7 @@ csv('./data/tab_b/meetings.csv?' + randomPar, (err, meetings) => {
           "orderable": true,
           "targets": 4,
           "defaultContent":"N/A",
-          "className": "",
+          "className": "dt-center",
           "data": function(d) {
             return d.badges_num;
           }
@@ -555,7 +597,7 @@ csv('./data/tab_b/meetings.csv?' + randomPar, (err, meetings) => {
           "orderable": true,
           "targets": 5,
           "defaultContent":"N/A",
-          "className": "",
+          "className": "dt-center",
           "data": function(d) {
             return d.meetings_num;
           }
@@ -598,7 +640,7 @@ csv('./data/tab_b/meetings.csv?' + randomPar, (err, meetings) => {
             var badgesCount = 0;
             _.each(data.badges, function (a) {
               badgesCount ++;
-              rowInfoContent += "<div class='row-details-entry'><span class='row-details-num'>" + badgesCount + ".</span> " + a.organisation_institution + " - " + a.org_inst_category + " - " + a.issue_date + " - " + a.valid_until + "</div>";
+              rowInfoContent += "<div class='row-details-entry'><span class='row-details-num'>" + badgesCount + ".</span> " + a.organisation_institution + " - " + a.profession + " - " + a.issue_date + " - " + a.valid_until + "</div>";
             });
             rowInfoContent += "</div>";
             row.child(rowInfoContent).show();
@@ -649,6 +691,7 @@ csv('./data/tab_b/meetings.csv?' + randomPar, (err, meetings) => {
     function throttle() {
       window.clearTimeout(throttleTimer);
       throttleTimer = window.setTimeout(function() {
+          UpdateTable();
           dc.redrawAll();
       }, 250);
     }
@@ -662,7 +705,10 @@ csv('./data/tab_b/meetings.csv?' + randomPar, (err, meetings) => {
       }
     }
     searchDimension.filter(null);
+    idDimension.filter(null);
+    idDimensionPeople.filter(null);
     $('#search-input').val('');
+    RefreshTable();
     dc.redrawAll();
   }
   $('.reset-btn').click(function(){

@@ -68,11 +68,11 @@
                   <thead>
                     <tr class="header">
                       <th class="header header-num">Nr</th> 
-                      <th class="header header-term">Vardas ir pavardė</th>
-                      <th class="header header-name">Organizacija / įstaiga</th>
-                      <th class="header header-agenda">Pareigos</th>
-                      <th class="header header-meetings">Badges number</th>
-                      <th class="header header-meetings">Committee Meetings</th>
+                      <th class="header header-badges1">Vardas ir pavardė</th>
+                      <th class="header header-badges2">Organizacija / įstaiga</th>
+                      <th class="header header-badges3">Pareigos</th>
+                      <th class="header header-badges4">Leidimų skaičius</th>
+                      <th class="header header-badges5">Dalyvavimas komitetų klausimų svarstymuose</th>
                     </tr>
                   </thead>
                 </table>

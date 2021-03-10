@@ -6,7 +6,8 @@ if (($handle = fopen("data/tab_b/badges_unencrypted.csv", "r")) !== FALSE) {
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
         $num = count($data);
         if($row > 0) {
-          $data[0] = md5($data[0]);
+          $clean_id = trim(str_replace("  ", " ", $data[0]));
+          $data[0] = md5($clean_id);
         }
         fputcsv($handle2, $data);
         $row++;
@@ -23,7 +24,8 @@ if (($handle = fopen("data/tab_b/meetings_unencrypted.csv", "r")) !== FALSE) {
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
         $num = count($data);
         if($row > 0) {
-          $data[0] = md5($data[0]);
+          $clean_id = trim(str_replace("  ", " ", $data[0]));
+          $data[0] = md5($clean_id);
         }
         fputcsv($handle2, $data);
         $row++;
