@@ -1,4 +1,4 @@
-ID,name,surname,organisation_institution,profession,org_inst_category,issue_year,issue_date,valid_until
+ID,name,surname,organisation_institution,profession,org_inst_category,issue_year,issue_date,valid_until 
 Adas Jakubauskas,Adas,Jakubauskas,Lietuvos gyventojų genocido ir rezistencijos tyrimo centras,,"Kita viešojo sektoriaus institucija, įstaiga",2020,2020,2021 07 21
 Adelė Štelmokienė,Adelė,Štelmokienė,LR Seimas,Seimo nario A. Nekrošiaus visuomeninė konsultantė,Seimas,2018,2018,2020 11 12
 Adolfas Jasinevičius,Adolfas,Jasinevičius,LR Žemės ūkio rūmai,,Verslo asociacija,2016,2016 11 17,2017 11 28
@@ -248,7 +248,7 @@ Andrius Tučkus,Andrius,Tučkus,Visuomeninė taryba prie Laisvės kovų ir valst
 Andrius Utka,Andrius,Utka,Valstybinė lietuvių kalbos komisija ,Narys,"Kita viešojo sektoriaus institucija, įstaiga",2018,2018 05 10,2019 05 17
 Andrius Valickas,Andrius,Valickas,LR Vidaus reikalų ministerija,,Ministerija,2019,2019,2020 12 19
 Andrius Vancevičius,Andrius,Vancevičius,LR Aplinkos ministerija,,Ministerija,2017,2017,2018 01 09
-Andrius Vyšniauskas,Andrius,Vyšniauskas,LR Seimas,Tėvynės Sąjungos-Lietuvos krikščionių demokratų frakcijos atstovas,Seimas,2018,2018,2020 11 12
+Andrius Vyšniauskas,Andrius,Vyšniauskas,LR Seimas,Tėvynės Sąjungos-Lietuvos krikščionių demokratų partijos atstovas,Seimas,2018,2018,2020 11 12
 Andrius Zalitis,Andrius,Zalitis,"LR Švietimo, mokslo ir sporto ministerija",,Ministerija,2019,2019,2020 03 20
 Andrius Žukauskas,Nuasmeninta,,UAB „Synergy Solutions“,,Verslo įmonė,2019,2019 09 13,2019 11 05
 Andžejus Roginskis,Andžejus,Roginskis,Lietuvos kriminalinės policijos biuras,,"Kita viešojo sektoriaus institucija, įstaiga",2017,2017,2018 03 01
@@ -379,7 +379,7 @@ Arvydas Vaitkus,Arvydas,Vaitkus,VĮ „Klaipėdos valstybinio jūrų uosto direk
 Asta Godienė,Asta , Godienė,LR Teisingumo ministerija,,Ministerija,2017,2017,2020 03 20
 Asta Kuniyoshi,Asta , Kuniyoshi,LR Valstybės kontrolė,,"Kita viešojo sektoriaus institucija, įstaiga",2017,2017,2022 01 08
 Asta Aranauskienė,Asta, Aranauskienė,LR Socialinės apsaugos ir darbo ministerija,,Ministerija,2017,2017,2018 11 17
-Asta Junevičienė,Asta ,Junevičienė,Lietuvos nacionalinė UNESCO komisija,,"Kita viešojo sektoriaus institucija, įstaiga",2020,2020 01 20,2021 01 21
+Asta Junevičienė,Asta ,Junevičienė,,,"Kita viešojo sektoriaus institucija, įstaiga",2020,2020 01 20,2021 01 21
 Asta Kandratavičienė,Asta ,Kandratavičienė,Neįgaliųjų reikalų departamentas prie LR Socialinės apsaugos ir darbo ministerijos ,,"Kita viešojo sektoriaus institucija, įstaiga",2017,2017,2018 08 30
 Asta Navickienė,Asta ,Navickienė,LR Seimas,Seimo nario J. Varžgalio visuomeninė konsultantė,Seimas,2019,2019,2020 11 12
 Asta Aranauskienė,Asta,Aranauskienė,LR Socialinės apsaugos ir darbo ministerija,,Ministerija,2018,2018,2019 10 12
@@ -829,7 +829,7 @@ Eglė Merkininkienė,Eglė,Merkininkienė,LR Valstybės kontrolė,,"Kita viešoj
 Eglė Merkininkienė,Eglė,Merkininkienė,LR Valstybės kontrolė,,"Kita viešojo sektoriaus institucija, įstaiga",2018,2018,2019 12 20
 Eglė Merkininkienė,Eglė,Merkininkienė,LR Valstybės kontrolė,,"Kita viešojo sektoriaus institucija, įstaiga",2019,2019,2020 12 20
 Eglė Mirončikienė,Eglė,Mirončikienė,Registruotas lobistas/-ė,Registruotas lobistas/-ė,Registruotas lobistas/-ė,2018,2018,2019 05 08
-Eglė Neciunskienė,Eglė,Neciunskienė,LR Vyriausybės kanceliarija,,Vyriausybė,2020,2020,2021 01 23
+Eglė Naciunskienė,Eglė,Naciunskienė,LR Vyriausybės kanceliarija,,Vyriausybė,2020,2020,2021 01 23
 Eglė Navickaitė,Nuasmeninta,,LR Seimas,Praktikantė,Seimas,2019,2019,2021 01 27
 Eglė Neciunskienė,Eglė,Neciunskienė,LR Vyriausybės kanceliarija,,Vyriausybė,2018,2018,2019 12 13
 Eglė Neciunskienė,Eglė,Neciunskienė,LR Vyriausybės kanceliarija,,Vyriausybė,2017,2017 03 13,2020 06 05
@@ -971,7 +971,7 @@ Galina Bielinienė,Nuasmeninta,,UAB „Corpus A“,,Verslo įmonė,2019,2019 12 
 Gari Škoropad,Nuasmeninta,,UAB „Konica Minolta Baltia“,,Verslo įmonė,2019,2019 12 17,2020 12 31
 Gasparas Genzbigelis,Gasparas,Genzbigelis,Nepriklausomybės gynėjų sąjunga,,Kita ne pelno organizacija,2017,2017,2018 01 20
 Gasparas Genzbigelis,Gasparas,Genzbigelis,Nepriklausomybės gynėjų sąjunga,,Kita ne pelno organizacija,2018,2018 01 16,Neterminuotai
-Gediminas Karalius,Gediminas,Karalius,LR Energetikos ministerija,,Ministerija,2019,2019,2020 04 01
+Gedimimas Karalius,Gedimimas,Karalius,LR Energetikos ministerija,,Ministerija,2019,2019,2020 04 01
 Gediminas Česonis,Gediminas,Česonis,LR Vidaus reikalų ministerija,,Ministerija,2018,2018,2019 02 13
 Gediminas Imbrasas,Gediminas,Imbrasas,LR Seimas,Seimo nario A. Dumbravos visuomeninis konsultantas ,Seimas,2016,2016,2017 12 08
 Gediminas Imbrasas,Gediminas,Imbrasas,LR Seimas,Seimo frakcijos „Tvarka ir teisingumas“ visuomeninis konsultantas,Seimas,2019,2019,2020 11 12
@@ -1405,7 +1405,7 @@ Juozas Brigmanas,Juozas,Brigmanas,LR Seimas,Seimo nario A. Butkevičiaus visuome
 Juozas Kontautas,Juozas,Kontautas,Nepriklausomybės gynėjų sąjunga,,Kita ne pelno organizacija,2017,2017,2018 04 13
 Juozas Kontautas,Juozas,Kontautas,Nepriklausomybės gynėjų sąjunga,,Kita ne pelno organizacija,2018,2018,2019 04 17
 Juozas Nevedomskas,Nuasmeninta,,UAB „Taurakalnis“,,Verslo įmonė,2019,2019 11 20,2020 11 20
-Juozas Puodžiukaitis,Juozas,Puodžiukaitis,Šakių raj. savivaldybė,l. e. mero pareigas,Savivaldybė,2017,2017,2018 02 08
+Juozas Puodžiukaitis,Juozas,Puodžiukaitis,Šakių raj. savivaldybė,l.e. mero pareigas,Savivaldybė,2017,2017,2018 02 08
 Juozas Šarkus,Juozas,Šarkus,LR Seimas,Seimo nario E. Gentvilo visuomeninis konsultantas ,Seimas,2017,2017,2018 01 24
 Juozas Širvinskas,Juozas,Širvinskas,LR Aplinkos ministerija,,Ministerija,2018,2018,2019 04 24
 Juozas Vytautas Šveikauskas,Juozas Vytautas,Šveikauskas,LR Sveikatos apsaugos ministerija,,Ministerija,2016,2016,2024 11 15
@@ -1601,7 +1601,7 @@ Kristina Tomilina,Kristina,Tomilina,Europos Parlamentas,Europos Parlamento nario
 Kristina Tomilina,Kristina,Tomilina,Europos Parlamentas,Europos Parlamento nario padėjėja,Europos Parlamentas,2020,2020 02 05,2024 06 01
 Kristupas Augustas Krivickas,Kristupas Augustas,Krivickas,LR Seimas,Seimo nario N. Puteikio visuomeninis konsultantas ,Seimas,2016,2016,2017 11 22
 Kristupas Augustas Krivickas,Kristupas Augustas,Krivickas,LR Seimas,Seimo nario N. Puteikio visuomeninis konsultantas,Seimas,2019,2019,2020 11 12
-Laimutė Mackelienė,Nuasmeninta,,Seimo kanceliarijos medicinos punktas,,Seimas,2016,2016,2017 09 01
+Laima Mackelienė,Nuasmeninta,,Seimo kanceliarijos medicinos punktas,,Seimas,2016,2016,2017 09 01
 Laima Galkutė,Laima,Galkutė,LR Seimas,Seimo nario R. Karbauskio visuomeninė konsultantė,Seimas,2020,2020,2020 11 12
 Laima Kalinauskienė,Laima,Kalinauskienė,LR Finansų ministerija,,Ministerija,2017,2017,2018 02 28
 Laima Kalinauskienė,Laima,Kalinauskienė,LR Finansų ministerija,,Ministerija,2018,2018,2019 04 03
@@ -1612,7 +1612,7 @@ Laima Kytrienė,Laima,Kytrienė,Lietuvos nacionalinė Martyno Mažvydo bibliotek
 Laima Lazauskienė,Laima,Lazauskienė,Vyriausioji rinkimų komisija,Narė,"Kita viešojo sektoriaus institucija, įstaiga",2017,2017,2021 04 24
 Laima Lazauskienė,Laima,Lazauskienė,Vyriausioji rinkimų komisija,,"Kita viešojo sektoriaus institucija, įstaiga",2018,2018,2019 05 17
 Laima Lazauskienė,Laima,Lazauskienė,Vyriausioji rinkimų komisija,,"Kita viešojo sektoriaus institucija, įstaiga",2019,2019,2020 05 08
-Laimutė Mackelienė,Nuasmeninta,,Seimo kanceliarijos medicinos punktas,,Seimas,2017,2017,2018 09 02
+Laima Mackelienė,Nuasmeninta,,Seimo kanceliarijos medicinos punktas,,Seimas,2017,2017,2018 09 02
 Laima Palinskaitė,Laima,Palinskaitė,Valstybės vaiko teisių apsaugos ir įvaikinimo tarnyba prie LR Socialinės apsaugos ir darbo ministerijos,,"Kita viešojo sektoriaus institucija, įstaiga",2018,2018,2019 09 28
 Laima Pašakinskienė,Nuasmeninta,,UAB „Corpus A“,,Verslo įmonė,2019,2019 12 10,2020 12 31
 Laima Vaičiulienė,Laima,Vaičiulienė,LR Sveikatos apsaugos ministerija,,Ministerija,2016,2016,2025 11 15
@@ -1739,8 +1739,8 @@ Liubovė Murauskienė,Liubovė,Murauskienė,Nacionalinė sveikatos taryba,Narė,
 Liucija Nijolė Kikutienė,Liucija Nijolė,Kikutienė,Lietuvos švietimo taryba,,"Kita viešojo sektoriaus institucija, įstaiga",2016,2016 12 01,2017 12 02
 Liudmila Nemirienė,Nuasmeninta,,UAB „Taurakalnis“,,Verslo įmonė,2019,2019 08 13,2020 08 20
 Liudvika Meškauskaitė,Liudvika,Meškauskaitė,,"Žiniasklaidos teisės ekspertė, advokatė",Kita,2018,2018,2019 05 24
-Liudvika Meškauskaitė,Liudvika,Meškauskaitė,LR Seimas,Žmogaus teisių komiteto visuomeninė patarėja-ekspertė,Seimas,2017,2017 10 31,2018 05 31
-Liudvika Meškauskaitė,Liudvika,Meškauskaitė,LR Seimas,Žmogaus teisių komiteto visuomeninė patarėja-ekspertė,Seimas,2019,2019 04 17,2020 04 18
+Liudvika Meškauskaitė,Liudvika,Meškauskaitė,LR Seimas,Žmogaus teisių komiteto visuomeninis patarėjas-ekspertas,Seimas,2017,2017 10 31,2018 05 31
+Liudvika Meškauskaitė,Liudvika,Meškauskaitė,LR Seimas,Žmogaus teisių komiteto visuomeninis patarėja-ekspertė,Seimas,2019,2019 04 17,2020 04 18
 Liudvikas Gadeikis,Liudvikas,Gadeikis,"VšĮ „Lietuvos nacionalinis radijas ir televizija""",Tarybos pirmininkas,Žiniasklaidos priemonė,2018,2018 04 26,2019 06 29
 Liudvikas Gadeikis,Liudvikas,Gadeikis,VšĮ „Lietuvos nacionalinis radijas ir televizija“,,Žiniasklaidos priemonė,2019,2019 09 19,2020 09 20
 Liudvikas Ragauskis,Liudvikas,Ragauskis,Registruotas lobistas/-ė,Registruotas lobistas/-ė,Registruotas lobistas/-ė,2017,2017,2018 01 02
@@ -2015,7 +2015,7 @@ Osvaldas Čalutka,Osvaldas,Čalutka,LR Seimas,Seimo nario K. Mažeikos visuomeni
 Osvaldas Šarmavičius,Osvaldas,Šarmavičius,Valstybės tarnybos departamentas,,"Kita viešojo sektoriaus institucija, įstaiga",2017,2017,2018 06 05
 Osvaldas Šmitas,Osvaldas,Šmitas,LR Ekonomikos ir inovacijų ministerija,,Ministerija,2017,2017,2019 12 27
 Osvaldas Šmitas,Osvaldas,Šmitas,LR Ekonomikos ir inovacijų ministerija,,Ministerija,2019,2019,2020 04 15
-Paulius Žvirblis,Paulius,Žvirblis,LR Aplinkos ministerija,,Ministerija,2018,2018,2019 02 23
+Pailus Žvirblis,Pailus,Žvirblis,LR Aplinkos ministerija,,Ministerija,2018,2018,2019 02 23
 Palmira Rudalevičienė,Palmira,Rudalevičienė,LR Seimas,Seimo nario E. Vareikio visuomeninis konsultantas ,Seimas,2016,2016,2017 12 07
 Paulė Kuzmickienė,Paulė,Kuzmickienė,LR Seimas,Seimo Tėvynės sąjungos-Lietuvos krikščionių demokratų partijos frakcijos visuomeninis konsultantė,Seimas,2017,2017,2018 01 04
 Paulė Svorobovičienė,Paulė,Svorobovičienė,LR Finansų ministerija,,Ministerija,2018,2018,2019 04 03
@@ -2061,7 +2061,7 @@ Petras Tuma,Petras,Tuma,LR Seimas,Seimo nario J. Varkalio visuomeninis konsultan
 Petras Vilimas,Petras,Vilimas,LR Seimas,Seimo nario V. Kamblevičiaus visuomeninis konsultantas,Seimas,2019,2019,2020 11 12
 Pijus Ralys,Pijus,Ralys,LR Seimas,Seimo nario R. Sinkevičiaus visuomeninis konsultantas,Seimas,2017,2017,2020 11 12
 Pijus Ralys,Pijus,Ralys,LR Seimas,Seimo nario R. Sinkevičiaus visuomeninis konsultantas,Seimas,2017,2017 05 19,2018 01 17
-Piotr Rožanovskij,Nuasmeninta,,UAB „Biuro mašinos“,,Verslo įmonė,2019,2019 11 25,2020 11 27
+Piotr Rozanovskij,Nuasmeninta,,UAB „Biuro mašinos“,,Verslo įmonė,2019,2019 11 25,2020 11 27
 Piotr Rožanovskij,Nuasmeninta,,UAB „Biuro mašinos“,,Verslo įmonė,2016,2016,2017 03 09
 Povilas Poderskis,Povilas,Poderskis,LR Seimas,Seimo narės A. Maldeikienės visuomeninis konsultantas,Seimas,2017,2017,2020 11 12
 Povilas Purtokas,Povilas,Purtokas,LR Seimas,Seimo nario M. Majausko visuomeninis konsultantas,Seimas,2017,2017,2020 11 12
@@ -2601,7 +2601,7 @@ Vaidotas Aleksius,Vaidotas ,Aleksius,VĮ „Turto bankas“,,VVĮ,2016,2016 12 1
 Vaidotas Deksnys,Vaidotas,Deksnys,Nacionalinė sveikatos taryba,Narys,"Kita viešojo sektoriaus institucija, įstaiga",2017,2017,2021 06 07
 Vaidotas Kalinauskas,Vaidotas,Kalinauskas,LR Socialinės apsaugos ir darbo ministerija,,Ministerija,2016,2016,2017 12 22
 Vaidotas Kalinauskas,Vaidotas,Kalinauskas,LR Socialinės apsaugos ir darbo ministerija,,Ministerija,2018,2018,2019 10 12
-Vaidotas Kalinauskas,Vaidotas,Kalinauskas,Socialinės apsaugos ir darbo ministerijos SDP departamento Socialinio draudimo skyrius,Vedėjas,Ministerija,2018,2018,2019 02 06
+Vaidotas Kalinauskas,Vaidotas,Kalinauskas,Socialinės apsaugos ir darbo ministerijos SDP departamento Socialinio draudimo skyrius,Vedėjas,MInisterija,2018,2018,2019 02 06
 Vaidotas Kalinauskas,Vaidotas,Kalinauskas,LR Socialinės apsaugos ir darbo ministerija,,Ministerija,2019,2019,2020 10 24
 Vaidotas Verba,Vaidotas,Verba,LR Seimas,Seimo Pirmininko V. Pranckiečio visuomeninis konsultantas,Seimas,2018,2018 11 12,2020 11 12
 Vaidutė Ščiglienė,Vaidutė,Ščiglienė,Valstybinė kultūros paveldo komisija,,"Kita viešojo sektoriaus institucija, įstaiga",2020,2020,2024 06 09
@@ -2842,7 +2842,7 @@ Vygantas Katkevičius,Vygantas,Katkevičius,LR Žemės ūkio ministerija,,Minist
 Vygantas Katkevičius,Vygantas,Katkevičius,LR Žemės ūkio ministerija,,Ministerija,2019,2019,2020 04 18
 Vygintas Gasparavičius,Vygintas,Gasparavičius,LR Seimas,Seimo nario V. Kernagio visuomeninis konsultantas ,Seimas,2016,2016,2017 11 30/2020 11 12
 Vygintas Gasparavičius,Vygintas,Gasparavičius,LR Seimas,Seimo nario V. Kernagio visuomeninis konsultantas ,Seimas,2017,2017,2020 11 12
-Vykintas Vaitkevičius,Vykintas,Vaitkevičius,Tėvynės Sąjungos-Lietuvos krikščionių demokratų frakcija,,Seimas,2018,2018,2020 11 12
+Vykintas Vaitkevičius,Vykintas,Vaitkevičius,Tėvynės Sąjungos-Lietuvos krikščionių demokratų partija,,Politinė partija,2018,2018,2020 11 12
 Vytas Lukšys,Vytas,Lukšys,Lietuvos gyventojų genocido ir rezistencijos tyrimo centras,,"Kita viešojo sektoriaus institucija, įstaiga",2019,2019,2020 05 09
 Vytas Lukšys,Vytas,Lukšys,Lietuvos gyventojų genocido ir rezistencijos tyrimo centras,,"Kita viešojo sektoriaus institucija, įstaiga",2020,2020,2021 07 21
 Vytas Lukšys,Vytas,Lukšys,Lietuvos gyventojų genocido ir rezistencijos tyrimo centras,,"Kita viešojo sektoriaus institucija, įstaiga",2018,2018 09 03,2019 04 03
@@ -2854,7 +2854,7 @@ Vytautas Stančikas,Vytautas ,Stančikas,Informacinių technologijų tarnyba pri
 Vytautas Stančikas,Vytautas ,Stančikas,Informacinių technologijų tarnyba prie KAM,,"Kita viešojo sektoriaus institucija, įstaiga",2019,2019 12 20,2020 12 31
 Vytautas Vabravičius,Vytautas ,Vabravičius,LR Seimas,Seimo narės R. Baškienės visuomeninis konsultantas,Seimas,2019,2019,2020 11 12
 Vytautas Antanas Januška,Vytautas Antanas,Januška,LR Aplinkos ministerija,,Ministerija,2017,2017,2018 01 09
-Vytautas Kazimieras Aranauskas,Vytautas Kazimieras,Aranauskas,LR Seimas,Buvęs Seimo kancleris,Seimas,,Nenurodyta,Neterminuotai
+Vytautas Aranauskas,Vytautas,Aranauskas,LR Seimas,Buvęs Seimo kancleris,Seimas,,Nenurodyta,Neterminuotai
 Vytautas Babravičius,Vytautas,Babravičius,"Labdaros ir paramos fondas ""Simo Runos""",,Labdaros ir paramos fondas,2017,2017 02 20,2018 02 01
 Vytautas Babravičius,Vytautas,Babravičius,"Labdaros ir paramos fondas ""Simo Runos""",Valdytojas,Labdaros ir paramos fondas,2018,2018 04 12,2019 02 06
 Vytautas Buivydas,Vytautas,Buivydas,LR Žemės ūkio rūmai,Vicepirmininkas,Verslo asociacija,2018,2018,2019 03 08

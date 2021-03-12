@@ -223,12 +223,15 @@ function addcommas(x){
   return x;
 }
 //Calc badge data
-function calcBadgeDate(b){
+function calcBadgeDate(b, id){
   var badgeDateNum = 0;
   var excludeStrings = ["", "Neterminuotai", "kol eina šias pareigas", "Nenurodyta", "iki jos kadencijos pab., vadovaujantis Seimo valdybos 2016 m. rugpjūčio 17 d. sprendimu Nr. SV-S-1632"]
   var issueDate = b.issue_date.trim().replace("  "," ");
   var issueYear = b.issue_year.trim().replace("  "," ");
   var validUntil = b.valid_until.trim().replace("  "," ");
+  if(id == "489fa53c24644aa8313a2d8521bb58f7") {
+    console.log(b);
+  }
   if (validUntil && excludeStrings.indexOf(validUntil) == -1) {
     var validUntilSplit = validUntil.split(" ");
     //Some valid_until have 2 dates, slash separated
@@ -250,7 +253,7 @@ function calcBadgeDate(b){
   } else if (issueYear && excludeStrings.indexOf(issueYear) == -1) {
     badgeDateNum = parseInt(issueYear);
   } else {
-    console.log(b);
+    //console.log(b);
   }
   return badgeDateNum;
 }
@@ -297,7 +300,7 @@ csv('./data/tab_b/meetings.csv?' + randomPar, (err, meetings) => {
       }
       listedPerson.badges.push(thisBadge);
       //Compare badge date, if this is more recent, update profession and org
-      var thisBadgeDate = calcBadgeDate(thisBadge);
+      var thisBadgeDate = calcBadgeDate(thisBadge, d.ID);
       if(listedPerson.latest_badge_date < thisBadgeDate) {
         listedPerson.profession = d.profession;
         listedPerson.org_inst_category = d.org_inst_category;
@@ -330,6 +333,11 @@ csv('./data/tab_b/meetings.csv?' + randomPar, (err, meetings) => {
         "issue_date": d.issue_date,
         "valid_until": d.valid_until
       }
+      var thisBadgeDate = calcBadgeDate(thisBadge, d.ID);
+      newPerson.profession = d.profession;
+      newPerson.org_inst_category = d.org_inst_category;
+      newPerson.organisation_institution = d.organisation_institution;
+      newPerson.latest_badge_date = thisBadgeDate;
       newPerson.badges.push(thisBadge);
       people.push(newPerson);
     }
@@ -751,16 +759,16 @@ csv('./data/tab_b/meetings.csv?' + randomPar, (err, meetings) => {
   var customCounters;
   function drawCustomCounters() {
     var dim = ndx.dimension (function(d) {
-      if (!d.surname) {
+      if (!d.ID) {
         return "";
       } else {
-        return d.name + ' ' + d.surname;
+        return d.ID;
       }
     });
     var group = dim.group().reduce(
       function(p,d) {  
         p.nb +=1;
-        if (!d.surname) {
+        if (!d.ID) {
           return p;
         }
         p.people += 1;
@@ -768,7 +776,7 @@ csv('./data/tab_b/meetings.csv?' + randomPar, (err, meetings) => {
       },
       function(p,d) {  
         p.nb -=1;
-        if (!d.surname) {
+        if (!d.ID) {
           return p;
         }
         p.people -= 1;
