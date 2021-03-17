@@ -46,7 +46,8 @@ var vuedata = {
       info: ''
     },
     mainTable: {
-      title: '',
+      title: 'Informacija rodoma pagal vėliausiai suteikto leidimo duomenis gautus iš LR Seimo kanceliarijos.',
+      subtitle: 'Paspaudę ant asmens leidimų skaičiaus, pamatykite, kaip keitėsi leidimų duomenys skirtingu laikotarpiu.',
       info: ''
     }
   },
@@ -229,9 +230,6 @@ function calcBadgeDate(b, id){
   var issueDate = b.issue_date.trim().replace("  "," ");
   var issueYear = b.issue_year.trim().replace("  "," ");
   var validUntil = b.valid_until.trim().replace("  "," ");
-  if(id == "489fa53c24644aa8313a2d8521bb58f7") {
-    console.log(b);
-  }
   if (validUntil && excludeStrings.indexOf(validUntil) == -1) {
     var validUntilSplit = validUntil.split(" ");
     //Some valid_until have 2 dates, slash separated
@@ -284,9 +282,19 @@ for ( var i = 0; i < 5; i++ ) {
 //Load data and generate charts
 csv('./data/tab_b/badges.csv?' + randomPar, (err, badges) => {
 csv('./data/tab_b/meetings.csv?' + randomPar, (err, meetings) => {
-  //Loop through mps to link and tidy data
+  //Loop through badges to link and tidy data
   var people = [];
   _.each(badges, function (d) {
+    //Turn categories into array for categories chart
+    d.org_inst_category_array = [];
+    if(d.org_inst_category == "Registruotas/-a lobistas/-ė, verslo įmonė") {
+      d.org_inst_category_array = ["Registruotas/-a lobistas/-ė", "Verslo įmonė"];
+    } else {
+      d.org_inst_category_array.push(d.org_inst_category);
+    }
+    //Get badge date number for date comparison and ordering
+    d.datenum = calcBadgeDate(d, d.ID);
+    //Create people based data
     var listedPerson = _.find(people, function(x) { return x.ID == d.ID });
     if(listedPerson) {
       listedPerson.badges_num ++;
@@ -296,16 +304,16 @@ csv('./data/tab_b/meetings.csv?' + randomPar, (err, meetings) => {
         "profession": d.profession,
         "issue_year": d.issue_year,
         "issue_date": d.issue_date,
-        "valid_until": d.valid_until
+        "valid_until": d.valid_until,
+        "datenum": d.datenum
       }
       listedPerson.badges.push(thisBadge);
       //Compare badge date, if this is more recent, update profession and org
-      var thisBadgeDate = calcBadgeDate(thisBadge, d.ID);
-      if(listedPerson.latest_badge_date < thisBadgeDate) {
+      if(listedPerson.latest_badge_date < d.datenum) {
         listedPerson.profession = d.profession;
         listedPerson.org_inst_category = d.org_inst_category;
         listedPerson.organisation_institution = d.organisation_institution;
-        listedPerson.latest_badge_date = thisBadgeDate;
+        listedPerson.latest_badge_date = d.datenum;
       }
     } else {
       var newPerson = {
@@ -331,19 +339,24 @@ csv('./data/tab_b/meetings.csv?' + randomPar, (err, meetings) => {
         "profession": d.profession,
         "issue_year": d.issue_year,
         "issue_date": d.issue_date,
-        "valid_until": d.valid_until
+        "valid_until": d.valid_until,
+        "datenum": d.datenum
       }
-      var thisBadgeDate = calcBadgeDate(thisBadge, d.ID);
       newPerson.profession = d.profession;
       newPerson.org_inst_category = d.org_inst_category;
       newPerson.organisation_institution = d.organisation_institution;
-      newPerson.latest_badge_date = thisBadgeDate;
+      newPerson.latest_badge_date = d.datenum;
       newPerson.badges.push(thisBadge);
       people.push(newPerson);
     }
   });
 
-  //Set totals for custom counters
+  //Order badges array in people data
+  _.each(people, function (d) {
+    d.badges.sort(function(a, b) { 
+      return b.datenum - a.datenum;
+    });
+  });
 
   //Set dc main vars. The second crossfilter is used to handle the travels stacked bar chart.
   var ndx = crossfilter(badges);
@@ -403,8 +416,8 @@ csv('./data/tab_b/meetings.csv?' + randomPar, (err, meetings) => {
   var createOrgTypeChart = function() {
     var chart = charts.orgType.chart;
     var dimension = ndx.dimension(function (d) {
-        return d.org_inst_category;
-    });
+        return d.org_inst_category_array;
+    }, true);
     var group = dimension.group().reduceSum(function (d) {
         return 1;
     });

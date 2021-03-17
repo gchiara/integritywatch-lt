@@ -1,8 +1,11 @@
 <template>
   <div class="chart-header row">
-    <div class="chart-title col-9">{{ title }}</div>
+    <div class="chart-title col-9">
+      <div v-html="title"></div>
+      <div class="chart-subtitle" v-html="subtitle" v-if="subtitle"></div>
+    </div>
     <div class="chart-header-buttons col-3">
-      <button type="button" class="btn btn-secondary btn-info" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" :data-content="info">
+      <button v-if="info" type="button" class="btn btn-secondary btn-info" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" :data-content="info">
         i
       </button>
     </div>
@@ -14,6 +17,7 @@ export default {
   name: 'ChartHeader',
   props: {
     title: String,
+    subtitle: String,
     info: String,
     bg: String,
     color: String
@@ -29,7 +33,7 @@ $color_TI_darker: darken( $color_TI, 20% );
   margin: 0;
   background: #fafafa;
   .chart-title {
-    font-size: 20px;
+    font-size: 18px;
     text-align: left;
     color: $color_TI_darker;
     @media only screen and (max-width: 1400px) {
@@ -41,6 +45,9 @@ $color_TI_darker: darken( $color_TI, 20% );
     @media only screen and (max-width: 767px) {
       font-size: 20px;
     }
+  }
+  .chart-subtitle {
+    font-size: 14px;
   }
   .chart-header-buttons {
     text-align: right;

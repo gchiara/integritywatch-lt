@@ -9,7 +9,7 @@
     <meta property="og:url" content="http://www.manoseimas.lt" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="ManoSeimas.lt" />
-    <meta property="og:description" content="Svetainėje „ManoSeimas.lt“ galite sužinoti, kaip Seimo nariai skelbia savo darbotvarkes ir praneša apie susitikimus su įvairių interesų grupių atstovais." />
+    <meta property="og:description" content="Svetainėje „ManoSeimas.lt“ galite greitai ir paprastai sužinoti, kas gauna ilgalaikius leidimus į Seimą ir kaip dažnai šie asmenys dalyvauja komitetų posėdžiuose, taip pat - kaip LR Seimo nariai skelbia savo darbotvarkes ir praneša apie susitikimus su įvairių interesų grupių atstovais, dalyvavimą renginiuose, susitikimus su kitais politikais." />
     <meta property="og:image" content="http://www.manoseimas.lt/images/thumbnail2.png" />
     <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
@@ -62,7 +62,7 @@
           <!-- TABLE -->
           <div class="col-12 chart-col">
             <div class="boxed-container chart-container chart-container-table">
-              <chart-header :title="charts.mainTable.title" :info="charts.mainTable.info" ></chart-header>
+              <chart-header :title="charts.mainTable.title" :subtitle="charts.mainTable.subtitle" :info="charts.mainTable.info" ></chart-header>
               <div class="chart-inner chart-table">
                 <table class="table table-hover dc-data-table" id="dc-data-table">
                   <thead>
