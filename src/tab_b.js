@@ -35,20 +35,20 @@ var vuedata = {
   charts: {
     orgType: {
       title: ' Išduotų leidimų skaičius pagal įstaigų/organizacijų kategoriją',
-      info: ''
+      info: 'Pasirinkite kategoriją(-as), norėdami pamatyti, kiek leidimų buvo išduota interesų grupėms ir viešojo sektoriaus institucijoms. Pamatykite duomenų kaitą grafikuose ir lentelėse.'
     },
     years: {
       title: 'Išduotų leidimų skaičius per metus',
-      info: ''
+      info: 'Tiksli išdavimo data buvo nurodyta ne prie visų leidimų; dalis jų buvo išduoti neterminuotam laikotarpiui'
     },
     topOrg: {
       title: 'Top 10 organizacijų ir įstaigų, gavusių daugiausiai leidimų',
-      info: ''
+      info: 'Sužinokite, kurios organizacijos, įstaigos ir institucijos gavo daugiausiai leidimų pagal pasirinktą interesų grupių ir/ar viešojo sektoriaus subjektų kategoriją'
     },
     mainTable: {
       title: 'Informacija rodoma pagal vėliausiai suteikto leidimo duomenis gautus iš LR Seimo kanceliarijos.',
       subtitle: 'Paspaudę ant asmens leidimų skaičiaus, pamatykite, kaip keitėsi leidimų duomenys skirtingu laikotarpiu.',
-      info: ''
+      info: 'Sužinokite, kiek leidimų gavo kiekvienos organizacijos ar įstaigos atstovas ir kaip dažnai šie asmenys lankėsi komitetų posėdžiuose. Informacija skiltyse “Organizacija / Įstaiga” ir “Pareigos”rodoma pagal vėliausiai gautą leidimą. Rikiuokite ir palyginkite duomenis tarpusavyje paspausdami lentelės skilties pavadinimą. Paspaudę leidimų skaičių, pamatykite leidimų išdavimo ir galiojimo datas.'
     }
   },
   openModalClicked: false,
@@ -288,7 +288,9 @@ csv('./data/tab_b/meetings.csv?' + randomPar, (err, meetings) => {
     //Turn categories into array for categories chart
     d.org_inst_category_array = [];
     if(d.org_inst_category == "Registruotas/-a lobistas/-ė, verslo įmonė") {
-      d.org_inst_category_array = ["Registruotas/-a lobistas/-ė", "Verslo įmonė"];
+      d.org_inst_category_array = ["Kita (Registruotas/-a lobistas/-ė)", "Verslo įmonė"];
+    } else if(d.org_inst_category == "Registruotas/-a lobistas/-ė") {
+      d.org_inst_category_array = ["Kita (Registruotas/-a lobistas/-ė)"];
     } else {
       d.org_inst_category_array.push(d.org_inst_category);
     }
@@ -350,6 +352,7 @@ csv('./data/tab_b/meetings.csv?' + randomPar, (err, meetings) => {
       people.push(newPerson);
     }
   });
+  console.log(people.length);
 
   //Order badges array in people data
   _.each(people, function (d) {

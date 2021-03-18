@@ -28,7 +28,7 @@
               <!-- INFO -->
               <div class="col-md-8 chart-col" v-if="showInfo">
                 <div class="boxed-container description-container">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor diam et ante rutrum, sed consectetur orci aliquet. Vestibulum finibus bibendum tortor non volutpat. Sed odio nulla, luctus in aliquam a, porttitor eleifend ante. <a href="./about.php">Daugiau čia</a>.</p>
+                  <p>Svetainėje „ManoSeimas.lt“ galite greitai ir paprastai sužinoti, kas gauna ilgalaikius leidimus į Seimą ir kaip dažnai šie asmenys dalyvauja komitetų posėdžiuose, taip pat - kaip LR Seimo nariai skelbia savo darbotvarkes ir praneša apie susitikimus su įvairių interesų grupių atstovais, dalyvavimą renginiuose, susitikimus su kitais politikais. Šiuos duomenis galite lyginti tarpusavyje pasinaudodami interaktyviais grafikais. <a href="./about.php?section=3">Daugiau čia</a>.</p>
                   <i class="material-icons close-btn" @click="showInfo = false">close</i>
                 </div>
               </div>
