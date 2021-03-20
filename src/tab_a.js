@@ -25,7 +25,7 @@ import ChartHeader from './components/ChartHeader.vue';
 
 var vuedata = {
   page: 'tabA',
-  legislationSelected: 8,
+  legislationSelected: 9,
   showMeetingsCharts: true,
   loader: true,
   readMore: false,
@@ -356,13 +356,13 @@ for ( var i = 0; i < 5; i++ ) {
   randomPar += randomCharacters.charAt(Math.floor(Math.random() * randomCharacters.length));
 }
 
-var mpsDatasetFile = './data/tab_a/legislation8/p2b_ad_seimo_nariai.json';
-var factionsDatasetFile = './data/tab_a/legislation8/p2b_ad_seimo_frakcijos.json';
-var agendasDatasetFile = './data/tab_a/legislation8/p2b_ad_sn_darbotvarkes.json';
-var photosDatasetFile = './data/tab_a/legislation8/photos.json';
-var lobbyMeetingsDatasetFile = './data/tab_a/legislation8/meetings_totals.csv';
-var partyMeetingsDatasetFile = './data/tab_a/legislation8/party_meetings.csv';
-var wordcloudMainDataFile = './data/tab_a/legislation8/wordcloud.json';
+var mpsDatasetFile = './data/tab_a/legislation9/p2b_ad_seimo_nariai.json';
+var factionsDatasetFile = './data/tab_a/legislation9/p2b_ad_seimo_frakcijos.json';
+var agendasDatasetFile = './data/tab_a/legislation9/p2b_ad_sn_darbotvarkes.json';
+var photosDatasetFile = './data/tab_a/legislation9/photos.json';
+var lobbyMeetingsDatasetFile = './data/tab_a/legislation9/meetings_totals.csv';
+var partyMeetingsDatasetFile = './data/tab_a/legislation9/party_meetings.csv';
+var wordcloudMainDataFile = './data/tab_a/legislation9/wordcloud.json';
 
 var legislationSelected = getParameterByName('legislation');
 if(legislationSelected == '8' || legislationSelected == '9') {
@@ -375,7 +375,7 @@ if(legislationSelected == '8' || legislationSelected == '9') {
   partyMeetingsDatasetFile = './data/tab_a/legislation'+legislationSelected+'/party_meetings.csv';
   wordcloudMainDataFile = './data/tab_a/legislation'+legislationSelected+'/wordcloud.json';
 }
-if(legislationSelected == '9') {
+if(vuedata.legislationSelected == '9') {
   vuedata.showMeetingsCharts = false;
   vuedata.charts.mainTable.info = "Pamatykite, kaip parlamentarai viešina savo darbotvarkes, rikiuokite ir palyginkite parlamentarų aktyvumą paspausdami ant lentelės skilčių pavadinimų. Informacija apie Seimo narius atnaujinama remiantis atvirasi Seimo duomenimis. Interesų grupių duomenys renkami ir bus atnaujinti prieš 2021 m. Seimo rudens sesiją.";
 }
@@ -394,7 +394,8 @@ json(mpsDatasetFile + '?' + randomPar, (err, mpsDataset) => {
               var agendas = agendasDataset.SeimoInformacija.SeimoNarys;
               var totAgendas = 0;
               var totMeetings = 0;
-              var extraMeetings = 5;
+              var extraMeetings = 0;
+              if(vuedata.legislationSelected == '8') { extraMeetings = 5; }
               var meetingsTotObject = {
                 "2017 PAVASARIS": 0,
                 "2017 RUDUO": 0,
@@ -455,7 +456,7 @@ json(mpsDatasetFile + '?' + randomPar, (err, mpsDataset) => {
                     //Filter agendas to only keep entries after 13 Nov 2020
                     d.agendas["SeimoNarioDarbotvarkėsĮvykis"] = _.filter(d.agendas["SeimoNarioDarbotvarkėsĮvykis"], function(x) { 
                       var iniDate = parseInt(x["@pradžia"].split(" ")[0].replaceAll("-",""));
-                      return iniDate >= 20201113; 
+                      return iniDate >= 20201113 && iniDate <= 20211231; 
                     });
                   } else {
                     //Filter agendas to only keep entries before 13 Nov 2020
@@ -822,6 +823,9 @@ json(mpsDatasetFile + '?' + randomPar, (err, mpsDataset) => {
                       "targets": 1,
                       "defaultContent":"N/A",
                       "data": function(d) {
+                        if(!d['@vardas'] && !d['@pavardė']) {
+                          return "Nerasta";
+                        }
                         return '<a href="https://www.lrs.lt/sip/portal.show?p_r=35299&p_k=1&p_a=498&p_asm_id=' + d['@asmens_id'] +'" target="_blank">' + d['@vardas'] + ' ' + d['@pavardė'];
                       }
                     },
@@ -907,7 +911,7 @@ json(mpsDatasetFile + '?' + randomPar, (err, mpsDataset) => {
                   "bPaginate": true,
                   "bLengthChange": true,
                   "bFilter": false,
-                  "order": [[ 5, "desc" ]],
+                  "order": [[ 1, "asc" ]],
                   "bSort": true,
                   "bInfo": true,
                   "bAutoWidth": false,

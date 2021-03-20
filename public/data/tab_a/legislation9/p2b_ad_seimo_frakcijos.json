@@ -2,7 +2,7 @@
     "SeimoInformacija": {
         "@licencija": "CC BY 4.0",
         "@pavadinimas": "Seimo frakcijos",
-        "@suformavimo_laikas": "2021-03-02 01:02:08",
+        "@suformavimo_laikas": "2021-03-19 21:19:01",
         "@tiekėjas": "Seimo kanceliarija",
         "@šaltinis": "www.lrs.lt",
         "SeimoKadencija": {
@@ -10,7 +10,7 @@
             "SeimoFrakcija": [
                 {
                     "@padalinio_id": "874",
-                    "@padalinio_narių_skaičius": "9",
+                    "@padalinio_narių_skaičius": "10",
                     "@padalinio_pavadinimas": "Darbo partijos  frakcija",
                     "@padalinio_pavadinimo_santrumpa": "DPF",
                     "SeimoFrakcijosNarys": [
@@ -67,6 +67,12 @@
                             "@pareigos": "Frakcijos narys",
                             "@pavardė": "Puidokas",
                             "@vardas": "Mindaugas"
+                        },
+                        {
+                            "@asmens_id": "47229",
+                            "@pareigos": "Frakcijos narys",
+                            "@pavardė": "Skardžius",
+                            "@vardas": "Artūras"
                         }
                     ]
                 },
@@ -511,16 +517,16 @@
                     "@padalinio_pavadinimo_santrumpa": "MG",
                     "SeimoFrakcijosNarys": [
                         {
-                            "@asmens_id": "73586",
-                            "@pareigos": "Frakcijos seniūnė",
-                            "@pavardė": "Tamašunienė",
-                            "@vardas": "Rita"
-                        },
-                        {
                             "@asmens_id": "47959",
-                            "@pareigos": "Frakcijos seniūno pavaduotojas",
+                            "@pareigos": "Frakcijos seniūnas",
                             "@pavardė": "Pinskus",
                             "@vardas": "Jonas"
+                        },
+                        {
+                            "@asmens_id": "73586",
+                            "@pareigos": "Frakcijos seniūno pavaduotoja",
+                            "@pavardė": "Tamašunienė",
+                            "@vardas": "Rita"
                         },
                         {
                             "@asmens_id": "53907",

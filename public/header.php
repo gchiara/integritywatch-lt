@@ -13,10 +13,10 @@
     </ul>
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a href="./app.php" class="nav-link nav-link-main" :class="{active: page == 'tabA'}">Darbotvarkės</a>
+        <a href="./darbotvarkes.php" class="nav-link nav-link-main" :class="{active: page == 'tabA'}">Darbotvarkės</a>
       </li>
       <li class="nav-item">
-        <a href="./access-badges.php" class="nav-link nav-link-main" :class="{active: page == 'tabB'}">Ilgalaikiai leidimai</a>
+        <a href="./app.php" class="nav-link nav-link-main" :class="{active: page == 'tabB'}">Ilgalaikiai leidimai</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

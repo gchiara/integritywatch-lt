@@ -2,7 +2,7 @@
     "SeimoInformacija": {
         "@licencija": "CC BY 4.0",
         "@pavadinimas": "Seimo nariai",
-        "@suformavimo_laikas": "2021-03-02 01:01:29",
+        "@suformavimo_laikas": "2021-03-19 21:18:54",
         "@tiekėjas": "Seimo kanceliarija",
         "@šaltinis": "www.lrs.lt",
         "SeimoKadencija": {
@@ -67,6 +67,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-16",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "266",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Gyvybės mokslų puoselėjimo grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2021-01-07",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "263",
@@ -78,6 +85,13 @@
                             "@pareigos": "Pirmininkas",
                             "@parlamentinės_grupės_id": "262",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji grupė „Skaitmeninė Lietuva“"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-08",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "208",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji grupė „Už gyvūnų gerovę ir apsaugą“"
                         },
                         {
                             "@data_iki": "",
@@ -1348,13 +1362,6 @@
                         },
                         {
                             "@data_iki": "",
-                            "@data_nuo": "2020-12-10",
-                            "@pareigos": "Narys",
-                            "@parlamentinės_grupės_id": "253",
-                            "@parlamentinės_grupės_pavadinimas": "Laikinoji grupė „Dėl sveikatos paslaugų suteikimo ir prieinamumo per COVID-19 pandemiją“"
-                        },
-                        {
-                            "@data_iki": "",
                             "@data_nuo": "2020-12-29",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "262",
@@ -2403,6 +2410,13 @@
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "242",
                             "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Lenkijos Respublikos Seimu ir Senatu grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-18",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "220",
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Maroko Karalyste grupė"
                         },
                         {
                             "@data_iki": "",
@@ -4596,7 +4610,7 @@
                             "@pareigos": "Komisijos narys"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2021-03-09",
                             "@data_nuo": "2020-11-24",
                             "@padalinio_id": "1106",
                             "@padalinio_pavadinimas": "Laisvės kovų ir valstybės istorinės atminties komisija",
@@ -4664,16 +4678,10 @@
                     "@lytis": "V",
                     "@pavardė": "Guoga",
                     "@vardas": "Antanas",
-                    "Kontaktai": [
-                        {
-                            "@reikšmė": "antanas.guoga@lrs.lt",
-                            "@rūšis": "El. p."
-                        },
-                        {
-                            "@reikšmė": "2396441",
-                            "@rūšis": "Darbo telefonas"
-                        }
-                    ],
+                    "Kontaktai": {
+                        "@reikšmė": "antanas.guoga@lrs.lt",
+                        "@rūšis": "El. p."
+                    },
                     "Pareigos": [
                         {
                             "@data_iki": "2021-02-19",
@@ -5117,6 +5125,13 @@
                             "@padalinio_id": "5",
                             "@padalinio_pavadinimas": "Biudžeto ir finansų komitetas",
                             "@pareigos": "Komiteto pirmininko pavaduotojas"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-10",
+                            "@padalinio_id": "1314",
+                            "@padalinio_pavadinimas": "Aleksandro Stulginskio žvaigždės skyrimo komisija",
+                            "@pareigos": "Komisijos narys"
                         },
                         {
                             "@data_iki": "",
@@ -5619,6 +5634,13 @@
                             "@padalinio_id": "2",
                             "@padalinio_pavadinimas": "Kaimo reikalų komitetas",
                             "@pareigos": "Komiteto narys"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-10",
+                            "@padalinio_id": "1314",
+                            "@padalinio_pavadinimas": "Aleksandro Stulginskio žvaigždės skyrimo komisija",
+                            "@pareigos": "Komisijos narys"
                         },
                         {
                             "@data_iki": "",
@@ -7373,6 +7395,13 @@
                             "@pareigos": "Komiteto narė"
                         },
                         {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-10",
+                            "@padalinio_id": "1106",
+                            "@padalinio_pavadinimas": "Laisvės kovų ir valstybės istorinės atminties komisija",
+                            "@pareigos": "Komisijos narė"
+                        },
+                        {
                             "@data_iki": "2020-12-09",
                             "@data_nuo": "2020-12-08",
                             "@padalinio_id": "1075",
@@ -8468,7 +8497,7 @@
                     ],
                     "Pareigos": [
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2021-03-09",
                             "@data_nuo": "2020-12-17",
                             "@padalinio_id": "1313",
                             "@padalinio_pavadinimas": "Ateities komitetas",
@@ -9265,6 +9294,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-17",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "241",
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su JAV Kongresu grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-03",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "34",
@@ -9708,9 +9744,23 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-10",
+                            "@padalinio_id": "1314",
+                            "@padalinio_pavadinimas": "Aleksandro Stulginskio žvaigždės skyrimo komisija",
+                            "@pareigos": "Komisijos narys"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-11-24",
                             "@padalinio_id": "9",
                             "@padalinio_pavadinimas": "Antikorupcijos komisija",
+                            "@pareigos": "Komisijos narys"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-10",
+                            "@padalinio_id": "1106",
+                            "@padalinio_pavadinimas": "Laisvės kovų ir valstybės istorinės atminties komisija",
                             "@pareigos": "Komisijos narys"
                         },
                         {
@@ -9726,6 +9776,13 @@
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "52",
                             "@parlamentinės_grupės_pavadinimas": "Seniūnų sueiga"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-16",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "266",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Gyvybės mokslų puoselėjimo grupė"
                         },
                         {
                             "@data_iki": "",
@@ -10134,6 +10191,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-18",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "220",
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Maroko Karalyste grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-03",
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "81",
@@ -10462,6 +10526,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-10",
+                            "@padalinio_id": "1314",
+                            "@padalinio_pavadinimas": "Aleksandro Stulginskio žvaigždės skyrimo komisija",
+                            "@pareigos": "Komisijos narys"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-11-24",
                             "@padalinio_id": "1054",
                             "@padalinio_pavadinimas": "Energetikos ir darnios plėtros komisija",
@@ -10780,6 +10851,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-18",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "220",
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Maroko Karalyste grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-03",
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "81",
@@ -10993,6 +11071,13 @@
                             "@padalinio_id": "1154",
                             "@padalinio_pavadinimas": "Laisvės frakcija",
                             "@pareigos": "Frakcijos narė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-18",
+                            "@pareigos": "Pirmininkė",
+                            "@parlamentinės_grupės_id": "266",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Gyvybės mokslų puoselėjimo grupė"
                         },
                         {
                             "@data_iki": "",
@@ -12073,11 +12158,18 @@
                             "@pareigos": "Komisijos narys"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2021-03-09",
                             "@data_nuo": "2020-11-13",
                             "@padalinio_id": "47",
                             "@padalinio_pavadinimas": "Mišri Seimo narių grupė",
                             "@pareigos": "Frakcijos seniūno pavaduotojas"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-10",
+                            "@padalinio_id": "47",
+                            "@padalinio_pavadinimas": "Mišri Seimo narių grupė",
+                            "@pareigos": "Frakcijos seniūnas"
                         },
                         {
                             "@data_iki": "",
@@ -12227,6 +12319,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-10",
+                            "@padalinio_id": "1314",
+                            "@padalinio_pavadinimas": "Aleksandro Stulginskio žvaigždės skyrimo komisija",
+                            "@pareigos": "Komisijos narys"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-11-13",
                             "@padalinio_id": "1022",
                             "@padalinio_pavadinimas": "Tėvynės sąjungos-Lietuvos krikščionių demokratų frakcija",
@@ -12367,6 +12466,13 @@
                             "@padalinio_id": "2",
                             "@padalinio_pavadinimas": "Kaimo reikalų komitetas",
                             "@pareigos": "Komiteto pirmininkas"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-10",
+                            "@padalinio_id": "1314",
+                            "@padalinio_pavadinimas": "Aleksandro Stulginskio žvaigždės skyrimo komisija",
+                            "@pareigos": "Komisijos narys"
                         },
                         {
                             "@data_iki": "",
@@ -13375,6 +13481,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-10",
+                            "@padalinio_id": "1314",
+                            "@padalinio_pavadinimas": "Aleksandro Stulginskio žvaigždės skyrimo komisija",
+                            "@pareigos": "Komisijos narys"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-11-24",
                             "@padalinio_id": "1054",
                             "@padalinio_pavadinimas": "Energetikos ir darnios plėtros komisija",
@@ -13752,6 +13865,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-18",
+                            "@pareigos": "Pirmininko pavaduotoja",
+                            "@parlamentinės_grupės_id": "266",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Gyvybės mokslų puoselėjimo grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-10",
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "253",
@@ -13770,6 +13890,13 @@
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "91",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji grupė „Už demokratinę Baltarusiją“"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-17",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "237",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Kauno regiono bičiulių grupė"
                         },
                         {
                             "@data_iki": "",
@@ -14054,6 +14181,48 @@
                             "@pareigos": "Pirmininkė",
                             "@parlamentinės_grupės_id": "28",
                             "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Ispanijos Karalyste grupė"
+                        }
+                    ]
+                },
+                {
+                    "@asmens_id": "47229",
+                    "@biografijos_nuoroda": "http://www.lrs.lt/sip/portal.show?p_r=8801&p_k=1&p_a=498&p_asm_id=47229&pt=sn:3#sn",
+                    "@data_iki": "",
+                    "@data_nuo": "2021-03-10",
+                    "@iškėlusi_partija": "Darbo partija",
+                    "@išrinkimo_būdas": "Pagal sąrašą",
+                    "@kadencijų_skaičius": "5",
+                    "@lytis": "V",
+                    "@pavardė": "Skardžius",
+                    "@vardas": "Artūras",
+                    "Kontaktai": [
+                        {
+                            "@reikšmė": "Arturas.Skardzius@lrs.lt",
+                            "@rūšis": "El. p."
+                        },
+                        {
+                            "@reikšmė": "2396441",
+                            "@rūšis": "Darbo telefonas"
+                        },
+                        {
+                            "@reikšmė": "http://skardzius.lt/",
+                            "@rūšis": "Asmeninė interneto svetainė"
+                        }
+                    ],
+                    "Pareigos": [
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-10",
+                            "@padalinio_id": "1002",
+                            "@padalinio_pavadinimas": "Lietuvos Respublikos Seimo ir Pasaulio lietuvių bendruomenės komisija",
+                            "@pareigos": "Komisijos narys"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-10",
+                            "@padalinio_id": "874",
+                            "@padalinio_pavadinimas": "Darbo partijos  frakcija",
+                            "@pareigos": "Frakcijos narys"
                         }
                     ]
                 },
@@ -15573,6 +15742,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-18",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "220",
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Maroko Karalyste grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-03",
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "81",
@@ -16078,11 +16254,18 @@
                             "@pareigos": "Komisijos narė"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2021-03-09",
                             "@data_nuo": "2020-11-13",
                             "@padalinio_id": "47",
                             "@padalinio_pavadinimas": "Mišri Seimo narių grupė",
                             "@pareigos": "Frakcijos seniūnė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-10",
+                            "@padalinio_id": "47",
+                            "@padalinio_pavadinimas": "Mišri Seimo narių grupė",
+                            "@pareigos": "Frakcijos seniūno pavaduotoja"
                         },
                         {
                             "@data_iki": "",
@@ -17556,6 +17739,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-10",
+                            "@padalinio_id": "1314",
+                            "@padalinio_pavadinimas": "Aleksandro Stulginskio žvaigždės skyrimo komisija",
+                            "@pareigos": "Komisijos narys"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-11-13",
                             "@padalinio_id": "1070",
                             "@padalinio_pavadinimas": "Lietuvos valstiečių ir žaliųjų sąjungos frakcija",
@@ -18144,6 +18334,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-10",
+                            "@padalinio_id": "1314",
+                            "@padalinio_pavadinimas": "Aleksandro Stulginskio žvaigždės skyrimo komisija",
+                            "@pareigos": "Komisijos narys"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-17",
                             "@padalinio_id": "1002",
                             "@padalinio_pavadinimas": "Lietuvos Respublikos Seimo ir Pasaulio lietuvių bendruomenės komisija",
@@ -18235,6 +18432,13 @@
                             "@padalinio_id": "1154",
                             "@padalinio_pavadinimas": "Laisvės frakcija",
                             "@pareigos": "Frakcijos narys"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-16",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "266",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Gyvybės mokslų puoselėjimo grupė"
                         },
                         {
                             "@data_iki": "",

@@ -34,21 +34,21 @@ var vuedata = {
   travelFilter: 'all',
   charts: {
     orgType: {
-      title: ' Išduotų leidimų skaičius pagal įstaigų/organizacijų kategoriją',
-      info: 'Pasirinkite kategoriją(-as), norėdami pamatyti, kiek leidimų buvo išduota interesų grupėms ir viešojo sektoriaus institucijoms. Pamatykite duomenų kaitą grafikuose ir lentelėse.'
+      title: 'Išduotų leidimų skaičiaus pagal įstaigų kategoriją',
+      info: 'Pasirinkite kategoriją(-as), norėdami sužinoti, kiek leidimų buvo išduota interesų grupėms ir viešojo sektoriaus institucijoms. Pamatykite duomenų kaitą grafikuose ir lentelėse. Asmuo kategorijai „Registruotas/-a lobistas/-ė“ yra priskiriamas, jeigu Seimo kanceliarijos pateiktuose duomenyse jis buvo nurodytas kaip lobistas.Tokiais atvejais (mažuma), kai buvo nurodyta, kad lobistas atstovavo verslo asociaciją ar verslą, jis buvo atitinkamai priskiriamas ir prie kitos kategorijos.'
     },
     years: {
       title: 'Išduotų leidimų skaičius per metus',
       info: 'Tiksli išdavimo data buvo nurodyta ne prie visų leidimų; dalis jų buvo išduoti neterminuotam laikotarpiui'
     },
     topOrg: {
-      title: 'Top 10 organizacijų ir įstaigų, gavusių daugiausiai leidimų',
+      title: 'Top 10 įstaigų, gavusių daugiausiai leidimų',
       info: 'Sužinokite, kurios organizacijos, įstaigos ir institucijos gavo daugiausiai leidimų pagal pasirinktą interesų grupių ir/ar viešojo sektoriaus subjektų kategoriją'
     },
     mainTable: {
       title: 'Informacija rodoma pagal vėliausiai suteikto leidimo duomenis gautus iš LR Seimo kanceliarijos.',
       subtitle: 'Paspaudę ant asmens leidimų skaičiaus, pamatykite, kaip keitėsi leidimų duomenys skirtingu laikotarpiu.',
-      info: 'Sužinokite, kiek leidimų gavo kiekvienos organizacijos ar įstaigos atstovas ir kaip dažnai šie asmenys lankėsi komitetų posėdžiuose. Informacija skiltyse “Organizacija / Įstaiga” ir “Pareigos”rodoma pagal vėliausiai gautą leidimą. Rikiuokite ir palyginkite duomenis tarpusavyje paspausdami lentelės skilties pavadinimą. Paspaudę leidimų skaičių, pamatykite leidimų išdavimo ir galiojimo datas.'
+      info: 'Sužinokite, kiek leidimų gavo kiekvienos įstaigos atstovas ir kaip dažnai šie asmenys lankėsi komitetų posėdžiuose. Rikiuokite ir palyginkite duomenis tarpusavyje paspausdami lentelės skilties pavadinimą. Paspaudę leidimų skaičių, pamatykite leidimų išdavimo ir galiojimo datas. Vienas asmuo galėjo gauti po daugiau negu vieną leidimą skirtingu laikotarpiu atstovaudami skirtingas įstaigas.'
     }
   },
   openModalClicked: false,
@@ -291,9 +291,12 @@ csv('./data/tab_b/meetings.csv?' + randomPar, (err, meetings) => {
       d.org_inst_category_array = ["Kita (Registruotas/-a lobistas/-ė)", "Verslo įmonė"];
     } else if(d.org_inst_category == "Registruotas/-a lobistas/-ė") {
       d.org_inst_category_array = ["Kita (Registruotas/-a lobistas/-ė)"];
+    } else if(d.org_inst_category == "VVĮ") {
+      d.org_inst_category_array = ["Valstybės valdoma įmonė"];
     } else {
       d.org_inst_category_array.push(d.org_inst_category);
     }
+    d.organisation_institution = d.organisation_institution.replace("  ", " ").trim();
     //Get badge date number for date comparison and ordering
     d.datenum = calcBadgeDate(d, d.ID);
     //Create people based data
@@ -381,41 +384,6 @@ csv('./data/tab_b/meetings.csv?' + randomPar, (err, meetings) => {
   });
 
   //Chart 1
-  var createOrgTypeChart_bkp = function() {
-    var chart = charts.orgType.chart;
-    var dimension = ndx.dimension(function (d) {
-      return d.org_inst_category;
-    });
-    var group = dimension.group().reduceSum(function (d) { return 1; });
-    var sizes = calcPieSize(charts.orgType.divId);
-    chart
-      .width(sizes.width)
-      .height(sizes.height)
-      .cy(sizes.cy)
-      .cap(9)
-      .innerRadius(sizes.innerRadius)
-      .radius(sizes.radius)
-      .legend(dc.legend().x(0).y(sizes.legendY).gap(10).autoItemWidth(true).horizontal(true).legendWidth(sizes.width).legendText(function(d) { 
-        var thisKey = d.name;
-        if(thisKey.length > 40){
-          return thisKey.substring(0,40) + '...';
-        }
-        return thisKey;
-      }))
-      .title(function(d){
-        return d.key + ': ' + d.value;
-      })
-      .dimension(dimension)
-      .ordinalColors(vuedata.colors.generic2)
-      .group(group);
-    chart.render();
-    chart.on('filtered', function(c) { 
-      UpdateTable();
-      dc.redrawAll() 
-    });
-  }
-
-  //Chart 3
   var createOrgTypeChart = function() {
     var chart = charts.orgType.chart;
     var dimension = ndx.dimension(function (d) {
@@ -510,6 +478,9 @@ csv('./data/tab_b/meetings.csv?' + randomPar, (err, meetings) => {
   var createTopOrgChart = function() {
     var chart = charts.topOrg.chart;
     var dimension = ndx.dimension(function (d) {
+        if(d.organisation_institution == "") {
+          return "Kita (Registruotas/-a lobistas/-ė)";
+        }
         return d.organisation_institution;
     });
     var group = dimension.group().reduceSum(function (d) {
@@ -584,6 +555,9 @@ csv('./data/tab_b/meetings.csv?' + randomPar, (err, meetings) => {
           "defaultContent":"N/A",
           "className": "",
           "data": function(d) {
+            if(!d.name && !d.surname) {
+              return "Nerasta";
+            }
             return d.name + " " + d.surname;
           }
         },
@@ -692,6 +666,7 @@ csv('./data/tab_b/meetings.csv?' + randomPar, (err, meetings) => {
     idDimensionPeople.filter(function(d) { 
       return filteredIds.indexOf(d) > -1;
     });
+    console.log(idDimensionPeople.top(Infinity));
   }
 
   //SEARCH INPUT FUNCTIONALITY

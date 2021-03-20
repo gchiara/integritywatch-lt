@@ -992,7 +992,7 @@ td.dt-center, th.dt-center {
 .tabA {
   .chart-table {
     td, th {
-      &:nth-child(4), &:nth-child(5) {
+      &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6) {
         @media only screen and (max-width: 768px) {
           display: none;
         }
