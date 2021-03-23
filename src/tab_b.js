@@ -478,7 +478,7 @@ csv('./data/tab_b/meetings.csv?' + randomPar, (err, meetings) => {
   var createTopOrgChart = function() {
     var chart = charts.topOrg.chart;
     var dimension = ndx.dimension(function (d) {
-        if(d.organisation_institution == "") {
+        if(d.organisation_institution == "" && d.org_inst_category_array.indexOf("Kita (Registruotas/-a lobistas/-ė)") > -1) {
           return "Kita (Registruotas/-a lobistas/-ė)";
         }
         return d.organisation_institution;
