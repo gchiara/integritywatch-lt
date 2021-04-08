@@ -6,8 +6,8 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-$mpsFile = file_get_contents("./data/tab_a/p2b_ad_seimo_nariai.json");
-$agendasFile = file_get_contents("./data/tab_a/p2b_ad_sn_darbotvarkes.json");
+$mpsFile = file_get_contents("./data/tab_a/legislation8/p2b_ad_seimo_nariai.json");
+$agendasFile = file_get_contents("./data/tab_a/legislation8/p2b_ad_sn_darbotvarkes.json");
 $mps = json_decode($mpsFile, true);
 $agendas = json_decode($agendasFile, true);
 
@@ -50,7 +50,7 @@ foreach ($finalWords as $key => $value) {
 	$wordObj = array( 'word' => $key, 'size' => $value );
 	array_push($cloudData, $wordObj);
 }
-file_put_contents('./data/tab_a/wordcloud.json', json_encode($cloudData));
+file_put_contents('./data/tab_a/legislation8/wordcloud.json', json_encode($cloudData));
 
 
 

@@ -34,21 +34,21 @@ var vuedata = {
   travelFilter: 'all',
   charts: {
     orgType: {
-      title: 'Išduotų leidimų skaičiaus pagal įstaigų kategoriją',
-      info: 'Pasirinkite kategoriją(-as), norėdami sužinoti, kiek leidimų buvo išduota interesų grupėms ir viešojo sektoriaus institucijoms. Pamatykite duomenų kaitą grafikuose ir lentelėse. Asmuo kategorijai „Registruotas/-a lobistas/-ė“ yra priskiriamas, jeigu Seimo kanceliarijos pateiktuose duomenyse jis buvo nurodytas kaip lobistas.Tokiais atvejais (mažuma), kai buvo nurodyta, kad lobistas atstovavo verslo asociaciją ar verslą, jis buvo atitinkamai priskiriamas ir prie kitos kategorijos.'
+      title: 'Išduotų leidimų skaičius pagal įstaigų kategoriją',
+      info: 'Pasirinkite kategoriją(-as), norėdami sužinoti, kiek leidimų buvo išduota interesų grupėms ir viešojo sektoriaus institucijoms. Pamatykite duomenų kaitą grafikuose ir lentelėse. Asmuo kategorijai „Registruotas/-a lobistas/-ė“ yra priskiriamas, jeigu Seimo kanceliarijos pateiktuose duomenyse jis buvo nurodytas kaip lobistas. Tokiais atvejais (mažuma), kai buvo nurodyta, kad lobistas atstovavo verslo asociaciją ar verslą, jis buvo atitinkamai priskiriamas ir prie kitos kategorijos.'
     },
     years: {
       title: 'Išduotų leidimų skaičius per metus',
-      info: 'Tiksli išdavimo data buvo nurodyta ne prie visų leidimų; dalis jų buvo išduoti neterminuotam laikotarpiui'
+      info: 'Tiksli išdavimo data buvo nurodyta ne prie visų leidimų; dalis jų buvo išduoti neterminuotam laikotarpiui.'
     },
     topOrg: {
       title: 'Top 10 įstaigų, gavusių daugiausiai leidimų',
-      info: 'Sužinokite, kurios organizacijos, įstaigos ir institucijos gavo daugiausiai leidimų pagal pasirinktą interesų grupių ir/ar viešojo sektoriaus subjektų kategoriją'
+      info: 'Sužinokite, kurios organizacijos, įstaigos ir institucijos gavo daugiausiai leidimų pagal pasirinktą interesų grupių ir/ar viešojo sektoriaus subjektų kategoriją.'
     },
     mainTable: {
-      title: 'Informacija rodoma pagal vėliausiai suteikto leidimo duomenis gautus iš LR Seimo kanceliarijos.',
+      title: 'Informacija rodoma pagal vėliausiai suteikto leidimo duomenis, gautus iš LR Seimo kanceliarijos.',
       subtitle: 'Paspaudę ant asmens leidimų skaičiaus, pamatykite, kaip keitėsi leidimų duomenys skirtingu laikotarpiu.',
-      info: 'Sužinokite, kiek leidimų gavo kiekvienos įstaigos atstovas ir kaip dažnai šie asmenys lankėsi komitetų posėdžiuose. Rikiuokite ir palyginkite duomenis tarpusavyje paspausdami lentelės skilties pavadinimą. Paspaudę leidimų skaičių, pamatykite leidimų išdavimo ir galiojimo datas. Vienas asmuo galėjo gauti po daugiau negu vieną leidimą skirtingu laikotarpiu atstovaudami skirtingas įstaigas.'
+      info: 'Sužinokite, kiek leidimų gavo kiekvienos įstaigos atstovas ir kaip dažnai šie asmenys lankėsi komitetų posėdžiuose. Rikiuokite ir palyginkite duomenis tarpusavyje paspausdami lentelės skilties pavadinimą. Paspaudę leidimų skaičių, pamatykite leidimų išdavimo ir galiojimo datas. Vienas asmuo galėjo gauti po daugiau negu vieną leidimą skirtingu laikotarpiu, atstovaudami skirtingas įstaigas.'
     }
   },
   openModalClicked: false,
@@ -272,6 +272,20 @@ jQuery.extend( jQuery.fn.dataTableExt.oSort, {
   }
 });
 
+jQuery.extend( jQuery.fn.dataTableExt.oSort, {
+  "name-pre": function (name) {
+    var cleanName = name.replace(/<\/?[^>]+(>|$)/g, "");
+    cleanName = cleanName.replace("Č","C").replace("Ž","Z").replace("Ž","Z").replace("Ą","A").replace("Š","S");
+    return cleanName;
+  },
+  "name-asc": function ( a, b ) {
+      return a.localeCompare(b);
+  },
+  "name-desc": function ( a, b ) {
+      return b.localeCompare(a);
+  }
+});
+
 //Generate random parameter for dynamic dataset loading (to avoid caching)
 var randomPar = '';
 var randomCharacters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -374,7 +388,7 @@ csv('./data/tab_b/meetings.csv?' + randomPar, (err, meetings) => {
   var idDimension = ndx.dimension(function (d) {
     var entryString = d.ID;
     return entryString.toLowerCase();
-});
+  });
   var idDimensionPeople = ndxPeople.dimension(function (d) {
     if(!d.ID) {
       console.log(d);
@@ -554,6 +568,7 @@ csv('./data/tab_b/meetings.csv?' + randomPar, (err, meetings) => {
           "targets": 1,
           "defaultContent":"N/A",
           "className": "",
+          "type": "name",
           "data": function(d) {
             if(!d.name && !d.surname) {
               return "Nerasta";
@@ -605,7 +620,7 @@ csv('./data/tab_b/meetings.csv?' + randomPar, (err, meetings) => {
       "bPaginate": true,
       "bLengthChange": true,
       "bFilter": false,
-      "order": [[ 1, "desc" ]],
+      "order": [[ 1, "asc" ]],
       "bSort": true,
       "bInfo": true,
       "bAutoWidth": false,

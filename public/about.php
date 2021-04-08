@@ -7,7 +7,9 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="ManoSeimas.lt" />
     <meta property="og:description" content="Svetainėje „ManoSeimas.lt“ galite sužinoti, kaip Seimo nariai skelbia savo darbotvarkes ir praneša apie susitikimus su įvairių interesų grupių atstovais." />
-    <meta property="og:image" content="http://www.manoseimas.lt/images/thumbnail2.png" />
+    <meta property="og:image" content="http://www.manoseimas.lt/images/thumbnail_new.png" />
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="630">
     <title>ManoSeimas.lt - Apie</title>
     <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
@@ -31,19 +33,19 @@
             <div id="collapse1" class="panel-collapse collapse in">
               <div class="panel-body">
                 <p>Svetainėje „ManoSeimas.lt“ galite greitai ir paprastai sužinoti, kas gauna ilgalaikius leidimus į Seimą ir kaip dažnai šie asmenys dalyvauja komitetų posėdžiuose, taip pat - kaip LR Seimo nariai skelbia savo darbotvarkes ir praneša apie susitikimus su įvairių interesų grupių atstovais, dalyvavimą renginiuose, susitikimus su kitais politikais. Šiuos duomenis galite lyginti tarpusavyje pasinaudodami interaktyviais grafikais.</p>
-                <p>Šioje svetainėje naudojami duomenys yra (1) gauti užklausų būdu remiantis Teisės gauti informaciją iš valstybės ir savivaldybių institucijų ir įstaigų įstatymu, (2) viešai prieinami, (3) skelbiami atvirų duomenų formatu puslapyje www.lrs.lt (tiekėjas - Seimo kanceliarija, duomenys pateikiami pagal CC BY 4.0 licenciją). Daugiau informacijos apie naudojamus duomenis ir jų analizę pateikiame skiltyse: „Parlamentarų susitikimai“ ir „Ilgalaikiai leidimai į Seimą“.</p> 
-                <h3>Atižvelgiant į TILS patirtį gaunant, susisteminant ir pateikiant duomenis viešai, rekomenduojame:</h3>
-                <p><strong>Skaitmenizuoti ir reguliariai skelbti duomenis apie išduotus ilgalaikius ir vienadienius leidimus į Seimą</strong> (nuasmeninant fizinių asmenų, teikiančių paslaugas Seimui, vardus ir pavardes):</p>
+                <p>Šioje svetainėje naudojami duomenys yra (1) gauti užklausų būdu, remiantis Teisės gauti informaciją iš valstybės ir savivaldybių institucijų ir įstaigų įstatymu, (2) viešai prieinami, (3) skelbiami atvirų duomenų formatu puslapyje www.lrs.lt (tiekėjas - Seimo kanceliarija, duomenys pateikiami pagal CC BY 4.0 licenciją). Daugiau informacijos apie naudojamus duomenis ir jų analizę pateikiame skiltyse: „Parlamentarų susitikimai“ ir „Ilgalaikiai leidimai į Seimą“.</p> 
+                <h3>Atsižvelgiant į TILS patirtį gaunant, susisteminant ir pateikiant duomenis viešai, rekomenduojame:</h3>
+                <p><strong>Reguliariai skelbti atvirus duomenis apie išduotus ilgalaikius leidimus į Seimą, tai daryti vienodu formatu (nuasmeninant jautrius asmens duomenis bei fizinių asmenų, teikiančių paslaugas Seimui, vardus ir pavardes):</strong></p>
                 <ul>
-                  <li>Organizacijų ir institucijų tikslius pavadinimus renkantis iš Registrų centro atverto Juridinių asmenų registro; </li>
-                  <li>Asmenims, kurie nori patekti arba yra kviečiami į Seimą, kartu su išduotu leidimu suteikti ir individualų ID numerį, kurį vėliau, lankantis dar kartą, būtų galima naudoti, pavyzdžiui, Seimo narių darbotvarkių, komitetų posėdžių dalyvių pildymui.</li>
+                  <li>Organizacijų ir institucijų tikslius pavadinimus pasirinkti iš Registrų centro atverto Juridinių asmenų registro;</li>
+                  <li>Prie asmenų, kurie nurodyta, kad gavo leidimus kaip lobistai, taip pat nurodyti juridinį asmenį, kurį jie atstovauja.</li>
                 </ul>
-                <p><strong>Supaprastinti parlamentarų darbotvarkių pildymą, susitarti dėl aiškios struktūros ir pildymo gairių</strong> (pvz. pasirenkant susitikimo kategoriją: susitikimas su rinkėjais, su lobistais, vidinis susitikimas; iš Registrų centro Juridinių asmenų registro pasirenkant oficialų organizacijos pavadinimą – tai naudoti ir komitetų „kviestųjų asmenų“ skilties pildymui bei leidimams):</p>
+                <p><strong>Asmenims, kurie nori patekti arba yra kviečiami į Seimą, kartu su išduotu leidimu suteikti ir individualų ID numerį, kurį vėliau, lankantis dar kartą, būtų galima naudoti pvz. Seimo narių darbotvarkių, komitetų posėdžių dalyvių skilties pildymui.</strong></p>
+                <p><strong>Supaprastinti parlamentarų darbotvarkių pildymą, susitarti dėl aiškios struktūros ir pildymo gairių (pvz. pasirenkant susitikimo kategoriją: susitikimas su rinkėjais, su lobistais, vidinis susitikimas; iš Registrų centro Juridinių asmenų registro pasirenkant oficialų organizacijos pavadinimą – tai naudoti ir komitetų „kviestųjų asmenų“ skilties pildymui bei leidimams):</strong></p>
                 <ul>
                   <li>Ragintume darbotvarkėse viešinti visus sutikimus su (1) interesų grupėmis (asociacijomis, konfederacijomis, nevyriausybinėmis organizacijomis, paramos ir labdaros fondais ir kt.), (2) registruotais lobistais ir (3) susitikimus, kurių metu gaunami pasiūlymai, susiję su norminių teisės aktų priėmimu, pakeitimu ar panaikinimu;</li>
                   <li>Kviestume darbotvarkėse nurodyti, su kokios organizacijos atstovais, kur ir kada susitinkama, kokios jų pareigos, koks susitikimo tikslas ar tema bei aiškiai įvardinti, kokie klausimai aptariami susitikimo metu.</li>
                 </ul>
-                <p><strong>Reguliariai vienoje vietoje Seimo lrs.lt puslapyje skelbti, kokios įmonės, kokiu laikotarpiu ir kokias paslaugas ir/ar prekes teikia Seimui.</strong></p>
                 <h3>Pastebėjote klaidą ar neatitikimą?</h3>
                 <p>Ši svetainė – tai pirminė (beta) puslapio versija, todėl apie pastebėtas klaidas prašome pranešti mums el. paštu <a href="mailto:info@transparency.lt">info@transparency.lt</a>.</p>
                 <div class="about-eu-funding">
@@ -108,19 +110,19 @@
                 <p>Naujausi duomenys apie ilgalaikius leidimus gauti 2020 m. rugsėjo 10 d. pagal užklausą LR Seimo kanceliarijai (pateikta 2019 m. gruodžio mėn.). Ši informacija (leidimus gavusių asmenų vardai ir pavardės) buvo sugretinta su Seimo komitetų duomenimis, kuriuos TILS surinko 2020 m. liepos mėn. pagal informaciją e-seimas.lrs.lt puslapyje.  TILS dėjo visas pastangas, siekdamas susisteminti Seimo pateikiamus duomenis. Vis tik dėl šių duomenų išsamumo ir vientisumo trūkumo TILS negali pilnai užtikrinti sugretintų duomenų tikslumo.</p>
                 <p>Išsamūs 2016-2020 m. Seimo kadencijos komitetų duomenys bus skelbiami 2021 m. antrąjį ketvirtį.</p>
                 <p>TILS pateikus užklausą LR vadovybės apsaugos tarnybai dėl duomenų apie tai, kam buvo išduoti  vienadieniai leidimai, ši informacija nebuvo suteikta.</p> 
-                <p>Pirminius Seimo pateiktus ilgalaikių leidimų duomenis (TILS nuasmenintus) galite parsisiųsti čia.</p>
+                <p>Pirminius Seimo pateiktus ilgalaikių leidimų duomenis (TILS nuasmenintus) galite parsisiųsti <a href="./data/Ilgalaikiai_leidimai_i_Seima_2016-2020_m.xlsx" target="_blank">čia</a>.</p>
                 <h3>Duomenų analizė</h3>
                 <p>Kviečiame susipažinti su trumpa duomenų analizės rezultatų apžvalga:</p>
                 <ul>
-                  <li>2016 – 2020 m. ilgalaikiai leidimai į Seimą</li>
+                  <li><a href="http://www.transparency.lt/ilgalaikiai-leidimai-i-seima/" target="_blank">2016 – 2020 m. ilgalaikiai leidimai į Seimą</a></li>
                 </ul>
                 <h3>Duomenų pateikimo ir analizės apribojimai</h3>
-                <p>Šioje svetainėje ir apžvalgoje pateikiami TILS sutvarkyti  ir susisteminti duomenys, siekiant pateikti apibendrintas įžvalgas ir tendencijas apie išduotus ilgalaikius leidimus. Visgi, atkreipiame dėmesį, kad galimi informacijos netikslumai dėl šių apribojimų, susijusių su informacijos vientisumo ir išsamumo trūkumu:</p>
+                <p>Šioje svetainėje ir apžvalgoje pateikiami TILS sutvarkyti ir susisteminti duomenys, siekiant pateikti apibendrintas įžvalgas ir tendencijas apie išduotus ilgalaikius leidimus. Visgi, atkreipiame dėmesį, kad galimi informacijos netikslumai dėl šių apribojimų, susijusių su informacijos vientisumo ir išsamumo trūkumu:</p>
                 <ul>
-                  <li>Asmenų, kuriems buvo išduoti ilgalaikiai Seimo leidimai, vardai, pavardės, pareigos, atstovaujamos įstaigos pavadinimas kartais buvo pateikti su gramatinėmis klaidomis. Tokiais atvejais, kai dviejų leidimų duomenys yra vienodi ir skiriasi tik viena ar dvi pavardėje ar varde esančios raidės, TILS rėmėsi viešai prieinama informacija, siekiant patikslinti pavardę.</li>
-                  <li>Įstaigos tam tikrai kategorijai (pvz. viešojo sektoriaus institucija, NVO, verslo asociacija, politinė partija) buvo priskiriamos remiantis viešai prieinama informacija. Visgi, ne apie visas įstaigas buvo pakankamai viešai prieinamos informacijos, ypač kai, pavyzdžiui, įstaiga neturi savo internetinio puslapio.</li>
-                  <li>Prie didžiosios dalies registruotų lobistų leidimų nebuvo nurodytas juridinis asmuo (pvz. verslo asociacija ar įmonė), kurią jie atstovauja, todėl TILS juos išimtinai priskyrė „registruotų lobistų“ kategorijai, jeigu jie iki 2021 m. sausio 1 d. savo leidimo(ų) galiojimo laikotarpiu buvo registravęsi <a href="http://www.lobistai.lt/" target="_blank">www.lobistai.lt</a> (dabar <a href="https://skaidris.vtek.lt/public/home/main" target="_blank">SKAIDRIS</a>). Kai atstovaujamas juridinis asmuo buvo nurodytas, jis atitinkamai taip pat buvo priskirtas ir prie verslo asociacijų, verslo įmonių ir kitų kategorijų.</li>
-                  <li>Dėl neišsamių leidimų duomenų (pvz. nenurodytas leidimo išdavimo ir galiojimo datos mėnuo), komitetuose dalyvavusių asmenų duomenų (pvz. nurodytas tik vardo inicialais, nenurodytos pareigos), galimų vienodų fizinių asmenų pavardžių, TILS negali užtikrinti leidimų ir komitetų duomenų sugretinimo tikslumo ir kviečia pranešti apie bet kokius pastebėtus neatitikimus el. paštu <a href="mailto:info@transparency.lt">info@transparency.lt</a>.</li>
+                  <li>Asmenų, kuriems buvo išduoti ilgalaikiai Seimo leidimai, vardai, pavardės, pareigos, atstovaujamos įstaigos pavadinimas kartais buvo pateikti su gramatinėmis klaidomis. Tokiais atvejais, kai dviejų leidimų duomenys yra vienodi ir skiriasi tik viena ar dvi pavardėje ar varde esančios raidės, rėmėmės viešai prieinama informacija, siekiant patikslinti vardą ir pavardę.</li>
+                  <li>Įstaigos tam tikrai kategorijai (pvz. viešojo sektoriaus institucija, NVO, verslo asociacija, politinė partija) buvo priskiriamos remiantis viešai prieinama informacija oficialiuose puslapiuose, jų tinklapiuose.</li>
+                  <li>Prie didžiosios dalies leidimų su prierašu „lobistas/-ė“ nebuvo nurodytas atstovaujamas juridinis asmuo (pvz. verslo asociacija ar įmonė), todėl, jeigu šie asmenys iki 2021 m. sausio 1 d. savo leidimo(ų) galiojimo laikotarpiu buvo registravęsi <a href="http://www.lobistai.lt/" target="_blank">www.lobistai.lt</a> (dabar <a href="https://skaidris.vtek.lt/public/home/main" target="_blank">SKAIDRIS</a>), juos išimtinai priskyrėme „registruotų lobistų“ kategorijai. Kai atstovaujamas juridinis asmuo buvo nurodytas, jis atitinkamai taip pat buvo priskirtas ir prie verslo asociacijų, verslo įmonių ir kitų kategorijų.</li>
+                  <li>Dėl neišsamių leidimų duomenų (pvz. nenurodytas leidimo išdavimo mėnuo, diena), komitetuose dalyvavusių asmenų duomenų (pvz. nurodytas tik vardo inicialais, nenurodytos pareigos), galimų vienodų fizinių asmenų pavardžių, negalime užtikrinti šimtaprocentinio leidimų ir komitetų duomenų sugretinimo tikslumo ir kviečiame pranešti apie bet kokius pastebėtus neatitikimus el. paštu <a href="mailto:info@transparency.lt">info@transparency.lt</a>.</li>
                 </ul>
               </div>
             </div>

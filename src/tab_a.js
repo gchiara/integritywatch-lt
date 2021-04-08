@@ -284,6 +284,20 @@ jQuery.extend( jQuery.fn.dataTableExt.oSort, {
   }
 });
 
+jQuery.extend( jQuery.fn.dataTableExt.oSort, {
+  "name-pre": function (name) {
+    var cleanName = name.replace(/<\/?[^>]+(>|$)/g, "");
+    cleanName = cleanName.replace("Č","C").replace("Ž","Z").replace("Ž","Z").replace("Ą","A").replace("Š","S");
+    return cleanName;
+  },
+  "name-asc": function ( a, b ) {
+      return a.localeCompare(b);
+  },
+  "name-desc": function ( a, b ) {
+      return b.localeCompare(a);
+  }
+});
+
 //Turn meetings totals into array and add avg
 function objToArray(obj) {
   var arr = [];
@@ -377,7 +391,7 @@ if(legislationSelected == '8' || legislationSelected == '9') {
 }
 if(vuedata.legislationSelected == '9') {
   vuedata.showMeetingsCharts = false;
-  vuedata.charts.mainTable.info = "Pamatykite, kaip parlamentarai viešina savo darbotvarkes, rikiuokite ir palyginkite parlamentarų aktyvumą paspausdami ant lentelės skilčių pavadinimų. Informacija apie Seimo narius atnaujinama remiantis atvirasi Seimo duomenimis. Interesų grupių duomenys renkami ir bus atnaujinti prieš 2021 m. Seimo rudens sesiją.";
+  vuedata.charts.mainTable.info = "Pamatykite, kaip parlamentarai viešina savo darbotvarkes, rikiuokite ir palyginkite parlamentarų aktyvumą paspausdami ant lentelės skilčių pavadinimų. Informacija apie Seimo narius atnaujinama remiantis atvirais Seimo duomenimis. Interesų grupių duomenys renkami ir bus atnaujinti prieš 2021 m. Seimo rudens sesiją.";
 }
 
 //Load data and generate charts
@@ -822,6 +836,7 @@ json(mpsDatasetFile + '?' + randomPar, (err, mpsDataset) => {
                       "orderable": true,
                       "targets": 1,
                       "defaultContent":"N/A",
+                      "type": "name",
                       "data": function(d) {
                         if(!d['@vardas'] && !d['@pavardė']) {
                           return "Nerasta";

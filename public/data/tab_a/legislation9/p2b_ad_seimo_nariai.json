@@ -2,7 +2,7 @@
     "SeimoInformacija": {
         "@licencija": "CC BY 4.0",
         "@pavadinimas": "Seimo nariai",
-        "@suformavimo_laikas": "2021-03-19 21:18:54",
+        "@suformavimo_laikas": "2021-03-30 16:36:04",
         "@tiekėjas": "Seimo kanceliarija",
         "@šaltinis": "www.lrs.lt",
         "SeimoKadencija": {
@@ -245,6 +245,13 @@
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "254",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji Kultūros paveldo, Europos kultūros kelių ir šv. Jokūbo kelio grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-30",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "108",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Maldos grupė"
                         },
                         {
                             "@data_iki": "",
@@ -1247,6 +1254,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-30",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "108",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Maldos grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-11-24",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "94",
@@ -1763,6 +1777,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-24",
+                            "@pareigos": "Pirmininkas",
+                            "@parlamentinės_grupės_id": "268",
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Singapūro Respublika grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-10",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "43",
@@ -1938,6 +1959,13 @@
                             "@pareigos": "Pirmininko pavaduotojas",
                             "@parlamentinės_grupės_id": "90",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji Dzūkijos bičiulių grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-30",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "108",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Maldos grupė"
                         }
                     ]
                 },
@@ -1990,6 +2018,13 @@
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "208",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji grupė „Už gyvūnų gerovę ir apsaugą“"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-24",
+                            "@pareigos": "Pirmininko pavaduotojas",
+                            "@parlamentinės_grupės_id": "267",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Kėdainių bičiulių grupė"
                         },
                         {
                             "@data_iki": "",
@@ -2525,6 +2560,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-30",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "108",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Maldos grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-11-24",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "94",
@@ -2714,6 +2756,13 @@
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "247",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji Lietuvos pajūrio bičiulių grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-30",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "108",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Maldos grupė"
                         },
                         {
                             "@data_iki": "",
@@ -3334,6 +3383,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-24",
+                            "@pareigos": "Pirmininkas",
+                            "@parlamentinės_grupės_id": "267",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Kėdainių bičiulių grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-10",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "251",
@@ -3502,6 +3558,13 @@
                             "@padalinio_id": "874",
                             "@padalinio_pavadinimas": "Darbo partijos  frakcija",
                             "@pareigos": "Frakcijos narys"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-24",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "267",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Kėdainių bičiulių grupė"
                         },
                         {
                             "@data_iki": "",
@@ -3830,6 +3893,13 @@
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "143",
                             "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Prancūzijos Respublika grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-24",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "268",
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Singapūro Respublika grupė"
                         }
                     ]
                 },
@@ -3980,6 +4050,13 @@
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "263",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji grupė „Aplinkosaugos entuziastai“"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-24",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "267",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Kėdainių bičiulių grupė"
                         },
                         {
                             "@data_iki": "",
@@ -4224,6 +4301,13 @@
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "247",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji Lietuvos pajūrio bičiulių grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-30",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "108",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Maldos grupė"
                         },
                         {
                             "@data_iki": "",
@@ -4493,6 +4577,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-30",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "108",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Maldos grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-08",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "71",
@@ -4650,6 +4741,13 @@
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "247",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji Lietuvos pajūrio bičiulių grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-30",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "108",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Maldos grupė"
                         },
                         {
                             "@data_iki": "",
@@ -5505,6 +5603,13 @@
                     "Pareigos": [
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-25",
+                            "@padalinio_id": "40",
+                            "@padalinio_pavadinimas": "Švietimo ir mokslo komitetas",
+                            "@pareigos": "Komiteto narys"
+                        },
+                        {
+                            "@data_iki": "2021-03-24",
                             "@data_nuo": "2020-11-19",
                             "@padalinio_id": "44",
                             "@padalinio_pavadinimas": "Užsienio reikalų komitetas",
@@ -6003,6 +6108,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-24",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "267",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Kėdainių bičiulių grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-11-19",
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "189",
@@ -6436,6 +6548,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-30",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "108",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Maldos grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-08",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "223",
@@ -6582,6 +6701,13 @@
                     "Pareigos": [
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-25",
+                            "@padalinio_id": "2",
+                            "@padalinio_pavadinimas": "Kaimo reikalų komitetas",
+                            "@pareigos": "Komiteto narys"
+                        },
+                        {
+                            "@data_iki": "2021-03-24",
                             "@data_nuo": "2020-11-19",
                             "@padalinio_id": "25",
                             "@padalinio_pavadinimas": "Valstybės valdymo ir savivaldybių komitetas",
@@ -6757,6 +6883,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-25",
+                            "@padalinio_id": "582",
+                            "@padalinio_pavadinimas": "Sveikatos reikalų komitetas",
+                            "@pareigos": "Komiteto narė"
+                        },
+                        {
+                            "@data_iki": "2021-03-24",
                             "@data_nuo": "2020-12-04",
                             "@padalinio_id": "40",
                             "@padalinio_pavadinimas": "Švietimo ir mokslo komitetas",
@@ -6803,6 +6936,13 @@
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "150",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji grupė „Už šeimą“"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-30",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "108",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Maldos grupė"
                         },
                         {
                             "@data_iki": "",
@@ -6967,6 +7107,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-24",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "220",
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Maroko Karalyste grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2021-02-04",
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "81",
@@ -7117,6 +7264,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-30",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "108",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Maldos grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-03",
                             "@pareigos": "Pirmininko pavaduotojas",
                             "@parlamentinės_grupės_id": "181",
@@ -7250,6 +7404,13 @@
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "247",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji Lietuvos pajūrio bičiulių grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-30",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "108",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Maldos grupė"
                         },
                         {
                             "@data_iki": "",
@@ -7395,11 +7556,18 @@
                             "@pareigos": "Komiteto narė"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2021-03-23",
                             "@data_nuo": "2021-03-10",
                             "@padalinio_id": "1106",
                             "@padalinio_pavadinimas": "Laisvės kovų ir valstybės istorinės atminties komisija",
                             "@pareigos": "Komisijos narė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-24",
+                            "@padalinio_id": "1106",
+                            "@padalinio_pavadinimas": "Laisvės kovų ir valstybės istorinės atminties komisija",
+                            "@pareigos": "Komisijos pirmininkė"
                         },
                         {
                             "@data_iki": "2020-12-09",
@@ -7442,6 +7610,13 @@
                             "@pareigos": "Pirmininko pavaduotoja",
                             "@parlamentinės_grupės_id": "253",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji grupė „Dėl sveikatos paslaugų suteikimo ir prieinamumo per COVID-19 pandemiją“"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-30",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "108",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Maldos grupė"
                         },
                         {
                             "@data_iki": "",
@@ -7505,6 +7680,13 @@
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "143",
                             "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Prancūzijos Respublika grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-24",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "268",
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Singapūro Respublika grupė"
                         },
                         {
                             "@data_iki": "",
@@ -7777,6 +7959,13 @@
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "29",
                             "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Italijos Respublika grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-24",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "220",
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Maroko Karalyste grupė"
                         },
                         {
                             "@data_iki": "",
@@ -8063,6 +8252,13 @@
                             "@padalinio_id": "1022",
                             "@padalinio_pavadinimas": "Tėvynės sąjungos-Lietuvos krikščionių demokratų frakcija",
                             "@pareigos": "Frakcijos narys"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-30",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "108",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Maldos grupė"
                         },
                         {
                             "@data_iki": "",
@@ -8457,6 +8653,13 @@
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "63",
                             "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Korėjos Respublika grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-24",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "268",
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Singapūro Respublika grupė"
                         },
                         {
                             "@data_iki": "",
@@ -9671,10 +9874,24 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-24",
+                            "@pareigos": "Pirmininko pavaduotoja",
+                            "@parlamentinės_grupės_id": "220",
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Maroko Karalyste grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-15",
                             "@pareigos": "Pirmininko pavaduotoja",
                             "@parlamentinės_grupės_id": "143",
                             "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Prancūzijos Respublika grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-24",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "268",
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Singapūro Respublika grupė"
                         },
                         {
                             "@data_iki": "",
@@ -9919,6 +10136,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-24",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "220",
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Maroko Karalyste grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-08",
                             "@pareigos": "Pirmininkė",
                             "@parlamentinės_grupės_id": "10",
@@ -9999,6 +10223,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-24",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "267",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Kėdainių bičiulių grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-11-19",
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "189",
@@ -10038,6 +10269,13 @@
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "141",
                             "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Jungtine Didžiosios Britanijos ir Šiaurės Airijos Karalyste grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-24",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "268",
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Singapūro Respublika grupė"
                         },
                         {
                             "@data_iki": "",
@@ -10125,6 +10363,13 @@
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "150",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji grupė „Už šeimą“"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-30",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "108",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Maldos grupė"
                         },
                         {
                             "@data_iki": "",
@@ -10306,6 +10551,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-30",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "108",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Maldos grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-10",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "184",
@@ -10477,6 +10729,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-22",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "48",
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Ukraina grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-08",
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "15",
@@ -10572,6 +10831,20 @@
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "237",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji Kauno regiono bičiulių grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-24",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "267",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Kėdainių bičiulių grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-30",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "108",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Maldos grupė"
                         },
                         {
                             "@data_iki": "",
@@ -10802,6 +11075,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-30",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "108",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Maldos grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-11-19",
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "189",
@@ -10921,6 +11201,13 @@
                             "@padalinio_id": "47",
                             "@padalinio_pavadinimas": "Mišri Seimo narių grupė",
                             "@pareigos": "Frakcijos narys"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-30",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "108",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Maldos grupė"
                         },
                         {
                             "@data_iki": "",
@@ -11709,6 +11996,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-30",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "108",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Maldos grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-08",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "249",
@@ -11905,6 +12199,13 @@
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "150",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji grupė „Už šeimą“"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-30",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "108",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Maldos grupė"
                         },
                         {
                             "@data_iki": "",
@@ -12170,6 +12471,13 @@
                             "@padalinio_id": "47",
                             "@padalinio_pavadinimas": "Mišri Seimo narių grupė",
                             "@pareigos": "Frakcijos seniūnas"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-24",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "52",
+                            "@parlamentinės_grupės_pavadinimas": "Seniūnų sueiga"
                         },
                         {
                             "@data_iki": "",
@@ -12497,6 +12805,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-30",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "108",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Maldos grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-23",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "242",
@@ -12588,6 +12903,13 @@
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "183",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji Lietuvos kariuomenės ir Lietuvos šaulių sąjungos paramos grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-30",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "108",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Maldos grupė"
                         },
                         {
                             "@data_iki": "",
@@ -12922,11 +13244,18 @@
                             "@pareigos": "Komisijos narys"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2021-03-23",
                             "@data_nuo": "2020-12-04",
                             "@padalinio_id": "1106",
                             "@padalinio_pavadinimas": "Laisvės kovų ir valstybės istorinės atminties komisija",
                             "@pareigos": "Komisijos pirmininkas"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-24",
+                            "@padalinio_id": "1106",
+                            "@padalinio_pavadinimas": "Laisvės kovų ir valstybės istorinės atminties komisija",
+                            "@pareigos": "Komisijos narys"
                         },
                         {
                             "@data_iki": "",
@@ -13133,6 +13462,13 @@
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "34",
                             "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Kanada grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-24",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "268",
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Singapūro Respublika grupė"
                         }
                     ]
                 },
@@ -13544,6 +13880,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-30",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "108",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Maldos grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-11",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "256",
@@ -13792,6 +14135,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-24",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "268",
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Singapūro Respublika grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-10",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "43",
@@ -13897,6 +14247,13 @@
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "237",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji Kauno regiono bičiulių grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-24",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "267",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Kėdainių bičiulių grupė"
                         },
                         {
                             "@data_iki": "",
@@ -14344,6 +14701,20 @@
                     "Pareigos": [
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-25",
+                            "@padalinio_id": "",
+                            "@padalinio_pavadinimas": "",
+                            "@pareigos": "Seimo opozicijos lyderis"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-25",
+                            "@padalinio_id": "35",
+                            "@padalinio_pavadinimas": "Seimo valdyba",
+                            "@pareigos": "Seimo opozicijos lyderis"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-11",
                             "@padalinio_id": "22",
                             "@padalinio_pavadinimas": "Nacionalinio saugumo ir gynybos komitetas",
@@ -14362,6 +14733,13 @@
                             "@padalinio_id": "1070",
                             "@padalinio_pavadinimas": "Lietuvos valstiečių ir žaliųjų sąjungos frakcija",
                             "@pareigos": "Frakcijos narys"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-25",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "52",
+                            "@parlamentinės_grupės_pavadinimas": "Seniūnų sueiga"
                         },
                         {
                             "@data_iki": "",
@@ -14592,6 +14970,13 @@
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "237",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji Kauno regiono bičiulių grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-30",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "108",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Maldos grupė"
                         },
                         {
                             "@data_iki": "",
@@ -14996,10 +15381,17 @@
                     ],
                     "Pareigos": [
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2021-03-24",
                             "@data_nuo": "2020-11-19",
                             "@padalinio_id": "582",
                             "@padalinio_pavadinimas": "Sveikatos reikalų komitetas",
+                            "@pareigos": "Komiteto narys"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-25",
+                            "@padalinio_id": "25",
+                            "@padalinio_pavadinimas": "Valstybės valdymo ir savivaldybių komitetas",
                             "@pareigos": "Komiteto narys"
                         },
                         {
@@ -15291,6 +15683,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-30",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "108",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Maldos grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-08",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "249",
@@ -15419,10 +15818,17 @@
                             "@pareigos": "Komiteto pirmininko pavaduotojas"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2021-03-24",
                             "@data_nuo": "2020-11-19",
                             "@padalinio_id": "2",
                             "@padalinio_pavadinimas": "Kaimo reikalų komitetas",
+                            "@pareigos": "Komiteto narys"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-25",
+                            "@padalinio_id": "44",
+                            "@padalinio_pavadinimas": "Užsienio reikalų komitetas",
                             "@pareigos": "Komiteto narys"
                         },
                         {
@@ -15438,6 +15844,13 @@
                             "@padalinio_id": "1070",
                             "@padalinio_pavadinimas": "Lietuvos valstiečių ir žaliųjų sąjungos frakcija",
                             "@pareigos": "Frakcijos narys"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-30",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "108",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Maldos grupė"
                         },
                         {
                             "@data_iki": "",
@@ -15700,6 +16113,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-30",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "208",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji grupė „Už gyvūnų gerovę ir apsaugą“"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-11-19",
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "150",
@@ -15743,7 +16163,7 @@
                         {
                             "@data_iki": "",
                             "@data_nuo": "2021-03-18",
-                            "@pareigos": "Narė",
+                            "@pareigos": "Pirmininkė",
                             "@parlamentinės_grupės_id": "220",
                             "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Maroko Karalyste grupė"
                         },
@@ -15868,6 +16288,13 @@
                             "@pareigos": "Pirmininko pavaduotojas",
                             "@parlamentinės_grupės_id": "208",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji grupė „Už gyvūnų gerovę ir apsaugą“"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-30",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "108",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Maldos grupė"
                         },
                         {
                             "@data_iki": "",
@@ -15997,6 +16424,13 @@
                             "@padalinio_id": "1022",
                             "@padalinio_pavadinimas": "Tėvynės sąjungos-Lietuvos krikščionių demokratų frakcija",
                             "@pareigos": "Frakcijos narys"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-30",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "108",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Maldos grupė"
                         },
                         {
                             "@data_iki": "",
@@ -16144,6 +16578,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-30",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "108",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Maldos grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-03",
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "181",
@@ -16268,7 +16709,7 @@
                             "@pareigos": "Frakcijos seniūno pavaduotoja"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2021-03-23",
                             "@data_nuo": "2020-11-13",
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "52",
@@ -16287,6 +16728,13 @@
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "150",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji grupė „Už šeimą“"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-30",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "108",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Maldos grupė"
                         },
                         {
                             "@data_iki": "",
@@ -16395,6 +16843,13 @@
                             "@padalinio_id": "793",
                             "@padalinio_pavadinimas": "Lietuvos socialdemokratų partijos frakcija",
                             "@pareigos": "Frakcijos narė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-30",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "108",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Maldos grupė"
                         },
                         {
                             "@data_iki": "",
@@ -17139,6 +17594,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2021-03-24",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "268",
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Singapūro Respublika grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-10",
                             "@pareigos": "Pirmininko pavaduotojas",
                             "@parlamentinės_grupės_id": "43",
@@ -17506,6 +17968,13 @@
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "183",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji Lietuvos kariuomenės ir Lietuvos šaulių sąjungos paramos grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-30",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "108",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Maldos grupė"
                         },
                         {
                             "@data_iki": "",
@@ -18233,6 +18702,13 @@
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "81",
                             "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Moldovos Respublika grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2021-03-24",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "268",
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Singapūro Respublika grupė"
                         },
                         {
                             "@data_iki": "",

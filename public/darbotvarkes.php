@@ -10,7 +10,9 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="ManoSeimas.lt" />
     <meta property="og:description" content="Svetainėje „ManoSeimas.lt“ galite sužinoti, kaip Seimo nariai skelbia savo darbotvarkes ir praneša apie susitikimus su įvairių interesų grupių atstovais." />
-    <meta property="og:image" content="http://www.manoseimas.lt/images/thumbnail2.png" />
+    <meta property="og:image" content="http://www.manoseimas.lt/images/thumbnail_new.png" />
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="630">
     <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
