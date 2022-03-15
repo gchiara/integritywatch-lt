@@ -74,7 +74,7 @@ new Vue({
   methods: {
     //Share
     downloadDataset: function () {
-      window.open('/data/tab_b/badges.csv');
+      window.open('./data/tab_b/badges.csv');
     },
     share: function (platform) {
       if(platform == 'twitter'){
@@ -551,7 +551,8 @@ csv('./data/tab_b/meetings.csv?' + randomPar, (err, meetings) => {
           "next":       "Kitas",
           "previous":   "Ankstesnis"
         },
-        "infoEmpty": "No entries to show"
+        "infoEmpty": "Įrašų nėra",
+        "emptyTable": "Nerasta"
       },
       "columnDefs": [
         {

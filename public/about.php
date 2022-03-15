@@ -7,7 +7,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="ManoSeimas.lt" />
     <meta property="og:description" content="Svetainėje „ManoSeimas.lt“ galite sužinoti, kaip Seimo nariai skelbia savo darbotvarkes ir praneša apie susitikimus su įvairių interesų grupių atstovais." />
-    <meta property="og:image" content="http://www.manoseimas.lt/images/thumbnail_new.png" />
+    <meta property="og:image" content="http://www.manoseimas.lt/images/thumbnail_090621.png" />
     <meta property="og:image:width" content="1280">
     <meta property="og:image:height" content="630">
     <title>ManoSeimas.lt - Apie</title>
@@ -32,9 +32,11 @@
             </div>
             <div id="collapse1" class="panel-collapse collapse in">
               <div class="panel-body">
-                <p>Svetainėje „ManoSeimas.lt“ galite greitai ir paprastai sužinoti, kas gauna ilgalaikius leidimus į Seimą ir kaip dažnai šie asmenys dalyvauja komitetų posėdžiuose, taip pat - kaip LR Seimo nariai skelbia savo darbotvarkes ir praneša apie susitikimus su įvairių interesų grupių atstovais, dalyvavimą renginiuose, susitikimus su kitais politikais. Šiuos duomenis galite lyginti tarpusavyje pasinaudodami interaktyviais grafikais.</p>
-                <p>Šioje svetainėje naudojami duomenys yra (1) gauti užklausų būdu, remiantis Teisės gauti informaciją iš valstybės ir savivaldybių institucijų ir įstaigų įstatymu, (2) viešai prieinami, (3) skelbiami atvirų duomenų formatu puslapyje www.lrs.lt (tiekėjas - Seimo kanceliarija, duomenys pateikiami pagal CC BY 4.0 licenciją). Daugiau informacijos apie naudojamus duomenis ir jų analizę pateikiame skiltyse: „Parlamentarų susitikimai“ ir „Ilgalaikiai leidimai į Seimą“.</p> 
+                <p>Svetainėje „ManoSeimas.lt“ galite greitai ir paprastai sužinoti, kokius teisės aktus dažniausiai svarsto Seimo komitetai ir kas dalyvauja komitetų klausimų svarstymuose. Taip pat galite sužinoti, kaip LR Seimo nariai skelbia savo darbotvarkes ir praneša apie susitikimus su įvairių interesų grupių atstovais ar kitais politikais bei kas iš jų gauna ilgalaikius leidimus į Seimą. Šiuos duomenis galite lyginti tarpusavyje pasinaudodami interaktyviais grafikais.</p>
+                <p>Šioje svetainėje naudojami duomenys yra (1) gauti užklausų būdu, remiantis Teisės gauti informaciją iš valstybės ir savivaldybių institucijų ir įstaigų įstatymu, (2) viešai prieinami, (3) skelbiami atvirų duomenų formatu puslapyje www.lrs.lt (tiekėjas - Seimo kanceliarija, duomenys pateikiami pagal CC BY 4.0 licenciją). Daugiau informacijos apie naudojamus duomenis ir jų analizę pateikiame skiltyse: „Parlamentarų susitikimai“, „Ilgalaikiai leidimai į Seimą“, „Komitetai“. </p> 
                 <h3>Atsižvelgiant į TILS patirtį gaunant, susisteminant ir pateikiant duomenis viešai, rekomenduojame:</h3>
+                <p><strong>Reguliariai skelbti atvirus komitetų išvadų duomenis, tai daryti vienodu formatu. Skelbti komitetų posėdžių (kai tai nėra uždaras posėdis) stenogramas.</strong></p>
+                <p><strong>Susisteminti ir viešai skelbti visus teisės aktų svarstymo etapus ir juose dalyvavusius asmenis sukuriant teisėkūros pėdsaką.</strong> (Pavyzdžiui, kiekvienam naujam teisės akto projektui priskirti elektroninį ID numerį ir visus su konkrečiu teisės aktu susijusius dokumentus, susitikimus pažymėti tuo pačiu ID numeriu).</p>
                 <p><strong>Reguliariai skelbti atvirus duomenis apie išduotus ilgalaikius leidimus į Seimą, tai daryti vienodu formatu (nuasmeninant jautrius asmens duomenis bei fizinių asmenų, teikiančių paslaugas Seimui, vardus ir pavardes):</strong></p>
                 <ul>
                   <li>Organizacijų ir institucijų tikslius pavadinimus pasirinkti iš Registrų centro atverto Juridinių asmenų registro;</li>
@@ -49,6 +51,7 @@
                 <h3>Pastebėjote klaidą ar neatitikimą?</h3>
                 <p>Ši svetainė – tai pirminė (beta) puslapio versija, todėl apie pastebėtas klaidas prašome pranešti mums el. paštu <a href="mailto:info@transparency.lt">info@transparency.lt</a>.</p>
                 <div class="about-eu-funding">
+                  <p style="font-family: Arial">Iniciatyva finansuojama iš <a href="https://www.transparency.lt/prisidek/" target="_blank">1.2 proc. GPM paramos</a></p>
                   <img class="logo" src="./images/flag_yellow_low.jpg" />
                   <p style="font-family: Arial">Iniciatyva finansuojama iš Europos Sąjungos vidaus saugumo fondo – policijos.</p>
                   <p style="font-family: Arial">Nei Europos Sąjungos institucijos ir įstaigos, nei jų vardu veikiantis asmuo negali prisiimti atsakomybės už pasekmes, galinčias atsirasti dėl šios informacijos naudojimo kitais tikslais ar kituose kontekstuose.</p>
@@ -68,9 +71,9 @@
             <div id="collapse2" class="panel-collapse collapse in">
               <div class="panel-body">
                 <p>Svetainėje „ManoSeimas.lt“ galite sužinoti, kaip XII ir XIII kadencijų Seimo nariai viešina savo darbotvarkes ir praneša apie susitikimus su įvairių interesų grupių atstovais, dalyvavimą renginiuose, susitikimus su kitais politikais. Šiuos duomenis galite lyginti tarpusavyje pasinaudodami interaktyviais grafikais.</p>
-                <p>Susitikimų skaičius su interesų grupių atstovais (verslininkais, NVO atstovais, registruotais lobistais, profsąjungomis) atnaujinamas prieš kiekvieną Seimo sesijos pradžią peržiūrint susitikimus, paskelbtus viešose Seimo narių darbotvarkėse, asmeninėse svetainėse ir svetainėje <a href="https://manosusitikimai.lt/" target="_blank">www.manosusitikimai.lt</a>.</p>
-                <p>Susisteminta informacija pateikiama apie XII Seimo kadencijos parlamentarų susitikimus su interesų grupėmis ir registruotais lobistais deklaruotus nuo 2017 m. kovo mėn. 10 d. iki 2020 m. rugpjūčio mėn. 16 d. Visi Seimo narių susitikimai (posėdžiai, vidiniai susitikimai, renginiai ir pan.) skelbiami ir reguliariai atnaujinami remiantis www.lrs.lt atvirais duomenimis.</p>
-                <p>Šio (XIII) Seimo kadencijos parlamentarų susitikimų duomenys su interesų grupėmis ir registruotais lobistais šiuo metu renkami ir bus skelbiami pasibaigus Seimo 2021 m. pavasario sesijai.</p>
+                <p>Susitikimų skaičius su interesų grupių atstovais (verslininkais, NVO atstovais, registruotais lobistais, profsąjungomis) atnaujinamas prieš kiekvieną Seimo sesijos pradžią peržiūrint susitikimus, paskelbtus viešose Seimo narių darbotvarkėse, asmeninėse svetainėse ir svetainėje <a href="https://manosusitikimai.lt/" target="_blank">www.manosusitikimai.lt</a>. Tais atvejais, kai Seimo narys (-ė) buvo paskirtas ministru (-e), papildomai peržiūrimi ir suskaičiuojami susitikimai su interesų grupių atstovais, skelbiami jo/jos, kaip ministro (-ės), darbotvarkėse.</p>
+                <p>Susisteminta informacija pateikiama apie XII Seimo kadencijos parlamentarų susitikimus su interesų grupėmis ir registruotais lobistais, deklaruotus nuo 2017 m. kovo mėn. 10 d. iki 2020 m. rugpjūčio mėn. 16 d. Visi Seimo narių susitikimai (posėdžiai, vidiniai susitikimai, renginiai ir pan.) skelbiami ir reguliariai atnaujinami remiantis <a href="http://www.lrs.lt" target="_blank">www.lrs.lt</a> atvirais duomenimis.</p>
+                <p>Šio (XIII) Seimo kadencijos parlamentarų susitikimų duomenys su interesų grupėmis ir registruotais lobistais reguliariai atnaujinami prieš kiekvieną sesiją, paskelbiant prieš tai buvusios sesijos rezultatus. 2020-2024 m. Seimo kadencijos duomenys, kaip ir prieš tai buvusios kadencijos, skaičiuojami nuo kovo 10 d. - pirmosios pavasario sesijos pradžios.</p>
                 <h3>Naudojamos sąvokos</h3>
                 <p><strong>Interesų grupė</strong> - tai gyventojų grupė ir/arba juridiniai asmenys, kurie siekia daryti įtaką priimant politinius ir/arba administracinius sprendimus.</p>
                 <p><strong>Susitikimas su interesų grupės atstovu (-ais)</strong> - susitikimas, kurio metu galimai buvo siekiama dalyvauti priimant sprendimus.</p>
@@ -83,7 +86,7 @@
                   <li>susitikimai, viešinti asmeninėse socialinių tinklų paskyrose.</li>
                 </ul>
                 <h3>Duomenų analizė</h3>
-                <p>Šioje svetainėje skelbiama informacija analizuojama „Transparency International“ Lietuvos skyriaus (TILS) ir pateikiama atskirose apžvalgose apie kiekvienos Seimo sesijos metu deklaruotus susitikimus. Šiuo metu atliktos septynios tokios apžvalgos. Kviečiame susipažinti su trumpa duomenų analize:</p>
+                <p>Šioje svetainėje skelbiama informacija analizuojama „Transparency International“ Lietuvos skyriaus (TILS) ir pateikiama atskirose apžvalgose apie kiekvienos Seimo sesijos metu deklaruotus susitikimus. Kviečiame susipažinti su trumpa duomenų analize:</p>
                 <ul>
                   <li><a href="https://www.transparency.lt/kas-trecias-seimo-narys-skelbia-su-kuo-susitinka-darbo-metu/" target="_blank">2017 m. pavasario sesija</a></li>
                   <li><a href="https://www.transparency.lt/trecdaliu-daugiau-seimo-nariu-skelbia-su-kuo-susitinka-darbo-metu/" target="_blank">2017 m. rudens sesija</a></li>
@@ -92,6 +95,8 @@
                   <li><a href="https://www.transparency.lt/parlamentaru-susitikimai-2019/" target="_blank">2019 m. pavasario sesija</a></li>
                   <li><a href="https://www.transparency.lt/parlamentaru_susitikimai_2019_ruduo/" target="_blank">2019 m. rudens sesija</a></li>
                   <li><a href="https://www.transparency.lt/2016-2020_seimas/" target="_blank">2020 m. pavasario sesija</a></li>
+                  <li><a href="https://www.transparency.lt/parlamentaru-susitikimai-2021pavasaris/" target="_blank">2021 m. pavasario sesija</a></li>
+                  <li><a href="http://www.transparency.lt/2021-ruduo/" target="_blank">2021 m. rudens sesija</a></li>
                 </ul>
               </div>
             </div>
@@ -108,7 +113,6 @@
                 <p>Svetainėje „ManoSeimas.lt“ galite sužinoti,  kas 2016-2020 m. gavo ilgalaikius leidimus į Seimą, kokių organizacijų ir įstaigų atstovai jų gavo daugiausiai, kokių interesų grupių atstovai, turintys ilgalaikius leidimus, ir kiek dažnai lankėsi Seimo komitetų posėdžiuose.</p> 
                 <p>Seimo kanceliarijoje išduodami ilgalaikiai ir vienos dienos leidimai įeiti į Seimo rūmus (daugiau informacijos: LR Seimo rūmų vidaus tvarkos aprašas, <a href="https://bit.ly/3t8x1MC" target="_blank">https://bit.ly/3t8x1MC</a>).</p> 
                 <p>Naujausi duomenys apie ilgalaikius leidimus gauti 2020 m. rugsėjo 10 d. pagal užklausą LR Seimo kanceliarijai (pateikta 2019 m. gruodžio mėn.). Ši informacija (leidimus gavusių asmenų vardai ir pavardės) buvo sugretinta su Seimo komitetų duomenimis, kuriuos TILS surinko 2020 m. liepos mėn. pagal informaciją e-seimas.lrs.lt puslapyje.  TILS dėjo visas pastangas, siekdamas susisteminti Seimo pateikiamus duomenis. Vis tik dėl šių duomenų išsamumo ir vientisumo trūkumo TILS negali pilnai užtikrinti sugretintų duomenų tikslumo.</p>
-                <p>Išsamūs 2016-2020 m. Seimo kadencijos komitetų duomenys bus skelbiami 2021 m. antrąjį ketvirtį.</p>
                 <p>TILS pateikus užklausą LR vadovybės apsaugos tarnybai dėl duomenų apie tai, kam buvo išduoti  vienadieniai leidimai, ši informacija nebuvo suteikta.</p> 
                 <p>Pirminius Seimo pateiktus ilgalaikių leidimų duomenis (TILS nuasmenintus) galite parsisiųsti <a href="./data/Ilgalaikiai_leidimai_i_Seima_2016-2020_m.xlsx" target="_blank">čia</a>.</p>
                 <h3>Duomenų analizė</h3>
@@ -127,6 +131,39 @@
               </div>
             </div>
           </div>
+          <!-- BLOCK 4 -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h1 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">4. Komitetai</a>
+              </h1>
+            </div>
+            <div id="collapse4" class="panel-collapse collapse in">
+              <div class="panel-body">
+                <p>Svetainėje „ManoSeimas.lt“ galite sužinoti, dėl kokių teisės aktų 2016-2020 m. dažniausiai svarstė Seimo komitetai ir kokie viešojo sektoriaus bei interesų grupių atstovai dalyvavo šiuose svarstymuose.</p>
+                <p>Duomenys apie komitetuose svarstytus klausimus surinkti 2020 m. liepos mėnesį pagal informaciją <a href="https://e-seimas.lrs.lt/portal/documentSearch/lt" target="_blank">e-seimas.lrs.lt</a> puslapyje. Surinktus pirminius komitetų duomenis galite parsisiųsti <a href="./data/Komitetu_duomenys.xlsx" target="_blank">čia</a>.</p>
+                <p>Komitetų posėdžių vaizdo įrašus galite rasti <a href="https://www.lrs.lt/sip/portal.show?p_r=36503&p_k=1" target="_blank">čia</a> bei YouTube kanale #AtvirasSeimas.</p>
+                <p>Daugiau statistikos apie komitetuose šiuo metu svarstomus projektus galite rasti <a href="https://www.lrs.lt/sip/portal.show?p_r=39152&p_k=1" target="_blank">čia</a>.</p>  
+                <p>Seimo narių balsavimai - <a href="https://www.lrs.lt/sip/portal.show?p_r=37067&p_k=1&p_kade_id=8#balsKadencija" target="_blank">čia</a>.</p>
+                <h3>Duomenų analizė</h3>
+                <p>Kviečiame susipažinti su trumpa duomenų analizės rezultatų apžvalga:</p>
+                <ul>
+                  <li><a href="https://www.transparency.lt/seimo-komitetai/" target="_blank">2016-2020 m. duomenys apie komitetuose svarstytus teisės aktus</a></li>
+                </ul>
+                <h3>Duomenų pateikimo ir analizės apribojimai</h3>
+                <p>Šioje svetainėje ir apžvalgoje pateikiami susisteminti komitetų duomenys, siekiant pateikti apibendrintas įžvalgas ir tendencijas apie tai, kokius teisės aktus dažniausiai svarstė komitetai, kurie komitetai buvo aktyviausiai, kas dalyvavo jų posėdžiuose. Visgi, atkreipiame dėmesį, kad galimi informacijos netikslumai dėl šių apribojimų, susijusių su informacijos vientisumo ir išsamumo trūkumu:</p>
+                <ul>
+                  <li>Klausimų svarstymuose dalyvavusių įstaigų atstovai ar pavieniai asmenys tam tikrai kategorijai, t.y. viešojo sektoriaus institucija arba interesų grupė, buvo priskiriami remiantis viešai prieinama informacija oficialiuose puslapiuose, jų tinklapiuose. Ne visuomet buvo nurodyti pilni atstovų vardai.</li>
+                  <li>Kiekvienam klausimo svarstymui buvo priskirtas teisės akto nr., remiantis e-seimas.lrs.lt paskelbta informacija.</li>
+                  <li>Kai kuriose viešai pateikiamų komitetų išvadose vietoj komiteto pavadinimo buvo nurodytas asmens vardas, pavardė.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-logos">
+          <img src="./images/ti_lt_logo.png" class="about-logo" />
+          <img src="./images/WSA-Lithuania_Winner-2021_seal.png" class="about-logo" />
         </div>
       </div>
     </div>

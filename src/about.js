@@ -41,10 +41,9 @@ new Vue({
     },
   },
   mounted () {
-    if(this.getUrlParameter('section') == 2 ){
-      $('#collapse2').addClass('show');
-    } else if(this.getUrlParameter('section') == 3 ){
-      $('#collapse3').addClass('show');
+    var selectedSection = this.getUrlParameter('section');
+    if(selectedSection) {
+      $('#collapse' + selectedSection).addClass('show');
     } else {
       $('#collapse1').addClass('show');
     }

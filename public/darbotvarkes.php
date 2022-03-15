@@ -6,18 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ManoSeimas.lt</title>
     <!-- Add twitter and og meta here -->
-    <meta property="og:url" content="http://www.manoseimas.lt" />
+    <meta property="og:url" content="http://www.manoseimas.lt/darbotvarkes.php" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="ManoSeimas.lt" />
     <meta property="og:description" content="Svetainėje „ManoSeimas.lt“ galite sužinoti, kaip Seimo nariai skelbia savo darbotvarkes ir praneša apie susitikimus su įvairių interesų grupių atstovais." />
-    <meta property="og:image" content="http://www.manoseimas.lt/images/thumbnail_new.png" />
+    <meta property="og:image" content="http://www.manoseimas.lt/images/thumbnail_090621.png" />
     <meta property="og:image:width" content="1280">
     <meta property="og:image:height" content="630">
     <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:500" rel="stylesheet">
-    <link rel="stylesheet" href="static/tab_a.css">
+    <link rel="stylesheet" href="static/tab_a.css?v=3">
 </head>
 <body>
     <div id="app" class="tabA">   
@@ -48,6 +48,21 @@
               </div>
             </div>
           </div>
+          <!-- COMPARISON CHART - LEGISLATION 9 -->
+          <div class="col-md-6 chart-col" v-if="legislationSelected == 9">
+            <div class="boxed-container chart-container  tab_a_3">
+              <chart-header :title="charts.termsComparison.title" :info="charts.termsComparison.info" ></chart-header>
+              <div class="chart-inner" id="termscomparison_chart"></div>
+              <div class="termscomparison-legend">
+                <div class="termscomparison-legend-entry">
+                  <span class="termscomparison-legend-color termscomparison-legend-color8"></span><span class="termscomparison-legend-text">XII kadencija</span>
+                </div>
+                <div class="termscomparison-legend-entry">
+                  <span class="termscomparison-legend-color termscomparison-legend-color9"></span><span class="termscomparison-legend-text">XIII kadencija</span>
+                </div>
+              </div>
+            </div>
+          </div>
           <!-- CHARTS - FIRST ROW -->
           <div class="col-md-6 chart-col" v-if="showMeetingsCharts">
             <div class="boxed-container chart-container tab_a_1" id="meetingstotals_chart_container">
@@ -69,8 +84,8 @@
           <div class="col-md-12 toggle-btn-container" v-if="showMeetingsCharts">
             <button class="toggle-btn" id="charts-toggle-btn" @click="showAllCharts = !showAllCharts">Daugiau</button>
           </div>
-          <!-- CHARTS - SECOND ROW - CAN BE TOGGLED -->
-          <div class="col-md-6 chart-col" v-show="showAllCharts" v-if="showMeetingsCharts">
+          <!-- CHARTS - SECOND ROW - CAN BE TOGGLED IN LEGISLATION 8, IS SHOWN IN 9 -->
+          <div class="col-md-6 chart-col" v-show="showAllCharts || legislationSelected == 9" v-if="showMeetingsCharts || legislationSelected == 9">
             <div class="boxed-container chart-container  tab_a_3">
               <chart-header :title="charts.meetingsGroups.title" :info="charts.meetingsGroups.info" ></chart-header>
               <div class="chart-inner" id="meetingsgroups_chart"></div>
@@ -79,7 +94,6 @@
           <!-- TABLE -->
           <div class="col-12 chart-col">
             <div class="selected-rows-list">
-              <span class="selected-rows-title">Pasirinkta:</span>
               <div class="selected-rows-tags">
               </div>
             </div>
@@ -137,11 +151,12 @@
                   <!-- Meetings Counts Info -->
                   <div class="col-md-12">
                     <div class="modal-divider"></div>
-                    <div v-if="selectedElement.lobbyMeetings">
-                      <div class="meetings-count-info-container" v-for="el in meetingsCountsTables">
+                    <!-- Meetings Legislation 8 -->
+                    <div v-if="selectedElement.lobbyMeetings && legislationSelected == 8">
+                      <div class="meetings-count-info-container" v-for="el in meetingsCountsTablesL8">
                         <div class="details-line details-line-meetings-title">{{ el.title }}: {{ selectedElement.lobbyMeetings[el.dataPrefix+'_total'] }}</div>
                         <table>
-                          <thead><tr><th>Su verslu</th><th>Su registruotais lobistais</th><th>Su NVO</th><th>Su profesinėmis sąjungomis</th><th>Kiti</th></tr></thead>
+                          <thead><tr><th>Su verslu ir verslo asociacijomis</th><th>Su registruotais lobistais</th><th>Su NVO</th><th>Su profesinėmis sąjungomis</th><th>Kiti</th></tr></thead>
                           <tbody>
                             <tr>
                               <td>{{ selectedElement.lobbyMeetings[el.dataPrefix+'_business'] }}</td>
@@ -152,6 +167,25 @@
                             </tr>
                           </tbody>
                         </table>
+                      </div>
+                    </div>
+                    <!-- Meetings Legislation 9 -->
+                    <div v-if="selectedElement.lobbyMeetings && legislationSelected == 9">
+                      <div class="meetings-count-info-container" v-for="el in meetingsCountsTablesL9">
+                        <div class="details-line details-line-meetings-title">{{ el.title }}: {{ selectedElement.lobbyMeetings[el.dataPrefix+'_total'] }}</div>
+                        <table>
+                          <thead><tr><th>Su verslu ir verslo asociacijomis *</th><th>Su registruotais lobistais</th><th>Su NVO</th><th>Su profesinėmis sąjungomis</th><th>Kiti</th></tr></thead>
+                          <tbody>
+                            <tr>
+                              <td>{{ selectedElement.lobbyMeetings[el.dataPrefix+'_business'] }}</td>
+                              <td>{{ selectedElement.lobbyMeetings[el.dataPrefix+'_registered_lobbyists'] }}</td>
+                              <td>{{ selectedElement.lobbyMeetings[el.dataPrefix+'_NGO_local'] }}</td>
+                              <td>{{ selectedElement.lobbyMeetings[el.dataPrefix+'_trade_unions'] }}</td>
+                              <td>{{ selectedElement.lobbyMeetings[el.dataPrefix+'_others'] }}</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div class="meetings-asterisk-line">*{{ selectedElement.lobbyMeetings['Asterisk_'+el.dataPrefix] }} {{ el.asteriskText }}</div>
                       </div>
                     </div>
                     <div v-show="selectedElement.agendas && selectedElement.agendasCount > 0" class="agendas-table-container">
@@ -208,7 +242,7 @@
     <script type="text/javascript" src="vendor/js/d3.layout.cloud.js"></script>
     <script type="text/javascript" src="vendor/js/crossfilter.min.js"></script>
     <script type="text/javascript" src="vendor/js/dc.js"></script>
-    <script src="static/tab_a.js"></script>
+    <script src="static/tab_a.js?v=3"></script>
 
  
 </body>

@@ -53,7 +53,11 @@ var vuedata = {
     },
     mainTable: {
       title: '',
-      info: 'Pamatykite, kaip parlamentarai viešina savo darbotvarkes, su kokiomis interesų grupėmis susitinka, rikiuokite ir palyginkite parlamentarų aktyvumą paspausdami ant lentelės skilčių pavadinimų.'
+      info: 'Pamatykite, kaip parlamentarai viešina savo darbotvarkes, su kokiomis interesų grupėmis susitinka, rikiuokite ir palyginkite parlamentarų aktyvumą paspausdami ant lentelės skilčių pavadinimų. Atkreipiame dėmesį, kad į Seimą išrinktų ir ministrais paskirtų politikų darbotvarkės yra skelbiamos ministerijų puslapiuose, todėl susitikimų, skelbiamų lrs.lt ir ministerijų puslapiuose, skaičius, gali skirtis. Susitikimai su interesų grupėmis buvo skaičiuojami peržiūrint tiek lrs.lt, tiek ministerijų puslapius.'
+    },
+    termsComparison: {
+      title: 'Seimo narių susitikimai',
+      info: 'Palyginkite, kaip keitėsi Seimo narių susitikimų skaičius skirtingų sesijų ir kadencijų metu.'
     }
   },
   openModalClicked: false,
@@ -63,7 +67,7 @@ var vuedata = {
   selectedRowsAgendasData: [],
   globalAgendasString: "",
   globalAgendasData: [],
-  meetingsCountsTables: [
+  meetingsCountsTablesL8: [
     {
       title: '2020 m. pavasario sesija',
       dataPrefix: '2020_Spring'
@@ -93,6 +97,18 @@ var vuedata = {
       dataPrefix: '2017_Spring'
     }
   ],
+  meetingsCountsTablesL9: [
+    {
+      title: '2021 m. rudens sesija',
+      dataPrefix: '2021_Autumn',
+      asteriskText: '- tiek susitikimų įvyko su lobistų sąraše registruotomis verslo asociacijomis ir įmonėmis.'
+    },
+    {
+      title: '2021 m. pavasario sesija',
+      dataPrefix: '2021_Spring',
+      asteriskText: '- tiek susitikimų įvyko su lobistų sąraše registruotomis verslo asociacijomis.'
+    },
+  ],
   colors: {
     generic: ["#3b95d0", "#4081ae", "#406a95", "#395a75" ],
     default1: "#2b90b8",
@@ -114,7 +130,7 @@ new Vue({
   methods: {
     //Share
     downloadDataset: function () {
-      window.open('/data/tab_a/meetings_totals.csv');
+      window.open('./data/tab_a/legislation'+this.legislationSelected+'/meetings_totals.csv');
     },
     share: function (platform) {
       if(platform == 'twitter'){
@@ -207,8 +223,8 @@ var calcPieSize = function(divId) {
 };
 var resizeGraphs = function() {
   for (var c in charts) {
-    if(((c == 'meetingsGroups') && vuedata.showAllCharts == false) || (c == 'meetingsSelected' && vuedata.selectedRows.length == 0) || (c == 'meetingsTotals' && vuedata.selectedRows.length > 0)){
-      
+    if((c == 'wordcloud' && vuedata.legislationSelected == 9) || (c == 'meetingsGroups' && vuedata.legislationSelected == 8 && vuedata.showAllCharts == false) || (c == 'meetingsSelected' && vuedata.selectedRows.length == 0) || (c == 'meetingsTotals' && (vuedata.selectedRows.length > 0 || vuedata.legislationSelected == 9))){
+
     } else {
       var sizes = calcPieSize(charts[c].divId);
       var newWidth = recalcWidth(charts[c].divId);
@@ -298,6 +314,67 @@ jQuery.extend( jQuery.fn.dataTableExt.oSort, {
   }
 });
 
+jQuery.extend({
+  highlight: function (node, re, nodeName, className) {
+      if (node.nodeType === 3) {
+          var match = node.data.match(re);
+          if (match) {
+              var highlight = document.createElement(nodeName || 'span');
+              highlight.className = className || 'highlight';
+              var wordNode = node.splitText(match.index);
+              wordNode.splitText(match[0].length);
+              var wordClone = wordNode.cloneNode(true);
+              highlight.appendChild(wordClone);
+              wordNode.parentNode.replaceChild(highlight, wordNode);
+              return 1; //skip added node in parent
+          }
+      } else if ((node.nodeType === 1 && node.childNodes) && // only element nodes that have children
+              !/(script|style)/i.test(node.tagName) && // ignore script and style nodes
+              !(node.tagName === nodeName.toUpperCase() && node.className === className)) { // skip if already highlighted
+          for (var i = 0; i < node.childNodes.length; i++) {
+              i += jQuery.highlight(node.childNodes[i], re, nodeName, className);
+          }
+      }
+      return 0;
+  }
+});
+
+//Highlighting plugin 
+jQuery.fn.unhighlight = function (options) {
+  var settings = { className: 'highlight', element: 'span' };
+  jQuery.extend(settings, options);
+
+  return this.find(settings.element + "." + settings.className).each(function () {
+      var parent = this.parentNode;
+      parent.replaceChild(this.firstChild, this);
+      parent.normalize();
+  }).end();
+};
+jQuery.fn.highlight = function (words, options) {
+  var settings = { className: 'highlight', element: 'span', caseSensitive: false, wordsOnly: false };
+  jQuery.extend(settings, options);
+  
+  if (words.constructor === String) {
+      words = [words];
+  }
+  words = jQuery.grep(words, function(word, i){
+    return word != '';
+  });
+  words = jQuery.map(words, function(word, i) {
+    return word.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");
+  });
+  if (words.length == 0) { return this; };
+  var flag = settings.caseSensitive ? "" : "i";
+  var pattern = "(" + words.join("|") + ")";
+  if (settings.wordsOnly) {
+      pattern = "\\b" + pattern + "\\b";
+  }
+  var re = new RegExp(pattern, flag);
+  return this.each(function () {
+      jQuery.highlight(this, re, settings.element, settings.className);
+  });
+};
+
 //Turn meetings totals into array and add avg
 function objToArray(obj) {
   var arr = [];
@@ -377,6 +454,7 @@ var photosDatasetFile = './data/tab_a/legislation9/photos.json';
 var lobbyMeetingsDatasetFile = './data/tab_a/legislation9/meetings_totals.csv';
 var partyMeetingsDatasetFile = './data/tab_a/legislation9/party_meetings.csv';
 var wordcloudMainDataFile = './data/tab_a/legislation9/wordcloud.json';
+var termsComparisonDataFile = './data/tab_a/legislation9/comparison_of_terms.csv';
 
 var legislationSelected = getParameterByName('legislation');
 if(legislationSelected == '8' || legislationSelected == '9') {
@@ -391,7 +469,8 @@ if(legislationSelected == '8' || legislationSelected == '9') {
 }
 if(vuedata.legislationSelected == '9') {
   vuedata.showMeetingsCharts = false;
-  vuedata.charts.mainTable.info = "Pamatykite, kaip parlamentarai viešina savo darbotvarkes, rikiuokite ir palyginkite parlamentarų aktyvumą paspausdami ant lentelės skilčių pavadinimų. Informacija apie Seimo narius atnaujinama remiantis atvirais Seimo duomenimis. Interesų grupių duomenys renkami ir bus atnaujinti prieš 2021 m. Seimo rudens sesiją.";
+  vuedata.charts.mainTable.info = "Pamatykite, kaip parlamentarai viešina savo darbotvarkes, rikiuokite ir palyginkite parlamentarų aktyvumą paspausdami ant lentelės skilčių pavadinimų. Informacija apie Seimo narius atnaujinama remiantis atvirais Seimo duomenimis. Tais atvejais, kai Seimo narys (-ė) buvo paskirtas ministru (-e), papildomai peržiūrimi ir suskaičiuojami susitikimai su interesų grupių atstovais, skelbiami jo/jos, kaip ministro (-ės), darbotvarkėse.";
+  vuedata.charts.meetingsGroups.info = "Pasirinkite jus dominančią frakciją ir pamatykite, kaip keitėsi jos narių susitikimų skaičius kadencijos metu. Parlamentarui pakeitus frakciją, jo/ jos nauji susitikimai buvo priskirti tai frakcijai, prie kurios jis/ ji prisijungė. Duomenys atnaujinami prieš kiekvieną sesiją."
 }
 
 //Load data and generate charts
@@ -470,7 +549,8 @@ json(mpsDatasetFile + '?' + randomPar, (err, mpsDataset) => {
                     //Filter agendas to only keep entries after 13 Nov 2020
                     d.agendas["SeimoNarioDarbotvarkėsĮvykis"] = _.filter(d.agendas["SeimoNarioDarbotvarkėsĮvykis"], function(x) { 
                       var iniDate = parseInt(x["@pradžia"].split(" ")[0].replaceAll("-",""));
-                      return iniDate >= 20201113 && iniDate <= 20211231; 
+                      //return iniDate >= 20201113 && iniDate <= 20211231; 
+                      return iniDate >= 20201113; 
                     });
                   } else {
                     //Filter agendas to only keep entries before 13 Nov 2020
@@ -525,7 +605,10 @@ json(mpsDatasetFile + '?' + randomPar, (err, mpsDataset) => {
               var ndxMeetingsTotals = crossfilter(meetingsTotalsData);
               var ndxMeetingsGroups = crossfilter(partyMeetingsDataset);
               var searchDimension = ndx.dimension(function (d) {
-                  var entryString = d['@vardas'] + ' ' + d['@pavardė'];
+                  var entryString = d['@vardas'] + ' ' + d['@pavardė'] + ' ' + d.agendasString;
+                  if(d.faction) {
+                    entryString += ' ' + d.faction['@padalinio_pavadinimo_santrumpa'];
+                  }
                   return entryString.toLowerCase();
               });
 
@@ -758,6 +841,19 @@ json(mpsDatasetFile + '?' + randomPar, (err, mpsDataset) => {
                   {name: "Frakcija „Lietuvos gerovei“", color: "#04A03C"},
                   {name: "Frakcija „Tvarka ir teisingumas“", color: "#24418C"},
                 ];
+                if(vuedata.legislationSelected == 9) {
+                  partiesData = [
+                    {name: "Darbo partijos frakcija (DPF)", color: "#DD3333"},
+                    {name: "Laisvės frakcija (LF)", color: "#3164B7"},
+                    {name: "Liberalų sąjūdžio frakcija (LSF)", color: "#F49813"},
+                    {name: "Lietuvos regionų frakcija (LRF)", color: "#04A03C"},
+                    {name: "Lietuvos socialdemokratų partijos frakcija (LSDPF)", color: "#E10514"},
+                    {name: "Lietuvos valstiečių ir žaliųjų sąjungos frakcija (LVŽSF)", color: "#0F7448"},
+                    {name: "Mišri Seimo narių grupė (MG)", color: "#7D7D7D"},
+                    {name: "Tėvynės sąjungos-Lietuvos krikščionių demokratų frakcija (TS-LKDF)", color: "#00A59B"},
+                    {name: "Demokratų frakcija „Vardan Lietuvos“ (DFVL)", color: "#13136e"}
+                  ];
+                }
                 var chart = charts.meetingsGroups.chart;
                 var dimension = ndxMeetingsGroups.dimension(function (d) {
                   return d.time; 
@@ -766,6 +862,9 @@ json(mpsDatasetFile + '?' + randomPar, (err, mpsDataset) => {
                 var composeArray = [];
                 _.each(partiesData, function (p) {
                   var thisGroup = dimension.group().reduceSum(function (d) { 
+                    if(d[p.name] == "N/A") {
+                      return -1;
+                    }
                     var val = parseInt(d[p.name]); 
                     if(isNaN(val)) {
                       return 0;
@@ -775,6 +874,9 @@ json(mpsDatasetFile + '?' + randomPar, (err, mpsDataset) => {
                   var thisCompose = dc.lineChart(chart)
                   .group(thisGroup, p.name)
                   .colors(p.color)
+                  .defined(function(d){
+                    return d.data.value !== -1;
+                  })
                   .renderDataPoints({
                     radius: 2,
                     fillOpacity: 0.5,
@@ -795,9 +897,9 @@ json(mpsDatasetFile + '?' + randomPar, (err, mpsDataset) => {
                   .xUnits(dc.units.ordinal)
                   .brushOn(false)
                   .xAxisLabel('')
-                  .yAxisLabel('Sustikimų Skaičius')
+                  .yAxisLabel('Susitikimų skaičius')
                   .dimension(dimension)
-                  .group(groups[0], 'Sustikimų Skaičius')
+                  .group(groups[0], 'Susitikimų skaičius')
                   ._rangeBandPadding(1)
                   .compose(composeArray);
                 chart.xAxis()
@@ -805,6 +907,116 @@ json(mpsDatasetFile + '?' + randomPar, (err, mpsDataset) => {
                   .tickFormat(function(d) { return d; });
                 chart.filter = function() {};
                 chart.render();
+              }
+
+              //TERMS COMPARISON CHART
+              var createTermsComparisonChart = function() {
+                csv(termsComparisonDataFile + '?' + randomPar, (err, data) => {
+                  var divId = "termscomparison_chart";
+                  var margin = {top: 10, right: 20, bottom: 70, left: 50},
+                  width = recalcWidth(divId) - margin.left - margin.right,
+                  height = 500 - margin.top - margin.bottom;
+                  var maxY = 0;
+                  var svgRoot = d3.select("#"+divId)
+                  .append("svg")
+                  .attr("width", width + margin.left + margin.right)
+                  .attr("height", height + margin.top + margin.bottom)
+                  var svg = svgRoot
+                  .append("g")
+                  .attr("transform",
+                        "translate(" + margin.left + "," + margin.top + ")");
+                  var subgroups = [];
+                  _.each(data, function (d) {
+                    var l8 = parseInt(d.legislation8 );
+                    var l9 = parseInt(d.legislation9 );
+                    if(l8 > maxY) { maxY = l8; }
+                    if(l9 > maxY) { maxY = l9; }
+                    subgroups.push(d.group);
+                  });
+                  subgroups = ["legislation9", "legislation8"];
+                  var groups = d3.map(data, function(d){return(d.group)}).keys();
+                  var x = d3.scaleBand()
+                    .domain(groups)
+                    .range([0, width])
+                    .padding([0.2])
+                  var xAxis = svg.append("g")
+                  .attr("transform", "translate(0," + height + ")")
+                  .call(d3.axisBottom(x).tickSize(0));
+                  //Customize x labels
+                  var editLabels = function() {
+                    xAxis.selectAll('text') 
+                      .call(function(t){                
+                        t.each(function(d){ 
+                          var self = d3.select(this);
+                          var s = self.text().split(' / ');  
+                          self.text(''); 
+                          self.append("tspan") 
+                            .attr("x", -5)
+                            .attr("dy","1em")
+                            .text(s[0].toUpperCase());
+                          self.append("tspan")
+                            .attr("x", 15)
+                            .attr("dy","1.1em")
+                            .text(s[1].toUpperCase());
+                        });
+                      })
+                      .style("text-anchor", "end")
+                      .attr("dx", "-1em")
+                      .attr("dy", ".15em")
+                      .attr("transform", "rotate(-25)");
+                  }
+                  editLabels();
+                  var y = d3.scaleLinear()
+                  .domain([0, maxY + 10])
+                  .range([ height, 0 ]);
+                  svg.append("g")
+                  .call(d3.axisLeft(y));
+                  var xSubgroup = d3.scaleBand()
+                  .domain(subgroups)
+                  .range([0, x.bandwidth()])
+                  .padding([0.05])
+                  var color = d3.scaleOrdinal().domain(subgroups).range(['#80b827','#3d8ac2']);
+                  var barsGroup = svg.append("g")
+                  .selectAll("g")
+                  .data(data)
+                  .enter()
+                  .append("g")
+                    .attr("transform", function(d) { return "translate(" + x(d.group) + ",0)"; });
+                  var bars = barsGroup
+                  .selectAll("rect")
+                  .data(function(d) { return subgroups.map(function(key) { return {key: key, value: d[key]}; }); })
+                  .enter().append("rect")
+                    .attr("x", function(d) { return xSubgroup(d.key); })
+                    .attr("y", function(d) { return y(d.value); })
+                    .attr("width", xSubgroup.bandwidth())
+                    .attr("height", function(d) { return height - y(d.value); })
+                    .attr("fill", function(d) { return color(d.key); })
+                    .append("svg:title") // TITLE APPENDED HERE
+                      .text(function(d) { return d.value; });
+
+                  svg.append("text")
+                    .attr("class", "y label")
+                    .attr("text-anchor", "end")
+                    .attr("x", "-85px")
+                    .attr("y", 0)
+                    .attr("dy", "-2.3em")
+                    .attr("transform", "rotate(-90)")
+                    .text("Susitikimų skaičius");
+                //Make chart responsive
+                var redrawComparisonChart = function() {
+                  width = recalcWidth(divId) - margin.left - margin.right;
+                  svgRoot.attr("width", width + margin.left + margin.right);
+                  x.range([0, width]);
+                  xAxis.call(d3.axisBottom(x).tickSize(0));
+                  editLabels();
+                  xSubgroup.range([0, x.bandwidth()])
+                  barsGroup.attr("transform", function(d) { return "translate(" + x(d.group) + ",0)"; });
+                  bars
+                  .attr("x", function(d) { return xSubgroup(d.key); })
+                  .attr("width", xSubgroup.bandwidth())
+                }
+                window.addEventListener("resize", redrawComparisonChart);
+                });
               }
               
               //TABLE
@@ -820,7 +1032,8 @@ json(mpsDatasetFile + '?' + randomPar, (err, mpsDataset) => {
                       "next":       "Kitas",
                       "previous":   "Ankstesnis"
                     },
-                    "infoEmpty": "No entries to show"
+                    "infoEmpty": "Įrašų nėra",
+                    "emptyTable": "Nerasta"
                   },
                   "columnDefs": [
                     {
@@ -996,6 +1209,7 @@ json(mpsDatasetFile + '?' + randomPar, (err, mpsDataset) => {
                 var dTable = $("#modalAgendasTable");
                 dTable.DataTable ({
                     "language": {
+                      "search": "Paieška:",
                       "info": "Nuo _START_ iki _END_ iš _TOTAL_ įrašų",
                       "lengthMenu": "Rodyti _MENU_ įrašus",
                       "paginate": {
@@ -1008,9 +1222,10 @@ json(mpsDatasetFile + '?' + randomPar, (err, mpsDataset) => {
                     },
                     "data" : vuedata.selectedElement.agendas['SeimoNarioDarbotvarkėsĮvykis'],
                     "destroy": true,
-                    "search": false,
+                    "search": true,
                     "pageLength": 20,
-                    "dom": '<<t>pi>',
+                    "dom": '<<f><t>pi>',
+                    //"dom": '<<t>pi>',
                     "order": [[ 0, "desc" ]],
                     "columns" : [
                         { "data" : function(d) { 
@@ -1020,6 +1235,11 @@ json(mpsDatasetFile + '?' + randomPar, (err, mpsDataset) => {
                         { "data" : "@pavadinimas" },
                         { "data" : "@vieta" }
                     ]
+                });
+                dTable.on( 'draw.dt', function () {
+                  var body = $( dTable.DataTable().table().body() );
+                  body.unhighlight();
+                  body.highlight( dTable.DataTable().search() );  
                 });
               }
               
@@ -1102,11 +1322,15 @@ json(mpsDatasetFile + '?' + randomPar, (err, mpsDataset) => {
               //Render charts
               if(vuedata.showMeetingsCharts) {
                 createMeetingsTotalsChart();
-                createMeetingsGroupsChart();
+                
               }
+              createMeetingsGroupsChart();
               createTable();
               if(vuedata.showMeetingsCharts) {
                 createWordcloudChart();
+              }
+              if(vuedata.legislationSelected == 9) {
+                createTermsComparisonChart();
               }
 
               $('.dataTables_wrapper').append($('.dataTables_length'));
