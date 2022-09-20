@@ -97,6 +97,7 @@
                   <li><a href="https://www.transparency.lt/2016-2020_seimas/" target="_blank">2020 m. pavasario sesija</a></li>
                   <li><a href="https://www.transparency.lt/parlamentaru-susitikimai-2021pavasaris/" target="_blank">2021 m. pavasario sesija</a></li>
                   <li><a href="http://www.transparency.lt/2021-ruduo/" target="_blank">2021 m. rudens sesija</a></li>
+                  <li><a href="https://www.transparency.lt/2022-pavasaris/" target="_blank">2022 m. pavasario sesija</a></li>
                 </ul>
               </div>
             </div>

@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:500" rel="stylesheet">
-    <link rel="stylesheet" href="static/tab_a.css?v=3">
+    <link rel="stylesheet" href="static/tab_a.css?v=4">
 </head>
 <body>
     <div id="app" class="tabA">   
@@ -242,7 +242,7 @@
     <script type="text/javascript" src="vendor/js/d3.layout.cloud.js"></script>
     <script type="text/javascript" src="vendor/js/crossfilter.min.js"></script>
     <script type="text/javascript" src="vendor/js/dc.js"></script>
-    <script src="static/tab_a.js?v=3"></script>
+    <script src="static/tab_a.js?v=4"></script>
 
  
 </body>

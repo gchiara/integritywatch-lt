@@ -2,7 +2,7 @@
     "SeimoInformacija": {
         "@licencija": "CC BY 4.0",
         "@pavadinimas": "Seimo nariai",
-        "@suformavimo_laikas": "2022-02-26 15:39:59",
+        "@suformavimo_laikas": "2022-08-31 13:31:23",
         "@tiekėjas": "Seimo kanceliarija",
         "@šaltinis": "www.lrs.lt",
         "SeimoKadencija": {
@@ -353,6 +353,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2022-05-12",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "43",
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Šiaurės Europos šalimis (Danijos Karalyste, Islandijos Respublika, Norvegijos Karalyste, Suomijos Respublika, Švedijos Karalyste) grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-03",
                             "@pareigos": "Pirmininkė",
                             "@parlamentinės_grupės_id": "181",
@@ -408,18 +415,25 @@
                     ],
                     "Pareigos": [
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2022-04-13",
                             "@data_nuo": "2020-12-17",
                             "@padalinio_id": "1313",
                             "@padalinio_pavadinimas": "Ateities komitetas",
                             "@pareigos": "Komiteto narė"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2022-03-25",
                             "@data_nuo": "2020-11-19",
                             "@padalinio_id": "591",
                             "@padalinio_pavadinimas": "Europos reikalų komitetas",
                             "@pareigos": "Komiteto pirmininko pavaduotoja"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-03-26",
+                            "@padalinio_id": "591",
+                            "@padalinio_pavadinimas": "Europos reikalų komitetas",
+                            "@pareigos": "Komiteto narė"
                         },
                         {
                             "@data_iki": "2022-01-18",
@@ -595,6 +609,13 @@
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "106",
                             "@parlamentinės_grupės_pavadinimas": "Seimo delegacija Europos Tarybos Parlamentinėje Asamblėjoje"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-06-21",
+                            "@pareigos": "Pirmininko pavaduotoja",
+                            "@parlamentinės_grupės_id": "103",
+                            "@parlamentinės_grupės_pavadinimas": "Seimo delegacija Lietuvos Respublikos Seimo, Lenkijos Respublikos Seimo bei Senato ir Ukrainos Aukščiausiosios Rados narių asamblėjoje"
                         }
                     ]
                 },
@@ -884,6 +905,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2022-05-11",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "285",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Bendradarbiavimo su Lietuvos jaunimo organizacijų taryba grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2021-01-07",
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "90",
@@ -992,7 +1020,7 @@
                             "@data_nuo": "2021-09-20",
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "243",
-                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos ir Okeanijos šalimis grupė"
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos, Naujosios Zelandijos ir kitomis Okeanijos šalimis grupė"
                         },
                         {
                             "@data_iki": "",
@@ -1467,6 +1495,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2022-05-11",
+                            "@pareigos": "Pirmininkas",
+                            "@parlamentinės_grupės_id": "285",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Bendradarbiavimo su Lietuvos jaunimo organizacijų taryba grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2021-05-25",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "196",
@@ -1931,6 +1966,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2022-05-12",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "285",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Bendradarbiavimo su Lietuvos jaunimo organizacijų taryba grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-29",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "262",
@@ -1966,10 +2008,17 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2022-04-12",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "209",
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Airija grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2021-09-22",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "243",
-                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos ir Okeanijos šalimis grupė"
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos, Naujosios Zelandijos ir kitomis Okeanijos šalimis grupė"
                         },
                         {
                             "@data_iki": "",
@@ -2051,7 +2100,7 @@
                         {
                             "@data_iki": "",
                             "@data_nuo": "2020-12-10",
-                            "@pareigos": "Narys",
+                            "@pareigos": "Pirmininko pavaduotojas",
                             "@parlamentinės_grupės_id": "43",
                             "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Šiaurės Europos šalimis (Danijos Karalyste, Islandijos Respublika, Norvegijos Karalyste, Suomijos Respublika, Švedijos Karalyste) grupė"
                         },
@@ -2298,6 +2347,13 @@
                             "@padalinio_id": "793",
                             "@padalinio_pavadinimas": "Lietuvos socialdemokratų partijos frakcija",
                             "@pareigos": "Frakcijos narys"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-05-11",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "285",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Bendradarbiavimo su Lietuvos jaunimo organizacijų taryba grupė"
                         },
                         {
                             "@data_iki": "",
@@ -2692,8 +2748,15 @@
                             "@pareigos": "Frakcijos seniūno pavaduotoja"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2022-03-10",
                             "@data_nuo": "2020-12-17",
+                            "@padalinio_id": "1070",
+                            "@padalinio_pavadinimas": "Lietuvos valstiečių ir žaliųjų sąjungos frakcija",
+                            "@pareigos": "Frakcijos seniūno pirmoji pavaduotoja"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-03-10",
                             "@padalinio_id": "1070",
                             "@padalinio_pavadinimas": "Lietuvos valstiečių ir žaliųjų sąjungos frakcija",
                             "@pareigos": "Frakcijos seniūno pirmoji pavaduotoja"
@@ -2778,7 +2841,7 @@
                         {
                             "@data_iki": "",
                             "@data_nuo": "2020-12-10",
-                            "@pareigos": "Narė",
+                            "@pareigos": "Pirmininko pavaduotoja",
                             "@parlamentinės_grupės_id": "43",
                             "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Šiaurės Europos šalimis (Danijos Karalyste, Islandijos Respublika, Norvegijos Karalyste, Suomijos Respublika, Švedijos Karalyste) grupė"
                         },
@@ -2941,7 +3004,7 @@
                             "@data_nuo": "2021-01-07",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "243",
-                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos ir Okeanijos šalimis grupė"
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos, Naujosios Zelandijos ir kitomis Okeanijos šalimis grupė"
                         },
                         {
                             "@data_iki": "",
@@ -3099,6 +3162,13 @@
                             "@padalinio_id": "1022",
                             "@padalinio_pavadinimas": "Tėvynės sąjungos-Lietuvos krikščionių demokratų frakcija",
                             "@pareigos": "Frakcijos seniūno pavaduotojas"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-03-29",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "284",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Buvusiųjų merų grupė"
                         },
                         {
                             "@data_iki": "",
@@ -3347,7 +3417,7 @@
                         {
                             "@data_iki": "",
                             "@data_nuo": "2020-11-17",
-                            "@pareigos": "Pirmininko pavaduotoja",
+                            "@pareigos": "Pirmininkė",
                             "@parlamentinės_grupės_id": "212",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji Vystomojo bendradarbiavimo, reprodukcinės sveikatos ir teisių grupė"
                         },
@@ -3390,11 +3460,11 @@
                     "@išrinkimo_būdas": "Pagal sąrašą",
                     "@kadencijų_skaičius": "1",
                     "@lytis": "M",
-                    "@pavardė": "Dobrovolska",
-                    "@vardas": "Evelina",
+                    "@pavardė": "Dobrowolska",
+                    "@vardas": "Ewelina",
                     "Kontaktai": [
                         {
-                            "@reikšmė": "evelina.dobrovolska@lrs.lt",
+                            "@reikšmė": "ewelina.dobrowolska@lrs.lt",
                             "@rūšis": "El. p."
                         },
                         {
@@ -3484,7 +3554,7 @@
                             "@pareigos": "Komiteto narys"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2022-03-15",
                             "@data_nuo": "2020-11-24",
                             "@padalinio_id": "1024",
                             "@padalinio_pavadinimas": "Priklausomybių prevencijos komisija",
@@ -3621,6 +3691,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2022-03-22",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "184",
+                            "@parlamentinės_grupės_pavadinimas": "Parlamentinių ryšių su Kinijos Respublika (Taivanu) grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-10",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "20",
@@ -3671,7 +3748,7 @@
                         {
                             "@data_iki": "",
                             "@data_nuo": "2020-12-10",
-                            "@pareigos": "Narys",
+                            "@pareigos": "Pirmininko pavaduotojas",
                             "@parlamentinės_grupės_id": "43",
                             "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Šiaurės Europos šalimis (Danijos Karalyste, Islandijos Respublika, Norvegijos Karalyste, Suomijos Respublika, Švedijos Karalyste) grupė"
                         },
@@ -3959,6 +4036,20 @@
                             "@pareigos": "Komiteto narys"
                         },
                         {
+                            "@data_iki": "2022-03-17",
+                            "@data_nuo": "2022-03-16",
+                            "@padalinio_id": "591",
+                            "@padalinio_pavadinimas": "Europos reikalų komitetas",
+                            "@pareigos": "Komiteto narys"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-03-18",
+                            "@padalinio_id": "591",
+                            "@padalinio_pavadinimas": "Europos reikalų komitetas",
+                            "@pareigos": "Komiteto pirmininko pavaduotojas"
+                        },
+                        {
                             "@data_iki": "",
                             "@data_nuo": "2020-11-24",
                             "@padalinio_id": "1054",
@@ -4002,10 +4093,31 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2022-06-16",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "243",
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos, Naujosios Zelandijos ir kitomis Okeanijos šalimis grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-07-20",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "27",
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Indijos Respublika grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-03",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "28",
                             "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Ispanijos Karalyste grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-06-16",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "29",
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Italijos Respublika grupė"
                         },
                         {
                             "@data_iki": "",
@@ -4431,6 +4543,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2022-03-29",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "284",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Buvusiųjų merų grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-08",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "247",
@@ -4519,6 +4638,13 @@
                             "@padalinio_id": "870",
                             "@padalinio_pavadinimas": "Liberalų  sąjūdžio frakcija",
                             "@pareigos": "Frakcijos narys"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-05-11",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "285",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Bendradarbiavimo su Lietuvos jaunimo organizacijų taryba grupė"
                         },
                         {
                             "@data_iki": "",
@@ -4690,6 +4816,13 @@
                             "@padalinio_id": "874",
                             "@padalinio_pavadinimas": "Darbo partijos  frakcija",
                             "@pareigos": "Frakcijos seniūno pavaduotoja"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-05-11",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "285",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Bendradarbiavimo su Lietuvos jaunimo organizacijų taryba grupė"
                         },
                         {
                             "@data_iki": "",
@@ -5248,6 +5381,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2022-05-11",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "285",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Bendradarbiavimo su Lietuvos jaunimo organizacijų taryba grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2021-05-11",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "270",
@@ -5327,6 +5467,13 @@
                             "@pareigos": "Komisijos narys"
                         },
                         {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-06-17",
+                            "@padalinio_id": "784",
+                            "@padalinio_pavadinimas": "Peticijų komisija",
+                            "@pareigos": "Komisijos narys"
+                        },
+                        {
                             "@data_iki": "2020-12-14",
                             "@data_nuo": "2020-11-13",
                             "@padalinio_id": "1022",
@@ -5339,6 +5486,13 @@
                             "@padalinio_id": "1022",
                             "@padalinio_pavadinimas": "Tėvynės sąjungos-Lietuvos krikščionių demokratų frakcija",
                             "@pareigos": "Frakcijos seniūno pavaduotojas"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-03-29",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "284",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Buvusiųjų merų grupė"
                         },
                         {
                             "@data_iki": "",
@@ -5510,7 +5664,7 @@
                             "@data_nuo": "2020-12-03",
                             "@pareigos": "Pirmininkas",
                             "@parlamentinės_grupės_id": "243",
-                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos ir Okeanijos šalimis grupė"
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos, Naujosios Zelandijos ir kitomis Okeanijos šalimis grupė"
                         },
                         {
                             "@data_iki": "2021-02-19",
@@ -5772,6 +5926,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2022-03-29",
+                            "@pareigos": "Pirmininko pavaduotojas",
+                            "@parlamentinės_grupės_id": "284",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Buvusiųjų merų grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2021-01-07",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "263",
@@ -6030,7 +6191,7 @@
                             "@data_nuo": "2021-01-15",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "243",
-                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos ir Okeanijos šalimis grupė"
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos, Naujosios Zelandijos ir kitomis Okeanijos šalimis grupė"
                         },
                         {
                             "@data_iki": "",
@@ -6247,6 +6408,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2022-05-11",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "285",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Bendradarbiavimo su Lietuvos jaunimo organizacijų taryba grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2021-01-07",
                             "@pareigos": "Pirmininko pavaduotojas",
                             "@parlamentinės_grupės_id": "263",
@@ -6439,6 +6607,13 @@
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "261",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji Daugiafunkcių miškų puoselėjimo grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-05-20",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "286",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji ryšių su žydų išeiviais iš Lietuvos (litvakais) grupė"
                         }
                     ]
                 },
@@ -6582,6 +6757,13 @@
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "36",
                             "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Kinijos Liaudies Respublika grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-06-08",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "81",
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Moldovos Respublika grupė"
                         },
                         {
                             "@data_iki": "",
@@ -6801,6 +6983,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2022-03-29",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "284",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Buvusiųjų merų grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2021-03-10",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "265",
@@ -6867,6 +7056,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2022-05-11",
+                            "@pareigos": "Pirmininko pavaduotoja",
+                            "@parlamentinės_grupės_id": "285",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Bendradarbiavimo su Lietuvos jaunimo organizacijų taryba grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-29",
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "262",
@@ -6926,7 +7122,7 @@
                             "@data_nuo": "2020-12-03",
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "243",
-                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos ir Okeanijos šalimis grupė"
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos, Naujosios Zelandijos ir kitomis Okeanijos šalimis grupė"
                         },
                         {
                             "@data_iki": "",
@@ -7007,6 +7203,13 @@
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "236",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji Aukštaičių grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-03-29",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "284",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Buvusiųjų merų grupė"
                         },
                         {
                             "@data_iki": "",
@@ -7216,7 +7419,7 @@
                             "@data_nuo": "2020-12-03",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "243",
-                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos ir Okeanijos šalimis grupė"
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos, Naujosios Zelandijos ir kitomis Okeanijos šalimis grupė"
                         },
                         {
                             "@data_iki": "",
@@ -7627,10 +7830,17 @@
                     ],
                     "Pareigos": [
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2022-06-16",
                             "@data_nuo": "2020-11-19",
                             "@padalinio_id": "22",
                             "@padalinio_pavadinimas": "Nacionalinio saugumo ir gynybos komitetas",
+                            "@pareigos": "Komiteto narys"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-06-17",
+                            "@padalinio_id": "45",
+                            "@padalinio_pavadinimas": "Teisės ir teisėtvarkos komitetas",
                             "@pareigos": "Komiteto narys"
                         },
                         {
@@ -7754,6 +7964,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2022-04-01",
+                            "@padalinio_id": "9",
+                            "@padalinio_pavadinimas": "Antikorupcijos komisija",
+                            "@pareigos": "Komisijos narė"
+                        },
+                        {
+                            "@data_iki": "2022-03-15",
                             "@data_nuo": "2020-12-04",
                             "@padalinio_id": "1024",
                             "@padalinio_pavadinimas": "Priklausomybių prevencijos komisija",
@@ -8120,18 +8337,25 @@
                             "@pareigos": "Komisijos narys"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2022-03-15",
                             "@data_nuo": "2021-09-15",
                             "@padalinio_id": "1024",
                             "@padalinio_pavadinimas": "Priklausomybių prevencijos komisija",
                             "@pareigos": "Komisijos narys"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2022-03-10",
                             "@data_nuo": "2021-09-10",
                             "@padalinio_id": "1322",
                             "@padalinio_pavadinimas": "Demokratų frakcija „Vardan Lietuvos“",
                             "@pareigos": "Frakcijos seniūno pavaduotojas"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-03-10",
+                            "@padalinio_id": "1322",
+                            "@padalinio_pavadinimas": "Demokratų frakcija „Vardan Lietuvos“",
+                            "@pareigos": "Frakcijos seniūnas"
                         },
                         {
                             "@data_iki": "2021-09-09",
@@ -8139,6 +8363,13 @@
                             "@padalinio_id": "1070",
                             "@padalinio_pavadinimas": "Lietuvos valstiečių ir žaliųjų sąjungos frakcija",
                             "@pareigos": "Frakcijos narys"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-03-16",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "52",
+                            "@parlamentinės_grupės_pavadinimas": "Seniūnų sueiga"
                         },
                         {
                             "@data_iki": "",
@@ -8247,6 +8478,13 @@
                             "@padalinio_id": "1022",
                             "@padalinio_pavadinimas": "Tėvynės sąjungos-Lietuvos krikščionių demokratų frakcija",
                             "@pareigos": "Frakcijos narys"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-03-29",
+                            "@pareigos": "Pirmininko pavaduotojas",
+                            "@parlamentinės_grupės_id": "284",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Buvusiųjų merų grupė"
                         },
                         {
                             "@data_iki": "",
@@ -8365,7 +8603,7 @@
                             "@data_nuo": "2020-12-03",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "243",
-                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos ir Okeanijos šalimis grupė"
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos, Naujosios Zelandijos ir kitomis Okeanijos šalimis grupė"
                         },
                         {
                             "@data_iki": "",
@@ -9510,6 +9748,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2022-05-11",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "285",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Bendradarbiavimo su Lietuvos jaunimo organizacijų taryba grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-11",
                             "@pareigos": "Pirmininko pavaduotojas",
                             "@parlamentinės_grupės_id": "256",
@@ -9663,7 +9908,7 @@
                             "@data_nuo": "2020-12-03",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "243",
-                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos ir Okeanijos šalimis grupė"
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos, Naujosios Zelandijos ir kitomis Okeanijos šalimis grupė"
                         },
                         {
                             "@data_iki": "",
@@ -9722,7 +9967,7 @@
                             "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Ukraina grupė"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2022-06-21",
                             "@data_nuo": "2020-12-15",
                             "@pareigos": "Pirmininkas",
                             "@parlamentinės_grupės_id": "71",
@@ -10236,6 +10481,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2022-05-11",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "285",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Bendradarbiavimo su Lietuvos jaunimo organizacijų taryba grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2021-05-25",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "196",
@@ -10271,6 +10523,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2022-06-27",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "259",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Seimo narių ryšių su Ekonominio bendradarbiavimo ir plėtros organizacija (EBPO) grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-09",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "239",
@@ -10302,7 +10561,7 @@
                             "@data_nuo": "2020-12-03",
                             "@pareigos": "Pirmininko pavaduotojas",
                             "@parlamentinės_grupės_id": "243",
-                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos ir Okeanijos šalimis grupė"
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos, Naujosios Zelandijos ir kitomis Okeanijos šalimis grupė"
                         },
                         {
                             "@data_iki": "",
@@ -10578,6 +10837,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2022-03-16",
+                            "@padalinio_id": "1024",
+                            "@padalinio_pavadinimas": "Priklausomybių prevencijos komisija",
+                            "@pareigos": "Komisijos narys"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-11-13",
                             "@padalinio_id": "874",
                             "@padalinio_pavadinimas": "Darbo partijos  frakcija",
@@ -10706,7 +10972,7 @@
                             "@pareigos": "Komiteto narys"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2022-03-31",
                             "@data_nuo": "2020-11-24",
                             "@padalinio_id": "9",
                             "@padalinio_pavadinimas": "Antikorupcijos komisija",
@@ -10714,6 +10980,20 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2022-04-01",
+                            "@padalinio_id": "585",
+                            "@padalinio_pavadinimas": "Jaunimo ir sporto reikalų komisija",
+                            "@pareigos": "Komisijos narys"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-03-10",
+                            "@padalinio_id": "1322",
+                            "@padalinio_pavadinimas": "Demokratų frakcija „Vardan Lietuvos“",
+                            "@pareigos": "Frakcijos narys"
+                        },
+                        {
+                            "@data_iki": "2022-03-10",
                             "@data_nuo": "2020-11-13",
                             "@padalinio_id": "1070",
                             "@padalinio_pavadinimas": "Lietuvos valstiečių ir žaliųjų sąjungos frakcija",
@@ -10863,7 +11143,7 @@
                             "@pareigos": "Pakomitečio narė"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2022-03-31",
                             "@data_nuo": "2021-01-15",
                             "@padalinio_id": "1075",
                             "@padalinio_pavadinimas": "Laisvės premijų komisija",
@@ -10889,6 +11169,13 @@
                             "@padalinio_id": "1070",
                             "@padalinio_pavadinimas": "Lietuvos valstiečių ir žaliųjų sąjungos frakcija",
                             "@pareigos": "Frakcijos narė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-05-11",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "285",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Bendradarbiavimo su Lietuvos jaunimo organizacijų taryba grupė"
                         },
                         {
                             "@data_iki": "",
@@ -10951,7 +11238,7 @@
                             "@data_nuo": "2020-12-03",
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "243",
-                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos ir Okeanijos šalimis grupė"
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos, Naujosios Zelandijos ir kitomis Okeanijos šalimis grupė"
                         },
                         {
                             "@data_iki": "",
@@ -11336,6 +11623,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2022-05-17",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "260",
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių grupė su Belgijos Karalyste, Nyderlandų Karalyste ir Liuksemburgo Didžiąja Hercogyste"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2021-03-24",
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "220",
@@ -11691,7 +11985,7 @@
                             "@parlamentinės_grupės_pavadinimas": "Seimo delegacija Baltijos Asamblėjoje"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2022-06-21",
                             "@data_nuo": "2020-12-08",
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "71",
@@ -11933,6 +12227,13 @@
                             "@padalinio_id": "1022",
                             "@padalinio_pavadinimas": "Tėvynės sąjungos-Lietuvos krikščionių demokratų frakcija",
                             "@pareigos": "Frakcijos narė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-05-11",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "285",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Bendradarbiavimo su Lietuvos jaunimo organizacijų taryba grupė"
                         },
                         {
                             "@data_iki": "",
@@ -12365,8 +12666,15 @@
                             "@pareigos": "Frakcijos narė"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2022-03-10",
                             "@data_nuo": "2020-11-24",
+                            "@padalinio_id": "1070",
+                            "@padalinio_pavadinimas": "Lietuvos valstiečių ir žaliųjų sąjungos frakcija",
+                            "@pareigos": "Frakcijos seniūnė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-03-10",
                             "@padalinio_id": "1070",
                             "@padalinio_pavadinimas": "Lietuvos valstiečių ir žaliųjų sąjungos frakcija",
                             "@pareigos": "Frakcijos seniūnė"
@@ -12729,13 +13037,6 @@
                         },
                         {
                             "@data_iki": "",
-                            "@data_nuo": "2021-02-05",
-                            "@pareigos": "Narė",
-                            "@parlamentinės_grupės_id": "212",
-                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Vystomojo bendradarbiavimo, reprodukcinės sveikatos ir teisių grupė"
-                        },
-                        {
-                            "@data_iki": "",
                             "@data_nuo": "2020-12-10",
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "184",
@@ -12760,7 +13061,7 @@
                             "@data_nuo": "2021-02-05",
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "243",
-                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos ir Okeanijos šalimis grupė"
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos, Naujosios Zelandijos ir kitomis Okeanijos šalimis grupė"
                         },
                         {
                             "@data_iki": "",
@@ -12977,6 +13278,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2022-05-11",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "285",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Bendradarbiavimo su Lietuvos jaunimo organizacijų taryba grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2021-02-26",
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "208",
@@ -13076,7 +13384,7 @@
                         {
                             "@data_iki": "",
                             "@data_nuo": "2020-12-10",
-                            "@pareigos": "Narė",
+                            "@pareigos": "Pirmininko pavaduotoja",
                             "@parlamentinės_grupės_id": "43",
                             "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Šiaurės Europos šalimis (Danijos Karalyste, Islandijos Respublika, Norvegijos Karalyste, Suomijos Respublika, Švedijos Karalyste) grupė"
                         }
@@ -13354,6 +13662,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2022-05-17",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "49",
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Vokietijos Federacine Respublika grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-22",
                             "@pareigos": "Nario pavaduotojas",
                             "@parlamentinės_grupės_id": "106",
@@ -13384,18 +13699,18 @@
                     ],
                     "Pareigos": [
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2022-03-25",
                             "@data_nuo": "2020-11-19",
                             "@padalinio_id": "591",
                             "@padalinio_pavadinimas": "Europos reikalų komitetas",
                             "@pareigos": "Komiteto narys"
                         },
                         {
-                            "@data_iki": "2022-01-18",
-                            "@data_nuo": "2020-11-19",
-                            "@padalinio_id": "44",
-                            "@padalinio_pavadinimas": "Užsienio reikalų komitetas",
-                            "@pareigos": "Komiteto pirmininkas"
+                            "@data_iki": "",
+                            "@data_nuo": "2022-03-26",
+                            "@padalinio_id": "591",
+                            "@padalinio_pavadinimas": "Europos reikalų komitetas",
+                            "@pareigos": "Komiteto pirmininko pavaduotojas"
                         },
                         {
                             "@data_iki": "2022-01-18",
@@ -13480,6 +13795,13 @@
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "57",
                             "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Armėnijos Respublika grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-06-16",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "243",
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos, Naujosios Zelandijos ir kitomis Okeanijos šalimis grupė"
                         },
                         {
                             "@data_iki": "",
@@ -13581,8 +13903,15 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2022-06-22",
+                            "@pareigos": "Pirmininkas",
+                            "@parlamentinės_grupės_id": "71",
+                            "@parlamentinės_grupės_pavadinimas": "Seimo delegacija Lietuvos Respublikos Seimo ir Ukrainos Aukščiausiosios Rados Asamblėjoje"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-08",
-                            "@pareigos": "Pirmininko pavaduotojas",
+                            "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "103",
                             "@parlamentinės_grupės_pavadinimas": "Seimo delegacija Lietuvos Respublikos Seimo, Lenkijos Respublikos Seimo bei Senato ir Ukrainos Aukščiausiosios Rados narių asamblėjoje"
                         }
@@ -13625,10 +13954,24 @@
                             "@pareigos": "Komisijos narė"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2022-03-15",
                             "@data_nuo": "2020-12-10",
                             "@padalinio_id": "1024",
                             "@padalinio_pavadinimas": "Priklausomybių prevencijos komisija",
+                            "@pareigos": "Komisijos pirmininko pavaduotoja"
+                        },
+                        {
+                            "@data_iki": "2022-04-14",
+                            "@data_nuo": "2022-04-01",
+                            "@padalinio_id": "1074",
+                            "@padalinio_pavadinimas": "Savižudybių ir smurto prevencijos komisija",
+                            "@pareigos": "Komisijos narė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-04-15",
+                            "@padalinio_id": "1074",
+                            "@padalinio_pavadinimas": "Savižudybių ir smurto prevencijos komisija",
                             "@pareigos": "Komisijos pirmininko pavaduotoja"
                         },
                         {
@@ -13825,6 +14168,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2022-05-11",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "285",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Bendradarbiavimo su Lietuvos jaunimo organizacijų taryba grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-08",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "247",
@@ -13836,6 +14186,13 @@
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "235",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji Mažosios Lietuvos draugų grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-05-20",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "286",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji ryšių su žydų išeiviais iš Lietuvos (litvakais) grupė"
                         },
                         {
                             "@data_iki": "",
@@ -13960,11 +14317,18 @@
                             "@pareigos": "Frakcijos seniūnas"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2022-03-10",
                             "@data_nuo": "2021-09-10",
                             "@padalinio_id": "1318",
                             "@padalinio_pavadinimas": "Lietuvos regionų frakcija",
                             "@pareigos": "Frakcijos seniūno pavaduotojas"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-03-10",
+                            "@padalinio_id": "1318",
+                            "@padalinio_pavadinimas": "Lietuvos regionų frakcija",
+                            "@pareigos": "Frakcijos seniūnas"
                         },
                         {
                             "@data_iki": "2021-03-09",
@@ -13983,6 +14347,13 @@
                         {
                             "@data_iki": "2021-09-14",
                             "@data_nuo": "2021-03-24",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "52",
+                            "@parlamentinės_grupės_pavadinimas": "Seniūnų sueiga"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-03-16",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "52",
                             "@parlamentinės_grupės_pavadinimas": "Seniūnų sueiga"
@@ -14083,10 +14454,24 @@
                     "Pareigos": [
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2022-04-14",
+                            "@padalinio_id": "1313",
+                            "@padalinio_pavadinimas": "Ateities komitetas",
+                            "@pareigos": "Komiteto narė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-11-19",
                             "@padalinio_id": "1072",
                             "@padalinio_pavadinimas": "Kultūros komitetas",
                             "@pareigos": "Komiteto narė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-06-22",
+                            "@padalinio_id": "1089",
+                            "@padalinio_pavadinimas": "Neįgaliųjų teisių komisija",
+                            "@pareigos": "Komisijos narė"
                         },
                         {
                             "@data_iki": "",
@@ -14362,6 +14747,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2022-05-20",
+                            "@pareigos": "Pirmininko pavaduotojas",
+                            "@parlamentinės_grupės_id": "286",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji ryšių su žydų išeiviais iš Lietuvos (litvakais) grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2021-05-25",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "271",
@@ -14399,7 +14791,7 @@
                     ],
                     "Pareigos": [
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2022-03-15",
                             "@data_nuo": "2020-11-19",
                             "@padalinio_id": "591",
                             "@padalinio_pavadinimas": "Europos reikalų komitetas",
@@ -14420,17 +14812,31 @@
                             "@pareigos": "Komiteto narys"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2022-03-15",
                             "@data_nuo": "2020-11-24",
                             "@padalinio_id": "1024",
                             "@padalinio_pavadinimas": "Priklausomybių prevencijos komisija",
                             "@pareigos": "Komisijos narys"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2022-03-10",
                             "@data_nuo": "2020-11-13",
                             "@padalinio_id": "874",
                             "@padalinio_pavadinimas": "Darbo partijos  frakcija",
+                            "@pareigos": "Frakcijos narys"
+                        },
+                        {
+                            "@data_iki": "2022-05-26",
+                            "@data_nuo": "2022-03-10",
+                            "@padalinio_id": "47",
+                            "@padalinio_pavadinimas": "Mišri Seimo narių grupė",
+                            "@pareigos": "Frakcijos narys"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-05-27",
+                            "@padalinio_id": "1327",
+                            "@padalinio_pavadinimas": "Seimo narys, neįsiregistravęs į frakciją",
                             "@pareigos": "Frakcijos narys"
                         },
                         {
@@ -14501,7 +14907,7 @@
                             "@data_nuo": "2020-12-03",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "243",
-                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos ir Okeanijos šalimis grupė"
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos, Naujosios Zelandijos ir kitomis Okeanijos šalimis grupė"
                         },
                         {
                             "@data_iki": "",
@@ -14638,6 +15044,20 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2022-05-11",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "285",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Bendradarbiavimo su Lietuvos jaunimo organizacijų taryba grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-03-29",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "284",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Buvusiųjų merų grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-17",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "261",
@@ -14649,6 +15069,13 @@
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "150",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji grupė „Už šeimą“"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-05-20",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "286",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji ryšių su žydų išeiviais iš Lietuvos (litvakais) grupė"
                         },
                         {
                             "@data_iki": "",
@@ -15008,6 +15435,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2022-05-11",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "285",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Bendradarbiavimo su Lietuvos jaunimo organizacijų taryba grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-23",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "150",
@@ -15019,6 +15453,13 @@
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "189",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji Moterų grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-05-20",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "286",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji ryšių su žydų išeiviais iš Lietuvos (litvakais) grupė"
                         },
                         {
                             "@data_iki": "",
@@ -15221,6 +15662,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2022-06-17",
+                            "@padalinio_id": "585",
+                            "@padalinio_pavadinimas": "Jaunimo ir sporto reikalų komisija",
+                            "@pareigos": "Komisijos narė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2021-05-27",
                             "@padalinio_id": "1074",
                             "@padalinio_pavadinimas": "Savižudybių ir smurto prevencijos komisija",
@@ -15239,6 +15687,20 @@
                             "@padalinio_id": "870",
                             "@padalinio_pavadinimas": "Liberalų  sąjūdžio frakcija",
                             "@pareigos": "Frakcijos seniūno pavaduotoja"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-05-11",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "285",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Bendradarbiavimo su Lietuvos jaunimo organizacijų taryba grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-03-29",
+                            "@pareigos": "Pirmininkė",
+                            "@parlamentinės_grupės_id": "284",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Buvusiųjų merų grupė"
                         },
                         {
                             "@data_iki": "",
@@ -15469,6 +15931,13 @@
                             "@pareigos": "Pirmininko pavaduotojas",
                             "@parlamentinės_grupės_id": "196",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji Bendradarbiavimo su skautais grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-03-29",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "284",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Buvusiųjų merų grupė"
                         },
                         {
                             "@data_iki": "",
@@ -15852,7 +16321,7 @@
                             "@data_nuo": "2021-10-13",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "243",
-                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos ir Okeanijos šalimis grupė"
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos, Naujosios Zelandijos ir kitomis Okeanijos šalimis grupė"
                         },
                         {
                             "@data_iki": "",
@@ -16617,11 +17086,18 @@
                             "@pareigos": "Komisijos narys"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2022-03-10",
                             "@data_nuo": "2021-09-10",
                             "@padalinio_id": "1322",
                             "@padalinio_pavadinimas": "Demokratų frakcija „Vardan Lietuvos“",
                             "@pareigos": "Frakcijos seniūnas"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-03-10",
+                            "@padalinio_id": "1322",
+                            "@padalinio_pavadinimas": "Demokratų frakcija „Vardan Lietuvos“",
+                            "@pareigos": "Frakcijos narys"
                         },
                         {
                             "@data_iki": "2021-09-09",
@@ -16744,6 +17220,13 @@
                             "@padalinio_id": "1022",
                             "@padalinio_pavadinimas": "Tėvynės sąjungos-Lietuvos krikščionių demokratų frakcija",
                             "@pareigos": "Frakcijos narys"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-05-11",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "285",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Bendradarbiavimo su Lietuvos jaunimo organizacijų taryba grupė"
                         },
                         {
                             "@data_iki": "",
@@ -16897,6 +17380,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2022-05-20",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "286",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji ryšių su žydų išeiviais iš Lietuvos (litvakais) grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2021-05-25",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "271",
@@ -16907,7 +17397,7 @@
                             "@data_nuo": "2020-12-03",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "243",
-                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos ir Okeanijos šalimis grupė"
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos, Naujosios Zelandijos ir kitomis Okeanijos šalimis grupė"
                         },
                         {
                             "@data_iki": "",
@@ -17109,11 +17599,18 @@
                             "@pareigos": "Komisijos narys"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2022-03-17",
                             "@data_nuo": "2021-09-10",
                             "@padalinio_id": "1322",
                             "@padalinio_pavadinimas": "Demokratų frakcija „Vardan Lietuvos“",
                             "@pareigos": "Frakcijos narys"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-03-17",
+                            "@padalinio_id": "1322",
+                            "@padalinio_pavadinimas": "Demokratų frakcija „Vardan Lietuvos“",
+                            "@pareigos": "Frakcijos seniūno pavaduotojas"
                         },
                         {
                             "@data_iki": "2021-09-09",
@@ -18094,7 +18591,7 @@
                         {
                             "@data_iki": "",
                             "@data_nuo": "2020-11-17",
-                            "@pareigos": "Pirmininkė",
+                            "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "212",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji Vystomojo bendradarbiavimo, reprodukcinės sveikatos ir teisių grupė"
                         },
@@ -18104,6 +18601,13 @@
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "184",
                             "@parlamentinės_grupės_pavadinimas": "Parlamentinių ryšių su Kinijos Respublika (Taivanu) grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-03-15",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "260",
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių grupė su Belgijos Karalyste, Nyderlandų Karalyste ir Liuksemburgo Didžiąja Hercogyste"
                         },
                         {
                             "@data_iki": "",
@@ -18118,6 +18622,13 @@
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "43",
                             "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Šiaurės Europos šalimis (Danijos Karalyste, Islandijos Respublika, Norvegijos Karalyste, Suomijos Respublika, Švedijos Karalyste) grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-05-17",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "49",
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Vokietijos Federacine Respublika grupė"
                         }
                     ]
                 },
@@ -18195,13 +18706,6 @@
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "150",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji grupė „Už šeimą“"
-                        },
-                        {
-                            "@data_iki": "",
-                            "@data_nuo": "2021-11-10",
-                            "@pareigos": "Narė",
-                            "@parlamentinės_grupės_id": "232",
-                            "@parlamentinės_grupės_pavadinimas": "Laikinoji grupė „Už žmogaus gyvybės ir sveikatos apsaugą nuo pradėjimo iki natūralios mirties“"
                         },
                         {
                             "@data_iki": "",
@@ -18843,11 +19347,18 @@
                             "@pareigos": "Frakcijos seniūno pavaduotoja"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2022-03-10",
                             "@data_nuo": "2021-09-10",
                             "@padalinio_id": "1318",
                             "@padalinio_pavadinimas": "Lietuvos regionų frakcija",
                             "@pareigos": "Frakcijos seniūnė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-03-10",
+                            "@padalinio_id": "1318",
+                            "@padalinio_pavadinimas": "Lietuvos regionų frakcija",
+                            "@pareigos": "Frakcijos seniūno pavaduotoja"
                         },
                         {
                             "@data_iki": "2021-03-09",
@@ -18871,11 +19382,18 @@
                             "@parlamentinės_grupės_pavadinimas": "Seniūnų sueiga"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2022-03-15",
                             "@data_nuo": "2021-09-10",
                             "@pareigos": "Narė",
                             "@parlamentinės_grupės_id": "52",
                             "@parlamentinės_grupės_pavadinimas": "Seniūnų sueiga"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-05-11",
+                            "@pareigos": "Narė",
+                            "@parlamentinės_grupės_id": "285",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Bendradarbiavimo su Lietuvos jaunimo organizacijų taryba grupė"
                         },
                         {
                             "@data_iki": "",
@@ -19162,6 +19680,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2022-05-20",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "286",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji ryšių su žydų išeiviais iš Lietuvos (litvakais) grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-17",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "259",
@@ -19264,6 +19789,13 @@
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "245",
                             "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Vakarų Balkanų šalimis (Kroatijos Respublika, Albanijos Respublika, Šiaurės Makedonijos Respublika, Juodkalnija, Serbijos Respublika, Bosnija ir Hercegovina, Kosovo Respublika) grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-06-22",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "71",
+                            "@parlamentinės_grupės_pavadinimas": "Seimo delegacija Lietuvos Respublikos Seimo ir Ukrainos Aukščiausiosios Rados Asamblėjoje"
                         }
                     ]
                 },
@@ -19376,6 +19908,13 @@
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "235",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji Mažosios Lietuvos draugų grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-05-20",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "286",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji ryšių su žydų išeiviais iš Lietuvos (litvakais) grupė"
                         },
                         {
                             "@data_iki": "",
@@ -19571,7 +20110,7 @@
                             "@data_nuo": "2020-12-03",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "243",
-                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos ir Okeanijos šalimis grupė"
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos, Naujosios Zelandijos ir kitomis Okeanijos šalimis grupė"
                         },
                         {
                             "@data_iki": "",
@@ -19944,7 +20483,7 @@
                             "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Ukraina grupė"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2021-06-21",
                             "@data_nuo": "2020-12-08",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "103",
@@ -20019,6 +20558,13 @@
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "236",
                             "@parlamentinės_grupės_pavadinimas": "Laikinoji Aukštaičių grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-03-29",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "284",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Buvusiųjų merų grupė"
                         },
                         {
                             "@data_iki": "",
@@ -20377,7 +20923,7 @@
                             "@pareigos": "Pakomitečio narys"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2022-03-15",
                             "@data_nuo": "2020-11-24",
                             "@padalinio_id": "1024",
                             "@padalinio_pavadinimas": "Priklausomybių prevencijos komisija",
@@ -20391,8 +20937,15 @@
                             "@pareigos": "Frakcijos narys"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2022-03-10",
                             "@data_nuo": "2021-06-30",
+                            "@padalinio_id": "1070",
+                            "@padalinio_pavadinimas": "Lietuvos valstiečių ir žaliųjų sąjungos frakcija",
+                            "@pareigos": "Frakcijos seniūno pavaduotojas"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-03-10",
                             "@padalinio_id": "1070",
                             "@padalinio_pavadinimas": "Lietuvos valstiečių ir žaliųjų sąjungos frakcija",
                             "@pareigos": "Frakcijos seniūno pavaduotojas"
@@ -20587,7 +21140,7 @@
                             "@data_nuo": "2020-12-03",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "243",
-                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos ir Okeanijos šalimis grupė"
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos, Naujosios Zelandijos ir kitomis Okeanijos šalimis grupė"
                         },
                         {
                             "@data_iki": "",
@@ -20696,6 +21249,20 @@
                             "@padalinio_id": "1070",
                             "@padalinio_pavadinimas": "Lietuvos valstiečių ir žaliųjų sąjungos frakcija",
                             "@pareigos": "Frakcijos narys"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-05-11",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "285",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Bendradarbiavimo su Lietuvos jaunimo organizacijų taryba grupė"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-03-29",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "284",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Buvusiųjų merų grupė"
                         },
                         {
                             "@data_iki": "",
@@ -20864,6 +21431,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2022-03-09",
+                            "@pareigos": "Narys",
+                            "@parlamentinės_grupės_id": "183",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji Lietuvos kariuomenės ir Lietuvos šaulių sąjungos paramos grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-08",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "248",
@@ -20909,7 +21483,7 @@
                             "@data_nuo": "2021-06-29",
                             "@pareigos": "Pirmininkas",
                             "@parlamentinės_grupės_id": "243",
-                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos ir Okeanijos šalimis grupė"
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos, Naujosios Zelandijos ir kitomis Okeanijos šalimis grupė"
                         },
                         {
                             "@data_iki": "",
@@ -21096,7 +21670,7 @@
                         {
                             "@data_iki": "",
                             "@data_nuo": "2020-12-10",
-                            "@pareigos": "Narys",
+                            "@pareigos": "Pirmininko pavaduotojas",
                             "@parlamentinės_grupės_id": "43",
                             "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Šiaurės Europos šalimis (Danijos Karalyste, Islandijos Respublika, Norvegijos Karalyste, Suomijos Respublika, Švedijos Karalyste) grupė"
                         },
@@ -21203,8 +21777,22 @@
                             "@pareigos": "Komiteto narys"
                         },
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2022-06-30",
+                            "@data_nuo": "2022-06-22",
+                            "@padalinio_id": "582",
+                            "@padalinio_pavadinimas": "Sveikatos reikalų komitetas",
+                            "@pareigos": "Komiteto narys"
+                        },
+                        {
+                            "@data_iki": "2022-06-21",
                             "@data_nuo": "2020-11-19",
+                            "@padalinio_id": "44",
+                            "@padalinio_pavadinimas": "Užsienio reikalų komitetas",
+                            "@pareigos": "Komiteto narys"
+                        },
+                        {
+                            "@data_iki": "",
+                            "@data_nuo": "2022-07-01",
                             "@padalinio_id": "44",
                             "@padalinio_pavadinimas": "Užsienio reikalų komitetas",
                             "@pareigos": "Komiteto narys"
@@ -21267,6 +21855,13 @@
                         },
                         {
                             "@data_iki": "",
+                            "@data_nuo": "2022-05-20",
+                            "@pareigos": "Pirmininkas",
+                            "@parlamentinės_grupės_id": "286",
+                            "@parlamentinės_grupės_pavadinimas": "Laikinoji ryšių su žydų išeiviais iš Lietuvos (litvakais) grupė"
+                        },
+                        {
+                            "@data_iki": "",
                             "@data_nuo": "2020-12-08",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "249",
@@ -21319,7 +21914,7 @@
                             "@data_nuo": "2020-12-03",
                             "@pareigos": "Narys",
                             "@parlamentinės_grupės_id": "243",
-                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos ir Okeanijos šalimis grupė"
+                            "@parlamentinės_grupės_pavadinimas": "Tarpparlamentinių ryšių su Australijos, Naujosios Zelandijos ir kitomis Okeanijos šalimis grupė"
                         },
                         {
                             "@data_iki": "",
@@ -21476,7 +22071,7 @@
                     ],
                     "Pareigos": [
                         {
-                            "@data_iki": "",
+                            "@data_iki": "2022-03-17",
                             "@data_nuo": "2020-11-19",
                             "@padalinio_id": "591",
                             "@padalinio_pavadinimas": "Europos reikalų komitetas",

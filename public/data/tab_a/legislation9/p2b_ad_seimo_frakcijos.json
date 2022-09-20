@@ -2,7 +2,7 @@
     "SeimoInformacija": {
         "@licencija": "CC BY 4.0",
         "@pavadinimas": "Seimo frakcijos",
-        "@suformavimo_laikas": "2022-02-26 15:40:01",
+        "@suformavimo_laikas": "2022-08-31 13:31:25",
         "@tiekėjas": "Seimo kanceliarija",
         "@šaltinis": "www.lrs.lt",
         "SeimoKadencija": {
@@ -10,7 +10,7 @@
             "SeimoFrakcija": [
                 {
                     "@padalinio_id": "874",
-                    "@padalinio_narių_skaičius": "10",
+                    "@padalinio_narių_skaičius": "9",
                     "@padalinio_pavadinimas": "Darbo partijos  frakcija",
                     "@padalinio_pavadinimo_santrumpa": "DPF",
                     "SeimoFrakcijosNarys": [
@@ -63,12 +63,6 @@
                             "@vardas": "Andrius"
                         },
                         {
-                            "@asmens_id": "79142",
-                            "@pareigos": "Frakcijos narys",
-                            "@pavardė": "Puidokas",
-                            "@vardas": "Mindaugas"
-                        },
-                        {
                             "@asmens_id": "47229",
                             "@pareigos": "Frakcijos narys",
                             "@pavardė": "Skardžius",
@@ -78,15 +72,15 @@
                 },
                 {
                     "@padalinio_id": "1322",
-                    "@padalinio_narių_skaičius": "15",
+                    "@padalinio_narių_skaičius": "16",
                     "@padalinio_pavadinimas": "Demokratų frakcija „Vardan Lietuvos“",
                     "@padalinio_pavadinimo_santrumpa": "DFVL",
                     "SeimoFrakcijosNarys": [
                         {
-                            "@asmens_id": "79145",
+                            "@asmens_id": "84606",
                             "@pareigos": "Frakcijos seniūnas",
-                            "@pavardė": "Skvernelis",
-                            "@vardas": "Saulius"
+                            "@pavardė": "Kukuraitis",
+                            "@vardas": "Linas"
                         },
                         {
                             "@asmens_id": "26656",
@@ -95,10 +89,10 @@
                             "@vardas": "Rima"
                         },
                         {
-                            "@asmens_id": "84606",
+                            "@asmens_id": "84623",
                             "@pareigos": "Frakcijos seniūno pavaduotojas",
-                            "@pavardė": "Kukuraitis",
-                            "@vardas": "Linas"
+                            "@pavardė": "Stončaitis",
+                            "@vardas": "Algirdas"
                         },
                         {
                             "@asmens_id": "47890",
@@ -125,6 +119,12 @@
                             "@vardas": "Domas"
                         },
                         {
+                            "@asmens_id": "79131",
+                            "@pareigos": "Frakcijos narys",
+                            "@pavardė": "Mažeika",
+                            "@vardas": "Kęstutis"
+                        },
+                        {
                             "@asmens_id": "79132",
                             "@pareigos": "Frakcijos narė",
                             "@pavardė": "Miliūtė",
@@ -149,10 +149,10 @@
                             "@vardas": "Lukas"
                         },
                         {
-                            "@asmens_id": "84623",
+                            "@asmens_id": "79145",
                             "@pareigos": "Frakcijos narys",
-                            "@pavardė": "Stončaitis",
-                            "@vardas": "Algirdas"
+                            "@pavardė": "Skvernelis",
+                            "@vardas": "Saulius"
                         },
                         {
                             "@asmens_id": "79149",
@@ -213,8 +213,8 @@
                         {
                             "@asmens_id": "84603",
                             "@pareigos": "Frakcijos narė",
-                            "@pavardė": "Dobrovolska",
-                            "@vardas": "Evelina"
+                            "@pavardė": "Dobrowolska",
+                            "@vardas": "Ewelina"
                         },
                         {
                             "@asmens_id": "38801",
@@ -335,16 +335,16 @@
                     "@padalinio_pavadinimo_santrumpa": "LRF",
                     "SeimoFrakcijosNarys": [
                         {
-                            "@asmens_id": "73586",
-                            "@pareigos": "Frakcijos seniūnė",
-                            "@pavardė": "Tamašunienė",
-                            "@vardas": "Rita"
-                        },
-                        {
                             "@asmens_id": "47959",
-                            "@pareigos": "Frakcijos seniūno pavaduotojas",
+                            "@pareigos": "Frakcijos seniūnas",
                             "@pavardė": "Pinskus",
                             "@vardas": "Jonas"
+                        },
+                        {
+                            "@asmens_id": "73586",
+                            "@pareigos": "Frakcijos seniūno pavaduotoja",
+                            "@pavardė": "Tamašunienė",
+                            "@vardas": "Rita"
                         },
                         {
                             "@asmens_id": "7199",
@@ -472,7 +472,7 @@
                 },
                 {
                     "@padalinio_id": "1070",
-                    "@padalinio_narių_skaičius": "21",
+                    "@padalinio_narių_skaičius": "20",
                     "@padalinio_pavadinimas": "Lietuvos valstiečių ir žaliųjų sąjungos frakcija",
                     "@padalinio_pavadinimo_santrumpa": "LVŽSF",
                     "SeimoFrakcijosNarys": [
@@ -555,12 +555,6 @@
                             "@vardas": "Deividas"
                         },
                         {
-                            "@asmens_id": "79131",
-                            "@pareigos": "Frakcijos narys",
-                            "@pavardė": "Mažeika",
-                            "@vardas": "Kęstutis"
-                        },
-                        {
                             "@asmens_id": "79134",
                             "@pareigos": "Frakcijos narys",
                             "@pavardė": "Nekrošius",
@@ -603,6 +597,18 @@
                             "@vardas": "Antanas"
                         }
                     ]
+                },
+                {
+                    "@padalinio_id": "1327",
+                    "@padalinio_narių_skaičius": "1",
+                    "@padalinio_pavadinimas": "Seimo narys, neįsiregistravęs į frakciją",
+                    "@padalinio_pavadinimo_santrumpa": "SNNF",
+                    "SeimoFrakcijosNarys": {
+                        "@asmens_id": "79142",
+                        "@pareigos": "Frakcijos narys",
+                        "@pavardė": "Puidokas",
+                        "@vardas": "Mindaugas"
+                    }
                 },
                 {
                     "@padalinio_id": "1022",

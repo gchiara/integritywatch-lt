@@ -99,6 +99,11 @@ var vuedata = {
   ],
   meetingsCountsTablesL9: [
     {
+      title: '2022 m. pavasario sesija',
+      dataPrefix: '2022_Spring',
+      asteriskText: '- tiek susitikimų įvyko su lobistų sąraše registruotomis verslo asociacijomis ir įmonėmis.'
+    },
+    {
       title: '2021 m. rudens sesija',
       dataPrefix: '2021_Autumn',
       asteriskText: '- tiek susitikimų įvyko su lobistų sąraše registruotomis verslo asociacijomis ir įmonėmis.'
@@ -851,7 +856,8 @@ json(mpsDatasetFile + '?' + randomPar, (err, mpsDataset) => {
                     {name: "Lietuvos valstiečių ir žaliųjų sąjungos frakcija (LVŽSF)", color: "#0F7448"},
                     {name: "Mišri Seimo narių grupė (MG)", color: "#7D7D7D"},
                     {name: "Tėvynės sąjungos-Lietuvos krikščionių demokratų frakcija (TS-LKDF)", color: "#00A59B"},
-                    {name: "Demokratų frakcija „Vardan Lietuvos“ (DFVL)", color: "#13136e"}
+                    {name: "Demokratų frakcija „Vardan Lietuvos“ (DFVL)", color: "#13136e"},
+                    {name: "Seimo narys, neįsiregistravęs į frakciją", color: "#bbbbbb"}
                   ];
                 }
                 var chart = charts.meetingsGroups.chart;
@@ -1024,7 +1030,7 @@ json(mpsDatasetFile + '?' + randomPar, (err, mpsDataset) => {
                 var count=0;
                 charts.mainTable.chart = $("#dc-data-table").dataTable({
                   "language": {
-                    "info": "Nuo _START_ iki _END_ iš _TOTAL_ įrašų",
+                    "info": "Rodoma _START_ iki _END_ iš _TOTAL_ įrašų",
                     "lengthMenu": "Rodyti _MENU_ įrašus",
                     "paginate": {
                       "first":      "First",
