@@ -92,12 +92,14 @@
                   <li><a href="https://www.transparency.lt/trecdaliu-daugiau-seimo-nariu-skelbia-su-kuo-susitinka-darbo-metu/" target="_blank">2017 m. rudens sesija</a></li>
                   <li><a href="https://www.transparency.lt/parlamentaru-susitikimai-2018-m-pavasaris/" target="_blank">2018 m. pavasario sesija</a></li>
                   <li><a href="https://www.transparency.lt/per-dvejus-metus-dukart-daugiau-seimo-nariu-pradejo-skelbti-susitikimus/" target="_blank">2018 m. rudens sesija</a></li>
-                  <li><a href="https://www.transparency.lt/parlamentaru-susitikimai-2019/" target="_blank">2019 m. pavasario sesija</a></li>
+                  <li><a href="https://transparency.lt/seimo-nariai-pradejo-viesinti-maziau-susitikimu/" target="_blank">2019 m. pavasario sesija</a></li>
                   <li><a href="https://www.transparency.lt/parlamentaru_susitikimai_2019_ruduo/" target="_blank">2019 m. rudens sesija</a></li>
-                  <li><a href="https://www.transparency.lt/2016-2020_seimas/" target="_blank">2020 m. pavasario sesija</a></li>
-                  <li><a href="https://www.transparency.lt/parlamentaru-susitikimai-2021pavasaris/" target="_blank">2021 m. pavasario sesija</a></li>
-                  <li><a href="http://www.transparency.lt/2021-ruduo/" target="_blank">2021 m. rudens sesija</a></li>
-                  <li><a href="https://www.transparency.lt/2022-pavasaris/" target="_blank">2022 m. pavasario sesija</a></li>
+                  <li><a href="https://transparency.lt/nuo-kadencijos-pradzios-du-trecdaliai-seimo-nariu-100-is-154-paskelbe-bent-po-viena-susitikima-su-interesu-grupemis-ir-registruotais-lobistais-is-viso-parlamentarai-paskelbe-3968-tokius-susitikimus/" target="_blank">2020 m. pavasario sesija</a></li>
+                  <li><a href="https://transparency.lt/2021-m-seimo-pavasario-sesijos-metu-70-parlamentaru-paskelbe-654-susitikimus-su-interesu-grupemis-ir-registruotais-lobistais/" target="_blank">2021 m. pavasario sesija</a></li>
+                  <li><a href="https://transparency.lt/pirmaisiais-kadencijos-metais-sio-seimo-nariai-paskelbe-penktadaliu-daugiau-susitikimu-nei-buvusio/" target="_blank">2021 m. rudens sesija</a></li>
+                  <li><a href="https://transparency.lt/nuo-kadencijos-pradzios-parlamentarai-turejo-beveik-2-tukst-susitikimu-su-interesu-grupiu-atstovais/" target="_blank">2022 m. pavasario sesija</a></li>
+                  <li><a href="https://transparency.lt/dideja-parlamentaru-susitikimu-su-interesu-grupemis-skaicius/" target="_blank">2022 m. rudens sesija</a></li>
+                  <li><a href="https://transparency.lt/politikos-skaidrumas/" target="_blank">2023 m. pavasario sesija</a></li>
                 </ul>
               </div>
             </div>
@@ -158,6 +160,19 @@
                   <li>Kiekvienam klausimo svarstymui buvo priskirtas teisės akto nr., remiantis e-seimas.lrs.lt paskelbta informacija.</li>
                   <li>Kai kuriose viešai pateikiamų komitetų išvadose vietoj komiteto pavadinimo buvo nurodytas asmens vardas, pavardė.</li>
                 </ul>
+              </div>
+            </div>
+          </div>
+          <!-- BLOCK 5 -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h1 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">5. Lobistinė veikla</a>
+              </h1>
+            </div>
+            <div id="collapse5" class="panel-collapse collapse in">
+              <div class="panel-body">
+                <p>Lorem ipsum</p>
               </div>
             </div>
           </div>

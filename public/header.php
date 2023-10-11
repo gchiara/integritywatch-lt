@@ -13,29 +13,39 @@
     </ul>
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a href="./app.php" class="nav-link nav-link-main" :class="{active: page == 'tabC'}">Komitetai</a>
+        <a href="./app.php" class="nav-link nav-link-main" :class="{active: page == 'tabA'}">Darbotvarkės</a>
+      </li>
+      <li class="nav-item">
+        <a href="./komitetai.php" class="nav-link nav-link-main" :class="{active: page == 'tabC'}">Komitetai</a>
       </li>
       <li class="nav-item">
         <a href="./ilgalaikiai-leidimai.php" class="nav-link nav-link-main" :class="{active: page == 'tabB'}">Ilgalaikiai leidimai</a>
       </li>
-      <li class="nav-item">
-        <a href="./darbotvarkes.php" class="nav-link nav-link-main" :class="{active: page == 'tabA'}">Darbotvarkės</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" :class="{active: page == 'tabD'}" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Lobistinė veikla
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="./lobbying-experience-declarations.php">Patirtos lobistinės įtakos deklaracijos</a>
+          <a class="dropdown-item" href="./lobbyists-transparency-declarations.php">Lobistų deklaracijos</a>
+          <a class="dropdown-item" href="./lobbyists.php">Lobistai</a>
+        </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Kitų šalių įrankiai
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			<a class="dropdown-item" href="https://www.integritywatch.eu/" target="_blank">Europos Sąjunga</a>
-			<a class="dropdown-item" href="https://www.integritywatch.fr/" target="_blank">Prancūzija</a>
-			<a class="dropdown-item" href="https://www.integritywatch.gr/" target="_blank">Graikija</a>
-			<a class="dropdown-item" href="http://www.soldiepolitica.it/" target="_blank">Italija</a>
-			<a class="dropdown-item" href="https://deputatiuzdelnas.lv/" target="_blank">Latvija</a>
-			<a class="dropdown-item" href="https://www.integritywatch.nl/" target="_blank">Nyderlandai</a>
-			<a class="dropdown-item" href="http://varuhintegritete.transparency.si/" target="_blank">Slovėnija</a>
-			<a class="dropdown-item" href="https://integritywatch.es/" target="_blank">Ispanija</a>
-			<a class="dropdown-item" href="https://openaccess.transparency.org.uk/" target="_blank">Jungtinė Karalystė</a>
-			<a class="dropdown-item" href="https://integritywatch.cl/" target="_blank">Čilė</a>
+          <a class="dropdown-item" href="https://www.integritywatch.eu/" target="_blank">Europos Sąjunga</a>
+          <a class="dropdown-item" href="https://www.integritywatch.fr/" target="_blank">Prancūzija</a>
+          <a class="dropdown-item" href="https://www.integritywatch.gr/" target="_blank">Graikija</a>
+          <a class="dropdown-item" href="http://www.soldiepolitica.it/" target="_blank">Italija</a>
+          <a class="dropdown-item" href="https://deputatiuzdelnas.lv/" target="_blank">Latvija</a>
+          <a class="dropdown-item" href="https://www.integritywatch.nl/" target="_blank">Nyderlandai</a>
+          <a class="dropdown-item" href="http://varuhintegritete.transparency.si/" target="_blank">Slovėnija</a>
+          <a class="dropdown-item" href="https://integritywatch.es/" target="_blank">Ispanija</a>
+          <a class="dropdown-item" href="https://openaccess.transparency.org.uk/" target="_blank">Jungtinė Karalystė</a>
+          <a class="dropdown-item" href="https://integritywatch.cl/" target="_blank">Čilė</a>
         </div>
       </li>
       <li class="nav-item">

@@ -30,6 +30,11 @@ $color_lobby: #449188;
     &.active, &:hover {
       color: #369f3e;
     }
+    @media only screen and (min-width: 991px) and (max-width: 1450px) {
+      font-size: 13px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
   .icon-btn {
     vertical-align: middle;
@@ -209,6 +214,12 @@ $color_lobby: #449188;
   &.tab_b_3 {
     height: 570px;
   }
+  &.tab_d_1 {
+    height: 525px;
+  }
+  &.tab_d_2 {
+    height: 525px;
+  }
 }
 .institution-filter-container {
   padding: 20px;
@@ -307,6 +318,12 @@ $color_lobby: #449188;
     width: 260px;
     &.footer-input-laws {
       width: 380px;
+    }
+    &.footer-input-lobbying {
+      width: 480px;
+      input::placeholder {
+        font-size: 13px;
+      }
     }
     -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -801,6 +818,10 @@ table.dataTable tbody tr.selected {
 td.dt-center, th.dt-center {
   text-align: center !important;
 }
+.redflag-img {
+  width: 15px;
+  margin-right: 2px;
+}
 
 /* POPOVER */
 
@@ -836,6 +857,20 @@ td.dt-center, th.dt-center {
     a {
       color: #3a89c1;
       font-weight: 400;
+      &.detailsModalBtn {
+        background: #3a89c1;
+        border: none;
+        border-radius: 3px;
+        padding: 3px 10px;
+        color: #fff;
+        font-weight: 400;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover,&:focus,&:active {
+          background: #d65b1e;
+          border: none;
+        }
+      }
     }
   }
   .dataTables_info, .dataTables_paginate, .dataTables_length {
@@ -912,6 +947,9 @@ td.dt-center, th.dt-center {
   }
   .details-line {
     text-align: left;
+  }
+  .details-table-title {
+    margin-bottom: 10px;
   }
   .modal-divider {
     height: 1px;
@@ -1055,6 +1093,17 @@ td.dt-center, th.dt-center {
         }
       }
       &:nth-child(3), &:nth-child(4), &:nth-child(7), &:nth-child(8) {
+        @media only screen and (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+.tabD {
+  .chart-table {
+    td, th {
+      &:nth-child(6) {
         @media only screen and (max-width: 768px) {
           display: none;
         }

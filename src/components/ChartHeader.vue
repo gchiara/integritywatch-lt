@@ -1,10 +1,10 @@
 <template>
   <div class="chart-header row">
-    <div class="chart-title col-9">
+    <div :class="['chart-title', 'col-10', customclass]">
       <div v-html="title"></div>
       <div class="chart-subtitle" v-html="subtitle" v-if="subtitle"></div>
     </div>
-    <div class="chart-header-buttons col-3">
+    <div class="chart-header-buttons col-2">
       <button v-if="info" type="button" class="btn btn-secondary btn-info" data-container="body" data-toggle="popover" data-trigger="hover" data-html="true" data-placement="bottom" :data-content="info">
         i
       </button>
@@ -20,7 +20,8 @@ export default {
     subtitle: String,
     info: String,
     bg: String,
-    color: String
+    color: String,
+    customclass: String
   }
 }
 </script>
@@ -36,6 +37,9 @@ $color_TI_darker: darken( $color_TI, 20% );
     font-size: 18px;
     text-align: left;
     color: $color_TI_darker;
+    &.smaller {
+      font-size: 16px !important;
+    }
     @media only screen and (max-width: 1400px) {
       font-size: 18px;
     }

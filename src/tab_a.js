@@ -99,6 +99,16 @@ var vuedata = {
   ],
   meetingsCountsTablesL9: [
     {
+      title: '2023 m. pavasario sesija',
+      dataPrefix: '2023_Spring',
+      asteriskText: '- tiek susitikimų įvyko su lobistų sąraše registruotomis verslo asociacijomis ir įmonėmis.'
+    },
+    {
+      title: '2022 m. rudens sesija',
+      dataPrefix: '2022_Autumn',
+      asteriskText: '- tiek susitikimų įvyko su lobistų sąraše registruotomis verslo asociacijomis ir įmonėmis.'
+    },
+    {
       title: '2022 m. pavasario sesija',
       dataPrefix: '2022_Spring',
       asteriskText: '- tiek susitikimų įvyko su lobistų sąraše registruotomis verslo asociacijomis ir įmonėmis.'
@@ -523,9 +533,11 @@ json(mpsDatasetFile + '?' + randomPar, (err, mpsDataset) => {
                 d.lobbyMeetings = _.find(lobbyMeetingsDataset, function(x) { return x['last_name'].trim() == d['@pavardė'].trim() && x['first_name'].trim() == d['@vardas'].trim()});
                 //Get photo url
                 d.photoUrl = '';
-                var photoEntry = _.find(photosDataset, function(x) { return x['url'] == d['@biografijos_nuoroda']});
+                //console.log(d['@biografijos_nuoroda']);
+                var photoEntry = _.find(photosDataset, function(x) {return x['url'] == d['@biografijos_nuoroda']});
                 if(photoEntry) {
                   d.photoUrl = photoEntry.photoUrl;
+                  d.photoLocalUrl = 'legislation' + vuedata.legislationSelected + '/' + _.last(photoEntry.photoUrl.split('/'));
                 }
                 //Add totals to totals object
                 if(d.lobbyMeetings) {
@@ -550,6 +562,15 @@ json(mpsDatasetFile + '?' + randomPar, (err, mpsDataset) => {
                 d.agendasCount = 0;
                 d.agendasString = "";
                 if(d.agendas) {
+                  _.each(d.agendas.SeimoNarioDarbotvarkėsĮvykis, function(a) {
+                    //console.log(a);
+                    if(vuedata.legislationSelected == '9') {
+                      a['@pabaiga'] = a.e;
+                      a['@pradžia'] = a.s;
+                      a['@pavadinimas'] = a.t;
+                      a['@vieta'] = a.l; 
+                    }
+                  });
                   if(vuedata.legislationSelected == '9') {
                     //Filter agendas to only keep entries after 13 Nov 2020
                     d.agendas["SeimoNarioDarbotvarkėsĮvykis"] = _.filter(d.agendas["SeimoNarioDarbotvarkėsĮvykis"], function(x) { 

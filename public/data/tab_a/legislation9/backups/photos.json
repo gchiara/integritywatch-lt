@@ -144,8 +144,8 @@
         "url": "http://www.lrs.lt/sip/portal.show?p_r=8801&p_k=1&p_a=498&p_asm_id=84602&pt=sn:3#sn"
     },
     {
-        "fname": "Evelina",
-        "lname": "Dobrovolska",
+        "fname": "Ewelina",
+        "lname": "Dobrowolska",
         "photoUrl": "https://www.lrs.lt/SIPIS/sn_foto/2020/evelina_dobrovolska.jpg",
         "url": "http://www.lrs.lt/sip/portal.show?p_r=8801&p_k=1&p_a=498&p_asm_id=84603&pt=sn:3#sn"
     },
@@ -205,7 +205,7 @@
     },
     {
         "fname": "Vaida",
-        "lname": "Giraitytė",
+        "lname": "Giraitytė-Juškevičienė",
         "photoUrl": "https://www.lrs.lt/SIPIS/sn_foto/2020/vaida_giraityte.jpg",
         "url": "http://www.lrs.lt/sip/portal.show?p_r=8801&p_k=1&p_a=498&p_asm_id=47909&pt=sn:3#sn"
     },
@@ -250,6 +250,12 @@
         "lname": "Haase",
         "photoUrl": "https://www.lrs.lt/SIPIS/sn_foto/2020/irena_haase.jpg",
         "url": "http://www.lrs.lt/sip/portal.show?p_r=8801&p_k=1&p_a=498&p_asm_id=22294&pt=sn:3#sn"
+    },
+    {
+        "fname": "Angelė",
+        "lname": "Jakavonytė",
+        "photoUrl": "https://www.lrs.lt/SIPIS/sn_foto/2020/angele_jakavonyte.jpg",
+        "url": "http://www.lrs.lt/sip/portal.show?p_r=8801&p_k=1&p_a=498&p_asm_id=22792&pt=sn:3#sn"
     },
     {
         "fname": "Jonas",
@@ -552,16 +558,16 @@
         "url": "http://www.lrs.lt/sip/portal.show?p_r=8801&p_k=1&p_a=498&p_asm_id=79139&pt=sn:3#sn"
     },
     {
-        "fname": "Beata",
-        "lname": "Petkevič",
-        "photoUrl": "https://www.lrs.lt/SIPIS/sn_foto/2020/beata_petkevic.jpg",
-        "url": "http://www.lrs.lt/sip/portal.show?p_r=8801&p_k=1&p_a=498&p_asm_id=84613&pt=sn:3#sn"
-    },
-    {
         "fname": "Audrius",
         "lname": "Petrošius",
         "photoUrl": "https://www.lrs.lt/SIPIS/sn_foto/2020/audrius_petrosius.jpg",
         "url": "http://www.lrs.lt/sip/portal.show?p_r=8801&p_k=1&p_a=498&p_asm_id=84614&pt=sn:3#sn"
+    },
+    {
+        "fname": "Beata",
+        "lname": "Pietkiewicz",
+        "photoUrl": "https://www.lrs.lt/SIPIS/sn_foto/2020/beata_petkevic.jpg",
+        "url": "http://www.lrs.lt/sip/portal.show?p_r=8801&p_k=1&p_a=498&p_asm_id=84613&pt=sn:3#sn"
     },
     {
         "fname": "Jonas",
@@ -652,6 +658,12 @@
         "lname": "Sejonienė",
         "photoUrl": "https://www.lrs.lt/SIPIS/sn_foto/2020/jurgita_sejoniene.jpg",
         "url": "http://www.lrs.lt/sip/portal.show?p_r=8801&p_k=1&p_a=498&p_asm_id=84620&pt=sn:3#sn"
+    },
+    {
+        "fname": "Vilius",
+        "lname": "Semeška",
+        "photoUrl": "https://www.lrs.lt/SIPIS/sn_foto/2020/vilius_semeska.jpg",
+        "url": "http://www.lrs.lt/sip/portal.show?p_r=8801&p_k=1&p_a=498&p_asm_id=83807&pt=sn:3#sn"
     },
     {
         "fname": "Algirdas",

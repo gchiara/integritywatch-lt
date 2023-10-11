@@ -369,7 +369,6 @@ csv('./data/tab_b/meetings.csv?' + randomPar, (err, meetings) => {
       people.push(newPerson);
     }
   });
-  console.log(people.length);
 
   //Order badges array in people data
   _.each(people, function (d) {
@@ -682,7 +681,7 @@ csv('./data/tab_b/meetings.csv?' + randomPar, (err, meetings) => {
     idDimensionPeople.filter(function(d) { 
       return filteredIds.indexOf(d) > -1;
     });
-    console.log(idDimensionPeople.top(Infinity));
+    //console.log(idDimensionPeople.top(Infinity));
   }
 
   //SEARCH INPUT FUNCTIONALITY
