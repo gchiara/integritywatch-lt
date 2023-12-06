@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ManoSeimas.lt</title>
     <!-- Add twitter and og meta here -->
-    <meta property="og:url" content="http://www.manoseimas.lt/app.php" />
+    <meta property="og:url" content="http://www.manoseimas.lt" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="ManoSeimas.lt" />
     <meta property="og:description" content="„ManoSeimas.lt“ galite sužinoti, ką svarsto Seimo komitetai, su kuo susitinka Seimo nariai bei kas gauna ilgalaikius leidimus į Seimą." />
@@ -17,10 +17,10 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:500" rel="stylesheet">
-    <link rel="stylesheet" href="static/tab_d_3.css?v=4">
+    <link rel="stylesheet" href="static/tab_d_1.css?v=9">
 </head>
 <body>
-    <div id="app" class="tabC">   
+    <div id="app" class="tabD">   
       <?php include 'header.php' ?>
       <div class="container-fluid dashboard-container-outer">
         <div class="row dashboard-container">
@@ -30,8 +30,8 @@
               <!-- INFO -->
               <div class="col-md-8 chart-col" v-if="showInfo">
                 <div class="boxed-container description-container">
-                  <h3>Patirtos lobistinės įtakos deklaracijos</h3>
-                  <p>Svetainėje galite greitai ir paprastai sužinoti, kaip lobistai ir asmenys, kuriems lobistine veikla siekiama daryti įtaką, skelbia savo deklaracijas. Galite šiuos duomenis analizuoti ir lyginti tarpusavyje pasirinkdami skirtingus rodiklius. <a href="./about.php?section=4">Daugiau čia</a>.</p>
+                  <h3>Lobistai</h3>
+                  <p>Svetainėje „ManoSeimas.lt“ galite greitai ir paprastai sužinoti, kaip lobistai ir asmenys, kuriems lobistine veikla siekiama daryti įtaką, skelbia savo deklaracijas. Galite šiuos duomenis analizuoti ir lyginti tarpusavyje pasirinkdami skirtingus rodiklius. <a href="./about.php?section=4">Daugiau čia</a>.</p>
                   <i class="material-icons close-btn" @click="showInfo = false">close</i>
                 </div>
               </div>
@@ -44,28 +44,16 @@
             </div>
           </div>
           <!-- CHARTS -->
-          <div class="col-md-3 chart-col">
-            <div class="boxed-container chart-container tab_d_2">
-              <chart-header :title="charts.topDeclarants.title" :info="charts.topDeclarants.info" :customclass="'smaller'" ></chart-header>
-              <div class="chart-inner" id="topdeclarants_chart"></div>
+          <div class="col-md-4 chart-col">
+            <div class="boxed-container chart-container tab_d_1">
+              <chart-header :title="charts.legalEntity.title" :info="charts.legalEntity.info" ></chart-header>
+              <div class="chart-inner" id="legalentity_chart"></div>
             </div>
           </div>
-          <div class="col-md-3 chart-col">
+          <div class="col-md-8 chart-col">
             <div class="boxed-container chart-container tab_d_2">
-              <chart-header :title="charts.topPositions.title" :info="charts.topPositions.info" :customclass="'smaller'" ></chart-header>
-              <div class="chart-inner" id="toppositions_chart"></div>
-            </div>
-          </div>
-          <div class="col-md-3 chart-col">
-            <div class="boxed-container chart-container tab_d_2">
-              <chart-header :title="charts.topInstitutions.title" :info="charts.topInstitutions.info" :customclass="'smaller'" ></chart-header>
-              <div class="chart-inner" id="topinstitutions_chart"></div>
-            </div>
-          </div>
-          <div class="col-md-3 chart-col">
-            <div class="boxed-container chart-container tab_d_2">
-              <chart-header :title="charts.topLegislations.title" :info="charts.topLegislations.info" :customclass="'smaller'" ></chart-header>
-              <div class="chart-inner" id="toplegislations_chart"></div>
+              <chart-header :title="charts.topLobbyists.title" :info="charts.topLobbyists.info" ></chart-header>
+              <div class="chart-inner" id="toplobbyists_chart"></div>
             </div>
           </div>
           <!-- TABLE -->
@@ -77,14 +65,11 @@
                   <thead>
                     <tr class="header">
                       <th class="header header-num">Nr</th> 
-                      <th class="header header-laws">Lobistinę veiklą patyręs asmuo</th>
-                      <th class="header header-laws">Pareigos</th>
-                      <th class="header header-laws">Institucija</th>
-                      <th class="header header-laws">Teisės aktai</th>
                       <th class="header header-laws">Lobistas</th>
-                      <th class="header header-laws">Užsakovas</th>
-                      <th class="header header-laws">Naudos gavėjas</th>
-                      <th class="header header-laws">Lobistų deklaracija</th>
+                      <th class="header header-laws">Juridinio asmens atstovai</th>
+                      <th class="header header-laws">Veiklos sričių skaičius</th>
+                      <th class="header header-laws">Deklaracijų skaičius</th>
+                      <th class="header header-extra"></th>
                     </tr>
                   </thead>
                 </table>
@@ -103,7 +88,7 @@
                 i
               </button>
               <div class="modal-title modal-title-law">
-                <div>{{ selectedElement.number }}</div>
+                <div>{{ selectedElement.lobbyists}}</div>
               </div>
               <button type="button" class="close" data-dismiss="modal"><i class="material-icons">close</i></button>
             </div>
@@ -112,11 +97,10 @@
               <div class="container">
                 <div class="row">
                   <div class="col-md-12">
-                    <div class="details-line" v-if="selectedElement.submission_date"><span class="details-line-title">Data:</span> {{ selectedElement.submission_date }}</div>
-                    <div class="details-line" v-if="selectedElement.legislation_name"><span class="details-line-title">Teisės aktas:</span> {{ selectedElement.legislation_name }}</div>
-                    <div class="details-line" v-if="selectedElement.legislation_description"><span class="details-line-title">Teisės akto aprašymas:</span> {{ selectedElement.legislation_description }}</div>
-                    <div class="details-line" v-if="selectedElement.representatives && selectedElement.representatives.length > 0"><span class="details-line-title">Lobisto atstovai:</span> {{ selectedElement.representatives.join(', ') }}</div>
-                    <div class="details-line" v-else><span class="details-line-title">Lobisto atstovai:</span> -</div>
+                    <div class="details-line" v-if="selectedElement.date_list_inclusion"><span class="details-line-title">Įrašymo į lobistų sąrašą data:</span> {{ selectedElement.date_list_inclusion }}</div>
+                    <div class="details-line" v-if="selectedElement.legal_entity_representatives && selectedElement.legal_entity_representatives.length > 0"><span class="details-line-title">Juridinio asmens atstovai:</span> {{ selectedElement.legal_entity_representatives.join(', ') }}</div>
+                    <div class="details-line" v-else><span class="details-line-title">Juridinio asmens atstovai:</span> -</div>
+                    <div class="details-line" v-if="selectedElement.legal_regulation_areas"><span class="details-line-title">Veiklos sritys::</span> {{ selectedElement.legal_regulation_areas }}</div>
                   </div>
                 </div>
               </div>
@@ -129,10 +113,10 @@
         <div class="row">
           <div class="footer-col col-12 col-sm-12 footer-counts">
             <div class="dc-data-count count-box count-box-main count-box-entries-c">
-              <div class="filter-count">0</div>deklaracijos iš <strong class="total-count">0</strong>
+              <div class="filter-count">0</div>lobistai iš <strong class="total-count">0</strong>
             </div>
             <div class="footer-input footer-input-lobbying">
-              <input type="text" id="search-input" placeholder="Paieška (pagal vardą, pareigas, darbovietę, teisės aktus...)">
+              <input type="text" id="search-input" placeholder="Paieška (pagal vardą, veiklos sritį, atstovus…)">
               <i class="material-icons">search</i>
             </div>
           </div>
@@ -157,7 +141,7 @@
     <script type="text/javascript" src="vendor/js/d3.layout.cloud.js"></script>
     <script type="text/javascript" src="vendor/js/crossfilter.min.js"></script>
     <script type="text/javascript" src="vendor/js/dc.js"></script>
-    <script src="static/tab_d_3.js?v=4"></script>
+    <script src="static/tab_d_1.js?v=9"></script>
 
  
 </body>

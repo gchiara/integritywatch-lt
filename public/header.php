@@ -13,7 +13,7 @@
     </ul>
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a href="./app.php" class="nav-link nav-link-main" :class="{active: page == 'tabA'}">Darbotvarkės</a>
+        <a href="./darbotvarkes.php" class="nav-link nav-link-main" :class="{active: page == 'tabA'}">Darbotvarkės</a>
       </li>
       <li class="nav-item">
         <a href="./komitetai.php" class="nav-link nav-link-main" :class="{active: page == 'tabC'}">Komitetai</a>
@@ -26,9 +26,9 @@
           Lobistinė veikla
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="./lobbying-experience-declarations.php">Patirtos lobistinės įtakos deklaracijos</a>
-          <a class="dropdown-item" href="./lobbyists-transparency-declarations.php">Lobistų deklaracijos</a>
-          <a class="dropdown-item" href="./lobbyists.php">Lobistai</a>
+          <a class="dropdown-item" href="./app.php">Patirtos lobistinės įtakos deklaracijos</a>
+          <a class="dropdown-item" href="./lobistu-skaidrumo-deklaracijos.php">Lobistų skaidrumo deklaracijos</a>
+          <a class="dropdown-item" href="./lobistai.php">Lobistai</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -52,7 +52,7 @@
         <a href="./about.php" class="nav-link">Apie</a>
       </li>
       <li class="nav-item">
-        <a href="https://www.transparency.lt/paremk/" class="nav-link" target="_blank"><img src="./images/donate.png" class="donate-btn-img" alt="Donate" /></a>
+        <a href="https://transparency.lt/paaukok/" class="nav-link" target="_blank"><img src="./images/donate.png" class="donate-btn-img" alt="Donate" /></a>
       </li>
     </ul>
   </div>

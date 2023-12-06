@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ManoSeimas.lt</title>
     <!-- Add twitter and og meta here -->
-    <meta property="og:url" content="http://www.manoseimas.lt/darbotvarkes.php" />
+    <meta property="og:url" content="http://www.manoseimas.lt" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="ManoSeimas.lt" />
-    <meta property="og:description" content="Svetainėje „ManoSeimas.lt“ galite sužinoti, kaip Seimo nariai skelbia savo darbotvarkes ir praneša apie susitikimus su įvairių interesų grupių atstovais." />
+    <meta property="og:description" content="„ManoSeimas.lt“ galite sužinoti, ką svarsto Seimo komitetai, su kuo susitinka Seimo nariai bei kas gauna ilgalaikius leidimus į Seimą." />
     <meta property="og:image" content="http://www.manoseimas.lt/images/thumbnail_090621.png" />
     <meta property="og:image:width" content="1280">
     <meta property="og:image:height" content="630">
@@ -17,10 +17,10 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:500" rel="stylesheet">
-    <link rel="stylesheet" href="static/tab_a.css?v=8">
+    <link rel="stylesheet" href="static/tab_d_3.css?v=8">
 </head>
 <body>
-    <div id="app" class="tabA">   
+    <div id="app" class="tabC">   
       <?php include 'header.php' ?>
       <div class="container-fluid dashboard-container-outer">
         <div class="row dashboard-container">
@@ -30,7 +30,8 @@
               <!-- INFO -->
               <div class="col-md-8 chart-col" v-if="showInfo">
                 <div class="boxed-container description-container">
-                  <p>Svetainėje „ManoSeimas.lt“ galite greitai ir paprastai sužinoti, kaip LR Seimo nariai skelbia savo darbotvarkes ir praneša apie susitikimus su įvairių interesų grupių atstovais, dalyvavimą renginiuose, susitikimus su kitais politikais. Galite šiuos duomenis analizuoti atskirose Seimo frakcijose arba tarpusavyje lyginti visų Seimo frakcijų rodiklius. <a href="./about.php?section=2">Daugiau čia</a>.</p>
+                  <h3>Patirtos lobistinės įtakos deklaracijos</h3>
+                  <p>Svetainėje „ManoSeimas.lt“ galite greitai ir paprastai sužinoti, kaip lobistai ir asmenys, kuriems lobistine veikla siekiama daryti įtaką, skelbia savo deklaracijas. Galite šiuos duomenis analizuoti ir lyginti tarpusavyje pasirinkdami skirtingus rodiklius. <a href="./about.php?section=4">Daugiau čia</a>.</p>
                   <i class="material-icons close-btn" @click="showInfo = false">close</i>
                 </div>
               </div>
@@ -41,76 +42,49 @@
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-12 chart-col legislation-select-container">
-                <a href="./darbotvarkes.php?legislation=9" class="link-button" :class="{active: legislationSelected == 9}">XIII kadencija</a>
-                <a href="./darbotvarkes.php?legislation=8" class="link-button" :class="{active: legislationSelected == 8}">XII kadencija</a>
-              </div>
+          </div>
+          <!-- CHARTS -->
+          <div class="col-md-3 chart-col">
+            <div class="boxed-container chart-container tab_d_2">
+              <chart-header :title="charts.topDeclarants.title" :info="charts.topDeclarants.info" :customclass="'smaller'" ></chart-header>
+              <div class="chart-inner" id="topdeclarants_chart"></div>
             </div>
           </div>
-          <!-- COMPARISON CHART - LEGISLATION 9 -->
-          <div class="col-md-6 chart-col" v-if="legislationSelected == 9">
-            <div class="boxed-container chart-container  tab_a_3">
-              <chart-header :title="charts.termsComparison.title" :info="charts.termsComparison.info" ></chart-header>
-              <div class="chart-inner" id="termscomparison_chart"></div>
-              <div class="termscomparison-legend">
-                <div class="termscomparison-legend-entry">
-                  <span class="termscomparison-legend-color termscomparison-legend-color8"></span><span class="termscomparison-legend-text">XII kadencija</span>
-                </div>
-                <div class="termscomparison-legend-entry">
-                  <span class="termscomparison-legend-color termscomparison-legend-color9"></span><span class="termscomparison-legend-text">XIII kadencija</span>
-                </div>
-              </div>
+          <div class="col-md-3 chart-col">
+            <div class="boxed-container chart-container tab_d_2">
+              <chart-header :title="charts.topPositions.title" :info="charts.topPositions.info" :customclass="'smaller'" ></chart-header>
+              <div class="chart-inner" id="toppositions_chart"></div>
             </div>
           </div>
-          <!-- CHARTS - FIRST ROW -->
-          <div class="col-md-6 chart-col" v-if="showMeetingsCharts">
-            <div class="boxed-container chart-container tab_a_1" id="meetingstotals_chart_container">
-              <chart-header :title="charts.meetingsTotals.title" :info="charts.meetingsTotals.info" ></chart-header>
-              <div class="chart-inner" id="meetingstotals_chart"></div>
-            </div>
-            <div class="boxed-container chart-container tab_a_1b" id="meetingsselected_chart_container">
-              <chart-header :title="charts.meetingsSelected.title" :info="charts.meetingsSelected.info" ></chart-header>
-              <div class="chart-inner" id="meetingsselected_chart"></div>
+          <div class="col-md-3 chart-col">
+            <div class="boxed-container chart-container tab_d_2">
+              <chart-header :title="charts.topInstitutions.title" :info="charts.topInstitutions.info" :customclass="'smaller'" ></chart-header>
+              <div class="chart-inner" id="topinstitutions_chart"></div>
             </div>
           </div>
-          <div class="col-md-6 chart-col" v-if="showMeetingsCharts">
-            <div class="boxed-container chart-container  tab_a_2">
-              <chart-header :title="charts.wordcloud.title" :info="charts.wordcloud.info" ></chart-header>
-              <div class="chart-inner" id="wordcloud_chart"></div>
-            </div>
-          </div>
-          <!-- TOGGLE BUTTON -->
-          <div class="col-md-12 toggle-btn-container" v-if="showMeetingsCharts">
-            <button class="toggle-btn" id="charts-toggle-btn" @click="showAllCharts = !showAllCharts">Daugiau</button>
-          </div>
-          <!-- CHARTS - SECOND ROW - CAN BE TOGGLED IN LEGISLATION 8, IS SHOWN IN 9 -->
-          <div class="col-md-6 chart-col" v-show="showAllCharts || legislationSelected == 9" v-if="showMeetingsCharts || legislationSelected == 9">
-            <div class="boxed-container chart-container  tab_a_3">
-              <chart-header :title="charts.meetingsGroups.title" :info="charts.meetingsGroups.info" ></chart-header>
-              <div class="chart-inner" id="meetingsgroups_chart"></div>
+          <div class="col-md-3 chart-col">
+            <div class="boxed-container chart-container tab_d_2">
+              <chart-header :title="charts.topLegislations.title" :info="charts.topLegislations.info" :customclass="'smaller'" ></chart-header>
+              <div class="chart-inner" id="toplegislations_chart"></div>
             </div>
           </div>
           <!-- TABLE -->
           <div class="col-12 chart-col">
-            <div class="selected-rows-list">
-              <div class="selected-rows-tags">
-              </div>
-            </div>
             <div class="boxed-container chart-container chart-container-table">
-              <chart-header :title="charts.mainTable.title" :info="charts.mainTable.info" ></chart-header>
+              <chart-header :title="charts.mainTable.title" :subtitle="charts.mainTable.subtitle" :info="charts.mainTable.info" ></chart-header>
               <div class="chart-inner chart-table">
                 <table class="table table-hover dc-data-table" id="dc-data-table">
                   <thead>
                     <tr class="header">
                       <th class="header header-num">Nr</th> 
-                      <th class="header header-name">Vardas ir pavardė</th>
-                      <th class="header header-group">Frakcija</th>
-                      <th class="header header-term">Kadencija</th>
-                      <!-- <th class="header">Ar parlamentaras yra frakcijos seniūnas ir/arba komiteto pirmininkas?</th> -->
-                      <th class="header header-agenda">Visi lrs.lt darbotvarkės įrašai</th>
-                      <th class="header header-meetings">Susitikimai su interesų grupėmis ir registruotais lobistais</th>
-                      <th class="header header-extra">Daugiau</th>
+                      <th class="header header-laws">Lobistinę veiklą patyręs asmuo</th>
+                      <th class="header header-laws">Pareigos</th>
+                      <th class="header header-laws">Institucija</th>
+                      <th class="header header-laws">Teisės aktai</th>
+                      <th class="header header-laws">Lobistas</th>
+                      <th class="header header-laws">Užsakovas</th>
+                      <th class="header header-laws">Naudos gavėjas</th>
+                      <th class="header header-laws">Lobistų deklaracija</th>
                     </tr>
                   </thead>
                 </table>
@@ -121,13 +95,15 @@
       </div>
       <!-- DETAILS MODAL -->
       <div class="modal" id="detailsModal">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-laws">
           <div class="modal-content">
             <!-- Modal Header -->
             <div class="modal-header">
-              <div class="modal-title">
-                <div>{{ selectedElement['@vardas'] }} {{ selectedElement['@pavardė'] }}</div>
-                <div v-if="selectedElement.faction">{{ selectedElement.faction['@padalinio_pavadinimo_santrumpa'] }}</div>
+              <button type="button" class="btn btn-secondary btn-info" data-container="body" data-toggle="popover" data-trigger="hover" data-html="true" data-placement="bottom" data-content="Lorem ipsum">
+                i
+              </button>
+              <div class="modal-title modal-title-law">
+                <div>{{ selectedElement.number }}</div>
               </div>
               <button type="button" class="close" data-dismiss="modal"><i class="material-icons">close</i></button>
             </div>
@@ -135,67 +111,12 @@
             <div class="modal-body">
               <div class="container">
                 <div class="row">
-                  <div class="col-md-8">
-                    <div class="details-line"><span class="details-line-title"><a :href="selectedElement['@biografijos_nuoroda']" target="_blank">LRS.lt profilis</a></span></div>
-                    <div class="details-line">
-                      <span class="details-line-title" v-if="selectedElement['@lytis'] == 'M'">Seimo narė nuo: </span>
-                      <span class="details-line-title" v-else>Seimo narys nuo: </span>
-                      {{ selectedElement['@data_nuo'] }}<span v-if="selectedElement['@data_iki']"> iki {{ selectedElement['@data_iki'] }}</span>
-                    </div>
-                    <div class="details-line" v-if="selectedElement.lobbyMeetings"><span class="details-line-title">Susitikimai su interesų grupėmis ir registruotais lobistais:</span> {{ selectedElement.lobbyMeetings.Total_all_periods }}</div>
-                    <div class="details-line"><span class="details-line-title">Visi lrs.lt darbotvarkės įrašai:</span> {{ selectedElement.agendasCount }}</div>
-                  </div>
-                  <div class="col-md-4">
-                    <img :src="'images/photos/'+selectedElement.photoLocalUrl" class="photo" />
-                  </div>
-                  <!-- Meetings Counts Info -->
                   <div class="col-md-12">
-                    <div class="modal-divider"></div>
-                    <!-- Meetings Legislation 8 -->
-                    <div v-if="selectedElement.lobbyMeetings && legislationSelected == 8">
-                      <div class="meetings-count-info-container" v-for="el in meetingsCountsTablesL8">
-                        <div class="details-line details-line-meetings-title">{{ el.title }}: {{ selectedElement.lobbyMeetings[el.dataPrefix+'_total'] }}</div>
-                        <table>
-                          <thead><tr><th>Su verslu ir verslo asociacijomis</th><th>Su registruotais lobistais</th><th>Su NVO</th><th>Su profesinėmis sąjungomis</th><th>Kiti</th></tr></thead>
-                          <tbody>
-                            <tr>
-                              <td>{{ selectedElement.lobbyMeetings[el.dataPrefix+'_business'] }}</td>
-                              <td>{{ selectedElement.lobbyMeetings[el.dataPrefix+'_registered_lobbyists'] }}</td>
-                              <td>{{ selectedElement.lobbyMeetings[el.dataPrefix+'_NGO_local'] }}</td>
-                              <td>{{ selectedElement.lobbyMeetings[el.dataPrefix+'_trade_unions'] }}</td>
-                              <td>{{ selectedElement.lobbyMeetings[el.dataPrefix+'_others'] }}</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                    <!-- Meetings Legislation 9 -->
-                    <div v-if="selectedElement.lobbyMeetings && legislationSelected == 9">
-                      <div class="meetings-count-info-container" v-for="el in meetingsCountsTablesL9">
-                        <div class="details-line details-line-meetings-title">{{ el.title }}: {{ selectedElement.lobbyMeetings[el.dataPrefix+'_total'] }}</div>
-                        <table>
-                          <thead><tr><th>Su verslu ir verslo asociacijomis *</th><th>Su registruotais lobistais</th><th>Su NVO</th><th>Su profesinėmis sąjungomis</th><th>Kiti</th></tr></thead>
-                          <tbody>
-                            <tr>
-                              <td>{{ selectedElement.lobbyMeetings[el.dataPrefix+'_business'] }}</td>
-                              <td>{{ selectedElement.lobbyMeetings[el.dataPrefix+'_registered_lobbyists'] }}</td>
-                              <td>{{ selectedElement.lobbyMeetings[el.dataPrefix+'_NGO_local'] }}</td>
-                              <td>{{ selectedElement.lobbyMeetings[el.dataPrefix+'_trade_unions'] }}</td>
-                              <td>{{ selectedElement.lobbyMeetings[el.dataPrefix+'_others'] }}</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <div class="meetings-asterisk-line">*{{ selectedElement.lobbyMeetings['Asterisk_'+el.dataPrefix] }} {{ el.asteriskText }}</div>
-                      </div>
-                    </div>
-                    <div v-show="selectedElement.agendas && selectedElement.agendasCount > 0" class="agendas-table-container">
-                    <div class="details-line"><span class="details-line-title">Visi lrs.lt darbotvarkės įrašai: {{ selectedElement.agendasCount }}</span></div>
-                      <table id="modalAgendasTable" class="agendas-table">
-                        <thead>
-                          <tr><th>Data</th><th>Susitikimo įrašas</th><th>Vieta</th></tr>
-                        </thead>
-                      </table>
-                    </div>
+                    <div class="details-line" v-if="selectedElement.submission_date"><span class="details-line-title">Data:</span> {{ selectedElement.submission_date }}</div>
+                    <div class="details-line" v-if="selectedElement.legislation_name"><span class="details-line-title">Teisės aktas:</span> {{ selectedElement.legislation_name }}</div>
+                    <div class="details-line" v-if="selectedElement.legislation_description"><span class="details-line-title">Teisės akto aprašymas:</span> {{ selectedElement.legislation_description }}</div>
+                    <div class="details-line" v-if="selectedElement.representatives && selectedElement.representatives.length > 0"><span class="details-line-title">Lobisto atstovai:</span> {{ selectedElement.representatives.join(', ') }}</div>
+                    <div class="details-line" v-else><span class="details-line-title">Lobisto atstovai:</span> -</div>
                   </div>
                 </div>
               </div>
@@ -207,17 +128,11 @@
       <div class="container-fluid footer-bar">
         <div class="row">
           <div class="footer-col col-12 col-sm-12 footer-counts">
-            <div class="dc-data-count count-box count-box-main">
-              <div class="filter-count">0</div>parlamentaras(-ė) iš <strong class="total-count">0</strong>
+            <div class="dc-data-count count-box count-box-main count-box-entries-c">
+              <div class="filter-count">0</div>deklaracijos iš <strong class="total-count">0</strong>
             </div>
-            <div class="count-box count-box-agendas">
-              <div class="filter-count nbagendas">0</div>iš <strong class="total-count">0</strong> darbotvarkės įrašų
-            </div>
-            <div class="count-box count-box-meetings">
-              <div class="filter-count nbmeetings">0</div>iš <strong class="total-count">0</strong> susitikimų su interesų grupėmis
-            </div>
-            <div class="footer-input">
-              <input type="text" id="search-input" placeholder="Paieška">
+            <div class="footer-input footer-input-lobbying">
+              <input type="text" id="search-input" placeholder="Paieška (pagal vardą, pareigas, darbovietę, teisės aktus...)">
               <i class="material-icons">search</i>
             </div>
           </div>
@@ -242,7 +157,7 @@
     <script type="text/javascript" src="vendor/js/d3.layout.cloud.js"></script>
     <script type="text/javascript" src="vendor/js/crossfilter.min.js"></script>
     <script type="text/javascript" src="vendor/js/dc.js"></script>
-    <script src="static/tab_a.js?v=8"></script>
+    <script src="static/tab_d_3.js?v=8"></script>
 
  
 </body>

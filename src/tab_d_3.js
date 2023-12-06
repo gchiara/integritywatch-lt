@@ -36,7 +36,7 @@ var vuedata = {
   charts: {
     topDeclarants: {
       title: 'Daugiausiai patirtą lobistinę įtaką deklaravę asmenys',
-      info: '<strong>Asmenys, kuriems lobistine veikla siekiama daryti įtaką,</strong> – Respublikos Prezidentas, Lietuvos Respublikos Seimo, Lietuvos Respublikos Vyriausybės nariai, viceministrai, Vyriausybės, ministerijų kancleriai, parlamentinių politinių partijų vadovai, merai, savivaldybių tarybų nariai, savivaldybių administracijų direktoriai ir jų pavaduotojai, kiti valstybės tarnautojai, valstybės pareigūnai ir kiti asmenys, kurie pagal teisės aktų nustatyta tvarka jiems suteiktas pareigines funkcijas dalyvauja rengiant, svarstant teisės aktų projektus ir juos priimant.'
+      info: 'Remiantis LR lobistinės veiklos įstatymu, asmenys, kuriems lobistine veikla siekiama daryti įtaką, yra šie: Respublikos Prezidentas, Lietuvos Respublikos Seimo, Lietuvos Respublikos Vyriausybės nariai, viceministrai, Vyriausybės, ministerijų kancleriai, parlamentinių politinių partijų vadovai, merai, savivaldybių tarybų nariai, savivaldybių administracijų direktoriai ir jų pavaduotojai, kiti valstybės tarnautojai, valstybės pareigūnai ir kiti asmenys, kurie pagal teisės aktų nustatyta tvarka jiems suteiktas pareigines funkcijas dalyvauja rengiant, svarstant teisės aktų projektus ir juos priimant.'
     },
     topPositions: {
       title: 'Daugiausiai patirtą lobistinę įtaką deklaravusių asmenų pareigos',
@@ -52,7 +52,7 @@ var vuedata = {
     },
     mainTable: {
       title: 'Patirtos lobistinės įtakos deklaracijos',
-      info: 'Rikiuokite ir palyginkite duomenis tarpusavyje, paspausdami lentelės skilties pavadinimą. Žalia vėliavėle žymimi atvejai, kai tiek lobistas, tiek lobistinę veiklą patyręs asmuo paskelbė savo deklaracijas. Raudona vėliavėle žymimi atvejai, kai tik viena pusė paskelbė savo deklaraciją.<br /><br />Duomenų šaltinis: Vyriausioji tarnybinės etikos komisija. Į apžvalgą įtraukti visi lobistinę įtaką patyrę asmenys ir jų deklaracijos nuo 2021 m. sausio 6 d. iki 2023 m. rugpjūčio 18 d.. TILS atskirai nevertino, ar pateiktos deklaracijos atitinka LR lobistinės veiklos įstatymo nuostatas.'
+      info: 'Žalia vėliavėle pažymėtos tos patirtos lobistinės įtakos deklaracijos, kuriose lobistinę įtaką deklaravęs asmuo nurodė ir atitinkamą lobisto paskelbtą deklaraciją (t.y., lobisto skaidrumo deklaracijos numerį).<br /><br />Duomenų šaltinis: Vyriausioji tarnybinės etikos komisija. Į apžvalgą įtraukti visi lobistinę įtaką patyrę asmenys ir jų deklaracijos nuo 2021 m. sausio 1 d. iki 2023 m. rugpjūčio 23 d.. TILS atskirai nevertino, ar pateiktos deklaracijos atitinka LR lobistinės veiklos įstatymo nuostatas.'
     },
   },
   openModalClicked: false,
@@ -280,6 +280,21 @@ jQuery.extend( jQuery.fn.dataTableExt.oSort, {
   }
 });
 
+jQuery.extend( jQuery.fn.dataTableExt.oSort, {
+  "flags-pre": function (entry) {
+    var flagval = 0;
+    if(entry.indexOf('greenflag.png') > -1) { flagval = 1; }
+    if(entry.indexOf('redflag.png') > -1) { flagval = -1; }
+    return flagval;
+  },
+  "flags-asc": function ( a, b ) {
+      return a.localeCompare(b);
+  },
+  "flags-desc": function ( a, b ) {
+      return b.localeCompare(a);
+  }
+});
+
 //Generate random parameter for dynamic dataset loading (to avoid caching)
 var randomPar = '';
 var randomCharacters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -289,7 +304,6 @@ for ( var i = 0; i < 5; i++ ) {
 
 //Load data and generate charts
 json('./data/tab_d/experience_declarations.json?' + randomPar, (err, entries) => {
-  console.log(entries);
   _.each(entries, function (d) {
     
   });
@@ -581,17 +595,18 @@ json('./data/tab_d/experience_declarations.json?' + randomPar, (err, entries) =>
         },
         {
           "searchable": false,
-          "orderable": false,
+          "orderable": true,
           "targets": 8,
           "defaultContent":"N/A",
-          //"type": "flags",
+          "type": "flags",
           "className": "dt-center",
           "data": function(d) {
             if(d.declaration_number && d.declaration_number != ''){
               //return '';
               return "<img src='./images/greenflag.png' class='redflag-img'>";
             }
-            return "<img src='./images/redflag.png' class='redflag-img'>";
+            return "";
+            //return "<img src='./images/redflag.png' class='redflag-img'>";
           }
         }
       ],

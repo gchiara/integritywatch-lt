@@ -7,31 +7,33 @@
             "Rasa Bričkienė"
         ],
         "legal_regulation_areas": "Sveikatos apsauga",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Vaistų gamintojų asociacija",
-        "nr": 1
+        "nr": "1"
     },
     {
         "certificate_num": "LOB-JA-2021-0077",
         "date_list_inclusion": "2021-03-10",
-        "legal_entity_code": "135634944",
+        "legal_entity_code": "110055327",
         "legal_entity_representatives": [
-            "Vytautas Klidzio",
+            "Jonas Kuzminskas",
+            "Mindaugas Petkevičius",
+            "Mindaugas Maciulevičius",
+            "Alvydas Pečiulaitis",
             "Vilius Jundulas",
+            "Vytautas Klidzio",
             "Tomas Raudonius",
             "Rolandas Jurkus",
-            "Mindaugas Maciulevičius",
-            "Mindaugas Petkevičius",
-            "Jonas Kuzminskas",
             "Edita Katutienė",
-            "Alvydas Pečiulaitis",
             "Albinas Slavinskis",
             "Adolfas Jasinevičius"
         ],
         "legal_regulation_areas": "Teisė ir teisėtvarka, Kaimo reikalai ir žemės ūkis, Aplinkosauga",
-        "legal_regulation_areas_num": 3,
+        "legal_regulation_areas_num": 3.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos žemės ūkio kooperatyvų asociacija „Kooperacijos kelias“",
-        "nr": 2
+        "nr": "2"
     },
     {
         "certificate_num": "LOB-JA-2021-0074",
@@ -41,9 +43,10 @@
             "Arūnas Pemkus"
         ],
         "legal_regulation_areas": "Tabako ir alkoholio kontrolė, Azartiniai lošimai ir loterijos, Užsienio reikalai, Teisė ir teisėtvarka, Sportas, Švietimas ir mokslas, Nacionalinis saugumas ir gynyba, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Finansai ir bankininkystė, Energetika, Miškų ūkis, Statybos, Transportas ir susisiekimas, Aplinkosauga, Sveikatos apsauga",
-        "legal_regulation_areas_num": 16,
+        "legal_regulation_areas_num": 16.0,
+        "lobbyist_until": "",
         "lobbyists": "Fipra Lithuania",
-        "nr": 3
+        "nr": "3"
     },
     {
         "certificate_num": "LOB-JA-2021-0072",
@@ -53,9 +56,10 @@
             "Giedrius Mažūnaitis"
         ],
         "legal_regulation_areas": "Užsienio reikalai, Švietimas ir mokslas, Socialinė apsauga ir darbas, Ekonomika ir inovacijos, Energetika, Aplinkosauga",
-        "legal_regulation_areas_num": 6,
+        "legal_regulation_areas_num": 6.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos chemijos pramonės įmonių asociacija",
-        "nr": 4
+        "nr": "4"
     },
     {
         "certificate_num": "LOB-JA-2021-0069",
@@ -65,9 +69,10 @@
             "Tadas Gudaitis"
         ],
         "legal_regulation_areas": "Finansai ir bankininkystė",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos investicinių ir pensijų fondų asociacija",
-        "nr": 5
+        "nr": "5"
     },
     {
         "certificate_num": "LOB-FA-2021-0066",
@@ -75,9 +80,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos",
-        "legal_regulation_areas_num": 2,
+        "legal_regulation_areas_num": 2.0,
+        "lobbyist_until": "",
         "lobbyists": "Tomas Danisevičius",
-        "nr": 6
+        "nr": "6"
     },
     {
         "certificate_num": "LOB-FA-2021-0065",
@@ -85,9 +91,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Tabako ir alkoholio kontrolė, Azartiniai lošimai ir loterijos, Vidaus reikalai, Teisė ir teisėtvarka, Sportas, Švietimas ir mokslas, Socialinė apsauga ir darbas, Nacionalinis saugumas ir gynyba, Kultūra, Ekonomika ir inovacijos, Finansai ir bankininkystė, Energetika, Statybos, Transportas ir susisiekimas, Aplinkosauga, Sveikatos apsauga",
-        "legal_regulation_areas_num": 16,
+        "legal_regulation_areas_num": 16.0,
+        "lobbyist_until": "",
         "lobbyists": "Ilan Ostrovskij",
-        "nr": 7
+        "nr": "7"
     },
     {
         "certificate_num": "LOB-FA-2021-0063",
@@ -95,19 +102,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Sveikatos apsauga",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Jolanta Šindeikienė",
-        "nr": 8
-    },
-    {
-        "certificate_num": "LOB-FA-2021-0062",
-        "date_list_inclusion": "2021-02-24",
-        "legal_entity_code": "-",
-        "legal_entity_representatives": [],
-        "legal_regulation_areas": "Tabako ir alkoholio kontrolė",
-        "legal_regulation_areas_num": 1,
-        "lobbyists": "Vidmantas Čičelis",
-        "nr": 9
+        "nr": "8"
     },
     {
         "certificate_num": "LOB-FA-2020-0060",
@@ -115,9 +113,21 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Vaiva Žukienė",
-        "nr": 10
+        "nr": "9"
+    },
+    {
+        "certificate_num": "LOB-FA-2021-0062",
+        "date_list_inclusion": "2021-02-24",
+        "legal_entity_code": "-",
+        "legal_entity_representatives": [],
+        "legal_regulation_areas": "Tabako ir alkoholio kontrolė",
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "2022-11-09",
+        "lobbyists": "Vidmantas Čičelis ",
+        "nr": "10"
     },
     {
         "certificate_num": "LOB-FA-2006-0004",
@@ -125,9 +135,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Kęstutis Žiemys",
-        "nr": 11
+        "nr": "11"
     },
     {
         "certificate_num": "LOB-FA-2007-0008",
@@ -135,9 +146,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Gintautas Zaleckas",
-        "nr": 12
+        "nr": "12"
     },
     {
         "certificate_num": "LOB-FA-2018-0038",
@@ -145,9 +157,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Tabako ir alkoholio kontrolė, Azartiniai lošimai ir loterijos, Vidaus reikalai, Užsienio reikalai, Teisė ir teisėtvarka, Sportas, Švietimas ir mokslas, Socialinė apsauga ir darbas, Nacionalinis saugumas ir gynyba, Kultūra, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Finansai ir bankininkystė, Energetika, Miškų ūkis, Statybos, Transportas ir susisiekimas, Aplinkosauga, Sveikatos apsauga",
-        "legal_regulation_areas_num": 19,
+        "legal_regulation_areas_num": 19.0,
+        "lobbyist_until": "",
         "lobbyists": "Mantas Zakarka",
-        "nr": 13
+        "nr": "13"
     },
     {
         "certificate_num": "LOB-FA-2017-0034",
@@ -155,9 +168,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Azartiniai lošimai ir loterijos, Teisė ir teisėtvarka, Kaimo reikalai ir žemės ūkis, Energetika, Statybos",
-        "legal_regulation_areas_num": 5,
+        "legal_regulation_areas_num": 5.0,
+        "lobbyist_until": "",
         "lobbyists": "Karolis Vinciūnas",
-        "nr": 14
+        "nr": "14"
     },
     {
         "certificate_num": "LOB-FA-2018-0037",
@@ -165,9 +179,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Paulius Vertelka",
-        "nr": 15
+        "nr": "15"
     },
     {
         "certificate_num": "LOB-FA-2014-0004",
@@ -175,9 +190,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Lina Venskaitytė",
-        "nr": 16
+        "nr": "16"
     },
     {
         "certificate_num": "LOB-FA-2020-0058",
@@ -185,9 +201,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kaimo reikalai ir žemės ūkis",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Zita Varanavičienė",
-        "nr": 17
+        "nr": "17"
     },
     {
         "certificate_num": "LOB-FA-2010-0005",
@@ -195,9 +212,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Redita Vadeikė",
-        "nr": 18
+        "nr": "18"
     },
     {
         "certificate_num": "LOB-FA-2018-0036",
@@ -205,9 +223,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kaimo reikalai ir žemės ūkis, Transportas ir susisiekimas",
-        "legal_regulation_areas_num": 2,
+        "legal_regulation_areas_num": 2.0,
+        "lobbyist_until": "",
         "lobbyists": "Vaidotas Uselis",
-        "nr": 19
+        "nr": "19"
     },
     {
         "certificate_num": "LOB-FA-2018-0035",
@@ -215,9 +234,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita, Teisė ir teisėtvarka",
-        "legal_regulation_areas_num": 2,
+        "legal_regulation_areas_num": 2.0,
+        "lobbyist_until": "",
         "lobbyists": "Jonas Uselis",
-        "nr": 20
+        "nr": "20"
     },
     {
         "certificate_num": "LOB-FA-2018-0034",
@@ -225,9 +245,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Geraldas Uselis",
-        "nr": 21
+        "nr": "21"
     },
     {
         "certificate_num": "LOB-FA-2001-0010",
@@ -235,9 +256,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Romanas Urniežius",
-        "nr": 22
+        "nr": "22"
     },
     {
         "certificate_num": "LOB-FA-2019-0064",
@@ -245,9 +267,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Mindaugas Ubartas",
-        "nr": 23
+        "nr": "23"
     },
     {
         "certificate_num": "LOB-FA-2018-0033",
@@ -255,9 +278,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Švietimas ir mokslas, Socialinė apsauga ir darbas, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Finansai ir bankininkystė, Energetika, Miškų ūkis, Statybos, Transportas ir susisiekimas, Aplinkosauga",
-        "legal_regulation_areas_num": 10,
+        "legal_regulation_areas_num": 10.0,
+        "lobbyist_until": "",
         "lobbyists": "Domantas Tracevičius",
-        "nr": 24
+        "nr": "24"
     },
     {
         "certificate_num": "LOB-FA-2019-0062",
@@ -265,19 +289,21 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Pranas Švedas",
-        "nr": 25
+        "nr": "25"
     },
     {
         "certificate_num": "LOB-FA-2019-0061",
-        "date_list_inclusion": "2019-01-23",
+        "date_list_inclusion": "2021-01-04",
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Vidas Šlivinskas",
-        "nr": 26
+        "nr": "26"
     },
     {
         "certificate_num": "LOB-FA-2018-0032",
@@ -285,9 +311,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita, Vidaus reikalai, Teisė ir teisėtvarka, Ekonomika ir inovacijos, Finansai ir bankininkystė",
-        "legal_regulation_areas_num": 5,
+        "legal_regulation_areas_num": 5.0,
+        "lobbyist_until": "",
         "lobbyists": "Antanas Šiupienius",
-        "nr": 27
+        "nr": "27"
     },
     {
         "certificate_num": "LOB-FA-2018-0031",
@@ -295,9 +322,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Evalda Šiškauskienė",
-        "nr": 28
+        "nr": "28"
     },
     {
         "certificate_num": "LOB-FA-2017-0033",
@@ -305,9 +333,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Karolis Šiaudkulis",
-        "nr": 29
+        "nr": "29"
     },
     {
         "certificate_num": "LOB-FA-2012-0012",
@@ -315,9 +344,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita, Teisė ir teisėtvarka",
-        "legal_regulation_areas_num": 2,
+        "legal_regulation_areas_num": 2.0,
+        "lobbyist_until": "",
         "lobbyists": "Sandra Mickienė",
-        "nr": 30
+        "nr": "30"
     },
     {
         "certificate_num": "LOB-FA-2001-0009",
@@ -325,9 +355,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Viešieji pirkimai, Kita, Tabako ir alkoholio kontrolė, Azartiniai lošimai ir loterijos, Vidaus reikalai, Užsienio reikalai, Teisė ir teisėtvarka, Sportas, Švietimas ir mokslas, Socialinė apsauga ir darbas, Nacionalinis saugumas ir gynyba, Kultūra, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Finansai ir bankininkystė, Energetika, Miškų ūkis, Statybos, Transportas ir susisiekimas, Aplinkosauga, Sveikatos apsauga",
-        "legal_regulation_areas_num": 21,
+        "legal_regulation_areas_num": 21.0,
+        "lobbyist_until": "",
         "lobbyists": "Romas Stumbrys",
-        "nr": 31
+        "nr": "31"
     },
     {
         "certificate_num": "LOB-FA-2019-0060",
@@ -335,9 +366,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Vytautas Stasiūnas",
-        "nr": 32
+        "nr": "32"
     },
     {
         "certificate_num": "LOB-FA-2020-0057",
@@ -345,9 +377,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Teisė ir teisėtvarka, Švietimas ir mokslas, Ekonomika ir inovacijos, Transportas ir susisiekimas",
-        "legal_regulation_areas_num": 4,
+        "legal_regulation_areas_num": 4.0,
+        "lobbyist_until": "",
         "lobbyists": "Artūras Stankevičius",
-        "nr": 33
+        "nr": "33"
     },
     {
         "certificate_num": "LOB-FA-2017-0032",
@@ -355,9 +388,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita, Azartiniai lošimai ir loterijos",
-        "legal_regulation_areas_num": 2,
+        "legal_regulation_areas_num": 2.0,
+        "lobbyist_until": "",
         "lobbyists": "Oleg Smirnov",
-        "nr": 34
+        "nr": "34"
     },
     {
         "certificate_num": "LOB-FA-2012-0011",
@@ -365,9 +399,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Linas Sesickas",
-        "nr": 35
+        "nr": "35"
     },
     {
         "certificate_num": "LOB-FA-2018-0030",
@@ -375,9 +410,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Vidaus reikalai, Teisė ir teisėtvarka, Nacionalinis saugumas ir gynyba, Ekonomika ir inovacijos, Transportas ir susisiekimas",
-        "legal_regulation_areas_num": 5,
+        "legal_regulation_areas_num": 5.0,
+        "lobbyist_until": "",
         "lobbyists": "Juozas Rimkevičius",
-        "nr": 36
+        "nr": "36"
     },
     {
         "certificate_num": "LOB-FA-2001-0008",
@@ -385,9 +421,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Bronius Antanas Rasimas",
-        "nr": 37
+        "nr": "37"
     },
     {
         "certificate_num": "LOB-FA-2019-0057",
@@ -395,9 +432,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Kristina Ramonienė",
-        "nr": 38
+        "nr": "38"
     },
     {
         "certificate_num": "LOB-FA-2011-0009",
@@ -405,9 +443,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita, Teisė ir teisėtvarka, Statybos",
-        "legal_regulation_areas_num": 3,
+        "legal_regulation_areas_num": 3.0,
+        "lobbyist_until": "",
         "lobbyists": "Liudvikas Ragauskis",
-        "nr": 39
+        "nr": "39"
     },
     {
         "certificate_num": "LOB-FA-2018-0029",
@@ -415,9 +454,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Aistis Radavičius",
-        "nr": 40
+        "nr": "40"
     },
     {
         "certificate_num": "LOB-FA-2017-0031",
@@ -425,19 +465,21 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Teisė ir teisėtvarka, Ekonomika ir inovacijos, Sveikatos apsauga",
-        "legal_regulation_areas_num": 3,
+        "legal_regulation_areas_num": 3.0,
+        "lobbyist_until": "",
         "lobbyists": "Rūta Pumputienė",
-        "nr": 41
+        "nr": "41"
     },
     {
         "certificate_num": "LOB-FA-2019-0056",
-        "date_list_inclusion": "2019-06-05",
+        "date_list_inclusion": "43621",
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Tabako ir alkoholio kontrolė, Azartiniai lošimai ir loterijos, Vidaus reikalai, Užsienio reikalai, Teisė ir teisėtvarka, Sportas, Švietimas ir mokslas, Socialinė apsauga ir darbas, Nacionalinis saugumas ir gynyba, Kultūra, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Finansai ir bankininkystė, Energetika, Miškų ūkis, Statybos, Transportas ir susisiekimas, Aplinkosauga, Sveikatos apsauga",
-        "legal_regulation_areas_num": 19,
+        "legal_regulation_areas_num": 19.0,
+        "lobbyist_until": "",
         "lobbyists": "Vaidas Poplovuchinas",
-        "nr": 42
+        "nr": "42"
     },
     {
         "certificate_num": "LOB-FA-2019-0055",
@@ -445,19 +487,21 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Justinas Poderis",
-        "nr": 43
+        "nr": "43"
     },
     {
         "certificate_num": "LOB-FA-2001-0007",
-        "date_list_inclusion": "2001-05-10",
+        "date_list_inclusion": "37021",
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita, Aplinkosauga",
-        "legal_regulation_areas_num": 2,
+        "legal_regulation_areas_num": 2.0,
+        "lobbyist_until": "",
         "lobbyists": "Mindaugas Pliauga",
-        "nr": 44
+        "nr": "44"
     },
     {
         "certificate_num": "LOB-FA-2017-0030",
@@ -465,9 +509,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Marius Pilkauskas",
-        "nr": 45
+        "nr": "45"
     },
     {
         "certificate_num": "LOB-FA-2020-0053",
@@ -475,9 +520,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Teisė ir teisėtvarka, Kaimo reikalai ir žemės ūkis, Aplinkosauga",
-        "legal_regulation_areas_num": 3,
+        "legal_regulation_areas_num": 3.0,
+        "lobbyist_until": "",
         "lobbyists": "Rimgaudas Pilka",
-        "nr": 46
+        "nr": "46"
     },
     {
         "certificate_num": "LOB-FA-2019-0054",
@@ -485,9 +531,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Jurius Petreikis",
-        "nr": 47
+        "nr": "47"
     },
     {
         "certificate_num": "LOB-FA-2020-0052",
@@ -495,9 +542,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Sportas, Švietimas ir mokslas, Socialinė apsauga ir darbas, Ekonomika ir inovacijos, Finansai ir bankininkystė, Transportas ir susisiekimas, Aplinkosauga",
-        "legal_regulation_areas_num": 7,
+        "legal_regulation_areas_num": 7.0,
+        "lobbyist_until": "",
         "lobbyists": "Ainis Petkus",
-        "nr": 48
+        "nr": "48"
     },
     {
         "certificate_num": "LOB-FA-2014-0003",
@@ -505,9 +553,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Linas Pečiulaitis",
-        "nr": 49
+        "nr": "49"
     },
     {
         "certificate_num": "LOB-FA-2020-0051",
@@ -515,9 +564,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Laimutis Paškevičius",
-        "nr": 50
+        "nr": "50"
     },
     {
         "certificate_num": "LOB-FA-2009-0004",
@@ -525,29 +575,32 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Petras Oržekauskas",
-        "nr": 51
+        "nr": "51"
     },
     {
         "certificate_num": "LOB-FA-2018-0028",
         "date_list_inclusion": "2018-07-25",
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
-        "legal_regulation_areas": "Kita, Tabako ir alkoholio kontrolė, Azartiniai lošimai ir loterijos, Vidaus reikalai, Užsienio reikalai, Teisė ir teisėtvarka, Sportas, Švietimas ir mokslas, Socialinė apsauga ir darbas, Nacionalinis saugumas ir gynyba, Kultūra, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Finansai ir bankininkystė, Energetika, Miškų ūkis, Statybos, Transportas ir susisiekimas, Aplinkosauga, Sveikatos apsauga",
-        "legal_regulation_areas_num": 20,
+        "legal_regulation_areas": "Tabako ir alkoholio kontrolė, Azartiniai lošimai ir loterijos, Vidaus reikalai, Užsienio reikalai, Teisė ir teisėtvarka, Sportas, Švietimas ir mokslas, Socialinė apsauga ir darbas, Nacionalinis saugumas ir gynyba, Kultūra, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Finansai ir bankininkystė, Energetika, Miškų ūkis, Statybos, Transportas ir susisiekimas, Aplinkosauga, Sveikatos apsauga",
+        "legal_regulation_areas_num": 19.0,
+        "lobbyist_until": "",
         "lobbyists": "Arnas Neverauskas",
-        "nr": 52
+        "nr": "52"
     },
     {
         "certificate_num": "LOB-FA-2020-0050",
         "date_list_inclusion": "2020-06-17",
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
-        "legal_regulation_areas": "Kita, Teisė ir teisėtvarka, Švietimas ir mokslas, Socialinė apsauga ir darbas, Ekonomika ir inovacijos, Sveikatos apsauga",
-        "legal_regulation_areas_num": 6,
+        "legal_regulation_areas": "Teisė ir teisėtvarka, Švietimas ir mokslas, Socialinė apsauga ir darbas, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Aplinkosauga, Sveikatos apsauga",
+        "legal_regulation_areas_num": 7.0,
+        "lobbyist_until": "",
         "lobbyists": "Kristina Nemaniūtė-Gagė",
-        "nr": 53
+        "nr": "53"
     },
     {
         "certificate_num": "LOB-FA-2019-0051",
@@ -555,9 +608,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "2023-03-08",
         "lobbyists": "Arturas Nastaravičius",
-        "nr": 54
+        "nr": "54"
     },
     {
         "certificate_num": "LOB-FA-2018-0027",
@@ -565,9 +619,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Energetika, Aplinkosauga",
-        "legal_regulation_areas_num": 2,
+        "legal_regulation_areas_num": 2.0,
+        "lobbyist_until": "",
         "lobbyists": "Martynas Nagevičius",
-        "nr": 55
+        "nr": "55"
     },
     {
         "certificate_num": "LOB-FA-2015-0004",
@@ -575,9 +630,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Tabako ir alkoholio kontrolė, Vidaus reikalai, Teisė ir teisėtvarka, Švietimas ir mokslas, Socialinė apsauga ir darbas, Nacionalinis saugumas ir gynyba, Kultūra, Aplinkosauga, Sveikatos apsauga",
-        "legal_regulation_areas_num": 9,
+        "legal_regulation_areas_num": 9.0,
+        "lobbyist_until": "",
         "lobbyists": "Eglė Mirončikienė",
-        "nr": 56
+        "nr": "56"
     },
     {
         "certificate_num": "LOB-FA-2019-0050",
@@ -585,9 +641,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Dangutė Mikutienė",
-        "nr": 57
+        "nr": "57"
     },
     {
         "certificate_num": "LOB-FA-2019-0049",
@@ -595,9 +652,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita, Teisė ir teisėtvarka, Ekonomika ir inovacijos, Aplinkosauga",
-        "legal_regulation_areas_num": 4,
+        "legal_regulation_areas_num": 4.0,
+        "lobbyist_until": "",
         "lobbyists": "Giedrius Mikulskas",
-        "nr": 58
+        "nr": "58"
     },
     {
         "certificate_num": "LOB-FA-2008-0004",
@@ -605,9 +663,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Dalia Mikalauskaitė",
-        "nr": 59
+        "nr": "59"
     },
     {
         "certificate_num": "LOB-FA-2017-0029",
@@ -615,9 +674,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Vidaus reikalai, Ekonomika ir inovacijos, Energetika, Statybos, Aplinkosauga",
-        "legal_regulation_areas_num": 5,
+        "legal_regulation_areas_num": 5.0,
+        "lobbyist_until": "",
         "lobbyists": "Edita Meškauskienė",
-        "nr": 60
+        "nr": "60"
     },
     {
         "certificate_num": "LOB-FA-2015-0003",
@@ -625,9 +685,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Arnas Marcinkus",
-        "nr": 61
+        "nr": "61"
     },
     {
         "certificate_num": "LOB-FA-2018-0026",
@@ -635,9 +696,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Virginijus Liberis",
-        "nr": 62
+        "nr": "62"
     },
     {
         "certificate_num": "LOB-FA-2020-0047",
@@ -645,9 +707,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Viešieji pirkimai, Teisė ir teisėtvarka, Švietimas ir mokslas, Statybos, Transportas ir susisiekimas",
-        "legal_regulation_areas_num": 5,
+        "legal_regulation_areas_num": 5.0,
+        "lobbyist_until": "",
         "lobbyists": "Justas Laurinčiukas",
-        "nr": 63
+        "nr": "63"
     },
     {
         "certificate_num": "LOB-FA-2020-0046",
@@ -655,9 +718,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Žilvinas Kvietkus",
-        "nr": 64
+        "nr": "64"
     },
     {
         "certificate_num": "LOB-FA-2011-0008",
@@ -665,9 +729,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Kęstutis Kvainauskas",
-        "nr": 65
+        "nr": "65"
     },
     {
         "certificate_num": "LOB-FA-2019-0047",
@@ -675,9 +740,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Sveikatos apsauga",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Jūratė Kulberkienė",
-        "nr": 66
+        "nr": "66"
     },
     {
         "certificate_num": "LOB-FA-2020-0045",
@@ -685,9 +751,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita, Vidaus reikalai, Užsienio reikalai, Teisė ir teisėtvarka, Švietimas ir mokslas, Kultūra",
-        "legal_regulation_areas_num": 6,
+        "legal_regulation_areas_num": 6.0,
+        "lobbyist_until": "",
         "lobbyists": "Faina Kukliansky",
-        "nr": 67
+        "nr": "67"
     },
     {
         "certificate_num": "LOB-FA-2020-0044",
@@ -695,9 +762,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Andrius Krištapavičius",
-        "nr": 68
+        "nr": "68"
     },
     {
         "certificate_num": "LOB-FA-2018-0025",
@@ -705,9 +773,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Robertas Klovas",
-        "nr": 69
+        "nr": "69"
     },
     {
         "certificate_num": "LOB-FA-2018-0024",
@@ -715,9 +784,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Mantas Kišonas",
-        "nr": 70
+        "nr": "70"
     },
     {
         "certificate_num": "LOB-FA-2017-0026",
@@ -725,9 +795,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Tabako ir alkoholio kontrolė, Kaimo reikalai ir žemės ūkis, Finansai ir bankininkystė, Energetika, Miškų ūkis, Statybos, Aplinkosauga",
-        "legal_regulation_areas_num": 7,
+        "legal_regulation_areas_num": 7.0,
+        "lobbyist_until": "",
         "lobbyists": "Vytautas Kisielius",
-        "nr": 71
+        "nr": "71"
     },
     {
         "certificate_num": "LOB-FA-2008-0003",
@@ -735,9 +806,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Edmundas Kisielius",
-        "nr": 72
+        "nr": "72"
     },
     {
         "certificate_num": "LOB-FA-2019-0046",
@@ -745,9 +817,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Teisė ir teisėtvarka, Sveikatos apsauga",
-        "legal_regulation_areas_num": 2,
+        "legal_regulation_areas_num": 2.0,
+        "lobbyist_until": "",
         "lobbyists": "Liudas Karnickas",
-        "nr": 73
+        "nr": "73"
     },
     {
         "certificate_num": "LOB-FA-2017-0025",
@@ -755,9 +828,21 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Povilas Karlonas",
-        "nr": 74
+        "nr": "74"
+    },
+    {
+        "certificate_num": "LOB-FA-2020-0043",
+        "date_list_inclusion": "2020-08-19",
+        "legal_entity_code": "-",
+        "legal_entity_representatives": [],
+        "legal_regulation_areas": "Tabako ir alkoholio kontrolė, Azartiniai lošimai ir loterijos, Vidaus reikalai, Užsienio reikalai, Teisė ir teisėtvarka, Sportas, Švietimas ir mokslas, Socialinė apsauga ir darbas, Nacionalinis saugumas ir gynyba, Kultūra, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Finansai ir bankininkystė, Energetika, Miškų ūkis, Statybos, Transportas ir susisiekimas, Aplinkosauga, Sveikatos apsauga, Viešieji pirkimai",
+        "legal_regulation_areas_num": 20.0,
+        "lobbyist_until": "",
+        "lobbyists": "Ramūnas Kardelis",
+        "nr": "75"
     },
     {
         "certificate_num": "LOB-FA-2019-0045",
@@ -765,9 +850,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Azartiniai lošimai ir loterijos, Finansai ir bankininkystė, Sveikatos apsauga",
-        "legal_regulation_areas_num": 3,
+        "legal_regulation_areas_num": 3.0,
+        "lobbyist_until": "",
         "lobbyists": "Andrius Karaliūnas",
-        "nr": 75
+        "nr": "76"
     },
     {
         "certificate_num": "LOB-FA-2012-0008",
@@ -775,9 +861,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Gytis Kaminskas",
-        "nr": 76
+        "nr": "77"
     },
     {
         "certificate_num": "LOB-FA-2001-0006",
@@ -785,9 +872,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Algirdas Juškys",
-        "nr": 77
+        "nr": "78"
     },
     {
         "certificate_num": "LOB-FA-2020-0042",
@@ -795,9 +883,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita, Tabako ir alkoholio kontrolė, Ekonomika ir inovacijos, Energetika, Aplinkosauga",
-        "legal_regulation_areas_num": 5,
+        "legal_regulation_areas_num": 5.0,
+        "lobbyist_until": "",
         "lobbyists": "Daivutė Jokšienė",
-        "nr": 78
+        "nr": "79"
     },
     {
         "certificate_num": "LOB-FA-2017-0024",
@@ -805,9 +894,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Andrius Iškauskas",
-        "nr": 79
+        "nr": "80"
     },
     {
         "certificate_num": "LOB-FA-2018-0022",
@@ -815,9 +905,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Vidaus reikalai, Teisė ir teisėtvarka, Švietimas ir mokslas, Socialinė apsauga ir darbas, Nacionalinis saugumas ir gynyba, Ekonomika ir inovacijos, Transportas ir susisiekimas",
-        "legal_regulation_areas_num": 7,
+        "legal_regulation_areas_num": 7.0,
+        "lobbyist_until": "",
         "lobbyists": "Aidas Gruodys",
-        "nr": 80
+        "nr": "81"
     },
     {
         "certificate_num": "LOB-FA-2017-0023",
@@ -825,9 +916,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Algirdas Glodenis",
-        "nr": 81
+        "nr": "82"
     },
     {
         "certificate_num": "LOB-FA-2017-0022",
@@ -835,9 +927,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Aurita Gintautienė",
-        "nr": 82
+        "nr": "83"
     },
     {
         "certificate_num": "LOB-FA-2017-0021",
@@ -845,9 +938,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Dalius Gintautas",
-        "nr": 83
+        "nr": "84"
     },
     {
         "certificate_num": "LOB-FA-2020-0039",
@@ -855,9 +949,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Žydrė Gavelienė",
-        "nr": 84
+        "nr": "85"
     },
     {
         "certificate_num": "LOB-FA-2019-0043",
@@ -865,9 +960,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Sveikatos apsauga",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Agnė Dalia Gaižauskienė",
-        "nr": 85
+        "nr": "86"
     },
     {
         "certificate_num": "LOB-FA-2011-0006",
@@ -875,9 +971,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Tabako ir alkoholio kontrolė, Azartiniai lošimai ir loterijos, Vidaus reikalai, Užsienio reikalai, Teisė ir teisėtvarka, Sportas, Švietimas ir mokslas, Socialinė apsauga ir darbas, Nacionalinis saugumas ir gynyba, Kultūra, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Finansai ir bankininkystė, Energetika, Miškų ūkis, Statybos, Transportas ir susisiekimas, Aplinkosauga, Sveikatos apsauga",
-        "legal_regulation_areas_num": 19,
+        "legal_regulation_areas_num": 19.0,
+        "lobbyist_until": "",
         "lobbyists": "Šarūnas Frolenko",
-        "nr": 86
+        "nr": "87"
     },
     {
         "certificate_num": "LOB-FA-2019-0042",
@@ -885,9 +982,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Gintautas Dukšta",
-        "nr": 87
+        "nr": "88"
     },
     {
         "certificate_num": "LOB-FA-2020-0037",
@@ -895,19 +993,21 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Marius Daukantas",
-        "nr": 88
+        "nr": "89"
     },
     {
         "certificate_num": "LOB-FA-2018-0021",
-        "date_list_inclusion": "LOB-FA-2018-0021",
+        "date_list_inclusion": "2018-07-11",
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Daiva Čibirienė",
-        "nr": 89
+        "nr": "90"
     },
     {
         "certificate_num": "LOB-FA-2019-0040",
@@ -915,9 +1015,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Kristina Čeredničenkaitė",
-        "nr": 90
+        "nr": "91"
     },
     {
         "certificate_num": "LOB-FA-2019-0038",
@@ -925,9 +1026,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Algis Čaplikas",
-        "nr": 91
+        "nr": "92"
     },
     {
         "certificate_num": "LOB-FA-2019-0037",
@@ -935,9 +1037,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Vytenis Butkevičius",
-        "nr": 92
+        "nr": "93"
     },
     {
         "certificate_num": "LOB-FA-2006-0003",
@@ -945,9 +1048,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Tomas Bukelis",
-        "nr": 93
+        "nr": "94"
     },
     {
         "certificate_num": "LOB-FA-2020-0033",
@@ -955,9 +1059,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Zenonas Budraitis",
-        "nr": 94
+        "nr": "95"
     },
     {
         "certificate_num": "LOB-FA-2019-0036",
@@ -965,9 +1070,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita, Sveikatos apsauga",
-        "legal_regulation_areas_num": 2,
+        "legal_regulation_areas_num": 2.0,
+        "lobbyist_until": "",
         "lobbyists": "Rasa Bričkienė",
-        "nr": 95
+        "nr": "96"
     },
     {
         "certificate_num": "LOB-FA-2009-0003",
@@ -975,9 +1081,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Aidas Blėda",
-        "nr": 96
+        "nr": "97"
     },
     {
         "certificate_num": "LOB-FA-2007-0005",
@@ -985,9 +1092,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Arnas Beržanskis",
-        "nr": 97
+        "nr": "98"
     },
     {
         "certificate_num": "LOB-FA-2013-0002",
@@ -995,9 +1103,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Deimantas Bertauskas",
-        "nr": 98
+        "nr": "99"
     },
     {
         "certificate_num": "LOB-FA-2012-0007",
@@ -1005,9 +1114,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Gintautas Bartkus",
-        "nr": 99
+        "nr": "100"
     },
     {
         "certificate_num": "LOB-FA-2020-0032",
@@ -1015,9 +1125,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Teisė ir teisėtvarka, Socialinė apsauga ir darbas, Sveikatos apsauga",
-        "legal_regulation_areas_num": 3,
+        "legal_regulation_areas_num": 3.0,
+        "lobbyist_until": "",
         "lobbyists": "Rūta Bardauskienė",
-        "nr": 100
+        "nr": "101"
     },
     {
         "certificate_num": "LOB-FA-2017-0018",
@@ -1025,9 +1136,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Juozas Antanaitis",
-        "nr": 101
+        "nr": "102"
     },
     {
         "certificate_num": "LOB-FA-2018-0020",
@@ -1035,9 +1147,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Tabako ir alkoholio kontrolė, Azartiniai lošimai ir loterijos, Vidaus reikalai, Užsienio reikalai, Teisė ir teisėtvarka, Sportas, Švietimas ir mokslas, Socialinė apsauga ir darbas, Nacionalinis saugumas ir gynyba, Kultūra, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Finansai ir bankininkystė, Energetika, Miškų ūkis, Statybos, Transportas ir susisiekimas, Aplinkosauga, Sveikatos apsauga",
-        "legal_regulation_areas_num": 19,
+        "legal_regulation_areas_num": 19.0,
+        "lobbyist_until": "",
         "lobbyists": "Gabrielė Andrašiūnienė",
-        "nr": 102
+        "nr": "103"
     },
     {
         "certificate_num": "LOB-FA-2019-0034",
@@ -1045,9 +1158,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita, Švietimas ir mokslas, Ekonomika ir inovacijos, Statybos, Aplinkosauga",
-        "legal_regulation_areas_num": 5,
+        "legal_regulation_areas_num": 5.0,
+        "lobbyist_until": "",
         "lobbyists": "Linas Adomavičius",
-        "nr": 103
+        "nr": "104"
     },
     {
         "certificate_num": "LOB-FA-2019-0033",
@@ -1055,9 +1169,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Švietimas ir mokslas, Energetika, Statybos, Transportas ir susisiekimas, Aplinkosauga",
-        "legal_regulation_areas_num": 5,
+        "legal_regulation_areas_num": 5.0,
+        "lobbyist_until": "",
         "lobbyists": "Gediminas Abartis",
-        "nr": 104
+        "nr": "105"
     },
     {
         "certificate_num": "LOB-FA-2022-0006",
@@ -1065,9 +1180,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Viešieji pirkimai, Tabako ir alkoholio kontrolė, Azartiniai lošimai ir loterijos, Vidaus reikalai, Užsienio reikalai, Teisė ir teisėtvarka, Sportas, Švietimas ir mokslas, Socialinė apsauga ir darbas, Nacionalinis saugumas ir gynyba, Kultūra, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Finansai ir bankininkystė, Energetika, Miškų ūkis, Statybos, Transportas ir susisiekimas, Aplinkosauga, Sveikatos apsauga",
-        "legal_regulation_areas_num": 20,
+        "legal_regulation_areas_num": 20.0,
+        "lobbyist_until": "2023-05-17",
         "lobbyists": "Rasa Beiniūtė",
-        "nr": 105
+        "nr": "106"
     },
     {
         "certificate_num": "LOB-FA-2022-0005",
@@ -1075,9 +1191,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Teisė ir teisėtvarka",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Lina Bušinskaitė",
-        "nr": 106
+        "nr": "107"
     },
     {
         "certificate_num": "LOB-JA-2022-0004",
@@ -1087,9 +1204,10 @@
             "Ovidijus Barkauskas"
         ],
         "legal_regulation_areas": "Viešieji pirkimai, Teisė ir teisėtvarka, Kultūra, Ekonomika ir inovacijos",
-        "legal_regulation_areas_num": 4,
+        "legal_regulation_areas_num": 4.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos pirotechnikų asociacija",
-        "nr": 107
+        "nr": "108"
     },
     {
         "certificate_num": "LOB-JA-2021-0061",
@@ -1099,9 +1217,10 @@
             "Robertas Litvaitis"
         ],
         "legal_regulation_areas": "Vidaus reikalai, Užsienio reikalai, Teisė ir teisėtvarka, Švietimas ir mokslas, Socialinė apsauga ir darbas, Ekonomika ir inovacijos, Transportas ir susisiekimas",
-        "legal_regulation_areas_num": 7,
+        "legal_regulation_areas_num": 7.0,
+        "lobbyist_until": "",
         "lobbyists": "Vairavimo mokytojų gildija",
-        "nr": 108
+        "nr": "109"
     },
     {
         "certificate_num": "LOB-JA-2021-0060",
@@ -1111,9 +1230,10 @@
             "Vitalija Kuliešienė"
         ],
         "legal_regulation_areas": "Kaimo reikalai ir žemės ūkis",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos verslinių sodų asociacija „Vaisiai ir uogos“",
-        "nr": 109
+        "nr": "110"
     },
     {
         "certificate_num": "LOB-JA-2021-0059",
@@ -1126,9 +1246,10 @@
             "Linas Adomavičius"
         ],
         "legal_regulation_areas": "Švietimas ir mokslas, Ekonomika ir inovacijos, Statybos, Aplinkosauga",
-        "legal_regulation_areas_num": 4,
+        "legal_regulation_areas_num": 4.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos statybos inžinierių sąjunga",
-        "nr": 110
+        "nr": "111"
     },
     {
         "certificate_num": "LOB-FA-2021-0056",
@@ -1136,9 +1257,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Tabako ir alkoholio kontrolė, Vidaus reikalai, Užsienio reikalai, Teisė ir teisėtvarka, Sportas, Švietimas ir mokslas, Socialinė apsauga ir darbas, Nacionalinis saugumas ir gynyba, Kultūra, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Finansai ir bankininkystė, Energetika, Miškų ūkis, Statybos, Transportas ir susisiekimas, Aplinkosauga, Sveikatos apsauga",
-        "legal_regulation_areas_num": 18,
+        "legal_regulation_areas_num": 18.0,
+        "lobbyist_until": "",
         "lobbyists": "Laura Sereckė",
-        "nr": 111
+        "nr": "112"
     },
     {
         "certificate_num": "LOB-JA-2021-0054",
@@ -1155,9 +1277,10 @@
             "Artūras Vainora"
         ],
         "legal_regulation_areas": "Tabako ir alkoholio kontrolė, Vidaus reikalai, Užsienio reikalai, Teisė ir teisėtvarka, Švietimas ir mokslas, Socialinė apsauga ir darbas, Kultūra, Ekonomika ir inovacijos, Finansai ir bankininkystė, Transportas ir susisiekimas, Aplinkosauga, Sveikatos apsauga",
-        "legal_regulation_areas_num": 12,
+        "legal_regulation_areas_num": 12.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos viešbučių ir restoranų asociacija",
-        "nr": 112
+        "nr": "113"
     },
     {
         "certificate_num": "LOB-JA-2021-0052",
@@ -1168,9 +1291,10 @@
             "Martynas Makelis"
         ],
         "legal_regulation_areas": "Teisė ir teisėtvarka, Sportas, Transportas ir susisiekimas, Aplinkosauga",
-        "legal_regulation_areas_num": 4,
+        "legal_regulation_areas_num": 4.0,
+        "lobbyist_until": "",
         "lobbyists": "Asociacija „Lietuvos aeroklubas“",
-        "nr": 113
+        "nr": "114"
     },
     {
         "certificate_num": "LOB-JA-2021-0051",
@@ -1180,9 +1304,10 @@
             "Jūratė Piragienė"
         ],
         "legal_regulation_areas": "Sveikatos apsauga",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Maisto papildų gamintojų asociacija",
-        "nr": 114
+        "nr": "115"
     },
     {
         "certificate_num": "LOB-JA-2021-0047",
@@ -1198,9 +1323,10 @@
             "Ingrida Sitnikienė"
         ],
         "legal_regulation_areas": "Ekonomika ir inovacijos, Energetika, Aplinkosauga",
-        "legal_regulation_areas_num": 3,
+        "legal_regulation_areas_num": 3.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos komunalininkų ir atliekų tvarkytojų asociacija",
-        "nr": 115
+        "nr": "116"
     },
     {
         "certificate_num": "LOB-JA-2021-0058",
@@ -1211,9 +1337,10 @@
             "Andrius Karaliūnas"
         ],
         "legal_regulation_areas": "Finansai ir bankininkystė",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Mokėjimo ir elektroninių pinigų įstaigų asociacija",
-        "nr": 116
+        "nr": "117"
     },
     {
         "certificate_num": "LOB-JA-2021-0057",
@@ -1223,21 +1350,23 @@
             "Milda Rainienė"
         ],
         "legal_regulation_areas": "Ekonomika ir inovacijos",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos turizmo asociacija",
-        "nr": 117
+        "nr": "118"
     },
     {
         "certificate_num": "LOB-JA-2021-0055",
         "date_list_inclusion": "2021-02-15",
         "legal_entity_code": "168045184",
         "legal_entity_representatives": [
-            "Vyda Elena Gasiūnienė"
+            "Elana Astramovič"
         ],
         "legal_regulation_areas": "Ekonomika ir inovacijos, Statybos, Transportas ir susisiekimas, Aplinkosauga",
-        "legal_regulation_areas_num": 4,
+        "legal_regulation_areas_num": 4.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos karjerų asociacija",
-        "nr": 118
+        "nr": "119"
     },
     {
         "certificate_num": "LOB-JA-2021-0053",
@@ -1248,9 +1377,10 @@
             "Donatas Parulis"
         ],
         "legal_regulation_areas": "Teisė ir teisėtvarka, Sportas, Švietimas ir mokslas, Socialinė apsauga ir darbas, Ekonomika ir inovacijos, Finansai ir bankininkystė, Transportas ir susisiekimas, Aplinkosauga, Sveikatos apsauga",
-        "legal_regulation_areas_num": 9,
+        "legal_regulation_areas_num": 9.0,
+        "lobbyist_until": "",
         "lobbyists": "Lygiagretaus vaistų importo asociacija",
-        "nr": 119
+        "nr": "120"
     },
     {
         "certificate_num": "LOB-JA-2021-0050",
@@ -1262,9 +1392,10 @@
             "Eimantas Pranauskas"
         ],
         "legal_regulation_areas": "Teisė ir teisėtvarka, Švietimas ir mokslas, Socialinė apsauga ir darbas, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Finansai ir bankininkystė, Energetika, Statybos, Transportas ir susisiekimas, Aplinkosauga, Sveikatos apsauga",
-        "legal_regulation_areas_num": 11,
+        "legal_regulation_areas_num": 11.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos žemės ūkio bendrovių asociacija",
-        "nr": 120
+        "nr": "121"
     },
     {
         "certificate_num": "LOB-JA-2021-0049",
@@ -1276,21 +1407,21 @@
             "Ugnė Radžiūnaitė-Šutjevienė",
             "Tomas Garuolis",
             "Tomas Andrejauskas",
-            "Romas Austinskas ",
-            "Ričardas Sartatavičius ",
+            "Romas Austinskas",
+            "Ričardas Sartatavičius",
             "Kristina Šermukšnytė-Alešiūnienė",
             "Gintautas Kvietkauskas",
             "Elana Astramovič",
             "Eigilė Čygaitė-Elzbergienė",
             "Dalius Gedvilas",
             "Arūnas Laurinaitis",
-            "Antanas Zabulis",
-            "Alvydas Stulpinas"
+            "Antanas Zabulis"
         ],
         "legal_regulation_areas": "Tabako ir alkoholio kontrolė, Azartiniai lošimai ir loterijos, Vidaus reikalai, Užsienio reikalai, Teisė ir teisėtvarka, Sportas, Švietimas ir mokslas, Socialinė apsauga ir darbas, Nacionalinis saugumas ir gynyba, Kultūra, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Finansai ir bankininkystė, Energetika, Miškų ūkis, Statybos, Transportas ir susisiekimas, Aplinkosauga, Sveikatos apsauga",
-        "legal_regulation_areas_num": 19,
+        "legal_regulation_areas_num": 19.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos pramonininkų konfederacija (LPK)",
-        "nr": 121
+        "nr": "122"
     },
     {
         "certificate_num": "LOB-JA-2021-0048",
@@ -1300,9 +1431,10 @@
             "Gintaras Kalinauskas"
         ],
         "legal_regulation_areas": "Nacionalinis saugumas ir gynyba, Ekonomika ir inovacijos, Energetika, Transportas ir susisiekimas",
-        "legal_regulation_areas_num": 4,
+        "legal_regulation_areas_num": 4.0,
+        "lobbyist_until": "",
         "lobbyists": "Rex Consultorum",
-        "nr": 122
+        "nr": "123"
     },
     {
         "certificate_num": "LOB-JA-2021-0046",
@@ -1310,12 +1442,13 @@
         "legal_entity_code": "302324502",
         "legal_entity_representatives": [
             "Vitas Mačiulis",
-            "Vilma Gaudybė"
+            "Vilma Gaubytė"
         ],
         "legal_regulation_areas": "Ekonomika ir inovacijos, Energetika, Aplinkosauga",
-        "legal_regulation_areas_num": 3,
+        "legal_regulation_areas_num": 3.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos saulės energetikos asociacija",
-        "nr": 123
+        "nr": "124"
     },
     {
         "certificate_num": "LOB-JA-2021-0045",
@@ -1326,9 +1459,10 @@
             "Dalia Ruščiauskienė"
         ],
         "legal_regulation_areas": "Užsienio reikalai, Teisė ir teisėtvarka, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Finansai ir bankininkystė, Energetika, Transportas ir susisiekimas, Aplinkosauga",
-        "legal_regulation_areas_num": 8,
+        "legal_regulation_areas_num": 8.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos grūdų perdirbėjų ir prekybininkų asociacija",
-        "nr": 124
+        "nr": "125"
     },
     {
         "certificate_num": "LOB-JA-2021-0037",
@@ -1340,9 +1474,10 @@
             "Donatas Parulis"
         ],
         "legal_regulation_areas": "Vidaus reikalai, Užsienio reikalai, Teisė ir teisėtvarka, Sportas, Švietimas ir mokslas, Socialinė apsauga ir darbas, Nacionalinis saugumas ir gynyba, Ekonomika ir inovacijos, Transportas ir susisiekimas, Sveikatos apsauga",
-        "legal_regulation_areas_num": 10,
+        "legal_regulation_areas_num": 10.0,
+        "lobbyist_until": "",
         "lobbyists": "UAB Lex ano",
-        "nr": 125
+        "nr": "126"
     },
     {
         "certificate_num": "LOB-JA-2021-0035",
@@ -1353,9 +1488,10 @@
             "Evaldas Sauliūnas"
         ],
         "legal_regulation_areas": "Ekonomika ir inovacijos, Aplinkosauga",
-        "legal_regulation_areas_num": 2,
+        "legal_regulation_areas_num": 2.0,
+        "lobbyist_until": "",
         "lobbyists": "Pakuotės Atliekų Perdirbėjų Asociacija",
-        "nr": 126
+        "nr": "127"
     },
     {
         "certificate_num": "LOB-JA-2021-0034",
@@ -1365,9 +1501,10 @@
             "Giedrius Rimša"
         ],
         "legal_regulation_areas": "Teisė ir teisėtvarka, Socialinė apsauga ir darbas, Ekonomika ir inovacijos, Finansai ir bankininkystė, Sveikatos apsauga",
-        "legal_regulation_areas_num": 5,
+        "legal_regulation_areas_num": 5.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos gyvybės draudimo įmonių asociacija",
-        "nr": 127
+        "nr": "128"
     },
     {
         "certificate_num": "LOB-FA-2021-0033",
@@ -1375,9 +1512,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Teisė ir teisėtvarka, Kaimo reikalai ir žemės ūkis, Energetika, Miškų ūkis, Aplinkosauga",
-        "legal_regulation_areas_num": 5,
+        "legal_regulation_areas_num": 5.0,
+        "lobbyist_until": "",
         "lobbyists": "Liutauras Raudonikis",
-        "nr": 128
+        "nr": "129"
     },
     {
         "certificate_num": "LOB-JA-2021-0030",
@@ -1391,9 +1529,10 @@
             "Andrius Burba"
         ],
         "legal_regulation_areas": "Transportas ir susisiekimas",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos nacionalinė vežėjų automobiliais asociacija „LINAVA“",
-        "nr": 129
+        "nr": "130"
     },
     {
         "certificate_num": "LOB-JA-2021-0028",
@@ -1403,9 +1542,10 @@
             "Kęstutis Pocius"
         ],
         "legal_regulation_areas": "Aplinkosauga",
-        "legal_regulation_areas_num": 1,
-        "lobbyists": "Žaliasis taškas, VšĮ",
-        "nr": 130
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
+        "lobbyists": "VšĮ Žaliasis taškas",
+        "nr": "131"
     },
     {
         "certificate_num": "LOB-JA-2021-0027",
@@ -1420,9 +1560,10 @@
             "Algimantas Kondrusevičius"
         ],
         "legal_regulation_areas": "Vidaus reikalai, Teisė ir teisėtvarka, Švietimas ir mokslas, Socialinė apsauga ir darbas, Ekonomika ir inovacijos, Transportas ir susisiekimas, Aplinkosauga",
-        "legal_regulation_areas_num": 7,
+        "legal_regulation_areas_num": 7.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos vežėjų sąjunga",
-        "nr": 131
+        "nr": "132"
     },
     {
         "certificate_num": "LOB-JA-2021-0022",
@@ -1432,9 +1573,10 @@
             "Vilma Gaubytė"
         ],
         "legal_regulation_areas": "Ekonomika ir inovacijos, Energetika, Aplinkosauga",
-        "legal_regulation_areas_num": 3,
+        "legal_regulation_areas_num": 3.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos biomasės energetikos asociacija LITBIOMA",
-        "nr": 132
+        "nr": "133"
     },
     {
         "certificate_num": "LOB-JA-2021-0019",
@@ -1445,9 +1587,10 @@
             "Aidas Budrys"
         ],
         "legal_regulation_areas": "Finansai ir bankininkystė",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos bankų asociacija",
-        "nr": 133
+        "nr": "134"
     },
     {
         "certificate_num": "LOB-JA-2021-0018",
@@ -1457,9 +1600,10 @@
             "Laisvūnas Bartkevičius"
         ],
         "legal_regulation_areas": "Ekonomika ir inovacijos, Energetika, Statybos, Transportas ir susisiekimas, Aplinkosauga",
-        "legal_regulation_areas_num": 5,
+        "legal_regulation_areas_num": 5.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos projektavimo įmonių asociacija",
-        "nr": 134
+        "nr": "135"
     },
     {
         "certificate_num": "LOB-JA-2021-0016",
@@ -1473,25 +1617,27 @@
             "Anastazija Peciukonė"
         ],
         "legal_regulation_areas": "Tabako ir alkoholio kontrolė, Azartiniai lošimai ir loterijos, Vidaus reikalai, Užsienio reikalai, Teisė ir teisėtvarka, Sportas, Švietimas ir mokslas, Socialinė apsauga ir darbas, Nacionalinis saugumas ir gynyba, Kultūra, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Finansai ir bankininkystė, Energetika, Miškų ūkis, Statybos, Transportas ir susisiekimas, Aplinkosauga, Sveikatos apsauga",
-        "legal_regulation_areas_num": 19,
-        "lobbyists": "UAB Meta advisory Lithuania",
-        "nr": 135
+        "legal_regulation_areas_num": 19.0,
+        "lobbyist_until": "",
+        "lobbyists": "UAB Meta Advisory Lithuania",
+        "nr": "136"
     },
     {
         "certificate_num": "LOB-JA-2021-0015",
         "date_list_inclusion": "2021-01-20",
         "legal_entity_code": "224996640",
         "legal_entity_representatives": [
+            "Vilius Tamkvaitis",
             "Rūta Skyrienė",
             "Rolandas Valiūnas",
-            "Monika Banevičiūtė",
-            "Monika Gabalytė",
+            "Roberta Vaitkevičiūtė",
             "Emilis Ruželė"
         ],
         "legal_regulation_areas": "Tabako ir alkoholio kontrolė, Azartiniai lošimai ir loterijos, Vidaus reikalai, Užsienio reikalai, Teisė ir teisėtvarka, Sportas, Švietimas ir mokslas, Socialinė apsauga ir darbas, Nacionalinis saugumas ir gynyba, Kultūra, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Finansai ir bankininkystė, Energetika, Miškų ūkis, Statybos, Transportas ir susisiekimas, Aplinkosauga, Sveikatos apsauga",
-        "legal_regulation_areas_num": 19,
+        "legal_regulation_areas_num": 19.0,
+        "lobbyist_until": "",
         "lobbyists": "Investors' Forum",
-        "nr": 136
+        "nr": "137"
     },
     {
         "certificate_num": "LOB-FA-2021-0012",
@@ -1499,9 +1645,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Teisė ir teisėtvarka, Sportas, Socialinė apsauga ir darbas, Kultūra, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Energetika, Statybos, Transportas ir susisiekimas, Aplinkosauga",
-        "legal_regulation_areas_num": 10,
+        "legal_regulation_areas_num": 10.0,
+        "lobbyist_until": "",
         "lobbyists": "Aušra Mudėnaitė",
-        "nr": 137
+        "nr": "138"
     },
     {
         "certificate_num": "LOB-JA-2021-0011",
@@ -1512,9 +1659,10 @@
             "Agnė Vaitkevičienė"
         ],
         "legal_regulation_areas": "Švietimas ir mokslas, Ekonomika ir inovacijos, Aplinkosauga, Sveikatos apsauga",
-        "legal_regulation_areas_num": 4,
+        "legal_regulation_areas_num": 4.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos Biotechnologų Asociacija",
-        "nr": 138
+        "nr": "139"
     },
     {
         "certificate_num": "LOB-FA-2021-0044",
@@ -1522,9 +1670,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Sveikatos apsauga",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Ieva Malcevičiūtė",
-        "nr": 139
+        "nr": "140"
     },
     {
         "certificate_num": "LOB-JA-2021-0043",
@@ -1532,14 +1681,15 @@
         "legal_entity_code": "193414384",
         "legal_entity_representatives": [
             "Vytas Čičelis",
-            "Saulius Šoliūnas ",
+            "Saulius Šoliūnas",
             "Raimondas Vėlavičius",
             "Arvydas Drąsutavičius"
         ],
         "legal_regulation_areas": "Transportas ir susisiekimas",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Asociacija „Kauno vežėjų klubas“",
-        "nr": 140
+        "nr": "141"
     },
     {
         "certificate_num": "LOB-JA-2021-0042",
@@ -1550,9 +1700,10 @@
             "Artūras Salda"
         ],
         "legal_regulation_areas": "Ekonomika ir inovacijos, Sveikatos apsauga",
-        "legal_regulation_areas_num": 2,
+        "legal_regulation_areas_num": 2.0,
+        "lobbyist_until": "",
         "lobbyists": "Nacionalinė sanatorijų ir reabilitacijos įstaigų asociacija",
-        "nr": 141
+        "nr": "142"
     },
     {
         "certificate_num": "LOB-FA-2021-0041",
@@ -1560,9 +1711,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Tabako ir alkoholio kontrolė, Azartiniai lošimai ir loterijos, Vidaus reikalai, Užsienio reikalai, Teisė ir teisėtvarka, Sportas, Švietimas ir mokslas, Socialinė apsauga ir darbas, Nacionalinis saugumas ir gynyba, Kultūra, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Finansai ir bankininkystė, Energetika, Miškų ūkis, Statybos, Transportas ir susisiekimas, Aplinkosauga, Sveikatos apsauga",
-        "legal_regulation_areas_num": 19,
+        "legal_regulation_areas_num": 19.0,
+        "lobbyist_until": "",
         "lobbyists": "Greta Šukytė",
-        "nr": 142
+        "nr": "143"
     },
     {
         "certificate_num": "LOB-JA-2021-0040",
@@ -1573,9 +1725,10 @@
             "Andrius Romanovskis"
         ],
         "legal_regulation_areas": "Finansai ir bankininkystė, Transportas ir susisiekimas, Sveikatos apsauga",
-        "legal_regulation_areas_num": 3,
+        "legal_regulation_areas_num": 3.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos draudikų asociacija",
-        "nr": 143
+        "nr": "144"
     },
     {
         "certificate_num": "LOB-JA-2021-0039",
@@ -1586,9 +1739,10 @@
             "Irma Pilipienė"
         ],
         "legal_regulation_areas": "Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Aplinkosauga, Sveikatos apsauga",
-        "legal_regulation_areas_num": 4,
+        "legal_regulation_areas_num": 4.0,
+        "lobbyist_until": "",
         "lobbyists": "Asociacija „Lietuvos maisto pramonė“",
-        "nr": 144
+        "nr": "145"
     },
     {
         "certificate_num": "LOB-JA-2021-0038",
@@ -1601,21 +1755,24 @@
             "Evaldas Čepulis"
         ],
         "legal_regulation_areas": "Ekonomika ir inovacijos, Energetika, Aplinkosauga",
-        "legal_regulation_areas_num": 3,
+        "legal_regulation_areas_num": 3.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos šilumos tiekėjų asociacija",
-        "nr": 145
+        "nr": "146"
     },
     {
         "certificate_num": "LOB-JA-2021-0036",
         "date_list_inclusion": "2021-02-01",
         "legal_entity_code": "300038139",
         "legal_entity_representatives": [
-            "Jolita Baltūsienė"
+            "Jolita Baltūsienė",
+            "Vilma Brukienė"
         ],
         "legal_regulation_areas": "Teisė ir teisėtvarka, Sveikatos apsauga",
-        "legal_regulation_areas_num": 2,
+        "legal_regulation_areas_num": 2.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos Respublikos odontologų rūmai",
-        "nr": 146
+        "nr": "147"
     },
     {
         "certificate_num": "LOB-JA-2021-0031",
@@ -1625,9 +1782,10 @@
             "Egidijus Mackevičius"
         ],
         "legal_regulation_areas": "Vidaus reikalai, Užsienio reikalai, Teisė ir teisėtvarka, Švietimas ir mokslas, Socialinė apsauga ir darbas, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Finansai ir bankininkystė, Energetika, Miškų ūkis, Statybos, Transportas ir susisiekimas, Aplinkosauga, Sveikatos apsauga",
-        "legal_regulation_areas_num": 14,
+        "legal_regulation_areas_num": 14.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos mėsos perdirbėjų asociacija",
-        "nr": 147
+        "nr": "148"
     },
     {
         "certificate_num": "LOB-JA-2021-0029",
@@ -1637,9 +1795,10 @@
             "Valdas Balčiūnas"
         ],
         "legal_regulation_areas": "Kaimo reikalai ir žemės ūkis, Aplinkosauga",
-        "legal_regulation_areas_num": 2,
+        "legal_regulation_areas_num": 2.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos aplinkosauginių ūkių asociacija",
-        "nr": 148
+        "nr": "149"
     },
     {
         "certificate_num": "LOB-JA-2021-0026",
@@ -1650,9 +1809,10 @@
             "Gintė Levišauskaitė"
         ],
         "legal_regulation_areas": "Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Aplinkosauga, Sveikatos apsauga",
-        "legal_regulation_areas_num": 4,
+        "legal_regulation_areas_num": 4.0,
+        "lobbyist_until": "",
         "lobbyists": "Asociacija „Lietuvos gėrimai“",
-        "nr": 149
+        "nr": "150"
     },
     {
         "certificate_num": "LOB-JA-2021-0025",
@@ -1670,9 +1830,10 @@
             "Algis Baravykas"
         ],
         "legal_regulation_areas": "Teisė ir teisėtvarka, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Energetika, Aplinkosauga, Sveikatos apsauga",
-        "legal_regulation_areas_num": 6,
+        "legal_regulation_areas_num": 6.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos kiaulių augintojų asociacija",
-        "nr": 150
+        "nr": "151"
     },
     {
         "certificate_num": "LOB-JA-2021-0024",
@@ -1682,9 +1843,10 @@
             "Evaldas Magelinskas"
         ],
         "legal_regulation_areas": "Azartiniai lošimai ir loterijos",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Nacionalinė lošimų ir žaidimų verslo asociacija",
-        "nr": 151
+        "nr": "152"
     },
     {
         "certificate_num": "LOB-JA-2021-0023",
@@ -1695,9 +1857,10 @@
             "Miroslavas Monkevičius"
         ],
         "legal_regulation_areas": "Teisė ir teisėtvarka, Energetika, Statybos, Aplinkosauga",
-        "legal_regulation_areas_num": 4,
+        "legal_regulation_areas_num": 4.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos respublikiniai būsto valdymo ir priežiūros rūmai",
-        "nr": 152
+        "nr": "153"
     },
     {
         "certificate_num": "LOB-JA-2021-0021",
@@ -1707,9 +1870,10 @@
             "Saulius Galadauskas"
         ],
         "legal_regulation_areas": "Tabako ir alkoholio kontrolė, Ekonomika ir inovacijos, Finansai ir bankininkystė, Aplinkosauga",
-        "legal_regulation_areas_num": 4,
+        "legal_regulation_areas_num": 4.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos aludarių gildija",
-        "nr": 153
+        "nr": "154"
     },
     {
         "certificate_num": "LOB-JA-2021-0020",
@@ -1719,9 +1883,10 @@
             "Agnė Vaitkuvienė"
         ],
         "legal_regulation_areas": "Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Sveikatos apsauga",
-        "legal_regulation_areas_num": 3,
+        "legal_regulation_areas_num": 3.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos kaimo turizmo asociacija",
-        "nr": 154
+        "nr": "155"
     },
     {
         "certificate_num": "LOB-JA-2021-0017",
@@ -1732,9 +1897,10 @@
             "Agnė Margevičiūtė"
         ],
         "legal_regulation_areas": "Socialinė apsauga ir darbas, Transportas ir susisiekimas",
-        "legal_regulation_areas_num": 2,
+        "legal_regulation_areas_num": 2.0,
+        "lobbyist_until": "",
         "lobbyists": "Tarptautinio transporto ir logistikos aljansas",
-        "nr": 155
+        "nr": "156"
     },
     {
         "certificate_num": "LOB-JA-2021-0014",
@@ -1746,9 +1912,10 @@
             "Andrius Raščius"
         ],
         "legal_regulation_areas": "Švietimas ir mokslas, Socialinė apsauga ir darbas, Ekonomika ir inovacijos, Finansai ir bankininkystė, Energetika, Statybos, Aplinkosauga",
-        "legal_regulation_areas_num": 7,
+        "legal_regulation_areas_num": 7.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos statybininkų asociacija",
-        "nr": 156
+        "nr": "157"
     },
     {
         "certificate_num": "LOB-FA-2021-0013",
@@ -1756,9 +1923,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Ekonomika ir inovacijos",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Gediminas Rainys",
-        "nr": 157
+        "nr": "158"
     },
     {
         "certificate_num": "LOB-JA-2021-0150",
@@ -1771,9 +1939,10 @@
             "Audrius Gudanavičius"
         ],
         "legal_regulation_areas": "Vidaus reikalai",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos nekilnojamojo turto agentūrų asociacija",
-        "nr": 158
+        "nr": "159"
     },
     {
         "certificate_num": "LOB-JA-2021-0149",
@@ -1785,9 +1954,10 @@
             "Darius Biekša"
         ],
         "legal_regulation_areas": "Ekonomika ir inovacijos, Energetika, Statybos, Aplinkosauga",
-        "legal_regulation_areas_num": 4,
+        "legal_regulation_areas_num": 4.0,
+        "lobbyist_until": "",
         "lobbyists": "Atsinaujinančios energijos gamintojų asociacija",
-        "nr": 159
+        "nr": "160"
     },
     {
         "certificate_num": "LOB-JA-2021-0147",
@@ -1797,9 +1967,10 @@
             "Tomas Talutis"
         ],
         "legal_regulation_areas": "Vidaus reikalai, Ekonomika ir inovacijos, Finansai ir bankininkystė",
-        "legal_regulation_areas_num": 3,
+        "legal_regulation_areas_num": 3.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos investicijų valdytojų asociacija",
-        "nr": 160
+        "nr": "161"
     },
     {
         "certificate_num": "LOB-JA-2021-0142",
@@ -1809,9 +1980,10 @@
             "Mindaugas Dorelis"
         ],
         "legal_regulation_areas": "Kaimo reikalai ir žemės ūkis",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "UAB Agrodronas",
-        "nr": 161
+        "nr": "162"
     },
     {
         "certificate_num": "LOB-FA-2021-0138",
@@ -1819,9 +1991,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Teisė ir teisėtvarka, Socialinė apsauga ir darbas, Sveikatos apsauga",
-        "legal_regulation_areas_num": 3,
+        "legal_regulation_areas_num": 3.0,
+        "lobbyist_until": "",
         "lobbyists": "Sonata Balevičienė",
-        "nr": 162
+        "nr": "163"
     },
     {
         "certificate_num": "LOB-JA-2021-0137",
@@ -1831,9 +2004,10 @@
             "Viktoras Čepys"
         ],
         "legal_regulation_areas": "Viešieji pirkimai, Vidaus reikalai, Užsienio reikalai, Teisė ir teisėtvarka, Švietimas ir mokslas, Socialinė apsauga ir darbas, Ekonomika ir inovacijos, Energetika, Transportas ir susisiekimas, Aplinkosauga",
-        "legal_regulation_areas_num": 10,
+        "legal_regulation_areas_num": 10.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos laivų statytojų ir remontininkų asociacija",
-        "nr": 163
+        "nr": "164"
     },
     {
         "certificate_num": "LOB-JA-2021-0135",
@@ -1843,9 +2017,10 @@
             "Naglis Simanavičius"
         ],
         "legal_regulation_areas": "Transportas ir susisiekimas",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "UAB Heston Airlines",
-        "nr": 164
+        "nr": "165"
     },
     {
         "certificate_num": "LOB-JA-2021-0131",
@@ -1855,9 +2030,10 @@
             "Paulius Vertelka"
         ],
         "legal_regulation_areas": "Ekonomika ir inovacijos",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "UAB Google Lithuania",
-        "nr": 165
+        "nr": "166"
     },
     {
         "certificate_num": "LOB-FA-2021-0148",
@@ -1865,9 +2041,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Statybos",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Dainius Koveras",
-        "nr": 166
+        "nr": "167"
     },
     {
         "certificate_num": "LOB-JA-2021-0146",
@@ -1877,9 +2054,10 @@
             "Arvydas Usnys"
         ],
         "legal_regulation_areas": "Švietimas ir mokslas, Transportas ir susisiekimas",
-        "legal_regulation_areas_num": 2,
+        "legal_regulation_areas_num": 2.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos buriuotojų sąjunga",
-        "nr": 167
+        "nr": "168"
     },
     {
         "certificate_num": "LOB-FA-2021-0145",
@@ -1887,9 +2065,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Viešieji pirkimai, Tabako ir alkoholio kontrolė, Azartiniai lošimai ir loterijos, Užsienio reikalai, Sportas, Švietimas ir mokslas, Nacionalinis saugumas ir gynyba, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Finansai ir bankininkystė, Miškų ūkis, Statybos, Transportas ir susisiekimas, Aplinkosauga, Sveikatos apsauga",
-        "legal_regulation_areas_num": 15,
+        "legal_regulation_areas_num": 15.0,
+        "lobbyist_until": "",
         "lobbyists": "Vitalijus Švedas",
-        "nr": 168
+        "nr": "169"
     },
     {
         "certificate_num": "LOB-JA-2021-0144",
@@ -1901,9 +2080,10 @@
             "Donatas Montvila"
         ],
         "legal_regulation_areas": "Kaimo reikalai ir žemės ūkis",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos šiltnamių asociacija",
-        "nr": 169
+        "nr": "170"
     },
     {
         "certificate_num": "LOB-JA-2021-0143",
@@ -1915,9 +2095,10 @@
             "Dainius Janėnas"
         ],
         "legal_regulation_areas": "Tabako ir alkoholio kontrolė, Ekonomika ir inovacijos, Energetika, Aplinkosauga",
-        "legal_regulation_areas_num": 4,
+        "legal_regulation_areas_num": 4.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuviškų degalinių sąjunga",
-        "nr": 170
+        "nr": "171"
     },
     {
         "certificate_num": "LOB-JA-2021-0141",
@@ -1928,9 +2109,10 @@
             "Erlandas Mikėnas"
         ],
         "legal_regulation_areas": "Transportas ir susisiekimas",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos mažų ir vidutinių vežėjų konfederacija LMVVK",
-        "nr": 171
+        "nr": "172"
     },
     {
         "certificate_num": "LOB-FA-2021-0140",
@@ -1938,9 +2120,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Azartiniai lošimai ir loterijos, Teisė ir teisėtvarka, Aplinkosauga",
-        "legal_regulation_areas_num": 3,
+        "legal_regulation_areas_num": 3.0,
+        "lobbyist_until": "",
         "lobbyists": "Dovilė Murauskienė",
-        "nr": 172
+        "nr": "173"
     },
     {
         "certificate_num": "LOB-FA-2021-0139",
@@ -1948,9 +2131,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Viešieji pirkimai, Vidaus reikalai, Ekonomika ir inovacijos, Finansai ir bankininkystė, Statybos, Sveikatos apsauga",
-        "legal_regulation_areas_num": 6,
+        "legal_regulation_areas_num": 6.0,
+        "lobbyist_until": "",
         "lobbyists": "Povilas Poderskis",
-        "nr": 173
+        "nr": "174"
     },
     {
         "certificate_num": "LOB-FA-2021-0136",
@@ -1958,9 +2142,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Vidaus reikalai",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Artūras Štaudė",
-        "nr": 174
+        "nr": "175"
     },
     {
         "certificate_num": "LOB-JA-2021-0134",
@@ -1971,9 +2156,10 @@
             "Giedrius Balevičius"
         ],
         "legal_regulation_areas": "Švietimas ir mokslas, Kaimo reikalai ir žemės ūkis, Miškų ūkis, Statybos, Aplinkosauga",
-        "legal_regulation_areas_num": 5,
+        "legal_regulation_areas_num": 5.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos žemėtvarkos ir hidrotechnikos inžinierių sąjunga",
-        "nr": 175
+        "nr": "176"
     },
     {
         "certificate_num": "LOB-JA-2021-0133",
@@ -1983,9 +2169,10 @@
             "Rokas Šliupas"
         ],
         "legal_regulation_areas": "Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Sveikatos apsauga",
-        "legal_regulation_areas_num": 3,
+        "legal_regulation_areas_num": 3.0,
+        "lobbyist_until": "",
         "lobbyists": "Lithempa",
-        "nr": 176
+        "nr": "177"
     },
     {
         "certificate_num": "LOB-JA-2021-0132",
@@ -1996,21 +2183,24 @@
             "Daiva Bikulčienė"
         ],
         "legal_regulation_areas": "Energetika",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos elektros energetikos asociacija",
-        "nr": 177
+        "nr": "178"
     },
     {
         "certificate_num": "LOB-JA-2021-0130",
         "date_list_inclusion": "2021-08-25",
         "legal_entity_code": "135030125",
         "legal_entity_representatives": [
-            "Ieva Bastienė"
+            "Ieva Bastienė",
+            "Jurgita Jankauskienė"
         ],
         "legal_regulation_areas": "Kaimo reikalai ir žemės ūkis",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos grūdų augintojų asociacija",
-        "nr": 178
+        "nr": "179"
     },
     {
         "certificate_num": "LOB-JA-2021-0129",
@@ -2020,9 +2210,10 @@
             "Ričardas Mironovas"
         ],
         "legal_regulation_areas": "Teisė ir teisėtvarka",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Nevyriausybinė organizacija „Iustitia est fundamentum“",
-        "nr": 179
+        "nr": "180"
     },
     {
         "certificate_num": "LOB-JA-2021-0128",
@@ -2032,9 +2223,10 @@
             "Rokas Urbonas"
         ],
         "legal_regulation_areas": "Viešieji pirkimai, Švietimas ir mokslas, Statybos, Transportas ir susisiekimas, Aplinkosauga",
-        "legal_regulation_areas_num": 5,
+        "legal_regulation_areas_num": 5.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos griovėjų asociacija",
-        "nr": 180
+        "nr": "181"
     },
     {
         "certificate_num": "LOB-JA-2021-0126",
@@ -2044,9 +2236,10 @@
             "Evelina Maškalaitė"
         ],
         "legal_regulation_areas": "Viešieji pirkimai, Švietimas ir mokslas, Ekonomika ir inovacijos, Transportas ir susisiekimas, Aplinkosauga",
-        "legal_regulation_areas_num": 5,
+        "legal_regulation_areas_num": 5.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos Nacionalinė ekspeditorių ir logistų asociacija „LINEKA“",
-        "nr": 181
+        "nr": "182"
     },
     {
         "certificate_num": "LOB-JA-2021-0155",
@@ -2056,9 +2249,10 @@
             "Česlovas Tallat-Kelpša"
         ],
         "legal_regulation_areas": "Kaimo reikalai ir žemės ūkis",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos žvėrelių augintojų asociacija",
-        "nr": 182
+        "nr": "183"
     },
     {
         "certificate_num": "LOB-JA-2022-0003",
@@ -2068,9 +2262,10 @@
             "Giedrius Pavilionis"
         ],
         "legal_regulation_areas": "Vidaus reikalai, Teisė ir teisėtvarka, Švietimas ir mokslas, Socialinė apsauga ir darbas, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Finansai ir bankininkystė, Statybos, Aplinkosauga",
-        "legal_regulation_areas_num": 9,
+        "legal_regulation_areas_num": 9.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos nekilnojamojo turto brokerių asociacija",
-        "nr": 183
+        "nr": "184"
     },
     {
         "certificate_num": "LOB-JA-2021-0154",
@@ -2080,9 +2275,124 @@
             "Tomas Liesis"
         ],
         "legal_regulation_areas": "Viešieji pirkimai, Sveikatos apsauga",
-        "legal_regulation_areas_num": 2,
+        "legal_regulation_areas_num": 2.0,
+        "lobbyist_until": "",
         "lobbyists": "UAB Medison Pharma Lithuania",
-        "nr": 184
+        "nr": "185"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0006",
+        "date_list_inclusion": "2023-01-18",
+        "legal_entity_code": "305047537",
+        "legal_entity_representatives": [
+            "Jolanta Beniulienė",
+            "Petras Staselis"
+        ],
+        "legal_regulation_areas": "Ekonomika ir inovacijos",
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
+        "lobbyists": "Lietuvos konferencijų ir renginių asociacija",
+        "nr": "186"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0002",
+        "date_list_inclusion": "2023-01-04",
+        "legal_entity_code": "300693625",
+        "legal_entity_representatives": [
+            "Domas Mikalauskas"
+        ],
+        "legal_regulation_areas": "Kaimo reikalai ir žemės ūkis",
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
+        "lobbyists": "UAB „Agroterra“",
+        "nr": "187"
+    },
+    {
+        "certificate_num": "LOB-JA-2022-0040",
+        "date_list_inclusion": "2022-12-21",
+        "legal_entity_code": "305644692",
+        "legal_entity_representatives": [
+            "Raimondas Imbrasas"
+        ],
+        "legal_regulation_areas": "Ekonomika ir inovacijos, Miškų ūkis",
+        "legal_regulation_areas_num": 2.0,
+        "lobbyist_until": "",
+        "lobbyists": "Medienos perdirbimo asociacija",
+        "nr": "188"
+    },
+    {
+        "certificate_num": "LOB-JA-2022-0038",
+        "date_list_inclusion": "2022-12-14",
+        "legal_entity_code": "306128807",
+        "legal_entity_representatives": [
+            "Egidijus Anulis"
+        ],
+        "legal_regulation_areas": "Energetika",
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
+        "lobbyists": "Atsakinga vandentvarkos asociacija „VANDENS JĖGA“",
+        "nr": "189"
+    },
+    {
+        "certificate_num": "LOB-JA-2022-0037",
+        "date_list_inclusion": "2022-12-07",
+        "legal_entity_code": "306160801",
+        "legal_entity_representatives": [
+            "Darius Marma"
+        ],
+        "legal_regulation_areas": "Viešieji pirkimai, Švietimas ir mokslas, Socialinė apsauga ir darbas, Nacionalinis saugumas ir gynyba, Ekonomika ir inovacijos, Energetika, Transportas ir susisiekimas, Aplinkosauga, Sveikatos apsauga",
+        "legal_regulation_areas_num": 9.0,
+        "lobbyist_until": "",
+        "lobbyists": "Respublikinė keleivių vežėjų autobusais asociacija",
+        "nr": "190"
+    },
+    {
+        "certificate_num": "LOB-JA-2022-0036",
+        "date_list_inclusion": "2022-12-07",
+        "legal_entity_code": "121480450",
+        "legal_entity_representatives": [
+            "Bronius Miežutavičius"
+        ],
+        "legal_regulation_areas": "Teisė ir teisėtvarka, Socialinė apsauga ir darbas, Ekonomika ir inovacijos, Energetika, Statybos, Aplinkosauga",
+        "legal_regulation_areas_num": 6.0,
+        "lobbyist_until": "",
+        "lobbyists": "Lietuvos vandens tiekėjų asociacija",
+        "nr": "191"
+    },
+    {
+        "certificate_num": "LOB-FA-2022-0034",
+        "date_list_inclusion": "2022-11-23",
+        "legal_entity_code": "-",
+        "legal_entity_representatives": [],
+        "legal_regulation_areas": "Ekonomika ir inovacijos",
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
+        "lobbyists": "Milda Savickaitė",
+        "nr": "192"
+    },
+    {
+        "certificate_num": "LOB-FA-2022-0033",
+        "date_list_inclusion": "2022-11-16",
+        "legal_entity_code": "-",
+        "legal_entity_representatives": [],
+        "legal_regulation_areas": "Viešieji pirkimai, Vidaus reikalai, Teisė ir teisėtvarka, Švietimas ir mokslas, Socialinė apsauga ir darbas, Nacionalinis saugumas ir gynyba, Kultūra, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Energetika, Statybos, Transportas ir susisiekimas, Aplinkosauga",
+        "legal_regulation_areas_num": 13.0,
+        "lobbyist_until": "",
+        "lobbyists": "Egidijus Skrodenis",
+        "nr": "193"
+    },
+    {
+        "certificate_num": "LOB-JA-2022-0032",
+        "date_list_inclusion": "2022-11-16",
+        "legal_entity_code": "304701279",
+        "legal_entity_representatives": [
+            "Anna Pavlovska"
+        ],
+        "legal_regulation_areas": "Švietimas ir mokslas, Ekonomika ir inovacijos, Finansai ir bankininkystė",
+        "legal_regulation_areas_num": 3.0,
+        "lobbyist_until": "",
+        "lobbyists": "Asociacija FINTECH HUB LT",
+        "nr": "194"
     },
     {
         "certificate_num": "LOB-FA-2022-0027",
@@ -2090,88 +2400,185 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Užsienio reikalai, Švietimas ir mokslas, Socialinė apsauga ir darbas, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Finansai ir bankininkystė, Sveikatos apsauga",
-        "legal_regulation_areas_num": 7,
+        "legal_regulation_areas_num": 7.0,
+        "lobbyist_until": "",
         "lobbyists": "Irmantas Mockus",
-        "nr": 185
+        "nr": "195"
+    },
+    {
+        "certificate_num": "LOB-FA-2023-0004",
+        "date_list_inclusion": "2023-01-11",
+        "legal_entity_code": "-",
+        "legal_entity_representatives": [],
+        "legal_regulation_areas": "Viešieji pirkimai, Švietimas ir mokslas, Aplinkosauga",
+        "legal_regulation_areas_num": 3.0,
+        "lobbyist_until": "",
+        "lobbyists": "Vytautas Matulevičius",
+        "nr": "196"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0003",
+        "date_list_inclusion": "2023-01-04",
+        "legal_entity_code": "303003809",
+        "legal_entity_representatives": [
+            "Rasa Montvilė"
+        ],
+        "legal_regulation_areas": "Sveikatos apsauga",
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
+        "lobbyists": "Vaistų didmeninio platinimo įmonių asociacija",
+        "nr": "197"
+    },
+    {
+        "certificate_num": "LOB-FA-2023-0001",
+        "date_list_inclusion": "2023-01-04",
+        "legal_entity_code": "-",
+        "legal_entity_representatives": [],
+        "legal_regulation_areas": "Viešieji pirkimai, Ekonomika ir inovacijos, Statybos",
+        "legal_regulation_areas_num": 3.0,
+        "lobbyist_until": "",
+        "lobbyists": "Viktor Voroncov",
+        "nr": "198"
+    },
+    {
+        "certificate_num": "LOB-FA-2022-0039",
+        "date_list_inclusion": "2022-12-14",
+        "legal_entity_code": "-",
+        "legal_entity_representatives": [],
+        "legal_regulation_areas": "Viešieji pirkimai, Tabako ir alkoholio kontrolė, Vidaus reikalai, Teisė ir teisėtvarka, Sportas, Švietimas ir mokslas, Socialinė apsauga ir darbas, Nacionalinis saugumas ir gynyba, Kultūra, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Finansai ir bankininkystė, Energetika, Miškų ūkis, Statybos, Transportas ir susisiekimas, Aplinkosauga, Sveikatos apsauga",
+        "legal_regulation_areas_num": 18.0,
+        "lobbyist_until": "",
+        "lobbyists": "Dominykas Jakštas",
+        "nr": "199"
+    },
+    {
+        "certificate_num": "LOB-FA-2022-0035",
+        "date_list_inclusion": "2022-11-30",
+        "legal_entity_code": "-",
+        "legal_entity_representatives": [],
+        "legal_regulation_areas": "Viešieji pirkimai, Tabako ir alkoholio kontrolė, Azartiniai lošimai ir loterijos, Vidaus reikalai, Užsienio reikalai, Teisė ir teisėtvarka, Sportas, Švietimas ir mokslas, Socialinė apsauga ir darbas, Nacionalinis saugumas ir gynyba, Kultūra, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Finansai ir bankininkystė, Energetika, Statybos, Transportas ir susisiekimas, Aplinkosauga, Sveikatos apsauga",
+        "legal_regulation_areas_num": 19.0,
+        "lobbyist_until": "",
+        "lobbyists": "Regina Jaskelevičienė",
+        "nr": "200"
+    },
+    {
+        "certificate_num": "LOB-JA-2022-0031",
+        "date_list_inclusion": "2022-11-16",
+        "legal_entity_code": "305729413",
+        "legal_entity_representatives": [
+            "Raimondas Gaižauskas",
+            "Jonas Akelis",
+            "Irmantas Misiūnas"
+        ],
+        "legal_regulation_areas": "Energetika",
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
+        "lobbyists": "Elektrą iš saulės gaminančių vartotojų asociacija",
+        "nr": "201"
+    },
+    {
+        "certificate_num": "LOB-JA-2022-0030",
+        "date_list_inclusion": "2022-11-09",
+        "legal_entity_code": "110878442",
+        "legal_entity_representatives": [
+            "Erikas Bėrontas"
+        ],
+        "legal_regulation_areas": "Ekonomika ir inovacijos",
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
+        "lobbyists": "UAB Ernst & Young Baltic",
+        "nr": "202"
     },
     {
         "certificate_num": "LOB-JA-2022-0029",
         "date_list_inclusion": "2022-10-26",
         "legal_entity_code": "122249382",
         "legal_entity_representatives": [
-            "Erikas Bėrontas"
+            "Inara Joniškienė"
         ],
         "legal_regulation_areas": "Viešieji pirkimai, Vidaus reikalai, Užsienio reikalai, Teisė ir teisėtvarka, Sportas, Švietimas ir mokslas, Socialinė apsauga ir darbas, Nacionalinis saugumas ir gynyba, Kultūra, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Finansai ir bankininkystė, Energetika, Miškų ūkis, Statybos, Transportas ir susisiekimas, Aplinkosauga, Sveikatos apsauga",
-        "legal_regulation_areas_num": 18,
+        "legal_regulation_areas_num": 18.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos žemės ūkio technikos asociacija",
-        "nr": 186
+        "nr": "203"
     },
     {
         "certificate_num": "LOB-JA-2022-0028",
         "date_list_inclusion": "2022-10-12",
         "legal_entity_code": "125373741",
         "legal_entity_representatives": [
-            "Inara Joniškienė"
+            "Rūta Vainienė",
+            "Paulina Širvinskaitė"
         ],
         "legal_regulation_areas": "Vidaus reikalai, Užsienio reikalai, Teisė ir teisėtvarka, Ekonomika ir inovacijos, Aplinkosauga, Sveikatos apsauga",
-        "legal_regulation_areas_num": 6,
+        "legal_regulation_areas_num": 6.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos kosmetikos ir buitinės chemijos gamintojų asociacija „Likochema“",
-        "nr": 187
+        "nr": "204"
     },
     {
         "certificate_num": "LOB-JA-2021-0009",
         "date_list_inclusion": "2021-01-18",
         "legal_entity_code": "124081271",
         "legal_entity_representatives": [
-            "Rūta Vainienė",
-            "Paulina Širvinskaitė"
+            "Vilius Kriaučiūnas",
+            "Robertas Klovas",
+            "Ineta Rizgelė",
+            "Gintarė Boreikytė",
+            "Emilis Ruželė",
+            "Eglė Radišauskienė",
+            "Andrius Romanovskis",
+            "Akvilė Razumienė"
         ],
         "legal_regulation_areas": "Tabako ir alkoholio kontrolė, Vidaus reikalai, Teisė ir teisėtvarka, Socialinė apsauga ir darbas, Ekonomika ir inovacijos, Statybos, Transportas ir susisiekimas, Aplinkosauga",
-        "legal_regulation_areas_num": 8,
+        "legal_regulation_areas_num": 8.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos prekybos įmonių asociacija",
-        "nr": 188
+        "nr": "205"
     },
     {
         "certificate_num": "LOB-JA-2021-0005",
         "date_list_inclusion": "2021-01-15",
         "legal_entity_code": "110063950",
         "legal_entity_representatives": [
-            "Vilius Kriaučiūnas",
-            "Robertas Klovas",
-            "Ineta Rizgelė",
-            "Gintarė Boreikytė",
-            "Eglė Radišauskienė",
-            "Andrius Romanovskis",
-            "Akvilė Razumienė"
+            "Gintaras Nakutis"
         ],
         "legal_regulation_areas": "Tabako ir alkoholio kontrolė, Azartiniai lošimai ir loterijos, Teisė ir teisėtvarka, Švietimas ir mokslas, Socialinė apsauga ir darbas, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Finansai ir bankininkystė, Energetika, Miškų ūkis, Statybos, Transportas ir susisiekimas, Aplinkosauga, Sveikatos apsauga",
-        "legal_regulation_areas_num": 14,
+        "legal_regulation_areas_num": 14.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos verslo konfederacija",
-        "nr": 189
+        "nr": "206"
     },
     {
         "certificate_num": "LOB-JA-2021-0010",
         "date_list_inclusion": "2021-01-18",
         "legal_entity_code": "304962891",
         "legal_entity_representatives": [
-            "Gintaras Nakutis"
+            "Mindaugas Reinikis"
         ],
         "legal_regulation_areas": "Švietimas ir mokslas, Socialinė apsauga ir darbas, Energetika, Transportas ir susisiekimas, Aplinkosauga",
-        "legal_regulation_areas_num": 5,
+        "legal_regulation_areas_num": 5.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos keleivių vežimo asociacija",
-        "nr": 190
+        "nr": "207"
     },
     {
         "certificate_num": "LOB-JA-2021-0008",
         "date_list_inclusion": "2021-01-18",
         "legal_entity_code": "302517241",
         "legal_entity_representatives": [
-            "Mindaugas Reinikis"
+            "Vytas Zabilius",
+            "Robertas Dargis",
+            "Mindaugas Statulevičius",
+            "Aušra Mudėnaitė",
+            "Arvydas Avulis"
         ],
         "legal_regulation_areas": "Transportas ir susisiekimas",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Nacionalinė aviacijos asociacija „LAVIA“",
-        "nr": 191
+        "nr": "208"
     },
     {
         "certificate_num": "LOB-JA-2021-0007",
@@ -2185,9 +2592,10 @@
             "Arvydas Avulis"
         ],
         "legal_regulation_areas": "Teisė ir teisėtvarka, Kultūra, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Finansai ir bankininkystė, Energetika, Statybos, Transportas ir susisiekimas, Aplinkosauga",
-        "legal_regulation_areas_num": 9,
+        "legal_regulation_areas_num": 9.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos nekilnojamojo turto plėtros asociacija",
-        "nr": 192
+        "nr": "209"
     },
     {
         "certificate_num": "LOB-JA-2021-0006",
@@ -2195,9 +2603,10 @@
         "legal_entity_code": "301793201",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Teisė ir teisėtvarka, Ekonomika ir inovacijos, Energetika, Statybos, Aplinkosauga",
-        "legal_regulation_areas_num": 5,
+        "legal_regulation_areas_num": 5.0,
+        "lobbyist_until": "",
         "lobbyists": "Nacionalinė pastatų paslaugų asociacija PREMA",
-        "nr": 193
+        "nr": "210"
     },
     {
         "certificate_num": "LOB-FA-2022-0009",
@@ -2205,9 +2614,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Viešieji pirkimai, Kultūra, Statybos, Aplinkosauga",
-        "legal_regulation_areas_num": 4,
+        "legal_regulation_areas_num": 4.0,
+        "lobbyist_until": "",
         "lobbyists": "Lukas Rekevičius",
-        "nr": 194
+        "nr": "211"
     },
     {
         "certificate_num": "LOB-JA-2021-0120",
@@ -2217,9 +2627,10 @@
             "Edis Urbanavičius"
         ],
         "legal_regulation_areas": "Sportas",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Nacionalinė sporto federacijų asociacija",
-        "nr": 195
+        "nr": "212"
     },
     {
         "certificate_num": "LOB-JA-2021-0119",
@@ -2229,9 +2640,10 @@
             "Sandra Jarockytė-Aleksejevienė"
         ],
         "legal_regulation_areas": "Ekonomika ir inovacijos",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Mažeikių verslininkų asociacija",
-        "nr": 196
+        "nr": "213"
     },
     {
         "certificate_num": "LOB-JA-2021-0118",
@@ -2241,9 +2653,10 @@
             "Vitas Karčiauskas"
         ],
         "legal_regulation_areas": "Teisė ir teisėtvarka, Švietimas ir mokslas, Nacionalinis saugumas ir gynyba, Kultūra, Ekonomika ir inovacijos, Statybos, Transportas ir susisiekimas, Aplinkosauga",
-        "legal_regulation_areas_num": 8,
+        "legal_regulation_areas_num": 8.0,
+        "lobbyist_until": "",
         "lobbyists": "Asociacija „Istorinis miestas“",
-        "nr": 197
+        "nr": "214"
     },
     {
         "certificate_num": "LOB-JA-2021-0117",
@@ -2253,9 +2666,10 @@
             "Edgaras Maladauskas"
         ],
         "legal_regulation_areas": "Energetika",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos vėjo elektrinių asociacija",
-        "nr": 198
+        "nr": "215"
     },
     {
         "certificate_num": "LOB-JA-2021-0116",
@@ -2265,9 +2679,10 @@
             "Emilis Cicėnas"
         ],
         "legal_regulation_areas": "Teisė ir teisėtvarka, Ekonomika ir inovacijos, Energetika, Transportas ir susisiekimas, Aplinkosauga",
-        "legal_regulation_areas_num": 5,
+        "legal_regulation_areas_num": 5.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos naftos produktų prekybos įmonių asociacija",
-        "nr": 199
+        "nr": "216"
     },
     {
         "certificate_num": "LOB-JA-2021-0113",
@@ -2279,9 +2694,10 @@
             "Robertas Valantiejus"
         ],
         "legal_regulation_areas": "Vidaus reikalai, Užsienio reikalai, Socialinė apsauga ir darbas, Nacionalinis saugumas ir gynyba, Ekonomika ir inovacijos, Statybos, Transportas ir susisiekimas, Aplinkosauga",
-        "legal_regulation_areas_num": 8,
+        "legal_regulation_areas_num": 8.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos jūrų krovos kompanijų asociacija",
-        "nr": 200
+        "nr": "217"
     },
     {
         "certificate_num": "LOB-JA-2021-0111",
@@ -2291,46 +2707,50 @@
             "Stanislava Siga Jakubauskienė"
         ],
         "legal_regulation_areas": "Kaimo reikalai ir žemės ūkis",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "ŽĮA Lampetra",
-        "nr": 201
+        "nr": "218"
     },
     {
         "certificate_num": "LOB-JA-2021-0109",
         "date_list_inclusion": "2021-06-02",
         "legal_entity_code": "120793378",
         "legal_entity_representatives": [
-            "Jonas Račas"
+            "Andrius Marinas"
         ],
         "legal_regulation_areas": "Viešieji pirkimai, Švietimas ir mokslas, Socialinė apsauga ir darbas, Kaimo reikalai ir žemės ūkis, Statybos, Aplinkosauga",
-        "legal_regulation_areas_num": 6,
+        "legal_regulation_areas_num": 6.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos melioracijos įmonių asociacija",
-        "nr": 202
+        "nr": "219"
     },
     {
         "certificate_num": "LOB-JA-2021-0108",
-        "date_list_inclusion": "6/2/2021",
+        "date_list_inclusion": "2021-06-02",
         "legal_entity_code": "180878484",
         "legal_entity_representatives": [
             "Kristina Katinienė"
         ],
         "legal_regulation_areas": "Viešieji pirkimai, Tabako ir alkoholio kontrolė, Teisė ir teisėtvarka, Socialinė apsauga ir darbas, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Energetika, Statybos, Aplinkosauga",
-        "legal_regulation_areas_num": 9,
+        "legal_regulation_areas_num": 9.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos pieno ūkio asociacija",
-        "nr": 203
+        "nr": "220"
     },
     {
         "certificate_num": "LOB-JA-2021-0107",
-        "date_list_inclusion": "5/26/2021",
+        "date_list_inclusion": "2021-05-26",
         "legal_entity_code": "305191434",
         "legal_entity_representatives": [
             "Kristina Balanoškė",
-            "Artūras Stankevičius "
+            "Artūras Stankevičius"
         ],
         "legal_regulation_areas": "Transportas ir susisiekimas",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Civilinės aviacijos asociacija (CAVIA)",
-        "nr": 204
+        "nr": "221"
     },
     {
         "certificate_num": "LOB-FA-2021-0105",
@@ -2338,9 +2758,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Vidaus reikalai, Teisė ir teisėtvarka, Socialinė apsauga ir darbas, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Miškų ūkis, Statybos, Transportas ir susisiekimas, Aplinkosauga",
-        "legal_regulation_areas_num": 9,
+        "legal_regulation_areas_num": 9.0,
+        "lobbyist_until": "",
         "lobbyists": "Kristijonas Paliutis",
-        "nr": 205
+        "nr": "222"
     },
     {
         "certificate_num": "LOB-JA-2021-0103",
@@ -2350,9 +2771,10 @@
             "Gerda Sakalauskaitė"
         ],
         "legal_regulation_areas": "Ekonomika ir inovacijos, Finansai ir bankininkystė",
-        "legal_regulation_areas_num": 2,
+        "legal_regulation_areas_num": 2.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos rizikos ir privataus kapitalo asociacija",
-        "nr": 206
+        "nr": "223"
     },
     {
         "certificate_num": "LOB-JA-2021-0101",
@@ -2362,9 +2784,10 @@
             "Sigitas Čirba"
         ],
         "legal_regulation_areas": "Teisė ir teisėtvarka",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Vilniaus miesto daugiabučių namų ir kitų pastatų administratorių asociacija",
-        "nr": 207
+        "nr": "224"
     },
     {
         "certificate_num": "LOB-JA-2021-0100",
@@ -2374,9 +2797,10 @@
             "Vilma Samaitienė"
         ],
         "legal_regulation_areas": "Teisė ir teisėtvarka",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Kėdainių daugiabučių asociacija",
-        "nr": 208
+        "nr": "225"
     },
     {
         "certificate_num": "LOB-JA-2021-0099",
@@ -2386,9 +2810,10 @@
             "Rolandas Klimavičius"
         ],
         "legal_regulation_areas": "Teisė ir teisėtvarka",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Vilniaus daugiabučių namų savininkų bendrijų asociacija",
-        "nr": 209
+        "nr": "226"
     },
     {
         "certificate_num": "LOB-JA-2021-0125",
@@ -2398,21 +2823,23 @@
             "Julius Grašys"
         ],
         "legal_regulation_areas": "Kaimo reikalai ir žemės ūkis",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos sėklininkystės asociacija",
-        "nr": 210
+        "nr": "227"
     },
     {
         "certificate_num": "LOB-JA-2021-0124",
         "date_list_inclusion": "2021-07-28",
         "legal_entity_code": "120707849",
         "legal_entity_representatives": [
-            "Indra Grigonienė"
+            "Gytė Bėkštienė"
         ],
         "legal_regulation_areas": "Ekonomika ir inovacijos",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos aprangos ir tekstilės įmonių asociacija",
-        "nr": 211
+        "nr": "228"
     },
     {
         "certificate_num": "LOB-JA-2021-0123",
@@ -2422,9 +2849,10 @@
             "Marius Lanskoronskis"
         ],
         "legal_regulation_areas": "Ekonomika ir inovacijos, Finansai ir bankininkystė",
-        "legal_regulation_areas_num": 2,
+        "legal_regulation_areas_num": 2.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos auditorių rūmai",
-        "nr": 212
+        "nr": "229"
     },
     {
         "certificate_num": "LOB-JA-2021-0122",
@@ -2434,9 +2862,10 @@
             "Šarūnas Dusevičius"
         ],
         "legal_regulation_areas": "Azartiniai lošimai ir loterijos",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Nacionalinių loterijų organizatorių asociacija",
-        "nr": 213
+        "nr": "230"
     },
     {
         "certificate_num": "LOB-JA-2021-0121",
@@ -2447,9 +2876,10 @@
             "Aušra Ignotaitė"
         ],
         "legal_regulation_areas": "Teisė ir teisėtvarka, Kaimo reikalai ir žemės ūkis, Energetika, Miškų ūkis, Statybos, Transportas ir susisiekimas, Aplinkosauga",
-        "legal_regulation_areas_num": 7,
+        "legal_regulation_areas_num": 7.0,
+        "lobbyist_until": "",
         "lobbyists": "UAB „Pusbroliai“",
-        "nr": 214
+        "nr": "231"
     },
     {
         "certificate_num": "LOB-JA-2021-0114",
@@ -2459,9 +2889,10 @@
             "Inga Langaitė"
         ],
         "legal_regulation_areas": "Švietimas ir mokslas, Ekonomika ir inovacijos, Finansai ir bankininkystė",
-        "legal_regulation_areas_num": 3,
+        "legal_regulation_areas_num": 3.0,
+        "lobbyist_until": "",
         "lobbyists": "Vienaragiai LT",
-        "nr": 215
+        "nr": "232"
     },
     {
         "certificate_num": "LOB-JA-2021-0110",
@@ -2473,9 +2904,10 @@
             "Dovydas Čeilutka"
         ],
         "legal_regulation_areas": "Ekonomika ir inovacijos",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos dirbtinio intelekto asociacija",
-        "nr": 216
+        "nr": "233"
     },
     {
         "certificate_num": "LOB-FA-2021-0106",
@@ -2483,9 +2915,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Ekonomika ir inovacijos",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Marius Rudalevičius",
-        "nr": 217
+        "nr": "234"
     },
     {
         "certificate_num": "LOB-JA-2021-0104",
@@ -2495,9 +2928,10 @@
             "Virginija Remeikienė"
         ],
         "legal_regulation_areas": "Teisė ir teisėtvarka, Finansai ir bankininkystė, Energetika, Statybos, Aplinkosauga",
-        "legal_regulation_areas_num": 5,
+        "legal_regulation_areas_num": 5.0,
+        "lobbyist_until": "",
         "lobbyists": "Šiaulių daugiabučių namų savininkų bendrijų asociacija",
-        "nr": 218
+        "nr": "235"
     },
     {
         "certificate_num": "LOB-JA-2021-0102",
@@ -2507,9 +2941,10 @@
             "Gytis Kauzonas"
         ],
         "legal_regulation_areas": "Viešieji pirkimai, Kaimo reikalai ir žemės ūkis, Energetika, Statybos, Aplinkosauga, Sveikatos apsauga",
-        "legal_regulation_areas_num": 6,
+        "legal_regulation_areas_num": 6.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos paukštininkystės asociacija",
-        "nr": 219
+        "nr": "236"
     },
     {
         "certificate_num": "LOB-JA-2021-0098",
@@ -2519,9 +2954,10 @@
             "Gintautas Zaleckas"
         ],
         "legal_regulation_areas": "Teisė ir teisėtvarka, Švietimas ir mokslas, Socialinė apsauga ir darbas, Ekonomika ir inovacijos",
-        "legal_regulation_areas_num": 4,
+        "legal_regulation_areas_num": 4.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos tiesioginės prekybos asociacija",
-        "nr": 220
+        "nr": "237"
     },
     {
         "certificate_num": "LOB-FA-2021-0097",
@@ -2529,9 +2965,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Viešieji pirkimai, Vidaus reikalai, Statybos, Aplinkosauga",
-        "legal_regulation_areas_num": 4,
+        "legal_regulation_areas_num": 4.0,
+        "lobbyist_until": "",
         "lobbyists": "Martynas Matulevičius",
-        "nr": 221
+        "nr": "238"
     },
     {
         "certificate_num": "LOB-JA-2022-0026",
@@ -2541,9 +2978,10 @@
             "Laura Mankūnaitė"
         ],
         "legal_regulation_areas": "Sveikatos apsauga",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "UAB Skandinavijos klinika",
-        "nr": 222
+        "nr": "239"
     },
     {
         "certificate_num": "LOB-FA-2022-0024",
@@ -2551,9 +2989,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Viešieji pirkimai, Tabako ir alkoholio kontrolė, Azartiniai lošimai ir loterijos, Vidaus reikalai, Užsienio reikalai, Teisė ir teisėtvarka, Sportas, Švietimas ir mokslas, Socialinė apsauga ir darbas, Nacionalinis saugumas ir gynyba, Kultūra, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Finansai ir bankininkystė, Energetika, Miškų ūkis, Statybos, Transportas ir susisiekimas, Aplinkosauga, Sveikatos apsauga",
-        "legal_regulation_areas_num": 20,
+        "legal_regulation_areas_num": 20.0,
+        "lobbyist_until": "",
         "lobbyists": "Vytautas Kaklys",
-        "nr": 223
+        "nr": "240"
     },
     {
         "certificate_num": "LOB-JA-2022-0025",
@@ -2563,9 +3002,10 @@
             "Mindaugas Papievis"
         ],
         "legal_regulation_areas": "Ekonomika ir inovacijos, Sveikatos apsauga",
-        "legal_regulation_areas_num": 2,
+        "legal_regulation_areas_num": 2.0,
+        "lobbyist_until": "",
         "lobbyists": "Europos Inovatyvių Vaistų Asociacija",
-        "nr": 224
+        "nr": "241"
     },
     {
         "certificate_num": "LOB-JA-2022-0023",
@@ -2575,9 +3015,10 @@
             "Vaidas Sabaliauskas"
         ],
         "legal_regulation_areas": "Viešieji pirkimai, Vidaus reikalai, Teisė ir teisėtvarka, Švietimas ir mokslas, Nacionalinis saugumas ir gynyba, Ekonomika ir inovacijos, Energetika, Aplinkosauga, Sveikatos apsauga",
-        "legal_regulation_areas_num": 9,
+        "legal_regulation_areas_num": 9.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos gynybos ir saugumo pramonės asociacija",
-        "nr": 225
+        "nr": "242"
     },
     {
         "certificate_num": "LOB-JA-2021-0004",
@@ -2587,9 +3028,10 @@
             "Jurgita Kuliešienė"
         ],
         "legal_regulation_areas": "Švietimas ir mokslas, Transportas ir susisiekimas",
-        "legal_regulation_areas_num": 2,
+        "legal_regulation_areas_num": 2.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos vairuotojų mokymo ir kvalifikacijos kėlimo mokyklų asociacija",
-        "nr": 226
+        "nr": "243"
     },
     {
         "certificate_num": "LOB-FA-2021-0003",
@@ -2597,9 +3039,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kita, Vidaus reikalai, Teisė ir teisėtvarka, Sportas, Švietimas ir mokslas, Socialinė apsauga ir darbas, Nacionalinis saugumas ir gynyba, Ekonomika ir inovacijos, Finansai ir bankininkystė, Energetika, Statybos, Transportas ir susisiekimas, Aplinkosauga, Sveikatos apsauga",
-        "legal_regulation_areas_num": 14,
+        "legal_regulation_areas_num": 14.0,
+        "lobbyist_until": "",
         "lobbyists": "Inga Volungevičiūtė",
-        "nr": 227
+        "nr": "244"
     },
     {
         "certificate_num": "LOB-FA-2021-0001",
@@ -2607,9 +3050,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Vidaus reikalai, Užsienio reikalai, Švietimas ir mokslas, Socialinė apsauga ir darbas, Transportas ir susisiekimas",
-        "legal_regulation_areas_num": 5,
+        "legal_regulation_areas_num": 5.0,
+        "lobbyist_until": "",
         "lobbyists": "Povilas Drižas",
-        "nr": 228
+        "nr": "245"
     },
     {
         "certificate_num": "LOB-FA-2021-0002",
@@ -2617,9 +3061,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Ekonomika ir inovacijos, Energetika, Transportas ir susisiekimas, Aplinkosauga",
-        "legal_regulation_areas_num": 4,
+        "legal_regulation_areas_num": 4.0,
+        "lobbyist_until": "",
         "lobbyists": "Jurgita Petrauskienė",
-        "nr": 229
+        "nr": "246"
     },
     {
         "certificate_num": "LOB-FA-2022-0008",
@@ -2627,9 +3072,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Teisė ir teisėtvarka, Socialinė apsauga ir darbas, Nacionalinis saugumas ir gynyba, Ekonomika ir inovacijos, Energetika, Statybos, Transportas ir susisiekimas, Aplinkosauga",
-        "legal_regulation_areas_num": 8,
+        "legal_regulation_areas_num": 8.0,
+        "lobbyist_until": "",
         "lobbyists": "Kęstutis Starkus",
-        "nr": 230
+        "nr": "247"
     },
     {
         "certificate_num": "LOB-JA-2022-0007",
@@ -2639,9 +3085,10 @@
             "Jūra Smilgaitė"
         ],
         "legal_regulation_areas": "Sveikatos apsauga",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Inovatyvios farmacijos pramonės asociacija (IFPA)",
-        "nr": 231
+        "nr": "248"
     },
     {
         "certificate_num": "LOB-FA-2022-0002",
@@ -2649,9 +3096,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Tabako ir alkoholio kontrolė, Azartiniai lošimai ir loterijos, Teisė ir teisėtvarka, Švietimas ir mokslas, Ekonomika ir inovacijos, Finansai ir bankininkystė, Transportas ir susisiekimas",
-        "legal_regulation_areas_num": 7,
+        "legal_regulation_areas_num": 7.0,
+        "lobbyist_until": "",
         "lobbyists": "Vytautas Zelianka",
-        "nr": 232
+        "nr": "249"
     },
     {
         "certificate_num": "LOB-JA-2021-0095",
@@ -2661,9 +3109,10 @@
             "Vytautas Lapinskas"
         ],
         "legal_regulation_areas": "Statybos, Sveikatos apsauga",
-        "legal_regulation_areas_num": 2,
+        "legal_regulation_areas_num": 2.0,
+        "lobbyist_until": "",
         "lobbyists": "UAB Tyrimų laboratorija",
-        "nr": 233
+        "nr": "250"
     },
     {
         "certificate_num": "LOB-JA-2021-0094",
@@ -2674,9 +3123,10 @@
             "Audrius Sveikata"
         ],
         "legal_regulation_areas": "Teisė ir teisėtvarka, Sveikatos apsauga",
-        "legal_regulation_areas_num": 2,
+        "legal_regulation_areas_num": 2.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos geros klinikinės ir reguliavimo praktikos asociacija",
-        "nr": 234
+        "nr": "251"
     },
     {
         "certificate_num": "LOB-FA-2021-0092",
@@ -2684,9 +3134,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Sveikatos apsauga",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Modestas Sriubas",
-        "nr": 235
+        "nr": "252"
     },
     {
         "certificate_num": "LOB-JA-2021-0096",
@@ -2697,9 +3148,10 @@
             "Jurgis Adomavičius"
         ],
         "legal_regulation_areas": "Ekonomika ir inovacijos, Transportas ir susisiekimas",
-        "legal_regulation_areas_num": 2,
+        "legal_regulation_areas_num": 2.0,
+        "lobbyist_until": "",
         "lobbyists": "Transporto inovacijų asociacija",
-        "nr": 236
+        "nr": "253"
     },
     {
         "certificate_num": "LOB-FA-2021-0153",
@@ -2707,9 +3159,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Socialinė apsauga ir darbas, Sveikatos apsauga",
-        "legal_regulation_areas_num": 2,
+        "legal_regulation_areas_num": 2.0,
+        "lobbyist_until": "",
         "lobbyists": "Gedas Bertulis",
-        "nr": 237
+        "nr": "254"
     },
     {
         "certificate_num": "LOB-FA-2021-0152",
@@ -2717,9 +3170,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Vidaus reikalai, Energetika, Sveikatos apsauga",
-        "legal_regulation_areas_num": 3,
+        "legal_regulation_areas_num": 3.0,
+        "lobbyist_until": "",
         "lobbyists": "Mindaugas Janulionis",
-        "nr": 238
+        "nr": "255"
     },
     {
         "certificate_num": "LOB-JA-2021-0090",
@@ -2730,9 +3184,10 @@
             "Aurelija Gabrielė Maldutytė"
         ],
         "legal_regulation_areas": "Viešieji pirkimai, Azartiniai lošimai ir loterijos, Vidaus reikalai, Užsienio reikalai, Teisė ir teisėtvarka, Švietimas ir mokslas, Socialinė apsauga ir darbas, Ekonomika ir inovacijos, Energetika, Transportas ir susisiekimas, Aplinkosauga",
-        "legal_regulation_areas_num": 11,
+        "legal_regulation_areas_num": 11.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos darbdavių konfederacija",
-        "nr": 239
+        "nr": "256"
     },
     {
         "certificate_num": "LOB-JA-2021-0087",
@@ -2742,9 +3197,10 @@
             "Vidas Joneliūkštis"
         ],
         "legal_regulation_areas": "Švietimas ir mokslas, Socialinė apsauga ir darbas, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Miškų ūkis, Transportas ir susisiekimas, Aplinkosauga",
-        "legal_regulation_areas_num": 7,
+        "legal_regulation_areas_num": 7.0,
+        "lobbyist_until": "",
         "lobbyists": "Rokiškio rajono ūkininkų sąjunga",
-        "nr": 240
+        "nr": "257"
     },
     {
         "certificate_num": "LOB-JA-2021-0086",
@@ -2756,9 +3212,10 @@
             "Aušra Ignotaitė"
         ],
         "legal_regulation_areas": "Teisė ir teisėtvarka, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Energetika, Miškų ūkis, Statybos, Transportas ir susisiekimas, Aplinkosauga",
-        "legal_regulation_areas_num": 8,
+        "legal_regulation_areas_num": 8.0,
+        "lobbyist_until": "",
         "lobbyists": "UAB Idex Baltic ",
-        "nr": 241
+        "nr": "258"
     },
     {
         "certificate_num": "LOB-FA-2021-0082",
@@ -2766,9 +3223,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Švietimas ir mokslas, Transportas ir susisiekimas",
-        "legal_regulation_areas_num": 2,
+        "legal_regulation_areas_num": 2.0,
+        "lobbyist_until": "",
         "lobbyists": "Joris Gintilas",
-        "nr": 242
+        "nr": "259"
     },
     {
         "certificate_num": "LOB-JA-2021-0091",
@@ -2778,9 +3236,10 @@
             "Tomas Grabauskas"
         ],
         "legal_regulation_areas": "Vidaus reikalai, Ekonomika ir inovacijos, Transportas ir susisiekimas, Aplinkosauga",
-        "legal_regulation_areas_num": 4,
+        "legal_regulation_areas_num": 4.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos Autoverslininkų Asociacija",
-        "nr": 243
+        "nr": "260"
     },
     {
         "certificate_num": "LOB-JA-2021-0089",
@@ -2792,9 +3251,10 @@
             "Indrė Bankuvienė"
         ],
         "legal_regulation_areas": "Finansai ir bankininkystė",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Asociacija Lietuvos kredito unijos",
-        "nr": 244
+        "nr": "261"
     },
     {
         "certificate_num": "LOB-JA-2021-0088",
@@ -2804,9 +3264,10 @@
             "Zofija Cironkienė"
         ],
         "legal_regulation_areas": "Socialinė apsauga ir darbas, Kaimo reikalai ir žemės ūkis, Finansai ir bankininkystė, Aplinkosauga",
-        "legal_regulation_areas_num": 4,
+        "legal_regulation_areas_num": 4.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos daržovių augintojų asociacija",
-        "nr": 245
+        "nr": "262"
     },
     {
         "certificate_num": "LOB-JA-2021-0085",
@@ -2817,9 +3278,10 @@
             "Arūnas Starkus"
         ],
         "legal_regulation_areas": "Tabako ir alkoholio kontrolė, Socialinė apsauga ir darbas, Ekonomika ir inovacijos, Sveikatos apsauga",
-        "legal_regulation_areas_num": 4,
+        "legal_regulation_areas_num": 4.0,
+        "lobbyist_until": "",
         "lobbyists": "Alkoholinių gėrimų mažųjų platintojų ir gamintojų asociacija",
-        "nr": 246
+        "nr": "263"
     },
     {
         "certificate_num": "LOB-JA-2021-0084",
@@ -2829,9 +3291,10 @@
             "Vilius Juraitis"
         ],
         "legal_regulation_areas": "Energetika",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos nepriklausomų elektros tiekėjų asociacija",
-        "nr": 247
+        "nr": "264"
     },
     {
         "certificate_num": "LOB-FA-2021-0083",
@@ -2839,9 +3302,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Miškų ūkis",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Aidas Pivoriūnas",
-        "nr": 248
+        "nr": "265"
     },
     {
         "certificate_num": "LOB-JA-2021-0081",
@@ -2851,9 +3315,140 @@
             "Saulius Gegieckas"
         ],
         "legal_regulation_areas": "Ekonomika ir inovacijos, Statybos, Aplinkosauga",
-        "legal_regulation_areas_num": 3,
+        "legal_regulation_areas_num": 3.0,
+        "lobbyist_until": "",
         "lobbyists": "Geologijos Įmonių Asociacija",
-        "nr": 249
+        "nr": "266"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0044",
+        "date_list_inclusion": "2023-07-05",
+        "legal_entity_code": "141146344",
+        "legal_entity_representatives": [
+            "Mindaugas Lužys"
+        ],
+        "legal_regulation_areas": "Viešieji pirkimai, Tabako ir alkoholio kontrolė, Teisė ir teisėtvarka, Sportas, Socialinė apsauga ir darbas, Nacionalinis saugumas ir gynyba, Ekonomika ir inovacijos, Energetika, Statybos, Transportas ir susisiekimas, Aplinkosauga, Sveikatos apsauga",
+        "legal_regulation_areas_num": 12.0,
+        "lobbyist_until": "",
+        "lobbyists": "Techninių dujų pramonės asociacija",
+        "nr": "267"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0043",
+        "date_list_inclusion": "2023-06-29",
+        "legal_entity_code": "-",
+        "legal_entity_representatives": [
+            "Thomas Eriksen"
+        ],
+        "legal_regulation_areas": "Finansai ir bankininkystė",
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
+        "lobbyists": "Mastercard Europe S.A.",
+        "nr": "268"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0042",
+        "date_list_inclusion": "2023-06-29",
+        "legal_entity_code": "305714774",
+        "legal_entity_representatives": [
+            "Liutauras Čeprackas"
+        ],
+        "legal_regulation_areas": "Kultūra, Ekonomika ir inovacijos",
+        "legal_regulation_areas_num": 2.0,
+        "lobbyist_until": "",
+        "lobbyists": "Viešojo maitinimo įstaigų asociacija",
+        "nr": "269"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0039",
+        "date_list_inclusion": "2023-06-14",
+        "legal_entity_code": "304072142",
+        "legal_entity_representatives": [
+            "Romanas Matulis"
+        ],
+        "legal_regulation_areas": "Viešieji pirkimai, Užsienio reikalai, Teisė ir teisėtvarka, Švietimas ir mokslas, Socialinė apsauga ir darbas, Kultūra, Ekonomika ir inovacijos, Finansai ir bankininkystė",
+        "legal_regulation_areas_num": 8.0,
+        "lobbyist_until": "",
+        "lobbyists": "Baltic Film & Creative Tech Cluster",
+        "nr": "270"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0038",
+        "date_list_inclusion": "2023-06-14",
+        "legal_entity_code": "304573947",
+        "legal_entity_representatives": [
+            "Julius Kalvaitis"
+        ],
+        "legal_regulation_areas": "Socialinė apsauga ir darbas, Ekonomika ir inovacijos, Transportas ir susisiekimas, Aplinkosauga",
+        "legal_regulation_areas_num": 4.0,
+        "lobbyist_until": "",
+        "lobbyists": "UAB Wolt LT",
+        "nr": "271"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0037",
+        "date_list_inclusion": "2023-06-07",
+        "legal_entity_code": "125712654",
+        "legal_entity_representatives": [
+            "Rolandas Morkūnas"
+        ],
+        "legal_regulation_areas": "Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Aplinkosauga",
+        "legal_regulation_areas_num": 3.0,
+        "lobbyist_until": "",
+        "lobbyists": "Nacionalinė akvakultūros ir žuvų produktų gamintojų asociacija",
+        "nr": "272"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0036",
+        "date_list_inclusion": "2023-06-02",
+        "legal_entity_code": "302484065",
+        "legal_entity_representatives": [
+            "Kristina Kazlauskaitė",
+            "Edita Karbauskienė"
+        ],
+        "legal_regulation_areas": "Viešieji pirkimai, Teisė ir teisėtvarka, Švietimas ir mokslas, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Finansai ir bankininkystė, Energetika, Miškų ūkis, Aplinkosauga, Sveikatos apsauga",
+        "legal_regulation_areas_num": 10.0,
+        "lobbyist_until": "",
+        "lobbyists": "Lietuvos ekologinių ūkių asociacija",
+        "nr": "273"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0032",
+        "date_list_inclusion": "2023-05-03",
+        "legal_entity_code": "291907760",
+        "legal_entity_representatives": [
+            "Linas Varanauskas"
+        ],
+        "legal_regulation_areas": "Kaimo reikalai ir žemės ūkis, Aplinkosauga",
+        "legal_regulation_areas_num": 2.0,
+        "lobbyist_until": "",
+        "lobbyists": "Lietuvos smulkių gyvūnų veterinarijos gydytojų asociacija",
+        "nr": "274"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0030",
+        "date_list_inclusion": "2023-04-27",
+        "legal_entity_code": "419688",
+        "legal_entity_representatives": [
+            "Vitnija Saldava",
+            "Jakub Turowski"
+        ],
+        "legal_regulation_areas": "Ekonomika ir inovacijos",
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
+        "lobbyists": "Facebook Poland Sp. z o.o.",
+        "nr": "275"
+    },
+    {
+        "certificate_num": "LOB-FA-2023-0050",
+        "date_list_inclusion": "2023-08-23",
+        "legal_entity_code": "-",
+        "legal_entity_representatives": [],
+        "legal_regulation_areas": "Tabako ir alkoholio kontrolė, Švietimas ir mokslas, Sportas, Sveikatos apsauga",
+        "legal_regulation_areas_num": 4.0,
+        "lobbyist_until": "",
+        "lobbyists": "Gediminas Tvarijonas",
+        "nr": "276"
     },
     {
         "certificate_num": "LOB-FA-2022-0020",
@@ -2861,9 +3456,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Tabako ir alkoholio kontrolė, Azartiniai lošimai ir loterijos, Teisė ir teisėtvarka, Socialinė apsauga ir darbas, Ekonomika ir inovacijos, Finansai ir bankininkystė, Aplinkosauga",
-        "legal_regulation_areas_num": 7,
+        "legal_regulation_areas_num": 7.0,
+        "lobbyist_until": "",
         "lobbyists": "Giedrius Rimša",
-        "nr": 250
+        "nr": "277"
     },
     {
         "certificate_num": "LOB-JA-2022-0018",
@@ -2876,9 +3472,10 @@
             "Andrius Simonaitis"
         ],
         "legal_regulation_areas": "Sveikatos apsauga",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos medicininės įrangos gamintojų asociacija",
-        "nr": 251
+        "nr": "278"
     },
     {
         "certificate_num": "LOB-FA-2022-0015",
@@ -2886,9 +3483,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Viešieji pirkimai, Tabako ir alkoholio kontrolė, Azartiniai lošimai ir loterijos, Vidaus reikalai, Užsienio reikalai, Teisė ir teisėtvarka, Sportas, Švietimas ir mokslas, Socialinė apsauga ir darbas, Nacionalinis saugumas ir gynyba, Kultūra, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Finansai ir bankininkystė, Energetika, Miškų ūkis, Statybos, Transportas ir susisiekimas, Aplinkosauga, Sveikatos apsauga",
-        "legal_regulation_areas_num": 20,
+        "legal_regulation_areas_num": 20.0,
+        "lobbyist_until": "",
         "lobbyists": "Gintautas Dulskas",
-        "nr": 252
+        "nr": "279"
     },
     {
         "certificate_num": "LOB-JA-2022-0014",
@@ -2898,9 +3496,10 @@
             "Rimantas Čiūtas"
         ],
         "legal_regulation_areas": "Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Aplinkosauga",
-        "legal_regulation_areas_num": 3,
+        "legal_regulation_areas_num": 3.0,
+        "lobbyist_until": "",
         "lobbyists": "Kanapių augintojų, perdirbėjų ir verslo inovatorių asociacija",
-        "nr": 253
+        "nr": "280"
     },
     {
         "certificate_num": "LOB-JA-2022-0013",
@@ -2910,9 +3509,10 @@
             "Andrius Laška"
         ],
         "legal_regulation_areas": "Švietimas ir mokslas",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "UAB „Programuok“",
-        "nr": 254
+        "nr": "281"
     },
     {
         "certificate_num": "LOB-JA-2022-0011",
@@ -2922,9 +3522,10 @@
             "Vykintas Valiulis"
         ],
         "legal_regulation_areas": "Teisė ir teisėtvarka, Ekonomika ir inovacijos, Finansai ir bankininkystė",
-        "legal_regulation_areas_num": 3,
+        "legal_regulation_areas_num": 3.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos mokesčių konsultantų asociacija",
-        "nr": 255
+        "nr": "282"
     },
     {
         "certificate_num": "LOB-FA-2022-0022",
@@ -2932,9 +3533,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Kaimo reikalai ir žemės ūkis",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Gytis Kauzonas",
-        "nr": 256
+        "nr": "283"
     },
     {
         "certificate_num": "LOB-FA-2022-0021",
@@ -2942,9 +3544,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Viešieji pirkimai, Tabako ir alkoholio kontrolė, Azartiniai lošimai ir loterijos, Vidaus reikalai, Užsienio reikalai, Teisė ir teisėtvarka, Sportas, Švietimas ir mokslas, Socialinė apsauga ir darbas, Nacionalinis saugumas ir gynyba, Kultūra, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Finansai ir bankininkystė, Energetika, Miškų ūkis, Statybos, Transportas ir susisiekimas, Aplinkosauga, Sveikatos apsauga",
-        "legal_regulation_areas_num": 20,
+        "legal_regulation_areas_num": 20.0,
+        "lobbyist_until": "",
         "lobbyists": "Gerardas Višinskis",
-        "nr": 257
+        "nr": "284"
     },
     {
         "certificate_num": "LOB-JA-2022-0019",
@@ -2954,9 +3557,10 @@
             "Gediminas Bartkus"
         ],
         "legal_regulation_areas": "Socialinė apsauga ir darbas",
-        "legal_regulation_areas_num": 1,
-        "lobbyists": "Neįgaliųjų socialinių įmonių sąjunga, VšĮ",
-        "nr": 258
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
+        "lobbyists": "VšĮ Neįgaliųjų socialinių įmonių sąjunga",
+        "nr": "285"
     },
     {
         "certificate_num": "LOB-JA-2022-0017",
@@ -2971,9 +3575,10 @@
             "Artūras Jonkus"
         ],
         "legal_regulation_areas": "Viešieji pirkimai",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Komunikacijos industrijos asociacija",
-        "nr": 259
+        "nr": "286"
     },
     {
         "certificate_num": "LOB-FA-2022-0016",
@@ -2981,9 +3586,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Energetika, Statybos, Aplinkosauga",
-        "legal_regulation_areas_num": 3,
+        "legal_regulation_areas_num": 3.0,
+        "lobbyist_until": "",
         "lobbyists": "Darius Jokubauskas",
-        "nr": 260
+        "nr": "287"
     },
     {
         "certificate_num": "LOB-JA-2022-0012",
@@ -2993,9 +3599,10 @@
             "Vytautas Buivydas"
         ],
         "legal_regulation_areas": "Kaimo reikalai ir žemės ūkis",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos jaunųjų ūkininkų ir jaunimo sąjunga",
-        "nr": 261
+        "nr": "288"
     },
     {
         "certificate_num": "LOB-JA-2022-0010",
@@ -3005,9 +3612,10 @@
             "Mindaugas Palijanskas"
         ],
         "legal_regulation_areas": "Vidaus reikalai, Ekonomika ir inovacijos, Energetika, Transportas ir susisiekimas, Aplinkosauga",
-        "legal_regulation_areas_num": 5,
+        "legal_regulation_areas_num": 5.0,
+        "lobbyist_until": "",
         "lobbyists": "Biodegalų asociacija",
-        "nr": 262
+        "nr": "289"
     },
     {
         "certificate_num": "LOB-FA-2022-0001",
@@ -3015,9 +3623,182 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Ekonomika ir inovacijos, Energetika, Aplinkosauga",
-        "legal_regulation_areas_num": 3,
+        "legal_regulation_areas_num": 3.0,
+        "lobbyist_until": "",
         "lobbyists": "Simonas Barsteiga",
-        "nr": 263
+        "nr": "290"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0026",
+        "date_list_inclusion": "2023-03-29",
+        "legal_entity_code": "304936925",
+        "legal_entity_representatives": [
+            "Gitana Mitrulevičiūtė"
+        ],
+        "legal_regulation_areas": "Socialinė apsauga ir darbas, Ekonomika ir inovacijos, Transportas ir susisiekimas, Aplinkosauga",
+        "legal_regulation_areas_num": 4.0,
+        "lobbyist_until": "",
+        "lobbyists": "UAB Humana LT",
+        "nr": "291"
+    },
+    {
+        "certificate_num": "LOB-FA-2023-0022",
+        "date_list_inclusion": "2023-03-22",
+        "legal_entity_code": "-",
+        "legal_entity_representatives": [],
+        "legal_regulation_areas": "Kaimo reikalai ir žemės ūkis",
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
+        "lobbyists": "Dainius Kižauskas",
+        "nr": "292"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0018",
+        "date_list_inclusion": "2023-02-15",
+        "legal_entity_code": "120505210",
+        "legal_entity_representatives": [
+            "Remigijus Šeris"
+        ],
+        "legal_regulation_areas": "Ekonomika ir inovacijos, Transportas ir susisiekimas",
+        "legal_regulation_areas_num": 2.0,
+        "lobbyist_until": "",
+        "lobbyists": "AB Lietuvos radijo ir televizijos centras",
+        "nr": "293"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0016",
+        "date_list_inclusion": "2023-02-01",
+        "legal_entity_code": "152812840",
+        "legal_entity_representatives": [
+            "Žydrūnas Stankevičius"
+        ],
+        "legal_regulation_areas": "Teisė ir teisėtvarka",
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
+        "lobbyists": "UAB „Birštono vandentiekis\"",
+        "nr": "294"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0013",
+        "date_list_inclusion": "2023-01-25",
+        "legal_entity_code": "181613656",
+        "legal_entity_representatives": [
+            "Ričardas Leckas",
+            "Jelena Jakelienė"
+        ],
+        "legal_regulation_areas": "Energetika",
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
+        "lobbyists": "UAB Elektrėnų komunalinis ūkis",
+        "nr": "295"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0010",
+        "date_list_inclusion": "2023-01-25",
+        "legal_entity_code": "162559136",
+        "legal_entity_representatives": [
+            "Mindaugas Užmiškis",
+            "Vilmantas Kizis"
+        ],
+        "legal_regulation_areas": "Energetika",
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
+        "lobbyists": "UAB „Kelmės vanduo\"",
+        "nr": "296"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0045",
+        "date_list_inclusion": "2023-07-12",
+        "legal_entity_code": "302334852",
+        "legal_entity_representatives": [
+            "Lina Bušinskaitė"
+        ],
+        "legal_regulation_areas": "Teisė ir teisėtvarka",
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
+        "lobbyists": "Interneto žiniasklaidos asociacija",
+        "nr": "297"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0041",
+        "date_list_inclusion": "2023-06-29",
+        "legal_entity_code": "306337415",
+        "legal_entity_representatives": [
+            "Antanas Grigalavičius",
+            "Rimgaudas Višinskas",
+            "Marina Gylienė",
+            "Edita Brukštuvienė",
+            "Dainoras Bendžaitis",
+            "Arūnas Juozas Zeleckis"
+        ],
+        "legal_regulation_areas": "Kaimo reikalai ir žemės ūkis, Energetika, Aplinkosauga",
+        "legal_regulation_areas_num": 3.0,
+        "lobbyist_until": "",
+        "lobbyists": "Lietuvos akvakultūros produktų gamintojų asociacija",
+        "nr": "298"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0040",
+        "date_list_inclusion": "2023-06-22",
+        "legal_entity_code": "120153047",
+        "legal_entity_representatives": [
+            "Andrius Griškevičius",
+            "Vytis Leonavičius"
+        ],
+        "legal_regulation_areas": "Viešieji pirkimai, Energetika, Statybos, Aplinkosauga",
+        "legal_regulation_areas_num": 4.0,
+        "lobbyist_until": "",
+        "lobbyists": "UAB „Grinda\"",
+        "nr": "299"
+    },
+    {
+        "certificate_num": "LOB-FA-2023-0035",
+        "date_list_inclusion": "2023-06-01",
+        "legal_entity_code": "-",
+        "legal_entity_representatives": [],
+        "legal_regulation_areas": "Viešieji pirkimai, Tabako ir alkoholio kontrolė, Vidaus reikalai, Teisė ir teisėtvarka, Sportas, Švietimas ir mokslas, Socialinė apsauga ir darbas, Kultūra, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Finansai ir bankininkystė, Energetika, Transportas ir susisiekimas, Aplinkosauga, Sveikatos apsauga",
+        "legal_regulation_areas_num": 15.0,
+        "lobbyist_until": "",
+        "lobbyists": "Robert Torvelainen",
+        "nr": "300"
+    },
+    {
+        "certificate_num": "LOB-FA-2023-0034",
+        "date_list_inclusion": "2023-05-10",
+        "legal_entity_code": "-",
+        "legal_entity_representatives": [],
+        "legal_regulation_areas": "Švietimas ir mokslas, Socialinė apsauga ir darbas, Ekonomika ir inovacijos, Sveikatos apsauga",
+        "legal_regulation_areas_num": 4.0,
+        "lobbyist_until": "",
+        "lobbyists": "Justina Krukonytė",
+        "nr": "301"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0033",
+        "date_list_inclusion": "2023-05-10",
+        "legal_entity_code": "120545849",
+        "legal_entity_representatives": [
+            "Karolina Krasnickaitė",
+            "Julija Džiaugė"
+        ],
+        "legal_regulation_areas": "Viešieji pirkimai, Teisė ir teisėtvarka, Energetika, Statybos, Aplinkosauga",
+        "legal_regulation_areas_num": 5.0,
+        "lobbyist_until": "",
+        "lobbyists": "UAB „Vilniaus vandenys\"",
+        "nr": "302"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0031",
+        "date_list_inclusion": "2023-05-03",
+        "legal_entity_code": "303129836",
+        "legal_entity_representatives": [
+            "Audronė Alijošiutė-Paulauskienė"
+        ],
+        "legal_regulation_areas": "Socialinė apsauga ir darbas, Ekonomika ir inovacijos, Aplinkosauga",
+        "legal_regulation_areas_num": 3.0,
+        "lobbyist_until": "",
+        "lobbyists": "Lietuvos atsakingo verslo asociacija",
+        "nr": "303"
     },
     {
         "certificate_num": "LOB-JA-2021-0079",
@@ -3028,9 +3809,10 @@
             "Arūnas Svitojus"
         ],
         "legal_regulation_areas": "Kaimo reikalai ir žemės ūkis",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos Respublikos žemės ūkio rūmai",
-        "nr": 264
+        "nr": "304"
     },
     {
         "certificate_num": "LOB-FA-2021-0076",
@@ -3038,9 +3820,10 @@
         "legal_entity_code": "-",
         "legal_entity_representatives": [],
         "legal_regulation_areas": "Ekonomika ir inovacijos, Statybos, Transportas ir susisiekimas",
-        "legal_regulation_areas_num": 3,
+        "legal_regulation_areas_num": 3.0,
+        "lobbyist_until": "",
         "lobbyists": "Liudas Basiulis",
-        "nr": 265
+        "nr": "305"
     },
     {
         "certificate_num": "LOB-JA-2021-0075",
@@ -3054,9 +3837,10 @@
             "Audrius Miežys"
         ],
         "legal_regulation_areas": "Energetika",
-        "legal_regulation_areas_num": 1,
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
         "lobbyists": "UAB Neste Lietuva",
-        "nr": 266
+        "nr": "306"
     },
     {
         "certificate_num": "LOB-JA-2021-0073",
@@ -3066,9 +3850,10 @@
             "Aušra Zigmontienė"
         ],
         "legal_regulation_areas": "Ekonomika ir inovacijos, Energetika, Aplinkosauga",
-        "legal_regulation_areas_num": 3,
+        "legal_regulation_areas_num": 3.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos savivaldybių komunalinių įmonių asociacija",
-        "nr": 267
+        "nr": "307"
     },
     {
         "certificate_num": "LOB-JA-2021-0070",
@@ -3085,9 +3870,10 @@
             "Agnė Grigaliūnienė"
         ],
         "legal_regulation_areas": "Sportas, Kultūra, Ekonomika ir inovacijos",
-        "legal_regulation_areas_num": 3,
+        "legal_regulation_areas_num": 3.0,
+        "lobbyist_until": "",
         "lobbyists": "Renginių industrijos asociacija",
-        "nr": 268
+        "nr": "308"
     },
     {
         "certificate_num": "LOB-JA-2021-0068",
@@ -3097,9 +3883,10 @@
             "Eduardas Šablinskas"
         ],
         "legal_regulation_areas": "Socialinė apsauga ir darbas, Ekonomika ir inovacijos",
-        "legal_regulation_areas_num": 2,
+        "legal_regulation_areas_num": 2.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos smulkiųjų verslininkų ir prekybininkų asociacija",
-        "nr": 269
+        "nr": "309"
     },
     {
         "certificate_num": "LOB-JA-2021-0067",
@@ -3109,9 +3896,10 @@
             "Tomas Danisevičius"
         ],
         "legal_regulation_areas": "Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos",
-        "legal_regulation_areas_num": 2,
+        "legal_regulation_areas_num": 2.0,
+        "lobbyist_until": "",
         "lobbyists": "Pluoštinių kultūrų augintojų asociacija",
-        "nr": 270
+        "nr": "310"
     },
     {
         "certificate_num": "LOB-JA-2021-0064",
@@ -3123,8 +3911,270 @@
             "Algimantas Šindeikis"
         ],
         "legal_regulation_areas": "Teisė ir teisėtvarka, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Miškų ūkis, Statybos, Transportas ir susisiekimas, Aplinkosauga",
-        "legal_regulation_areas_num": 7,
+        "legal_regulation_areas_num": 7.0,
+        "lobbyist_until": "",
         "lobbyists": "Lietuvos miško ir žemės savininkų asociacija (LMSA)",
-        "nr": 271
+        "nr": "311"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0028",
+        "date_list_inclusion": "2023-04-12",
+        "legal_entity_code": "HRB154165B",
+        "legal_entity_representatives": [
+            "Malgorzata Kacprzyk"
+        ],
+        "legal_regulation_areas": "Ekonomika ir inovacijos, Statybos",
+        "legal_regulation_areas_num": 2.0,
+        "lobbyist_until": "",
+        "lobbyists": "Airbnb Germany GmbH",
+        "nr": "312"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0025",
+        "date_list_inclusion": "2023-03-29",
+        "legal_entity_code": "135144755",
+        "legal_entity_representatives": [
+            "Petras Tamašauskas"
+        ],
+        "legal_regulation_areas": "Kaimo reikalai ir žemės ūkis",
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
+        "lobbyists": "Lietuvos veterinarijos gydytojų asociacija",
+        "nr": "313"
+    },
+    {
+        "certificate_num": "LOB-FA-2023-0024",
+        "date_list_inclusion": "2023-03-22",
+        "legal_entity_code": "-",
+        "legal_entity_representatives": [],
+        "legal_regulation_areas": "Viešieji pirkimai, Vidaus reikalai, Teisė ir teisėtvarka, Švietimas ir mokslas, Ekonomika ir inovacijos, Statybos, Transportas ir susisiekimas, Sveikatos apsauga",
+        "legal_regulation_areas_num": 8.0,
+        "lobbyist_until": "",
+        "lobbyists": "Ramūnas Mackevičius",
+        "nr": "314"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0023",
+        "date_list_inclusion": "2023-03-22",
+        "legal_entity_code": "302733698",
+        "legal_entity_representatives": [
+            "Dainius Kižauskas"
+        ],
+        "legal_regulation_areas": "Kaimo reikalai ir žemės ūkis",
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
+        "lobbyists": "Lietuvos žemės ūkio kooperatyvų asociacija",
+        "nr": "315"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0021",
+        "date_list_inclusion": "2023-03-16",
+        "legal_entity_code": "124135580",
+        "legal_entity_representatives": [
+            "Vilius Šerėnas",
+            "Viktorija Sankauskaitė",
+            "Viačeslav Blaščiuk",
+            "Rimvydas Kvedaravičius",
+            "Povilas Šalačevičius",
+            "Monika Merkytė",
+            "Laurynas Mereckas",
+            "Laurynas Jakubauskas",
+            "Jonas Kimontas",
+            "Greta Juodžiukynienė",
+            "Gerimantas Bakanas",
+            "Edvinas Notkus",
+            "Dalia Vitkuvienė",
+            "Aurimas Kudūkis",
+            "Audronė Raščiauskienė-Jablonskė",
+            "Andrejus Dolgovas",
+            "Algimantas Sadauskas"
+        ],
+        "legal_regulation_areas": "Viešieji pirkimai, Ekonomika ir inovacijos, Energetika, Statybos, Aplinkosauga",
+        "legal_regulation_areas_num": 5.0,
+        "lobbyist_until": "",
+        "lobbyists": "AB Vilniaus šilumos tinklai",
+        "nr": "316"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0020",
+        "date_list_inclusion": "2023-03-01",
+        "legal_entity_code": "132616649",
+        "legal_entity_representatives": [
+            "Indrė Rudžionytė"
+        ],
+        "legal_regulation_areas": "Aplinkosauga",
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
+        "lobbyists": "UAB Kauno švara",
+        "nr": "317"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0019",
+        "date_list_inclusion": "2023-02-15",
+        "legal_entity_code": "305535426",
+        "legal_entity_representatives": [
+            "Akvilė Budreckytė"
+        ],
+        "legal_regulation_areas": "Švietimas ir mokslas",
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
+        "lobbyists": "Ugdymas lauke",
+        "nr": "318"
+    },
+    {
+        "certificate_num": "LOB-FA-2023-0017",
+        "date_list_inclusion": "2023-02-01",
+        "legal_entity_code": "-",
+        "legal_entity_representatives": [],
+        "legal_regulation_areas": "Statybos",
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
+        "lobbyists": "Arvydas Kulys",
+        "nr": "319"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0015",
+        "date_list_inclusion": "2023-02-01",
+        "legal_entity_code": "144127993",
+        "legal_entity_representatives": [
+            "Vaidas Seirackas",
+            "Reda Toleikienė",
+            "Raimonda Pelutienė",
+            "Justina Žukauskienė",
+            "Irena Stankevičienė",
+            "Indrė Lukošiūtė"
+        ],
+        "legal_regulation_areas": "Transportas ir susisiekimas",
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
+        "lobbyists": "UAB „Busturas\"",
+        "nr": "320"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0014",
+        "date_list_inclusion": "2023-02-01",
+        "legal_entity_code": "132532496",
+        "legal_entity_representatives": [
+            "Marijus Zaborskas"
+        ],
+        "legal_regulation_areas": "Viešieji pirkimai",
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
+        "lobbyists": "UAB Kauno butų ūkis",
+        "nr": "321"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0012",
+        "date_list_inclusion": "2023-01-25",
+        "legal_entity_code": "151004973",
+        "legal_entity_representatives": [
+            "Algirdas Brazys"
+        ],
+        "legal_regulation_areas": "Viešieji pirkimai, Statybos, Transportas ir susisiekimas",
+        "legal_regulation_areas_num": 3.0,
+        "lobbyist_until": "",
+        "lobbyists": "UAB „Kelranga\"",
+        "nr": "322"
+    },
+    {
+        "certificate_num": "LOB-FA-2023-0011",
+        "date_list_inclusion": "2023-01-25",
+        "legal_entity_code": "-",
+        "legal_entity_representatives": [],
+        "legal_regulation_areas": "Viešieji pirkimai, Užsienio reikalai, Švietimas ir mokslas, Nacionalinis saugumas ir gynyba, Ekonomika ir inovacijos, Energetika, Miškų ūkis",
+        "legal_regulation_areas_num": 7.0,
+        "lobbyist_until": "",
+        "lobbyists": "Virgilijus Dirma",
+        "nr": "323"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0009",
+        "date_list_inclusion": "2023-01-25",
+        "legal_entity_code": "302261532",
+        "legal_entity_representatives": [
+            "Emilija Biterytė"
+        ],
+        "legal_regulation_areas": "Švietimas ir mokslas, Socialinė apsauga ir darbas, Miškų ūkis, Aplinkosauga",
+        "legal_regulation_areas_num": 4.0,
+        "lobbyist_until": "",
+        "lobbyists": "Mes Darom",
+        "nr": "324"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0008",
+        "date_list_inclusion": "2023-01-25",
+        "legal_entity_code": "302580900",
+        "legal_entity_representatives": [
+            "Rytis Paulikaitis"
+        ],
+        "legal_regulation_areas": "Sportas, Ekonomika ir inovacijos, Transportas ir susisiekimas, Aplinkosauga",
+        "legal_regulation_areas_num": 4.0,
+        "lobbyist_until": "",
+        "lobbyists": "Lietuvos Dviračių verslo asociacija",
+        "nr": "325"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0007",
+        "date_list_inclusion": "2023-01-25",
+        "legal_entity_code": "163994426",
+        "legal_entity_representatives": [
+            "Tomas Jurgutis"
+        ],
+        "legal_regulation_areas": "Viešieji pirkimai, Energetika, Aplinkosauga",
+        "legal_regulation_areas_num": 3.0,
+        "lobbyist_until": "",
+        "lobbyists": "UAB „Kretingos vandenys“",
+        "nr": "326"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0046",
+        "date_list_inclusion": "2023-08-02",
+        "legal_entity_code": "302683277",
+        "legal_entity_representatives": [
+            "Darius Aleknavičius"
+        ],
+        "legal_regulation_areas": "Viešieji pirkimai, Ekonomika ir inovacijos, Transportas ir susisiekimas, Statybos",
+        "legal_regulation_areas_num": 4.0,
+        "lobbyist_until": "",
+        "lobbyists": "UAB Vilniaus viešasis transportas",
+        "nr": "327"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0048",
+        "date_list_inclusion": "2023-08-09",
+        "legal_entity_code": "305951321",
+        "legal_entity_representatives": [
+            "Saulius Petravičius"
+        ],
+        "legal_regulation_areas": "Socialinė apsauga ir darbas, Ekonomika ir inovacijos, Sveikatos apsauga, Finansai ir bankininkystė, Azartiniai lošimai ir loterijos",
+        "legal_regulation_areas_num": 5.0,
+        "lobbyist_until": "",
+        "lobbyists": "Atsakingo lošimų verslo asociacija",
+        "nr": "328"
+    },
+    {
+        "certificate_num": "LOB-FA-2023-0047",
+        "date_list_inclusion": "2023-08-09",
+        "legal_entity_code": "-",
+        "legal_entity_representatives": [],
+        "legal_regulation_areas": "Kultūra",
+        "legal_regulation_areas_num": 1.0,
+        "lobbyist_until": "",
+        "lobbyists": "Darius Mažeika",
+        "nr": "329"
+    },
+    {
+        "certificate_num": "LOB-JA-2023-0049",
+        "date_list_inclusion": "2023-08-16",
+        "legal_entity_code": "305678310",
+        "legal_entity_representatives": [
+            "Paulius Girčys",
+            "Algis Čaplikas"
+        ],
+        "legal_regulation_areas": "Viešieji pirkimai, Tabako ir alkoholio kontrolė, Azartiniai lošimai ir loterijos, Vidaus reikalai, Užsienio reikalai, Teisė ir teisėtvarka, Sportas, Švietimas ir mokslas, Socialinė apsauga ir darbas, Nacionalinis saugumas ir gynyba, Kultūra, Kaimo reikalai ir žemės ūkis, Ekonomika ir inovacijos, Finansai ir bankininkystė, Energetika, Miškų ūkis, Statybos, Transportas ir susisiekimas, Aplinkosauga, Sveikatos apsauga",
+        "legal_regulation_areas_num": 20.0,
+        "lobbyist_until": "",
+        "lobbyists": "UAB Socium agency",
+        "nr": "330"
     }
 ]

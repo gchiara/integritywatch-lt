@@ -44,7 +44,7 @@ var vuedata = {
     },
     mainTable: {
       title: 'Lobistai',
-      info: 'Rikiuokite ir palyginkite duomenis tarpusavyje, paspausdami lentelės skilties pavadinimą. Duomenų šaltinis: Vyriausioji tarnybinės etikos komisija. Į apžvalgą įtraukti visi registruoti lobistai ir jų deklaracijos nuo 2001 m. sausio 24 d. iki 2023 m. rugsėjo 6 d.. TILS atskirai nevertino, ar pateiktos lobistų skaidrumo deklaracijos atitinka LR lobistinės veiklos įstatymo nuostatas.'
+      info: 'Rikiuokite ir palyginkite duomenis tarpusavyje, paspausdami lentelės skilties pavadinimą. Duomenų šaltinis: Vyriausioji tarnybinės etikos komisija. Į apžvalgą įtraukti visi registruoti lobistai ir jų deklaracijos nuo 2021 m. sausio 1 d. iki 2023 m. rugpjūčio 23 d.. TILS atskirai nevertino, ar pateiktos lobistų skaidrumo deklaracijos atitinka LR lobistinės veiklos įstatymo nuostatas.'
     },
   },
   openModalClicked: false,
@@ -442,9 +442,7 @@ json('./data/tab_d/transparency_declarations.json?' + randomPar, (err, entriesDe
           "defaultContent":"N/A",
           "data": function(d) {
             if(d.activitiesNum > 0) {
-              //d.certificate_num
-              //return '<a href="./lobbyists-transparency-declarations.php?lobbyist='+d.lobbyists+'" class="detailsModalBtn">Deklaracijos</button>';
-              return '<a href="./lobbyists-transparency-declarations.php?lobbyist='+d.certificate_num+'" class="detailsModalBtn">Deklaracijos</button>';
+              return '<a href="./lobistu-skaidrumo-deklaracijos.php?lobbyist='+d.certificate_num+'" class="detailsModalBtn">Deklaracijos</button>';
             }
             return '';
           }
@@ -492,6 +490,9 @@ json('./data/tab_d/transparency_declarations.json?' + randomPar, (err, entriesDe
             var rowInfoContent = "<div class='row-details-container'>";
             if(vuedata.selectedElement.date_list_inclusion) {
               rowInfoContent += '<div class="row-details-entry"><strong>Įrašymo į lobistų sąrašą data:</strong> ' + vuedata.selectedElement.date_list_inclusion + '</div>';
+            }
+            if(vuedata.selectedElement.lobbyist_until && vuedata.selectedElement.lobbyist_until !== '') {
+              rowInfoContent += '<div class="row-details-entry"><strong>Lobistas iki:</strong> ' + vuedata.selectedElement.lobbyist_until + '</div>';
             }
             if(vuedata.selectedElement.legal_entity_representatives && vuedata.selectedElement.legal_entity_representatives.length > 0) {
               rowInfoContent += '<div class="row-details-entry"><strong>Juridinio asmens atstovai:</strong> ' + vuedata.selectedElement.legal_entity_representatives.join(', ') + '</div>';

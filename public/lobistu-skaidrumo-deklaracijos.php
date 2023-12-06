@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:500" rel="stylesheet">
-    <link rel="stylesheet" href="static/tab_d_2.css?v=4">
+    <link rel="stylesheet" href="static/tab_d_2.css?v=8">
 </head>
 <body>
     <div id="app" class="tabC">   
@@ -30,8 +30,8 @@
               <!-- INFO -->
               <div class="col-md-8 chart-col" v-if="showInfo">
                 <div class="boxed-container description-container">
-                  <h3>Lobistų deklaracijos</h3>
-                  <p>Svetainėje galite greitai ir paprastai sužinoti, kaip lobistai ir asmenys, kuriems lobistine veikla siekiama daryti įtaką, skelbia savo deklaracijas. Galite šiuos duomenis analizuoti ir lyginti tarpusavyje pasirinkdami skirtingus rodiklius. <a href="./about.php?section=4">Daugiau čia</a>.</p>
+                  <h3>Lobistų skaidrumo deklaracijos</h3>
+                  <p>Svetainėje „ManoSeimas.lt“ galite greitai ir paprastai sužinoti, kaip lobistai ir asmenys, kuriems lobistine veikla siekiama daryti įtaką, skelbia savo deklaracijas. Galite šiuos duomenis analizuoti ir lyginti tarpusavyje pasirinkdami skirtingus rodiklius. <a href="./about.php?section=4">Daugiau čia</a>.</p>
                   <i class="material-icons close-btn" @click="showInfo = false">close</i>
                 </div>
               </div>
@@ -97,9 +97,6 @@
           <div class="modal-content">
             <!-- Modal Header -->
             <div class="modal-header">
-              <button type="button" class="btn btn-secondary btn-info" data-container="body" data-toggle="popover" data-trigger="hover" data-html="true" data-placement="bottom" data-content="Lorem ipsum">
-                i
-              </button>
               <div class="modal-title modal-title-law">
                 <div>{{ selectedElement.number }}</div>
               </div>
@@ -161,7 +158,7 @@
     <script type="text/javascript" src="vendor/js/d3.layout.cloud.js"></script>
     <script type="text/javascript" src="vendor/js/crossfilter.min.js"></script>
     <script type="text/javascript" src="vendor/js/dc.js"></script>
-    <script src="static/tab_d_2.js?v=4"></script>
+    <script src="static/tab_d_2.js?v=8"></script>
 
  
 </body>

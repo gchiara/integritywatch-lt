@@ -51,8 +51,8 @@ var vuedata = {
       info: ''
     },
     mainTable: {
-      title: 'Lobistų deklaracijos',
-      info: 'Paspaudę ant pasirinktos eilutės, pamatykite, sužinokite apie lobistinę įtaką patyrusius asmenis ir/ar asmenų grupes. Rikiuokite ir palyginkite duomenis tarpusavyje, paspausdami lentelės skilties pavadinimą. Duomenų šaltinis: Vyriausioji tarnybinės etikos komisija. Į apžvalgą įtraukti visi registruoti lobistai ir jų deklaracijos nuo 2021 m. sausio 7 d. iki 2023 m. rugpjūčio 23 d.. TILS atskirai nevertino, ar pateiktos lobistų skaidrumo deklaracijos atitinka LR lobistinės veiklos įstatymo nuostatas.'
+      title: 'Lobistų skaidrumo deklaracijos',
+      info: 'Paspaudę ant pasirinktos eilutės, pamatykite, sužinokite apie lobistinę įtaką patyrusius asmenis ir/ar asmenų grupes. Rikiuokite ir palyginkite duomenis tarpusavyje, paspausdami lentelės skilties pavadinimą. Duomenų šaltinis: Vyriausioji tarnybinės etikos komisija. Į apžvalgą įtraukti visi registruoti lobistai ir jų deklaracijos nuo 2021 m. sausio 1 d. iki 2023 m. rugpjūčio 23 d.. TILS atskirai nevertino, ar pateiktos lobistų skaidrumo deklaracijos atitinka LR lobistinės veiklos įstatymo nuostatas.'
     },
   },
   openModalClicked: false,
@@ -297,7 +297,7 @@ var randomCharacters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123
 for ( var i = 0; i < 5; i++ ) {
   randomPar += randomCharacters.charAt(Math.floor(Math.random() * randomCharacters.length));
 }
-
+var testCount = 0;
 //Load data and generate charts
 json('./data/tab_d/transparency_declarations.json?' + randomPar, (err, entries) => {
   _.each(entries, function (d) {
@@ -309,7 +309,14 @@ json('./data/tab_d/transparency_declarations.json?' + randomPar, (err, entries) 
     //Legislation names array made by splitting cleaned names by semicolon
     d.legislation_name_array = [];
     if(d.legislation_name_cleaned && d.legislation_name_cleaned != '') {
-      d.legislation_name_array = d.legislation_name_cleaned.split(';');
+      d.legislation_name_array = d.legislation_name_cleaned.replaceAll('; ',';').split(';');
+      if(d.legislation_name_cleaned.indexOf('LR Sveikatos draudimo įstatymas') > -1) {
+        d.legislation_name_cleaned_testMark = '1';
+        console.log(d.legislation_name_cleaned);
+        console.log(d.legislation_name_array);
+        testCount ++;
+        console.log(testCount);
+      }
     }
     d.influencedPeopleString = '';
     //Calculate influenced people and groups numbers, also add to array for influenced people and groups bars
@@ -339,6 +346,7 @@ json('./data/tab_d/transparency_declarations.json?' + randomPar, (err, entries) 
     
 
   });
+  console.log(entries);
   //Set dc main vars. The second crossfilter is used to handle the travels stacked bar chart.
   var ndx = crossfilter(entries);
   var searchDimension = ndx.dimension(function (d) {
